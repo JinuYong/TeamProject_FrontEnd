@@ -50,7 +50,7 @@
                 <img class="footer-icon" src="@/assets/img/google.svg">
             </div>
             <p class="footer-text">
-                만든 이 | 유인환, 박진우, 김영근, 하보석, 김준석
+                만든 이 | 유인환, 박진우, 김영근, 하보석, 김준섭
                 <br />
                 © 노인과 막내 (Old man and Yong man) | 2022.06.22
             </p>
