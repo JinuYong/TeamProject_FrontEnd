@@ -12,8 +12,13 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+<<<<<<< HEAD
 import nuxt_plugin_plugin_342e1f64 from 'nuxt_plugin_plugin_342e1f64' // Source: .\\components\\plugin.js (mode: 'all')
 import nuxt_plugin_axios_dfa2ecf2 from 'nuxt_plugin_axios_dfa2ecf2' // Source: .\\axios.js (mode: 'all')
+=======
+import nuxt_plugin_plugin_c2063482 from 'nuxt_plugin_plugin_c2063482' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_axios_3df27755 from 'nuxt_plugin_axios_3df27755' // Source: ./axios.js (mode: 'all')
+>>>>>>> 83c72994942ea5499ce265c8cddbe60dbd04a5e3
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -63,7 +68,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"omym-frontend","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fcss\u002Fbootstrap.min.css","rel":"stylesheet","integrity":"sha384-0evHe\u002FX+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor","crossorigin":"anonymous"}],"script":[{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fjs\u002Fbootstrap.bundle.min.js","integrity":"sha384-pprn3073KE6tl6bjs2QrFaJGz5\u002FSUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2","crossorigin":"anonymous"},{"src":"\u002F\u002Ft1.daumcdn.net\u002Fmapjsapi\u002Fbundle\u002Fpostcode\u002Fprod\u002Fpostcode.v2.js"}],"style":[]},
+    head: {"title":"omym-frontend","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fcss\u002Fbootstrap.min.css","rel":"stylesheet","integrity":"sha384-0evHe\u002FX+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor","crossorigin":"anonymous"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.css","integrity":"sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"}],"script":[{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fjs\u002Fbootstrap.bundle.min.js","integrity":"sha384-pprn3073KE6tl6bjs2QrFaJGz5\u002FSUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2","crossorigin":"anonymous"},{"src":"\u002F\u002Ft1.daumcdn.net\u002Fmapjsapi\u002Fbundle\u002Fpostcode\u002Fprod\u002Fpostcode.v2.js"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjquery\u002F3.6.0\u002Fjquery.min.js","integrity":"sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn\u002F+\u002F3e7Jo4EaG7TubfWGUrMQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.js","integrity":"sha512-uto9mlQzrs59VwILcLiRYeLKPPbS\u002FbT71da\u002FOEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==","crossorigin":"anonymous","referrerpolicy":"no-referrer"}],"style":[]},
 
     router,
     nuxt: {
@@ -177,12 +182,21 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
+<<<<<<< HEAD
   if (typeof nuxt_plugin_plugin_342e1f64 === 'function') {
     await nuxt_plugin_plugin_342e1f64(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_dfa2ecf2 === 'function') {
     await nuxt_plugin_axios_dfa2ecf2(app.context, inject)
+=======
+  if (typeof nuxt_plugin_plugin_c2063482 === 'function') {
+    await nuxt_plugin_plugin_c2063482(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_axios_3df27755 === 'function') {
+    await nuxt_plugin_axios_3df27755(app.context, inject)
+>>>>>>> 83c72994942ea5499ce265c8cddbe60dbd04a5e3
   }
 
   // Lock enablePreview in context
