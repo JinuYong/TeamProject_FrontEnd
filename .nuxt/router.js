@@ -4,9 +4,16 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _48ad24f1 = () => interopDefault(import('../pages/ItemList/ItemList.vue' /* webpackChunkName: "pages/ItemList/ItemList" */))
-const _366eb7fc = () => interopDefault(import('../pages/tourItemDetails/TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
-const _1ffb42f4 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _7286b00a = () => interopDefault(import('../pages/CheckId.vue' /* webpackChunkName: "pages/CheckId" */))
+const _73df445e = () => interopDefault(import('../pages/CheckPwd.vue' /* webpackChunkName: "pages/CheckPwd" */))
+const _2477f627 = () => interopDefault(import('../pages/CheckSignUp.vue' /* webpackChunkName: "pages/CheckSignUp" */))
+const _5a1410bd = () => interopDefault(import('../pages/FindId.vue' /* webpackChunkName: "pages/FindId" */))
+const _7dfdfa0b = () => interopDefault(import('../pages/FindPwd.vue' /* webpackChunkName: "pages/FindPwd" */))
+const _c01cc7e0 = () => interopDefault(import('../pages/LogIn.vue' /* webpackChunkName: "pages/LogIn" */))
+const _10c82741 = () => interopDefault(import('../pages/SignUp.vue' /* webpackChunkName: "pages/SignUp" */))
+const _22f62114 = () => interopDefault(import('../pages/ItemList/ItemList.vue' /* webpackChunkName: "pages/ItemList/ItemList" */))
+const _0da2d99d = () => interopDefault(import('../pages/tourItemDetails/TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
+const _d51a260e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -20,16 +27,44 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/CheckId",
+    component: _7286b00a,
+    name: "CheckId"
+  }, {
+    path: "/CheckPwd",
+    component: _73df445e,
+    name: "CheckPwd"
+  }, {
+    path: "/CheckSignUp",
+    component: _2477f627,
+    name: "CheckSignUp"
+  }, {
+    path: "/FindId",
+    component: _5a1410bd,
+    name: "FindId"
+  }, {
+    path: "/FindPwd",
+    component: _7dfdfa0b,
+    name: "FindPwd"
+  }, {
+    path: "/LogIn",
+    component: _c01cc7e0,
+    name: "LogIn"
+  }, {
+    path: "/SignUp",
+    component: _10c82741,
+    name: "SignUp"
+  }, {
     path: "/ItemList/ItemList",
-    component: _48ad24f1,
+    component: _22f62114,
     name: "ItemList-ItemList"
   }, {
     path: "/tourItemDetails/TourItemDetail",
-    component: _366eb7fc,
+    component: _0da2d99d,
     name: "tourItemDetails-TourItemDetail"
   }, {
     path: "/",
-    component: _1ffb42f4,
+    component: _d51a260e,
     name: "index"
   }],
 
