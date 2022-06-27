@@ -2,15 +2,22 @@
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\ItemList\\\\ItemList.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/ItemList/ItemList.vue",
     "chunkName": "pages/ItemList/ItemList",
-    "_name": "_48061ace"
+    "_name": "_48ad24f1"
+  },
+  {
+    "name": "tourItemDetails-TourItemDetail",
+    "path": "/tourItemDetails/TourItemDetail",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/tourItemDetails/TourItemDetail.vue",
+    "chunkName": "pages/tourItemDetails/TourItemDetail",
+    "_name": "_366eb7fc"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\index.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_2e6a5a2b"
+    "_name": "_1ffb42f4"
   }
 ]
