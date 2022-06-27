@@ -2,71 +2,71 @@
   {
     "name": "CheckId",
     "path": "/CheckId",
-    "component": "/Users/macbook/Desktop/Project/front/pages/CheckId.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/CheckId.vue",
     "chunkName": "pages/CheckId",
-    "_name": "_7286b00a"
+    "_name": "_35e1fa3a"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
-    "component": "/Users/macbook/Desktop/Project/front/pages/CheckPwd.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/CheckPwd.vue",
     "chunkName": "pages/CheckPwd",
-    "_name": "_73df445e"
+    "_name": "_1bed402e"
   },
   {
     "name": "CheckSignUp",
     "path": "/CheckSignUp",
-    "component": "/Users/macbook/Desktop/Project/front/pages/CheckSignUp.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/CheckSignUp.vue",
     "chunkName": "pages/CheckSignUp",
-    "_name": "_2477f627"
+    "_name": "_507aaf52"
   },
   {
     "name": "FindId",
     "path": "/FindId",
-    "component": "/Users/macbook/Desktop/Project/front/pages/FindId.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/FindId.vue",
     "chunkName": "pages/FindId",
-    "_name": "_5a1410bd"
+    "_name": "_160ec08d"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
-    "component": "/Users/macbook/Desktop/Project/front/pages/FindPwd.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/FindPwd.vue",
     "chunkName": "pages/FindPwd",
-    "_name": "_7dfdfa0b"
+    "_name": "_4159443b"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "/Users/macbook/Desktop/Project/front/pages/LogIn.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/LogIn.vue",
     "chunkName": "pages/LogIn",
-    "_name": "_c01cc7e0"
+    "_name": "_f60c9b80"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "/Users/macbook/Desktop/Project/front/pages/SignUp.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/SignUp.vue",
     "chunkName": "pages/SignUp",
-    "_name": "_10c82741"
+    "_name": "_667a51de"
   },
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
-    "component": "/Users/macbook/Desktop/Project/front/pages/ItemList/ItemList.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/ItemList/ItemList.vue",
     "chunkName": "pages/ItemList/ItemList",
-    "_name": "_22f62114"
+    "_name": "_faa584b4"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
-    "component": "/Users/macbook/Desktop/Project/front/pages/tourItemDetails/TourItemDetail.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/tourItemDetails/TourItemDetail.vue",
     "chunkName": "pages/tourItemDetails/TourItemDetail",
-    "_name": "_0da2d99d"
+    "_name": "_677f196d"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/macbook/Desktop/Project/front/pages/index.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_d51a260e"
+    "_name": "_7a7b0329"
   }
 ]
