@@ -319,12 +319,6 @@ $.datepicker.setDefaults({
 </script>
 
 <style>
-body {
-    width: 850px;
-    margin: 0 auto;
-    padding-top: 50px;
-}
-
 ul,
 li {
     list-style: none;
