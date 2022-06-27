@@ -1,9 +1,16 @@
 [
   {
+    "name": "ItemList-ItemList",
+    "path": "/ItemList/ItemList",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\ItemList\\\\ItemList.vue",
+    "chunkName": "pages/ItemList/ItemList",
+    "_name": "_48061ace"
+  },
+  {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_603576fb"
+    "_name": "_2e6a5a2b"
   }
 ]
