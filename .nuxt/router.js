@@ -4,16 +4,17 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _35e1fa3a = () => interopDefault(import('../pages/CheckId.vue' /* webpackChunkName: "pages/CheckId" */))
-const _1bed402e = () => interopDefault(import('../pages/CheckPwd.vue' /* webpackChunkName: "pages/CheckPwd" */))
-const _507aaf52 = () => interopDefault(import('../pages/CheckSignUp.vue' /* webpackChunkName: "pages/CheckSignUp" */))
-const _160ec08d = () => interopDefault(import('../pages/FindId.vue' /* webpackChunkName: "pages/FindId" */))
-const _4159443b = () => interopDefault(import('../pages/FindPwd.vue' /* webpackChunkName: "pages/FindPwd" */))
-const _f60c9b80 = () => interopDefault(import('../pages/LogIn.vue' /* webpackChunkName: "pages/LogIn" */))
-const _667a51de = () => interopDefault(import('../pages/SignUp.vue' /* webpackChunkName: "pages/SignUp" */))
-const _faa584b4 = () => interopDefault(import('../pages/ItemList/ItemList.vue' /* webpackChunkName: "pages/ItemList/ItemList" */))
-const _677f196d = () => interopDefault(import('../pages/tourItemDetails/TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
-const _7a7b0329 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _a950ce88 = () => interopDefault(import('..\\pages\\CheckId.vue' /* webpackChunkName: "pages/CheckId" */))
+const _552b71ec = () => interopDefault(import('..\\pages\\CheckPwd.vue' /* webpackChunkName: "pages/CheckPwd" */))
+const _446135d9 = () => interopDefault(import('..\\pages\\CheckSignUp.vue' /* webpackChunkName: "pages/CheckSignUp" */))
+const _3feb6c6a = () => interopDefault(import('..\\pages\\FindId.vue' /* webpackChunkName: "pages/FindId" */))
+const _92623a86 = () => interopDefault(import('..\\pages\\FindPwd.vue' /* webpackChunkName: "pages/FindPwd" */))
+const _38e90942 = () => interopDefault(import('..\\pages\\LogIn.vue' /* webpackChunkName: "pages/LogIn" */))
+const _d2833f62 = () => interopDefault(import('..\\pages\\SignUp.vue' /* webpackChunkName: "pages/SignUp" */))
+const _9626a622 = () => interopDefault(import('..\\pages\\boardDetails\\boardDetails.vue' /* webpackChunkName: "pages/boardDetails/boardDetails" */))
+const _48061ace = () => interopDefault(import('..\\pages\\ItemList\\ItemList.vue' /* webpackChunkName: "pages/ItemList/ItemList" */))
+const _30dceb2c = () => interopDefault(import('..\\pages\\tourItemDetails\\TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
+const _2e6a5a2b = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -28,43 +29,47 @@ export const routerOptions = {
 
   routes: [{
     path: "/CheckId",
-    component: _35e1fa3a,
+    component: _a950ce88,
     name: "CheckId"
   }, {
     path: "/CheckPwd",
-    component: _1bed402e,
+    component: _552b71ec,
     name: "CheckPwd"
   }, {
     path: "/CheckSignUp",
-    component: _507aaf52,
+    component: _446135d9,
     name: "CheckSignUp"
   }, {
     path: "/FindId",
-    component: _160ec08d,
+    component: _3feb6c6a,
     name: "FindId"
   }, {
     path: "/FindPwd",
-    component: _4159443b,
+    component: _92623a86,
     name: "FindPwd"
   }, {
     path: "/LogIn",
-    component: _f60c9b80,
+    component: _38e90942,
     name: "LogIn"
   }, {
     path: "/SignUp",
-    component: _667a51de,
+    component: _d2833f62,
     name: "SignUp"
   }, {
+    path: "/boardDetails/boardDetails",
+    component: _9626a622,
+    name: "boardDetails-boardDetails"
+  }, {
     path: "/ItemList/ItemList",
-    component: _faa584b4,
+    component: _48061ace,
     name: "ItemList-ItemList"
   }, {
     path: "/tourItemDetails/TourItemDetail",
-    component: _677f196d,
+    component: _30dceb2c,
     name: "tourItemDetails-TourItemDetail"
   }, {
     path: "/",
-    component: _7a7b0329,
+    component: _2e6a5a2b,
     name: "index"
   }],
 
