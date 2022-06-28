@@ -2,106 +2,106 @@
   {
     "name": "CheckId",
     "path": "/CheckId",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/CheckId.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/CheckId.vue",
     "chunkName": "pages/CheckId",
-    "_name": "_3ed2880b"
+    "_name": "_7c517345"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/CheckPwd.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/CheckPwd.vue",
     "chunkName": "pages/CheckPwd",
-    "_name": "_310e6c7d"
+    "_name": "_b9262efa"
   },
   {
     "name": "CheckSignUp",
     "path": "/CheckSignUp",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/CheckSignUp.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/CheckSignUp.vue",
     "chunkName": "pages/CheckSignUp",
-    "_name": "_91b434b0"
+    "_name": "_0f2eb83c"
   },
   {
     "name": "FindId",
     "path": "/FindId",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/FindId.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/FindId.vue",
     "chunkName": "pages/FindId",
-    "_name": "_26dcb49c"
+    "_name": "_20967a22"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/FindPwd.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/FindPwd.vue",
     "chunkName": "pages/FindPwd",
-    "_name": "_4a49d20c"
+    "_name": "_f06e8574"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/LogIn.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/LogIn.vue",
     "chunkName": "pages/LogIn",
-    "_name": "_09a58051"
+    "_name": "_2a79f20b"
   },
   {
     "name": "MypageUpdate",
     "path": "/MypageUpdate",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/MypageUpdate.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/MypageUpdate.vue",
     "chunkName": "pages/MypageUpdate",
-    "_name": "_87e21a68"
+    "_name": "_b9b8085c"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/Qna.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/Qna.vue",
     "chunkName": "pages/Qna",
-    "_name": "_7692912c"
+    "_name": "_676c2966"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/SignUp.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/SignUp.vue",
     "chunkName": "pages/SignUp",
-    "_name": "_44de69c0"
+    "_name": "_516adeb4"
   },
   {
     "name": "boardDetails-boardDetails",
     "path": "/boardDetails/boardDetails",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/boardDetails/boardDetails.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/boardDetails/boardDetails.vue",
     "chunkName": "pages/boardDetails/boardDetails",
-    "_name": "_7e090517"
+    "_name": "_cf45545e"
   },
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/ItemList/ItemList.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/ItemList/ItemList.vue",
     "chunkName": "pages/ItemList/ItemList",
-    "_name": "_b6710b92"
+    "_name": "_48ad24f1"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/tourItemDetails/TourItemDetail.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/tourItemDetails/TourItemDetail.vue",
     "chunkName": "pages/tourItemDetails/TourItemDetail",
-    "_name": "_2cf4df08"
+    "_name": "_366eb7fc"
   },
   {
     "name": "tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/components/KakaoMapApiCom",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/tourItemDetails/components/KakaoMapApiCom.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/tourItemDetails/components/KakaoMapApiCom.vue",
     "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
-    "_name": "_723e596e"
+    "_name": "_6a007003"
   },
   {
     "name": "tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/components/ReviewsCom",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/tourItemDetails/components/ReviewsCom.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/tourItemDetails/components/ReviewsCom.vue",
     "chunkName": "pages/tourItemDetails/components/ReviewsCom",
-    "_name": "_1430e7a2"
+    "_name": "_6f7695e9"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/무제 폴더/pages/index.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_01b25d8c"
+    "_name": "_1ffb42f4"
   }
 ]
