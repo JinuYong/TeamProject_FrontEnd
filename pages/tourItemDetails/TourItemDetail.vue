@@ -1,586 +1,412 @@
 <template>
-  <div>
-    <div class="container">
-      <hr>
-      <div class="card">
-        <div class="row">
-          <aside class="col-sm-5 border-right">
-            <article class="gallery-wrap">
-              <div class="img-big-wrap">
-                <div> <a href="#"><img src="https://s9.postimg.org/tupxkvfj3/image.jpg"></a></div>
-              </div> <!-- slider-product.// -->
-              <div class="img-small-wrap">
-                <div class="item-gallery"> <img src="https://s9.postimg.org/tupxkvfj3/image.jpg"> </div>
-                <div class="item-gallery"> <img src="https://s9.postimg.org/tupxkvfj3/image.jpg"> </div>
-                <div class="item-gallery"> <img src="https://s9.postimg.org/tupxkvfj3/image.jpg"> </div>
-                <div class="item-gallery"> <img src="https://s9.postimg.org/tupxkvfj3/image.jpg"> </div>
-              </div> <!-- slider-nav.// -->
-            </article> <!-- gallery-wrap .end// -->
-          </aside>
-          <aside class="col-sm-7">
-            <article class="card-body p-5">
-              <h3 class="title mb-3">Original Version of Some product name</h3>
+    <div class="container mt-3 px-0">
+        <div class="container b px-0">
+            <!--    상품 이미지, 상품명 및 결제 관련  -->
+            <!--      상품 이미지 -->
+            <div class="row mx-2 mt-3">
+                <!--      상품 이미지 main -->
+                <div class="col-md-6">
+                    <div class="row mt-3 mx-1">
+                        <img src="@/assets/img/itemDetails/item-image.jpeg"
+                             class="img-fluid p-0 b"
+                             alt="item-img-large"
+                             style="width: 500px; height: 300px">
+                        <!--      상품 이미지 small -->
+                        <ul class="d-flex justify-content-center mt-2">
+                            <li class="p-1 li-img">
+                                <img src="@/assets/img/itemDetails/item-image.jpeg" alt="item-img-small"
+                                     style="width: 50px; height: 50px"/>
+                            </li>
+                            <li class="p-1 li-img">
+                                <img src="@/assets/img/itemDetails/item-image.jpeg" alt="item-img-small"
+                                     style="width: 50px; height: 50px"/>
+                            </li>
+                            <li class="p-1 li-img">
+                                <img src="@/assets/img/itemDetails/item-image.jpeg" alt="item-img-small"
+                                     style="width: 50px; height: 50px"/>
+                            </li>
+                            <li class="p-1 li-img">
+                                <img src="@/assets/img/itemDetails/item-image.jpeg" alt="item-img-small"
+                                     style="width: 50px; height: 50px"/>
+                            </li>
+                            <li class="p-1 li-img">
+                                <img src="@/assets/img/itemDetails/item-image.jpeg" alt="item-img-small"
+                                     style="width: 50px; height: 50px"/>
+                            </li>
+                            <li class="p-1 li-img">
+                                <img src="@/assets/img/itemDetails/item-image.jpeg" alt="item-img-small"
+                                     style="width: 50px; height: 50px"/>
+                            </li>
+                        </ul>
+                    </div>
 
-              <p class="price-detail-wrap">
-	<span class="price h3 text-warning">
-		<span class="currency">US $</span><span class="num">1299</span>
-	</span>
-                <span>/per kg</span>
-              </p> <!-- price-detail-wrap .// -->
-              <dl class="item-property">
-                <dt>Description</dt>
-                <dd><p>Here goes description consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco </p></dd>
-              </dl>
-              <dl class="param param-feature">
-                <dt>Model#</dt>
-                <dd>12345611</dd>
-              </dl>  <!-- item-property-hor .// -->
-              <dl class="param param-feature">
-                <dt>Color</dt>
-                <dd>Black and white</dd>
-              </dl>  <!-- item-property-hor .// -->
-              <dl class="param param-feature">
-                <dt>Delivery</dt>
-                <dd>Russia, USA, and Europe</dd>
-              </dl>  <!-- item-property-hor .// -->
+                </div>
 
-              <hr>
-              <div class="row">
-                <div class="col-sm-5">
-                  <dl class="param param-inline">
-                    <dt>Quantity: </dt>
-                    <dd>
-                      <select class="form-control form-control-sm" style="width:70px;">
-                        <option> 1 </option>
-                        <option> 2 </option>
-                        <option> 3 </option>
-                      </select>
-                    </dd>
-                  </dl>  <!-- item-property .// -->
-                </div> <!-- col.// -->
-                <div class="col-sm-7">
-                  <dl class="param param-inline">
-                    <dt>Size: </dt>
-                    <dd>
-                      <label class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <span class="form-check-label">SM</span>
-                      </label>
-                      <label class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <span class="form-check-label">MD</span>
-                      </label>
-                      <label class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <span class="form-check-label">XXL</span>
-                      </label>
-                    </dd>
-                  </dl>  <!-- item-property .// -->
-                </div> <!-- col.// -->
-              </div> <!-- row.// -->
-              <hr>
-              <a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
-              <a href="#" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>
-            </article> <!-- card-body.// -->
-          </aside> <!-- col.// -->
-        </div> <!-- row.// -->
-      </div> <!-- card.// -->
+                <!--      상품명 및 결제 -->
+                <div class="col-md-6 mb-5">
+                    <div class="row b mx-1 mt-3 p-3">
+                        <div class="p-0">
+                            <!--        상품 location(지역) -->
+                            <div><span class="badge rounded-pill bg-primary">지역</span></div>
+                            <div>
+                                <div class="h4">상품명이 들어갈 자리입니다.</div>
+                                <p>상품 간략설명이 들어갈 자리입니다.<br> 두줄 정도가 적당합니다.</p>
+                            </div>
+                        </div>
 
+                        <!--        상품 할인율 및 상품 가격 -->
+                        <div class="mt-2"></div>
+                        <div class="col-md-3 p-0">
+                            <!--            할인율 -->
+                            <div class="h3">25%</div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="text-end">
+                                <!--            할인 전 가격 -->
+                                <span class="text-decoration-line-through fs-8" style="color:lightgray">100,000원</span>
+                                <!--          할인 후 가격 -->
+                                <span class="fs-5 pl-2"> 75,000</span><span class="fs-5 pl-2">원</span>
+                            </div>
+                        </div>
+                        <div class="mt-2"></div>
+                        <div class="col col-md-7">
+                            <div class="mt-1 text-end p-0 pr-0">인원선택</div>
+                        </div>
+                        <div class="col col-md-5 pl-0">
+                            <!--        quantity value button -->
+                            <div class="input-group input-group-sm mb-3 " style=" float: right">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">-</span>
+                                <input type="text" class="form-control"
+                                       aria-label="Sizing example input"
+                                       aria-describedby="inputGroup-sizing-sm"
+                                       style=" text-align:center;"
+                                       value="0">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">+</span>
+                            </div>
+                        </div>
 
+                        <!--        결제 가격 -->
+                        <div class="mt-3"></div>
+                        <div class="text-end">
+                            <span class="fs-5">총 </span>
+                            <span class="h3"> 75,000</span>
+                            <span class="h3"> 원</span>
+                        </div>
+                        <!--        장바구니 추가 및 결제 버튼 -->
+                        <div class="mt-2"></div>
+                        <div class="d-grid gap-2 col-md-6 p-0 p-1">
+                            <button class="btn btn-secondary" type="button">장바구니 추가</button>
+                        </div>
+                        <div class="col-md d-grid gap-2 p-0 p-1">
+                            <button class="btn btn-secondary">
+                                구매하기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            상품설명 및 리뷰 란 -->
+            <div class="row mx-4">
+                <!--                상품설명으로 이동-->
+                <button class="b col-md-6 btn btn-light">상품설명</button>
+                <!--                상품리뷰로 이동-->
+                <button class="b col-md-6 item-detail btn btn-light">리뷰</button>
+                <!--                상품설명란 -->
+                <div class="b col-md-12 px-0">
+                    <img class="img-fluid" src="@/assets/img/itemDetails/danang/danang1.png">
+                    <img class="img-fluid" src="@/assets/img/itemDetails/danang/danang2.png">
+                    <img class="img-fluid" src="@/assets/img/itemDetails/danang/danang3.png">
+                    <img class="img-fluid" src="@/assets/img/itemDetails/danang/danang4.png">
+                </div>
+                <div class="my-3"></div>
+            </div>
+
+            <div class="my-5">
+                <hr style="background-color: black">
+            </div>
+
+            <div class="my-3"></div>
+
+            <!--            카카오 지도 API -->
+            <div class="row">
+                <div class="col-md">
+                    <div class="h5 m-4">여행지 한눈에 보기</div>
+                    <div class="px-3">
+                        <kakao-map-api/>
+                    </div>
+
+                </div>
+            </div>
+            <div class="my-3"></div>
+            <!-- Related items section-->
+            <div class="py-3">
+                <div class="container px-4 px-lg-5 mt-5">
+                    <div class="h5 mb-4">관련여행상품 추천</div>
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5">
+                            <div class="card h-80">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute"
+                                     style="top: 0.5rem; right: 0.5rem">
+                                    Sale
+                                </div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="https://dummyimage.com/450x450/dee2e6/6c757d.jpg"
+                                     alt="..."/>
+                                <!-- Product details-->
+                                <div class="card-body p-3">
+                                    <div class="text-left">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">여행지 입니다</h5>
+                                        <p class="fw">여행내용 입니다</p>
+
+                                        <ul style="float: left; margin: 0">
+                                            <li>&nbsp;</li>
+                                            <li>
+                                                <p class="badge rounded-pill bg-primary m-0">지역</p>
+                                            </li>
+                                        </ul>
+                                        <!-- Product price-->
+                                        <ul  style="float: right; margin: 0; padding: 0">
+                                            <li>
+                                                <span class="text-muted text-decoration-line-through text-right">₩200,000</span>
+                                            </li>
+                                            <li>
+                                                <span class="b-sidebar-right">₩175,000</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="card h-80">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute"
+                                     style="top: 0.5rem; right: 0.5rem">
+                                    Sale
+                                </div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="https://dummyimage.com/450x450/dee2e6/6c757d.jpg"
+                                     alt="..."/>
+                                <!-- Product details-->
+                                <div class="card-body p-3">
+                                    <div class="text-left">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">여행지 입니다</h5>
+                                        <p class="fw">여행내용 입니다</p>
+
+                                        <ul style="float: left; margin: 0">
+                                            <li>&nbsp;</li>
+                                            <li>
+                                                <p class="badge rounded-pill bg-primary m-0">지역</p>
+                                            </li>
+                                        </ul>
+                                        <!-- Product price-->
+                                        <ul  style="float: right; margin: 0; padding: 0">
+                                            <li>
+                                                <span class="text-muted text-decoration-line-through text-right">₩200,000</span>
+                                            </li>
+                                            <li>
+                                                <span class="b-sidebar-right">₩175,000</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                        <div class="card h-80">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute"
+                                 style="top: 0.5rem; right: 0.5rem">
+                                Sale
+                            </div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x450/dee2e6/6c757d.jpg"
+                                 alt="..."/>
+                            <!-- Product details-->
+                            <div class="card-body p-3">
+                                <div class="text-left">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">여행지 입니다</h5>
+                                    <p class="fw">여행내용 입니다</p>
+
+                                    <ul style="float: left; margin: 0">
+                                        <li>&nbsp;</li>
+                                        <li>
+                                            <p class="badge rounded-pill bg-primary m-0">지역</p>
+                                        </li>
+                                    </ul>
+                                    <!-- Product price-->
+                                    <ul  style="float: right; margin: 0; padding: 0">
+                                        <li>
+                                            <span class="text-muted text-decoration-line-through text-right">₩200,000</span>
+                                        </li>
+                                        <li>
+                                            <span class="b-sidebar-right">₩175,000</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col mb-5">
+                            <div class="card h-80">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute"
+                                     style="top: 0.5rem; right: 0.5rem">
+                                    Sale
+                                </div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="https://dummyimage.com/450x450/dee2e6/6c757d.jpg"
+                                     alt="..."/>
+                                <!-- Product details-->
+                                <div class="card-body p-3">
+                                    <div class="text-left">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">여행지 입니다</h5>
+                                        <p class="fw">여행내용 입니다</p>
+
+                                        <ul style="float: left; margin: 0">
+                                            <li>&nbsp;</li>
+                                            <li>
+                                                <p class="badge rounded-pill bg-primary m-0">지역</p>
+                                            </li>
+                                        </ul>
+                                        <!-- Product price-->
+                                        <ul  style="float: right; margin: 0; padding: 0">
+                                            <li>
+                                                <span class="text-muted text-decoration-line-through text-right">₩200,000</span>
+                                            </li>
+                                            <li>
+                                                <span class="b-sidebar-right">₩175,000</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--                상품리뷰란 표시 -->
+            <div class="row">
+                <h5 class="m-3 p-3">상품리뷰</h5>
+                <div class="col-md">
+                    <div class="px-3">
+                        <reviews-com></reviews-com>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-    <!--container.//-->
-
-
-    <br><br><br>
-    <article class="bg-secondary mb-3">
-      <div class="card-body text-center">
-        <h4 class="text-white">HTML UI KIT <br> Ready to use Bootstrap 4 components and templates </h4>
-        <p class="h5 text-white"> for Ecommerce, marketplace, booking websites
-          and product landing pages</p>   <br>
-        <p><a class="btn btn-warning" target="_blank" href="http://bootstrap-ecommerce.com/"> Bootstrap-ecommerce.com
-          <i class="fa fa-window-restore "></i></a></p>
-      </div>
-      <br><br><br>
-    </article>
-
-    <!-- Related items section-->
-    <section class="py-5 bg-light">
-      <div class="container px-4 px-lg-5 mt-5">
-        <h2 class="fw-bolder mb-4">Related products</h2>
-        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-          <div class="col mb-5">
-            <div class="card h-100">
-              <!-- Product image-->
-              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-              <!-- Product details-->
-              <div class="card-body p-4">
-                <div class="text-center">
-                  <!-- Product name-->
-                  <h5 class="fw-bolder">Fancy Product</h5>
-                  <!-- Product price-->
-                  $40.00 - $80.00
-                </div>
-              </div>
-              <!-- Product actions-->
-              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-5">
-            <div class="card h-100">
-              <!-- Sale badge-->
-              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-              <!-- Product image-->
-              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-              <!-- Product details-->
-              <div class="card-body p-4">
-                <div class="text-center">
-                  <!-- Product name-->
-                  <h5 class="fw-bolder">Special Item</h5>
-                  <!-- Product reviews-->
-                  <div class="d-flex justify-content-center small text-warning mb-2">
-                    <div class="bi-star-fill"></div>
-                    <div class="bi-star-fill"></div>
-                    <div class="bi-star-fill"></div>
-                    <div class="bi-star-fill"></div>
-                    <div class="bi-star-fill"></div>
-                  </div>
-                  <!-- Product price-->
-                  <span class="text-muted text-decoration-line-through">$20.00</span>
-                  $18.00
-                </div>
-              </div>
-              <!-- Product actions-->
-              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-5">
-            <div class="card h-100">
-              <!-- Sale badge-->
-              <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-              <!-- Product image-->
-              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-              <!-- Product details-->
-              <div class="card-body p-4">
-                <div class="text-center">
-                  <!-- Product name-->
-                  <h5 class="fw-bolder">Sale Item</h5>
-                  <!-- Product price-->
-                  <span class="text-muted text-decoration-line-through">$50.00</span>
-                  $25.00
-                </div>
-              </div>
-              <!-- Product actions-->
-              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-5">
-            <div class="card h-100">
-              <!-- Product image-->
-              <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-              <!-- Product details-->
-              <div class="card-body p-4">
-                <div class="text-center">
-                  <!-- Product name-->
-                  <h5 class="fw-bolder">Popular Item</h5>
-                  <!-- Product reviews-->
-                  <div class="d-flex justify-content-center small text-warning mb-2">
-                    <div class="bi-star-fill"></div>
-                    <div class="bi-star-fill"></div>
-                    <div class="bi-star-fill"></div>
-                    <div class="bi-star-fill"></div>
-                    <div class="bi-star-fill"></div>
-                  </div>
-                  <!-- Product price-->
-                  $40.00
-                </div>
-              </div>
-              <!-- Product actions-->
-              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--    상품 이미지, 상품명 및 결제 관련  -->
-    <div>
-      <!--      상품 이미지 -->
-      <div>
-        <!--      상품 이미지 main -->
-        <div><img src="#" alt="item-img-large"/></div>
-        <!--      상품 이미지 small -->
-        <div><img src="#" alt="item-img-small"/></div>
-        <div><img src="#" alt="item-img-small"/></div>
-        <div><img src="#" alt="item-img-small"/></div>
-      </div>
-      <!--      상품명 및 결제 -->
-      <div>
-        <!--        상품 location(지역) -->
-        <div><p>지역</p></div>
-        <div>
-          <p>상품명</p>
-          <p>상품 간략설명</p>
-        </div>
-
-        <!--        상품 할인율 및 상품 가격 -->
-        <div>
-          <p>
-            <!--            할인율 -->
-            <strong>25%</strong>
-            <!--            할인 전 가격 -->
-            <span><del>100000원</del></span>
-            <!--          할인 후 가격 -->
-            <span><strong>75000원</strong></span>
-          </p>
-        </div>
-        <div><p></p></div>
-        <!--        quantity value button -->
-        <div>
-          <label>수량</label>
-          <button>-</button>
-          <input value="0">
-          <button>+</button>
-        </div>
-        <!--        결제 가격 -->
-        <div>
-          <strong>75000원</strong>
-        </div>
-        <!--        장바구니 추가 및 결제 버튼 -->
-        <div>
-          <button>
-            장바구니 추가
-          </button>
-          <button>
-            구매하기
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!--    상품 상세 페이지 -->
-    <div>
-      <!--      상품 설명, 리뷰 페이지 보이기 -->
-      <div>
-        <div>
-          <div><a href="detail">상품설명</a></div>
-          <div><a href="review">리뷰</a></div>
-          <div href="detail"><img src="#"/>상품상세 보기 이미지</div>
-        </div>
-      </div>
-
-      <!--      여행지 한눈에 보기(지도 API) -->
-      <div>
-        <div>지도 API 예정</div>
-      </div>
-
-      <!--      관련 여행 상품 추천 (지역) -->
-      <div>
-        <div>관련 여행상품 추천</div>
-      </div>
-      <!--      댓글 -->
-      <div href="review">
-        <p>상품리뷰</p>
-        <div>
-          <!--          리뷰내용 -->
-          <div>
-            <div><img src="#" alt="user-thumbnail"/></div>
-            <div>
-              <ul>
-                <li>rating</li>
-                <li>userId | review-insert-time</li>
-                <li>대통령은 제1항과 제2항의 처분 또는 명령을 한 때에는 지체없이 국회에 보고하여 그 승인을 얻어야 한다. 중앙선거관리위원회는 법령의 범위안에서 선거관리·국민투표관리 또는 정당사무에
-                  관한 규칙을 제정할 수 있으며
-                </li>
-              </ul>
-            </div>
-            <div><img src="#" alt="review-image"/></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
+import KakaoMapApi from "~/pages/tourItemDetails/components/KakaoMapApiCom";
+import reviewsCom from "~/pages/tourItemDetails/components/ReviewsCom";
+
 export default {
-  name: "TourItemDetail"
+    name: "TourItemDetail",
+    components: {
+        KakaoMapApi,
+        reviewsCom
+    },
 }
 </script>
 
 <style scoped>
 
-/*****************globals*************/
-body {
-  font-family: 'open sans';
-  overflow-x: hidden;
+.b {
+    border: solid 1px lightgray;
 }
 
-img {
-  max-width: 100%;
+ul {
+    padding: 0;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.preview {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+li {
+    list-style: none;
 }
 
-@media screen and (max-width: 996px) {
-  .preview {
-    margin-bottom: 20px;
-  }
+.li-img {
+    list-style: none;
+    float: left;
 }
 
-.preview-pic {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+.li-text {
+    list-style: none;
+    float: right;
 }
 
-.preview-thumbnail.nav-tabs {
-  border: none;
-  margin-top: 15px;
+.item-detail {
+    text-align: center;
+    height: 50px;
+    line-height: 45px;
 }
 
-.preview-thumbnail.nav-tabs li {
-  width: 18%;
-  margin-right: 2.5%;
+.review {
+    float: left;
+    list-style: none;
 }
 
-.preview-thumbnail.nav-tabs li img {
-  max-width: 100%;
-  display: block;
-}
-
-.preview-thumbnail.nav-tabs li a {
-  padding: 0;
-  margin: 0;
-}
-
-.preview-thumbnail.nav-tabs li:last-of-type {
-  margin-right: 0;
-}
-
-.tab-content {
-  overflow: hidden;
-}
-
-.tab-content img {
-  width: 100%;
-  -webkit-animation-name: opacity;
-  animation-name: opacity;
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-}
-
-.card {
-  margin-top: 50px;
-  background: #eee;
-  padding: 3em;
-  line-height: 1.5em;
-}
-
-@media screen and (min-width: 997px) {
-  .wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-.details {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.colors {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.product-title, .price, .sizes, .colors {
-  text-transform: UPPERCASE;
-  font-weight: bold;
-}
-
-.checked, .price span {
-  color: #ff9f1a;
-}
-
-.product-title, .rating, .product-description, .price, .vote, .sizes {
-  margin-bottom: 15px;
-}
-
-.product-title {
-  margin-top: 0;
-}
-
-.size {
-  margin-right: 10px;
-}
-
-.size:first-of-type {
-  margin-left: 40px;
-}
-
-.color {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  height: 2em;
-  width: 2em;
-  border-radius: 2px;
-}
-
-.color:first-of-type {
-  margin-left: 20px;
-}
-
-.add-to-cart, .like {
-  background: #ff9f1a;
-  padding: 1.2em 1.5em;
-  border: none;
-  text-transform: UPPERCASE;
-  font-weight: bold;
-  color: #fff;
-  -webkit-transition: background .3s ease;
-  transition: background .3s ease;
-}
-
-.add-to-cart:hover, .like:hover {
-  background: #b36800;
-  color: #fff;
-}
-
-.not-available {
-  text-align: center;
-  line-height: 2em;
-}
-
-.not-available:before {
-  font-family: fontawesome;
-  content: "\f00d";
-  color: #fff;
-}
-
-.orange {
-  background: #ff9f1a;
-}
-
-.green {
-  background: #85ad00;
-}
-
-.blue {
-  background: #0076ad;
-}
-
-.tooltip-inner {
-  padding: 1.3em;
-}
-
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(3);
-    transform: scale(3);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(3);
-    transform: scale(3);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
 
 /* preview pic */
 .preview {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 996px) {
-  .preview {
-    margin-bottom: 20px;
-  }
+    .preview {
+        margin-bottom: 20px;
+    }
 }
 
 .preview-pic {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 
 .preview-thumbnail.nav-tabs {
-  border: none;
-  margin-top: 15px;
+    border: none;
+    margin-top: 15px;
 }
 
 .preview-thumbnail.nav-tabs li {
-  width: 18%;
-  margin-right: 2.5%;
+    width: 18%;
+    margin-right: 2.5%;
 }
 
 .preview-thumbnail.nav-tabs li img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 .preview-thumbnail.nav-tabs li a {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .preview-thumbnail.nav-tabs li:last-of-type {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 </style>
