@@ -3,21 +3,30 @@
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
     "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/ItemList/ItemList.vue",
-    "chunkName": "pages/ItemList/ItemList",
-    "_name": "_48ad24f1"
+    "chunkName": "pages/ItemList/ItemList"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
     "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/tourItemDetails/TourItemDetail.vue",
-    "chunkName": "pages/tourItemDetails/TourItemDetail",
-    "_name": "_366eb7fc"
+    "chunkName": "pages/tourItemDetails/TourItemDetail"
+  },
+  {
+    "name": "tourItemDetails-components-KakaoMapApiCom",
+    "path": "/tourItemDetails/components/KakaoMapApiCom",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/tourItemDetails/components/KakaoMapApiCom.vue",
+    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom"
+  },
+  {
+    "name": "tourItemDetails-components-ReviewsCom",
+    "path": "/tourItemDetails/components/ReviewsCom",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/tourItemDetails/components/ReviewsCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ReviewsCom"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_1ffb42f4"
+    "chunkName": "pages/index"
   }
 ]
