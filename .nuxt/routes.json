@@ -2,71 +2,67 @@
   {
     "name": "CheckId",
     "path": "/CheckId",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/CheckId.vue",
-    "chunkName": "pages/CheckId",
-    "_name": "_35e1fa3a"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\CheckId.vue",
+    "chunkName": "pages/CheckId"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/CheckPwd.vue",
-    "chunkName": "pages/CheckPwd",
-    "_name": "_1bed402e"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\CheckPwd.vue",
+    "chunkName": "pages/CheckPwd"
   },
   {
     "name": "CheckSignUp",
     "path": "/CheckSignUp",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/CheckSignUp.vue",
-    "chunkName": "pages/CheckSignUp",
-    "_name": "_507aaf52"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\CheckSignUp.vue",
+    "chunkName": "pages/CheckSignUp"
   },
   {
     "name": "FindId",
     "path": "/FindId",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/FindId.vue",
-    "chunkName": "pages/FindId",
-    "_name": "_160ec08d"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\FindId.vue",
+    "chunkName": "pages/FindId"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/FindPwd.vue",
-    "chunkName": "pages/FindPwd",
-    "_name": "_4159443b"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\FindPwd.vue",
+    "chunkName": "pages/FindPwd"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/LogIn.vue",
-    "chunkName": "pages/LogIn",
-    "_name": "_f60c9b80"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\LogIn.vue",
+    "chunkName": "pages/LogIn"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/SignUp.vue",
-    "chunkName": "pages/SignUp",
-    "_name": "_667a51de"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\SignUp.vue",
+    "chunkName": "pages/SignUp"
+  },
+  {
+    "name": "boardDetails-boardDetails",
+    "path": "/boardDetails/boardDetails",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\boardDetails\\\\boardDetails.vue",
+    "chunkName": "pages/boardDetails/boardDetails"
   },
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/ItemList/ItemList.vue",
-    "chunkName": "pages/ItemList/ItemList",
-    "_name": "_faa584b4"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\ItemList\\\\ItemList.vue",
+    "chunkName": "pages/ItemList/ItemList"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/tourItemDetails/TourItemDetail.vue",
-    "chunkName": "pages/tourItemDetails/TourItemDetail",
-    "_name": "_677f196d"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\tourItemDetails\\\\TourItemDetail.vue",
+    "chunkName": "pages/tourItemDetails/TourItemDetail"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/hwan/Fullstack_cource/team/frontend/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_7a7b0329"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\Test\\\\front\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
