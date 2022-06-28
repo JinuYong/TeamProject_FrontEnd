@@ -61,6 +61,21 @@ export default {
                 crossorigin: "anonymous",
                 referrerpolicy: "no-referrer",
             },
+            // kakao map 라이브러리 불러오기
+            {
+                src : "//dapi.kakao.com/v2/maps/sdk.js?appkey=2347b9f93173423c7fe7580ee45e5589"
+            },
+
+            {
+                src :  "//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=LIBRARY",
+            },
+            {
+                src :  "//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services"
+            },
+            {
+                src :  "//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"
+            },
+
         ],
     },
 
