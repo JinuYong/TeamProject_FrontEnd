@@ -1,15 +1,16 @@
 <template>
   <div>
-    <form class="commons">
-      <h1 class="h1 mt-5 mb-3 fw-normal">아이디찾기</h1>
-      <h1 class="h5 mb-3 fw-normal">
-        계정 생성 시 등록한 이름과 이메일을 입력해 주세요.
+    <form class="common">
+      <h1 class="h1 mb-4 fw-normal text-center">아이디찾기</h1>
+      <h1 class="h5 mb-4 fw-normal text-center">
+        계정 생성 시 등록한 이름과 이메일을 <br />
+        입력해 주세요.
       </h1>
 
       <div class="form-floating">
         <input
           type="email"
-          class="form-control"
+          class="form-control mb-1"
           id="floatingInput"
           placeholder="name@example.com"
         />
@@ -17,18 +18,24 @@
       </div>
       <div class="form-floating">
         <input
-          type="password"
+          type="email"
           class="form-control"
-          id="floatingPassword"
+          id="floatingEmail"
           placeholder="Password"
         />
-        <label for="floatingPassword">이메일</label>
+        <label for="floatingEmail">이메일</label>
       </div>
-
-      <button class="w-100 mt-3 btn btn-lg btn-success" type="submit">
-        확인
-      </button>
-      <p class="mt-5 mb-3 text-muted">&copy; 노인과막내 2022-</p>
+      <button class="w-100 mt-5 mb-5 btn btn-lg" type="submit">확인</button>
+      <hr />
+      <div class="logoPic-flex">
+        <div>
+          <img
+            src="@/assets/img/omym_logo.png"
+            alt="logoPic"
+            class="logoPic mt-3"
+          />
+        </div>
+      </div>
     </form>
   </div>
 </template>
@@ -41,9 +48,5 @@ export default {
 </script>
 
 <style>
-.commons {
-  width: 40%;
-  margin-top: 15%;
-  margin-left: 30%;
-}
+@import "@/assets/css/project_hbs.css";
 </style>
