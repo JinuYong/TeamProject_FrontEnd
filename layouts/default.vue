@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control search-bar me-2" type="search" placeholder="Search" aria-label="Search" @keyup="searchKeyword()">
+                    <input class="form-control main-searchbar me-2" type="search" placeholder="Search" aria-label="Search" @keyup="searchKeyword()">
                     <img src="@/assets/img/search_icon.png" class="search-icon"/>
                 </form>
                 <img class="header-icon" src="@/assets/img/login.png" alt="login">
@@ -89,7 +89,7 @@ export default {
     }
     section {
         width: 1024px;
-        height: 100%;
+        min-height: 599px;
         margin: 0 auto;
         padding-bottom: 50px;
     }
@@ -103,13 +103,20 @@ export default {
         width: 1024px;
         margin: 0 auto;
     }
-    .search-bar {
+    .main-searchbar {
         width: 250px;
+        border-radius: 50px 50px;
+        border: 2px solid #A30000;
+    }
+    .main-searchbar::placeholder {
+        color: #b1b1b1;
+        font-weight: 300;
+        font-size: 14px;
     }
     .search-icon {
         padding: 10px 0;
         width: 15px;
-        transform: translateX(-200%);
+        transform: translateX(-250%);
     }
     .logo-img {
         width: 150px;

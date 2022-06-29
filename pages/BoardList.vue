@@ -1,5 +1,10 @@
 <template>
     <div class="container">
+        <h4>자유 게시판</h4>
+        <form class="d-flex board-searchbar" role="search">
+            <input class="form-control search-bar me-2" type="search" placeholder="Search" aria-label="Search" @keyup="searchKeyword()">
+            <img src="@/assets/img/search_icon.png" class="search-icon"/>
+        </form>
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -38,5 +43,19 @@ export default {
 }
 </script>
 <style scoped>
-    
+    .container {
+        margin-top: 50px;
+    }
+    th {
+        font-weight: 400;
+    }
+    tbody {
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .board-searchbar {
+        justify-content: end;
+        transform: translateX(25px);
+        margin-bottom: 10px;
+    }
 </style>
