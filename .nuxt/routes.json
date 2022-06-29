@@ -1,5 +1,12 @@
 [
   {
+    "name": "BoardList",
+    "path": "/BoardList",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\BoardList.vue",
+    "chunkName": "pages/BoardList",
+    "_name": "_09fdc52d"
+  },
+  {
     "name": "CheckId",
     "path": "/CheckId",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckId.vue",
@@ -42,11 +49,32 @@
     "_name": "_6ab42612"
   },
   {
+    "name": "MypageUpdate",
+    "path": "/MypageUpdate",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\MypageUpdate.vue",
+    "chunkName": "pages/MypageUpdate",
+    "_name": "_21ef81eb"
+  },
+  {
+    "name": "Qna",
+    "path": "/Qna",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Qna.vue",
+    "chunkName": "pages/Qna",
+    "_name": "_a23c99a6"
+  },
+  {
     "name": "SignUp",
     "path": "/SignUp",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp.vue",
     "chunkName": "pages/SignUp",
     "_name": "_c3524502"
+  },
+  {
+    "name": "boardDetails-boardDetails",
+    "path": "/boardDetails/boardDetails",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\boardDetails\\\\boardDetails.vue",
+    "chunkName": "pages/boardDetails/boardDetails",
+    "_name": "_0d12b21f"
   },
   {
     "name": "ItemList-ItemList",
@@ -61,6 +89,20 @@
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\TourItemDetail.vue",
     "chunkName": "pages/tourItemDetails/TourItemDetail",
     "_name": "_4acab808"
+  },
+  {
+    "name": "tourItemDetails-components-KakaoMapApiCom",
+    "path": "/tourItemDetails/components/KakaoMapApiCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
+    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
+    "_name": "_12e23fd6"
+  },
+  {
+    "name": "tourItemDetails-components-ReviewsCom",
+    "path": "/tourItemDetails/components/ReviewsCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ReviewsCom",
+    "_name": "_44f17188"
   },
   {
     "name": "index",
