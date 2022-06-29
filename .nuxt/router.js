@@ -4,7 +4,6 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _09fdc52d = () => interopDefault(import('..\\pages\\BoardList.vue' /* webpackChunkName: "pages/BoardList" */))
 const _d2627ce8 = () => interopDefault(import('..\\pages\\CheckId.vue' /* webpackChunkName: "pages/CheckId" */))
 const _4ecd39c8 = () => interopDefault(import('..\\pages\\CheckPwd.vue' /* webpackChunkName: "pages/CheckPwd" */))
 const _491112ae = () => interopDefault(import('..\\pages\\CheckSignUp.vue' /* webpackChunkName: "pages/CheckSignUp" */))
@@ -14,7 +13,9 @@ const _6ab42612 = () => interopDefault(import('..\\pages\\LogIn.vue' /* webpackC
 const _21ef81eb = () => interopDefault(import('..\\pages\\MypageUpdate.vue' /* webpackChunkName: "pages/MypageUpdate" */))
 const _a23c99a6 = () => interopDefault(import('..\\pages\\Qna.vue' /* webpackChunkName: "pages/Qna" */))
 const _c3524502 = () => interopDefault(import('..\\pages\\SignUp.vue' /* webpackChunkName: "pages/SignUp" */))
+const _530881e6 = () => interopDefault(import('..\\pages\\board\\List.vue' /* webpackChunkName: "pages/board/List" */))
 const _0d12b21f = () => interopDefault(import('..\\pages\\boardDetails\\boardDetails.vue' /* webpackChunkName: "pages/boardDetails/boardDetails" */))
+const _279bfa4e = () => interopDefault(import('..\\pages\\inform\\List.vue' /* webpackChunkName: "pages/inform/List" */))
 const _1b59b06e = () => interopDefault(import('..\\pages\\ItemList\\ItemList.vue' /* webpackChunkName: "pages/ItemList/ItemList" */))
 const _4acab808 = () => interopDefault(import('..\\pages\\tourItemDetails\\TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
 const _12e23fd6 = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\KakaoMapApiCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/KakaoMapApiCom" */))
@@ -33,10 +34,6 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/BoardList",
-    component: _09fdc52d,
-    name: "BoardList"
-  }, {
     path: "/CheckId",
     component: _d2627ce8,
     name: "CheckId"
@@ -73,9 +70,17 @@ export const routerOptions = {
     component: _c3524502,
     name: "SignUp"
   }, {
+    path: "/board/List",
+    component: _530881e6,
+    name: "board-List"
+  }, {
     path: "/boardDetails/boardDetails",
     component: _0d12b21f,
     name: "boardDetails-boardDetails"
+  }, {
+    path: "/inform/List",
+    component: _279bfa4e,
+    name: "inform-List"
   }, {
     path: "/ItemList/ItemList",
     component: _1b59b06e,

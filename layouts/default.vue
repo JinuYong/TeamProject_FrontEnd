@@ -13,7 +13,7 @@
                     <span class="divider"></span>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" @click="moveTo('/ItemList/ItemList')">여행상품</a>
+                            <a class="nav-link" aria-current="page" @click="moveTo('/itemlist/itemlist')">여행상품</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="/">여행정보</a>
@@ -24,17 +24,17 @@
                                 <img class="dropdown-icon" src="@/assets/img/chevron-down.png">
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">자유게시판</a></li>
-                                <li><a class="dropdown-item" href="#">Q&A</a></li>
+                                <li><a class="dropdown-item" @click="moveTo('/board/list')">자유게시판</a></li>
+                                <li><a class="dropdown-item" @click="moveTo('/qna')">Q&A</a></li>
                             </ul>
                         </li>
                     </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control main-searchbar me-2" type="search" placeholder="Search" aria-label="Search" @keyup="searchKeyword()">
+                <form class="d-flex main-searchbar" role="search">
+                    <input class="form-control search-input me-2" type="search" placeholder="검색어 입력" aria-label="Search" @keyup="searchKeyword()">
                     <img src="@/assets/img/search_icon.png" class="search-icon"/>
                 </form>
-                <img class="header-icon" src="@/assets/img/login.png" alt="login">
-                <img class="header-icon" src="@/assets/img/signup.png" alt="signup">
+                <img class="header-icon" src="@/assets/img/login.png" alt="login" @click="moveTo('/login')">
+                <img class="header-icon" src="@/assets/img/signup.png" alt="signup" @click="moveTo('/signup')">
                 </div>
             </div>
         </nav>
@@ -89,6 +89,7 @@ export default {
     }
     section {
         width: 1024px;
+        min-width: 700px;
         min-height: 599px;
         margin: 0 auto;
         padding-bottom: 50px;
@@ -105,18 +106,25 @@ export default {
     }
     .main-searchbar {
         width: 250px;
-        border-radius: 50px 50px;
-        border: 2px solid #A30000;
+        position: relative;
     }
-    .main-searchbar::placeholder {
-        color: #b1b1b1;
-        font-weight: 300;
+    .search-input::placeholder {
+        color: #dfdfdf;
+        font-weight: 400;
         font-size: 14px;
     }
+    .search-input {
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+        border-bottom: 2px solid #A30000;
+    }
     .search-icon {
-        padding: 10px 0;
-        width: 15px;
-        transform: translateX(-250%);
+        position: absolute;
+        width: 17px;
+        margin: 0;
+        top: 10px;
+        right: 20px;
     }
     .logo-img {
         width: 150px;
@@ -124,7 +132,7 @@ export default {
     .divider {
         width: 2px;
         height: 30px;
-        background: gray;
+        background: #959595;
         margin: 0 20px;
     }
     .nav-link {
@@ -132,6 +140,7 @@ export default {
         font-size: 18px;
         display: inline-flex;
         align-items: center;
+        cursor: pointer;
     }
     .nav-item {
         padding-right: 10px;
@@ -151,6 +160,7 @@ export default {
     .header-icon {
         width: 25px;
         margin: 0 10px;
+        padding: 15px 0;
     }
 
     footer {
