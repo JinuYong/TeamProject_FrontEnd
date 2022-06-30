@@ -2,6 +2,8 @@
     <div>
         <h1 class="headers">마이페이지</h1>
         <hr />
+
+        <!-- 좌측 버튼 파트 시작 -->
         <div class="d-flex align-items-start">
             <div
                 class="nav flex-column nav-pills me-3"
@@ -9,6 +11,7 @@
                 role="tablist"
                 aria-orientation="vertical"
             >
+                <!-- 좌측 버튼 파트 시작 -->
                 <button
                     class="nav-link active"
                     id="v-pills-home-tab"
@@ -34,6 +37,9 @@
                     결제 내역
                 </button>
             </div>
+            <!-- 좌측 버튼 파트 끝 -->
+
+            <!-- 내 정보 수정 파트 시작 -->
             <div class="tab-content" id="v-pills-tabContent">
                 <div
                     class="tab-pane fade show active"
@@ -41,162 +47,173 @@
                     role="tabpanel"
                     aria-labelledby="v-pills-home-tab"
                 >
-                    <form class="signup float-right">
-                        <div>
-                            <h4>
-                                프로필
+                    <div class="login_box">
+                        <div class="left">
+                            <form class="signup">
+                                <h1 class="text-center">내 정보</h1>
+                                <div class="mt-5">
+                                    <h4>
+                                        프로필
+                                        <img
+                                            src="@/assets/img/user.png"
+                                            alt="userImg"
+                                            class="user"
+                                        />
+                                    </h4>
+                                </div>
+
+                                <!-- 아이디 -->
+                                <div class="mb-3">
+                                    <label
+                                        for="formGroupExampleInput2"
+                                        class="form-label"
+                                        >아이디</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="id"
+                                        placeholder="5~15자 내외로 입력해 주세요."
+                                        minlength="5"
+                                        maxlength="15"
+                                    />
+                                </div>
+
+                                <!-- 비밀번호 -->
+                                <div class="mb-3">
+                                    <label
+                                        for="formGroupExampleInput2"
+                                        class="form-label"
+                                        >비밀번호</label
+                                    >
+                                    <input
+                                        type="password"
+                                        class="form-control"
+                                        id="password"
+                                        placeholder="대,소문자 포함 8~20자 내외로 입력해 주세요."
+                                        minlength="8"
+                                        maxlength="20"
+                                    />
+                                </div>
+
+                                <!-- 비밀번호 확인 -->
+                                <div class="mb-3">
+                                    <label
+                                        for="formGroupExampleInput2"
+                                        class="form-label"
+                                        >비밀번호 확인</label
+                                    >
+                                    <input
+                                        type="password"
+                                        class="form-control"
+                                        id="password"
+                                        placeholder="입력한 비밀번호를 다시 입력해 주세요."
+                                        minlength="8"
+                                        maxlength="20"
+                                    />
+                                </div>
+
+                                <!-- 이메일 -->
+                                <div class="mb-3">
+                                    <label
+                                        for="formGroupExampleInput2"
+                                        class="form-label"
+                                        >이메일</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="formGroupExampleInput2"
+                                        placeholder="example12@naver.com"
+                                    />
+                                </div>
+                                <!-- 이름 -->
+                                <div class="mb-3">
+                                    <label
+                                        for="formGroupExampleInput2"
+                                        class="form-label"
+                                        >이름</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="formGroupExampleInput2"
+                                        placeholder="공백 없이 입력해 주세요."
+                                    />
+                                </div>
+
+                                <!-- 연락처 -->
+                                <div class="mb-3">
+                                    <label
+                                        for="formGroupExampleInput2"
+                                        class="form-label"
+                                        >연락처</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="formGroupExampleInput2"
+                                        placeholder="ex) 010-1111-1111"
+                                    />
+                                </div>
+
+                                <!-- 주소 -->
+                                <div class="mb-3">
+                                    <label
+                                        for="formGroupExampleInput2"
+                                        class="form-label"
+                                        >주소</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="id"
+                                        v-model="address"
+                                        placeholder="우측의 '주소검색' 버튼을 클릭하세요."
+                                    />
+                                    <div class="mt-1">
+                                        <input
+                                            type="text"
+                                            class="form-control mt-2"
+                                            id="formGroupExampleInput2"
+                                            placeholder="상세 주소를 입력해 주세요."
+                                        />
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-100 mt-3 mb-3 btn btn-lg"
+                                        type="submit"
+                                    >
+                                        수정하기
+                                    </button>
+                                </div>
+                                <hr />
+                                <div class="logoPic-flex">
+                                    <div>
+                                        <img
+                                            src="@/assets/img/omym_logo.png"
+                                            alt="logoPic"
+                                            class="logoPic mt-3"
+                                        />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="right">
+                            <div class="right-inductor">
                                 <img
-                                    src="@/assets/img/user.png"
-                                    alt="userImg"
-                                    class="user"
-                                />
-                            </h4>
-                        </div>
-
-                        <!-- 아이디 -->
-                        <div class="mb-3">
-                            <label
-                                for="formGroupExampleInput2"
-                                class="form-label"
-                                >아이디</label
-                            >
-                            <div class="col-lg-12">
-                                <label
-                                    for="inputPassword2"
-                                    class="visually-hidden"
-                                    >아이디</label
-                                >
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="id"
-                                    placeholder="5~15자 내외로 입력해 주세요."
-                                    required
-                                    minlength="5"
-                                    maxlength="15"
+                                    src="@/assets/img/beach.jpg"
+                                    alt="sidePic"
+                                    class="sidePic"
                                 />
                             </div>
                         </div>
-
-                        <!-- 비밀번호 -->
-                        <div class="mb-3">
-                            <label
-                                for="formGroupExampleInput2"
-                                class="form-label"
-                                >비밀번호</label
-                            >
-                            <input
-                                type="password"
-                                class="form-control"
-                                id="password"
-                                placeholder="대,소문자 포함 8~20자 내외로 입력해 주세요."
-                                required
-                                minlength="8"
-                                maxlength="20"
-                            />
-                        </div>
-
-                        <!-- 비밀번호 확인 -->
-                        <div class="mb-3">
-                            <label
-                                for="formGroupExampleInput2"
-                                class="form-label"
-                                >비밀번호 확인</label
-                            >
-                            <input
-                                type="password"
-                                class="form-control"
-                                id="password"
-                                placeholder="입력한 비밀번호를 다시 입력해 주세요."
-                                required
-                                minlength="8"
-                                maxlength="20"
-                            />
-                        </div>
-
-                        <!-- 이메일 -->
-                        <div class="mb-3">
-                            <label
-                                for="formGroupExampleInput2"
-                                class="form-label"
-                                >이메일</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="formGroupExampleInput2"
-                                placeholder="example12@naver.com"
-                            />
-                        </div>
-                        <!-- 이름 -->
-                        <div class="mb-3">
-                            <label
-                                for="formGroupExampleInput2"
-                                class="form-label"
-                                >이름</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="formGroupExampleInput2"
-                                placeholder="공백 없이 입력해 주세요."
-                                required
-                            />
-                        </div>
-
-                        <!-- 연락처 -->
-                        <div class="mb-3">
-                            <label
-                                for="formGroupExampleInput2"
-                                class="form-label"
-                                >연락처</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="formGroupExampleInput2"
-                                placeholder="ex) 010-1111-1111"
-                                required
-                            />
-                        </div>
-
-                        <!-- 주소 -->
-                        <label for="formGroupExampleInput2" class="form-label"
-                            >주소</label
-                        >
-                        <div class="post-box" v-if="postOpen">
-                            <VueDaumPostcode @complete="oncomplete" />
-                        </div>
-                        <div class="form-box">
-                            <input
-                                class="col-lg-9"
-                                disabled
-                                v-model="address"
-                            />
-                            <div
-                                v-on:click="search"
-                                type="submit"
-                                class="btn btn-success"
-                            >
-                                주소검색
-                            </div>
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="formGroupExampleInput2"
-                                placeholder="상세 주소를 입력해 주세요."
-                            />
-                        </div>
-                        <div>
-                            <button
-                                class="w-100 mt-3 btn btn-lg btn-success"
-                                type="submit"
-                            >
-                                수정하기
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
+                <!-- 내 정보 수정 파트 끝 -->
+
+                <!-- 결제 내역 파트 시작 -->
                 <div
                     class="tab-pane fade"
                     id="v-pills-profile"
@@ -221,11 +238,13 @@
                                 <td>2022.07.27</td>
                                 <td>2</td>
                                 <td>2022.06.28</td>
+
+                                <!-- 결제 취소 버튼 시작 -->
                                 <td>
                                     <!-- Button trigger modal -->
                                     <button
                                         type="button"
-                                        class="btn btn-success"
+                                        class="btn"
                                         data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop1"
                                     >
@@ -287,14 +306,14 @@
                                                 <div class="modal-footer">
                                                     <button
                                                         type="button"
-                                                        class="btn btn-secondary"
+                                                        class="btn"
                                                         data-bs-dismiss="modal"
                                                     >
                                                         취소
                                                     </button>
                                                     <button
                                                         type="button"
-                                                        class="btn btn-primary"
+                                                        class="btn"
                                                     >
                                                         확인
                                                     </button>
@@ -303,6 +322,7 @@
                                         </div>
                                     </div>
                                 </td>
+                                <!-- 결제 취소 버튼 종료 -->
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -310,11 +330,13 @@
                                 <td>2022.07.27</td>
                                 <td>3</td>
                                 <td>2022.06.28</td>
+
+                                <!-- 리뷰 작성 버튼 시작 -->
                                 <td>
                                     <!-- Button trigger modal -->
                                     <button
                                         type="button"
-                                        class="btn btn-success"
+                                        class="btn"
                                         data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop"
                                     >
@@ -431,14 +453,14 @@
                                                     <div class="modal-footer">
                                                         <button
                                                             type="button"
-                                                            class="btn btn-secondary"
+                                                            class="btn"
                                                             data-bs-dismiss="modal"
                                                         >
                                                             취소
                                                         </button>
                                                         <button
                                                             type="button"
-                                                            class="btn btn-success"
+                                                            class="btn"
                                                         >
                                                             확인
                                                         </button>
@@ -447,9 +469,8 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- 별점주기 -->
                                 </td>
+                                <!-- 리뷰 작성 버튼 종료 -->
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
@@ -457,16 +478,13 @@
                                 <td>2022.07.27</td>
                                 <td>4</td>
                                 <td>2022.06.28</td>
-                                <td>
-                                    <button class="btn btn-success">
-                                        결제 취소
-                                    </button>
-                                </td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+            <!-- 결제 내역 파트 종료 -->
         </div>
     </div>
 </template>
@@ -475,13 +493,14 @@
 export default {};
 </script>
 
-<style>
+<style scope>
 .headers {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
+/* 내 정보 수정 부분 */
 .user {
     width: 100px;
     height: 100px;
@@ -489,10 +508,40 @@ export default {};
 }
 
 .signup {
-    margin-left: 400px;
-    width: 50%;
+    min-width: 500px;
+    width: 500px;
+    border-radius: 10px;
+    padding: 40px;
 }
 
+.btn {
+    background: #a30000;
+    color: white;
+}
+
+.logoPic {
+    width: 150px;
+    height: 40px;
+}
+
+.logoPic-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    border-bottom: 2px solid #a30000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #a30000;
+}
+
+/* 좌측 메뉴 버튼 */
 .nav-link {
     width: 150px;
 }
@@ -502,6 +551,7 @@ export default {};
     text-align: center;
 }
 
+/* 리뷰 작성 부분 */
 .starPic {
     width: 30px;
     height: 30px;
@@ -521,12 +571,48 @@ export default {};
     text-shadow: 0 0 0 gray; /* 새 이모지 색상 부여 */
 }
 #myform label:hover {
-    text-shadow: 0 0 0 lightcoral; /* 마우스 호버 */
+    text-shadow: 0 0 0 #a30000; /* 마우스 호버 */
 }
 #myform label:hover ~ label {
-    text-shadow: 0 0 0 lightcoral; /* 마우스 호버 뒤에오는 이모지들 */
+    text-shadow: 0 0 0 #a30000; /* 마우스 호버 뒤에오는 이모지들 */
 }
 #myform input[type="radio"]:checked ~ label {
-    text-shadow: 0 0 0 lightcoral; /* 마우스 클릭 체크 */
+    text-shadow: 0 0 0 #a30000; /* 마우스 클릭 체크 */
+}
+
+.sidePic {
+    width: 850px;
+    height: 1200px;
+}
+
+/* TEST */
+.login_box {
+    width: 1400px;
+    height: 1150px;
+    position: absolute;
+    top: 90%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+
+.login_box .left {
+    width: 41%;
+    height: 100%;
+    padding: 25px 25px;
+}
+
+.left {
+    background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+
+.right .right-text {
+    height: 100%;
+    position: relative;
+    transform: translate(0%, 45%);
 }
 </style>
