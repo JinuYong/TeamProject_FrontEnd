@@ -1,7 +1,6 @@
 <template>
     <div>
         <div class="top-banner">
-            <!-- <img src="@/assets/img/topBanner.png" alt="배너" width="1024px"> -->
             <h4>여행정보</h4>
         </div>
         <h5 class="sub-title">오늘의 TOP3</h5>
@@ -15,7 +14,7 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class="card-bottom">
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted">2022.06.30 | 조회수 | 댓글수</small></p>
                 </div>
             </div>
             <div class="card board-card">
@@ -27,7 +26,7 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class="card-bottom">
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted">2022.06.30 | 조회수 | 댓글수</small></p>
                 </div>
             </div>
             <div class="card board-card">
@@ -39,7 +38,46 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class="card-bottom">
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted">2022.06.30 | 조회수 | 댓글수</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="card board-card">
+                <div class="thumbnail-container col-md-3">
+                    <img src="@/assets/img/sample.png" class="img-fluid rounded-start thumbnail" alt="컨텐츠 이미지">
+                </div>
+                <div class="card-body col-md-9">
+                    <p class="card-title">Card title</p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-bottom">
+                    <p class="card-text"><small class="text-muted">2022.06.30 | 조회수 | 댓글수</small></p>
+                </div>
+            </div>
+            <div class="card board-card">
+                <div class="thumbnail-container col-md-3">
+                    <img src="@/assets/img/sample.png" class="img-fluid rounded-start thumbnail" alt="컨텐츠 이미지">
+                </div>
+                <div class="card-body col-md-9">
+                    <p class="card-title">Card title</p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-bottom">
+                    <p class="card-text"><small class="text-muted">2022.06.30 | 조회수 | 댓글수</small></p>
+                </div>
+            </div>
+            <div class="card board-card">
+                <div class="thumbnail-container col-md-3">
+                    <img src="@/assets/img/sample.png" class="img-fluid rounded-start thumbnail" alt="컨텐츠 이미지">
+                </div>
+                <div class="card-body col-md-9">
+                    <p class="card-title">Card title</p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-bottom">
+                    <p class="card-text"><small class="text-muted">2022.06.30 | 조회수 | 댓글수</small></p>
                 </div>
             </div>
         </div>

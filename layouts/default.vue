@@ -16,7 +16,7 @@
                             <a class="nav-link" aria-current="page" @click="moveTo('/itemlist/itemlist')">여행상품</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/">여행정보</a>
+                            <a class="nav-link" aria-current="page" @click="moveTo('/inform/list')">여행정보</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
