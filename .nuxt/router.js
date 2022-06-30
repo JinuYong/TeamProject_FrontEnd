@@ -13,8 +13,9 @@ const _6ab42612 = () => interopDefault(import('..\\pages\\LogIn.vue' /* webpackC
 const _21ef81eb = () => interopDefault(import('..\\pages\\MypageUpdate.vue' /* webpackChunkName: "pages/MypageUpdate" */))
 const _a23c99a6 = () => interopDefault(import('..\\pages\\Qna.vue' /* webpackChunkName: "pages/Qna" */))
 const _c3524502 = () => interopDefault(import('..\\pages\\SignUp.vue' /* webpackChunkName: "pages/SignUp" */))
+const _11f6bb80 = () => interopDefault(import('..\\pages\\board\\Detail.vue' /* webpackChunkName: "pages/board/Detail" */))
 const _530881e6 = () => interopDefault(import('..\\pages\\board\\List.vue' /* webpackChunkName: "pages/board/List" */))
-const _0d12b21f = () => interopDefault(import('..\\pages\\boardDetails\\boardDetails.vue' /* webpackChunkName: "pages/boardDetails/boardDetails" */))
+const _c815aafe = () => interopDefault(import('..\\pages\\inform\\Detail.vue' /* webpackChunkName: "pages/inform/Detail" */))
 const _279bfa4e = () => interopDefault(import('..\\pages\\inform\\List.vue' /* webpackChunkName: "pages/inform/List" */))
 const _1b59b06e = () => interopDefault(import('..\\pages\\ItemList\\ItemList.vue' /* webpackChunkName: "pages/ItemList/ItemList" */))
 const _4acab808 = () => interopDefault(import('..\\pages\\tourItemDetails\\TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
@@ -70,13 +71,17 @@ export const routerOptions = {
     component: _c3524502,
     name: "SignUp"
   }, {
+    path: "/board/Detail",
+    component: _11f6bb80,
+    name: "board-Detail"
+  }, {
     path: "/board/List",
     component: _530881e6,
     name: "board-List"
   }, {
-    path: "/boardDetails/boardDetails",
-    component: _0d12b21f,
-    name: "boardDetails-boardDetails"
+    path: "/inform/Detail",
+    component: _c815aafe,
+    name: "inform-Detail"
   }, {
     path: "/inform/List",
     component: _279bfa4e,
