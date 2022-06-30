@@ -47,6 +47,6 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import "@/assets/css/project_hbs.css";
 </style>
