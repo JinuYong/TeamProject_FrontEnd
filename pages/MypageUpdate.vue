@@ -73,9 +73,6 @@
                                         type="text"
                                         class="form-control"
                                         id="id"
-                                        placeholder="5~15자 내외로 입력해 주세요."
-                                        minlength="5"
-                                        maxlength="15"
                                     />
                                 </div>
 
@@ -90,9 +87,6 @@
                                         type="password"
                                         class="form-control"
                                         id="password"
-                                        placeholder="대,소문자 포함 8~20자 내외로 입력해 주세요."
-                                        minlength="8"
-                                        maxlength="20"
                                     />
                                 </div>
 
@@ -107,9 +101,6 @@
                                         type="password"
                                         class="form-control"
                                         id="password"
-                                        placeholder="입력한 비밀번호를 다시 입력해 주세요."
-                                        minlength="8"
-                                        maxlength="20"
                                     />
                                 </div>
 
@@ -124,7 +115,6 @@
                                         type="text"
                                         class="form-control"
                                         id="formGroupExampleInput2"
-                                        placeholder="example12@naver.com"
                                     />
                                 </div>
                                 <!-- 이름 -->
@@ -138,7 +128,6 @@
                                         type="text"
                                         class="form-control"
                                         id="formGroupExampleInput2"
-                                        placeholder="공백 없이 입력해 주세요."
                                     />
                                 </div>
 
@@ -153,7 +142,6 @@
                                         type="text"
                                         class="form-control"
                                         id="formGroupExampleInput2"
-                                        placeholder="ex) 010-1111-1111"
                                     />
                                 </div>
 
@@ -169,14 +157,12 @@
                                         class="form-control"
                                         id="id"
                                         v-model="address"
-                                        placeholder="우측의 '주소검색' 버튼을 클릭하세요."
                                     />
                                     <div class="mt-1">
                                         <input
                                             type="text"
                                             class="form-control mt-2"
                                             id="formGroupExampleInput2"
-                                            placeholder="상세 주소를 입력해 주세요."
                                         />
                                     </div>
                                 </div>
@@ -490,7 +476,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+    layout: "MyPage",
+};
 </script>
 
 <style scope>
@@ -508,15 +496,23 @@ export default {};
 }
 
 .signup {
-    min-width: 500px;
-    width: 500px;
+    min-width: 350px;
+    width: 400px;
+    height: 1100px;
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .btn {
     background: #a30000;
+    box-shadow: none;
     color: white;
+}
+
+.btn:hover {
+    color: white;
+    box-shadow: none;
+    background: #a30000;
 }
 
 .logoPic {
@@ -581,17 +577,17 @@ export default {};
 }
 
 .sidePic {
-    width: 850px;
-    height: 1200px;
+    width: 900px;
+    height: 1100px;
 }
 
 /* TEST */
 .login_box {
-    width: 1400px;
-    height: 1150px;
+    width: 1300px;
+    height: 1100px;
     position: absolute;
     top: 90%;
-    left: 54%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
     border-radius: 10px;
