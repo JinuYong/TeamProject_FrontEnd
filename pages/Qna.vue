@@ -174,7 +174,7 @@
     </div>
 </template>
 
-<script>
+<script scoped>
 /* eslint-disable */
 export default {
     name: "qna",

@@ -39,10 +39,9 @@
             </div>
         </nav>
 
-        <section class="default">
+        <section class="my-page">
             <Nuxt />
         </section>
-
         <!-- 푸터 -->
         <footer>
             <div class="footer-content">
@@ -61,35 +60,16 @@
         </footer>
     </div>
 </template>
-
 <script>
 export default {
-    data() {
-        return {
-    
-        }
-    },
-    methods: {
-        moveTo(url) {
-            $nuxt.$router.push(url);
-        },
-        searchKeyword() {
-            // 검색기능 구현
-        }
-    },  
     
 }
 </script>
-
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&display=swap');
-
-    /* 전체 */
     * { 
         font-family: 'Noto Sans KR', sans-serif;
     }
-    .default {
-        width: 1024px;
+    .my-page {
         min-width: 700px;
         min-height: 599px;
         margin: 0 auto;
@@ -201,4 +181,3 @@ export default {
         margin-top: 20px;
     }
 </style>
-

@@ -63,6 +63,13 @@
     "_name": "_10c82741"
   },
   {
+    "name": "board-Detail",
+    "path": "/board/Detail",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\Detail.vue",
+    "chunkName": "pages/board/Detail",
+    "_name": "_11f6bb80"
+  },
+  {
     "name": "board-List",
     "path": "/board/List",
     "component": "/Users/macbook/Desktop/Project/front/pages/board/List.vue",
@@ -70,11 +77,19 @@
     "_name": "_98ead7a0"
   },
   {
+<<<<<<< HEAD
+    "name": "inform-Detail",
+    "path": "/inform/Detail",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\Detail.vue",
+    "chunkName": "pages/inform/Detail",
+    "_name": "_c815aafe"
+=======
     "name": "boardDetails-boardDetails",
     "path": "/boardDetails/boardDetails",
     "component": "/Users/macbook/Desktop/Project/front/pages/boardDetails/boardDetails.vue",
     "chunkName": "pages/boardDetails/boardDetails",
     "_name": "_7e58cb56"
+>>>>>>> 0a5f5e09b31628448a6371eae36dfdeaed19498f
   },
   {
     "name": "inform-List",
