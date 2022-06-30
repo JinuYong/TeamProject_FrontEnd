@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="signup-container">
         <form class="signup">
             <h1>회원가입</h1>
             <div class="mt-4">
@@ -191,12 +191,18 @@ export default {
 </script>
 
 <style scope>
+.signup-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 599px;
+}
+
 .signup {
     min-width: 500px;
-    width: 500px;
-    margin-top: 5%;
-    margin-left: 35%;
-    margin-bottom: 5%;
+    width: 550px;
+    margin-top: 50px;
     border: 5px solid #a30000;
     border-radius: 10px;
     padding: 40px;
@@ -240,5 +246,9 @@ export default {
 .form-control:focus {
     box-shadow: none;
     border-color: #a30000;
+}
+
+.row {
+    justify-content: space-between;
 }
 </style>
