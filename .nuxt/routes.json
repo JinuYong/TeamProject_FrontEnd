@@ -2,135 +2,141 @@
   {
     "name": "CheckId",
     "path": "/CheckId",
-    "component": "/Users/macbook/Desktop/Project/front/pages/CheckId.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/CheckId.vue",
     "chunkName": "pages/CheckId",
-    "_name": "_7286b00a"
+    "_name": "_32812347"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
-    "component": "/Users/macbook/Desktop/Project/front/pages/CheckPwd.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/CheckPwd.vue",
     "chunkName": "pages/CheckPwd",
-    "_name": "_73df445e"
+    "_name": "_99998e7e"
   },
   {
     "name": "CheckSignUp",
     "path": "/CheckSignUp",
-    "component": "/Users/macbook/Desktop/Project/front/pages/CheckSignUp.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/CheckSignUp.vue",
     "chunkName": "pages/CheckSignUp",
-    "_name": "_2477f627"
+    "_name": "_a146fa38"
   },
   {
     "name": "FindId",
     "path": "/FindId",
-    "component": "/Users/macbook/Desktop/Project/front/pages/FindId.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/FindId.vue",
     "chunkName": "pages/FindId",
-    "_name": "_5a1410bd"
+    "_name": "_ece07c40"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
-    "component": "/Users/macbook/Desktop/Project/front/pages/FindPwd.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/FindPwd.vue",
     "chunkName": "pages/FindPwd",
-    "_name": "_7dfdfa0b"
+    "_name": "_3df86d48"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "/Users/macbook/Desktop/Project/front/pages/LogIn.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/LogIn.vue",
     "chunkName": "pages/LogIn",
-    "_name": "_c01cc7e0"
+    "_name": "_bd0c8ae6"
   },
   {
     "name": "MypageUpdate",
     "path": "/MypageUpdate",
-    "component": "/Users/macbook/Desktop/Project/front/pages/MypageUpdate.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/MypageUpdate.vue",
     "chunkName": "pages/MypageUpdate",
-    "_name": "_0e021ba6"
+    "_name": "_6aa805e0"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "/Users/macbook/Desktop/Project/front/pages/Qna.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/Qna.vue",
     "chunkName": "pages/Qna",
-    "_name": "_486090ab"
+    "_name": "_6d682a68"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "/Users/macbook/Desktop/Project/front/pages/SignUp.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/SignUp.vue",
     "chunkName": "pages/SignUp",
-    "_name": "_10c82741"
+    "_name": "_4043d864"
   },
   {
     "name": "board-Detail",
     "path": "/board/Detail",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\Detail.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/board/Detail.vue",
     "chunkName": "pages/board/Detail",
-    "_name": "_11f6bb80"
+    "_name": "_8f5c4274"
   },
   {
     "name": "board-List",
     "path": "/board/List",
-    "component": "/Users/macbook/Desktop/Project/front/pages/board/List.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/board/List.vue",
     "chunkName": "pages/board/List",
-    "_name": "_98ead7a0"
+    "_name": "_6db2fbd3"
   },
   {
-<<<<<<< HEAD
     "name": "inform-Detail",
     "path": "/inform/Detail",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\Detail.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/inform/Detail.vue",
     "chunkName": "pages/inform/Detail",
-    "_name": "_c815aafe"
-=======
-    "name": "boardDetails-boardDetails",
-    "path": "/boardDetails/boardDetails",
-    "component": "/Users/macbook/Desktop/Project/front/pages/boardDetails/boardDetails.vue",
-    "chunkName": "pages/boardDetails/boardDetails",
-    "_name": "_7e58cb56"
->>>>>>> 0a5f5e09b31628448a6371eae36dfdeaed19498f
+    "_name": "_514f79fb"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
-    "component": "/Users/macbook/Desktop/Project/front/pages/inform/List.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/inform/List.vue",
     "chunkName": "pages/inform/List",
-    "_name": "_dd1958ea"
+    "_name": "_1c57e048"
   },
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
-    "component": "/Users/macbook/Desktop/Project/front/pages/ItemList/ItemList.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/ItemList/ItemList.vue",
     "chunkName": "pages/ItemList/ItemList",
-    "_name": "_22f62114"
+    "_name": "_966b8b1a"
+  },
+  {
+    "name": "payment-Payment",
+    "path": "/payment/Payment",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/payment/Payment.vue",
+    "chunkName": "pages/payment/Payment",
+    "_name": "_3aefd901"
+  },
+  {
+    "name": "shoppingCart-ShoppingCart",
+    "path": "/shoppingCart/ShoppingCart",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/shoppingCart/ShoppingCart.vue",
+    "chunkName": "pages/shoppingCart/ShoppingCart",
+    "_name": "_0370f4f3"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
-    "component": "/Users/macbook/Desktop/Project/front/pages/tourItemDetails/TourItemDetail.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/tourItemDetails/TourItemDetail.vue",
     "chunkName": "pages/tourItemDetails/TourItemDetail",
-    "_name": "_0da2d99d"
+    "_name": "_9813dc80"
   },
   {
     "name": "tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/components/KakaoMapApiCom",
-    "component": "/Users/macbook/Desktop/Project/front/pages/tourItemDetails/components/KakaoMapApiCom.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/tourItemDetails/components/KakaoMapApiCom.vue",
     "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
-    "_name": "_f69b88f0"
+    "_name": "_b414c0f6"
   },
   {
     "name": "tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/components/ReviewsCom",
-    "component": "/Users/macbook/Desktop/Project/front/pages/tourItemDetails/components/ReviewsCom.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/tourItemDetails/components/ReviewsCom.vue",
     "chunkName": "pages/tourItemDetails/components/ReviewsCom",
-    "_name": "_00fcebee"
+    "_name": "_c638532a"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/macbook/Desktop/Project/front/pages/index.vue",
+    "component": "/Users/hwan/Fullstack_cource/team/front/6_30_2/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_d51a260e"
+    "_name": "_d209e914"
   }
 ]

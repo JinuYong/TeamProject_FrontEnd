@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1 class="display-4 row justify-content-center">Q&A</h1>
+        <h1 class="display-4 row justify-content-center" style="margin-top: 50px">Q&A</h1>
         <br />
-        <hr />
+        <hr class="qna-line"/>
         <br />
         <!-- 아코디언 시작 -->
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -174,7 +174,7 @@
     </div>
 </template>
 
-<script scoped>
+<script>
 /* eslint-disable */
 export default {
     name: "qna",
@@ -182,15 +182,9 @@ export default {
 </script>
 
 <style>
-body {
-    width: 850px;
-    margin: 0 auto;
-    padding-top: 50px;
+.qna-line {
+    color: #a30000;
 }
-/* .qahead {
-    font-size: 50px;
-    font-weight: 330;
-} */
 .qa {
     font-size: 40px;
     font-weight: 300;
