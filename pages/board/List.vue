@@ -108,7 +108,7 @@ export default {
 
     .form-control:focus {
         border-color:  lightgray !important;
-        box-shadow: none;
+        box-shadow: none !important;
     }
     input::placeholder {
         color: #dfdfdf;

@@ -33,8 +33,8 @@
                     <input class="form-control search-input me-2" type="search" placeholder="검색어 입력" aria-label="Search" @keyup="searchKeyword()">
                     <img src="@/assets/img/search_icon.png" class="search-icon"/>
                 </form>
-                <img class="header-icon" src="@/assets/img/login.png" alt="login" @click="moveTo('/login')">
-                <img class="header-icon" src="@/assets/img/signup.png" alt="signup" @click="moveTo('/signup')">
+                <img class="header-icon" src="@/assets/img/header/login.svg" alt="login" @click="moveTo('/login')">
+                <img class="header-icon" src="@/assets/img/header/person_add.svg" alt="signup" @click="moveTo('/signup')">
                 </div>
             </div>
         </nav>
@@ -82,7 +82,7 @@ export default {
 </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 
     /* 전체 */
     * { 
@@ -153,6 +153,10 @@ export default {
         display: inline-flex;
         align-items: center;
         cursor: pointer;
+        color: #494949;
+    }
+    .nav-link:hover {
+        color: #A30000;
     }
     .nav-item {
         padding-right: 10px;

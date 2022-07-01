@@ -32,6 +32,6 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 @import "@/assets/css/project_hbs.css";
 </style>

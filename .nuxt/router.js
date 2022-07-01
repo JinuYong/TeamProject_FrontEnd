@@ -4,26 +4,27 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _32812347 = () => interopDefault(import('../pages/CheckId.vue' /* webpackChunkName: "pages/CheckId" */))
-const _99998e7e = () => interopDefault(import('../pages/CheckPwd.vue' /* webpackChunkName: "pages/CheckPwd" */))
-const _a146fa38 = () => interopDefault(import('../pages/CheckSignUp.vue' /* webpackChunkName: "pages/CheckSignUp" */))
-const _ece07c40 = () => interopDefault(import('../pages/FindId.vue' /* webpackChunkName: "pages/FindId" */))
-const _3df86d48 = () => interopDefault(import('../pages/FindPwd.vue' /* webpackChunkName: "pages/FindPwd" */))
-const _bd0c8ae6 = () => interopDefault(import('../pages/LogIn.vue' /* webpackChunkName: "pages/LogIn" */))
-const _6aa805e0 = () => interopDefault(import('../pages/MypageUpdate.vue' /* webpackChunkName: "pages/MypageUpdate" */))
-const _6d682a68 = () => interopDefault(import('../pages/Qna.vue' /* webpackChunkName: "pages/Qna" */))
-const _4043d864 = () => interopDefault(import('../pages/SignUp.vue' /* webpackChunkName: "pages/SignUp" */))
-const _8f5c4274 = () => interopDefault(import('../pages/board/Detail.vue' /* webpackChunkName: "pages/board/Detail" */))
-const _6db2fbd3 = () => interopDefault(import('../pages/board/List.vue' /* webpackChunkName: "pages/board/List" */))
-const _514f79fb = () => interopDefault(import('../pages/inform/Detail.vue' /* webpackChunkName: "pages/inform/Detail" */))
-const _1c57e048 = () => interopDefault(import('../pages/inform/List.vue' /* webpackChunkName: "pages/inform/List" */))
-const _966b8b1a = () => interopDefault(import('../pages/ItemList/ItemList.vue' /* webpackChunkName: "pages/ItemList/ItemList" */))
-const _3aefd901 = () => interopDefault(import('../pages/payment/Payment.vue' /* webpackChunkName: "pages/payment/Payment" */))
-const _0370f4f3 = () => interopDefault(import('../pages/shoppingCart/ShoppingCart.vue' /* webpackChunkName: "pages/shoppingCart/ShoppingCart" */))
-const _9813dc80 = () => interopDefault(import('../pages/tourItemDetails/TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
-const _b414c0f6 = () => interopDefault(import('../pages/tourItemDetails/components/KakaoMapApiCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/KakaoMapApiCom" */))
-const _c638532a = () => interopDefault(import('../pages/tourItemDetails/components/ReviewsCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/ReviewsCom" */))
-const _d209e914 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _d2627ce8 = () => interopDefault(import('..\\pages\\CheckId.vue' /* webpackChunkName: "pages/CheckId" */))
+const _f3bfcc36 = () => interopDefault(import('..\\pages\\CheckPayment.vue' /* webpackChunkName: "pages/CheckPayment" */))
+const _4ecd39c8 = () => interopDefault(import('..\\pages\\CheckPwd.vue' /* webpackChunkName: "pages/CheckPwd" */))
+const _491112ae = () => interopDefault(import('..\\pages\\CheckSignUp.vue' /* webpackChunkName: "pages/CheckSignUp" */))
+const _30ba720a = () => interopDefault(import('..\\pages\\FindId.vue' /* webpackChunkName: "pages/FindId" */))
+const _bb73e8e6 = () => interopDefault(import('..\\pages\\FindPwd.vue' /* webpackChunkName: "pages/FindPwd" */))
+const _6ab42612 = () => interopDefault(import('..\\pages\\LogIn.vue' /* webpackChunkName: "pages/LogIn" */))
+const _21ef81eb = () => interopDefault(import('..\\pages\\MypageUpdate.vue' /* webpackChunkName: "pages/MypageUpdate" */))
+const _a23c99a6 = () => interopDefault(import('..\\pages\\Qna.vue' /* webpackChunkName: "pages/Qna" */))
+const _c3524502 = () => interopDefault(import('..\\pages\\SignUp.vue' /* webpackChunkName: "pages/SignUp" */))
+const _11f6bb80 = () => interopDefault(import('..\\pages\\board\\Detail.vue' /* webpackChunkName: "pages/board/Detail" */))
+const _530881e6 = () => interopDefault(import('..\\pages\\board\\List.vue' /* webpackChunkName: "pages/board/List" */))
+const _c815aafe = () => interopDefault(import('..\\pages\\inform\\Detail.vue' /* webpackChunkName: "pages/inform/Detail" */))
+const _279bfa4e = () => interopDefault(import('..\\pages\\inform\\List.vue' /* webpackChunkName: "pages/inform/List" */))
+const _1b59b06e = () => interopDefault(import('..\\pages\\ItemList\\ItemList.vue' /* webpackChunkName: "pages/ItemList/ItemList" */))
+const _3fe77c87 = () => interopDefault(import('..\\pages\\payment\\Payment.vue' /* webpackChunkName: "pages/payment/Payment" */))
+const _039f4d97 = () => interopDefault(import('..\\pages\\shoppingCart\\ShoppingCart.vue' /* webpackChunkName: "pages/shoppingCart/ShoppingCart" */))
+const _4acab808 = () => interopDefault(import('..\\pages\\tourItemDetails\\TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
+const _12e23fd6 = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\KakaoMapApiCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/KakaoMapApiCom" */))
+const _44f17188 = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\ReviewsCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/ReviewsCom" */))
+const _603576fb = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -38,83 +39,87 @@ export const routerOptions = {
 
   routes: [{
     path: "/CheckId",
-    component: _32812347,
+    component: _d2627ce8,
     name: "CheckId"
   }, {
+    path: "/CheckPayment",
+    component: _f3bfcc36,
+    name: "CheckPayment"
+  }, {
     path: "/CheckPwd",
-    component: _99998e7e,
+    component: _4ecd39c8,
     name: "CheckPwd"
   }, {
     path: "/CheckSignUp",
-    component: _a146fa38,
+    component: _491112ae,
     name: "CheckSignUp"
   }, {
     path: "/FindId",
-    component: _ece07c40,
+    component: _30ba720a,
     name: "FindId"
   }, {
     path: "/FindPwd",
-    component: _3df86d48,
+    component: _bb73e8e6,
     name: "FindPwd"
   }, {
     path: "/LogIn",
-    component: _bd0c8ae6,
+    component: _6ab42612,
     name: "LogIn"
   }, {
     path: "/MypageUpdate",
-    component: _6aa805e0,
+    component: _21ef81eb,
     name: "MypageUpdate"
   }, {
     path: "/Qna",
-    component: _6d682a68,
+    component: _a23c99a6,
     name: "Qna"
   }, {
     path: "/SignUp",
-    component: _4043d864,
+    component: _c3524502,
     name: "SignUp"
   }, {
     path: "/board/Detail",
-    component: _8f5c4274,
+    component: _11f6bb80,
     name: "board-Detail"
   }, {
     path: "/board/List",
-    component: _6db2fbd3,
+    component: _530881e6,
     name: "board-List"
   }, {
     path: "/inform/Detail",
-    component: _514f79fb,
+    component: _c815aafe,
     name: "inform-Detail"
   }, {
     path: "/inform/List",
-    component: _1c57e048,
+    component: _279bfa4e,
     name: "inform-List"
   }, {
     path: "/ItemList/ItemList",
-    component: _966b8b1a,
+    component: _1b59b06e,
     name: "ItemList-ItemList"
   }, {
     path: "/payment/Payment",
-    component: _3aefd901,
+    component: _3fe77c87,
     name: "payment-Payment"
   }, {
     path: "/shoppingCart/ShoppingCart",
-    component: _0370f4f3,
+    component: _039f4d97,
     name: "shoppingCart-ShoppingCart"
   }, {
     path: "/tourItemDetails/TourItemDetail",
-    component: _9813dc80,
+    component: _4acab808,
     name: "tourItemDetails-TourItemDetail"
   }, {
     path: "/tourItemDetails/components/KakaoMapApiCom",
-    component: _b414c0f6,
+    component: _12e23fd6,
     name: "tourItemDetails-components-KakaoMapApiCom"
   }, {
     path: "/tourItemDetails/components/ReviewsCom",
-    component: _c638532a,
+    component: _44f17188,
     name: "tourItemDetails-components-ReviewsCom"
   }, {
     path: "/",
-    component: _d209e914,
+    component: _603576fb,
     name: "index"
   }],
 
