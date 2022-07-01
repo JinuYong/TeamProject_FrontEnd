@@ -34,7 +34,6 @@ export default {
 
 <style scoped>
 @import "@/assets/css/project_hbs.css";
-<<<<<<< HEAD
 
 .form-control {
     border-bottom: 2px solid #a30000;
@@ -47,6 +46,4 @@ export default {
     box-shadow: none;
     border-color: #a30000;
 }
-=======
->>>>>>> cf83cb045f3a16d086b4fe8fdb2142894811b7b1
 </style>

@@ -63,6 +63,13 @@
     "_name": "_a23c99a6"
   },
   {
+    "name": "SearchResult",
+    "path": "/SearchResult",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SearchResult.vue",
+    "chunkName": "pages/SearchResult",
+    "_name": "_df3f6328"
+  },
+  {
     "name": "SignUp",
     "path": "/SignUp",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp.vue",

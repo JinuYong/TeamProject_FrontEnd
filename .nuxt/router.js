@@ -13,6 +13,7 @@ const _bb73e8e6 = () => interopDefault(import('..\\pages\\FindPwd.vue' /* webpac
 const _6ab42612 = () => interopDefault(import('..\\pages\\LogIn.vue' /* webpackChunkName: "pages/LogIn" */))
 const _21ef81eb = () => interopDefault(import('..\\pages\\MypageUpdate.vue' /* webpackChunkName: "pages/MypageUpdate" */))
 const _a23c99a6 = () => interopDefault(import('..\\pages\\Qna.vue' /* webpackChunkName: "pages/Qna" */))
+const _df3f6328 = () => interopDefault(import('..\\pages\\SearchResult.vue' /* webpackChunkName: "pages/SearchResult" */))
 const _c3524502 = () => interopDefault(import('..\\pages\\SignUp.vue' /* webpackChunkName: "pages/SignUp" */))
 const _11f6bb80 = () => interopDefault(import('..\\pages\\board\\Detail.vue' /* webpackChunkName: "pages/board/Detail" */))
 const _530881e6 = () => interopDefault(import('..\\pages\\board\\List.vue' /* webpackChunkName: "pages/board/List" */))
@@ -73,6 +74,10 @@ export const routerOptions = {
     path: "/Qna",
     component: _a23c99a6,
     name: "Qna"
+  }, {
+    path: "/SearchResult",
+    component: _df3f6328,
+    name: "SearchResult"
   }, {
     path: "/SignUp",
     component: _c3524502,

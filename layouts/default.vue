@@ -88,8 +88,11 @@ export default {
     * { 
         font-family: 'Noto Sans KR', sans-serif;
     }
+    .btn {
+        border-radius: 3px !important;
+    }
     .default {
-        width: 1024px;
+        width: 1200px;
         min-width: 700px;
         min-height: 599px;
         margin: 0 auto;
@@ -112,7 +115,7 @@ export default {
         border-bottom: 1px solid #E5E5E5;
     }
     .container-fluid {
-        width: 1024px;
+        width: 1200px;
         margin: 0 auto;
     }
     .main-searchbar {
@@ -188,7 +191,7 @@ export default {
         bottom: 0;
     }
     .footer-content {
-        width: 1024px;
+        width: 1200px;
         margin: 0 auto;
     }
     .footer-icons {

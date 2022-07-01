@@ -110,7 +110,7 @@ export default {
 }
 .btn {
     width: 60px;
-    height: 38px;
+    height: 35px;
     color: #ffffff;
     background: #A30000;
     font-weight: 300;
