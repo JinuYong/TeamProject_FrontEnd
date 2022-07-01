@@ -65,6 +65,9 @@ typings/
 # next.js build output
 .next
 
+# .nuxt 제외
+.nuxt
+
 # Nuxt generate
 dist
 

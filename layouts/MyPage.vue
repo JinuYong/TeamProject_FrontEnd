@@ -3,38 +3,115 @@
         <!-- 헤더 -->
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img class="logo-img" src="@/assets/img/omym_logo.png" alt="logo"></a>
-                <button class="navbar-toggler collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                <a class="navbar-brand" href="/"
+                    ><img
+                        class="logo-img"
+                        src="@/assets/img/omym_logo.png"
+                        alt="logo"
+                /></a>
+                <button
+                    class="navbar-toggler collapse-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="28"
+                        height="28"
+                        fill="currentColor"
+                        class="bi bi-list"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        ></path>
                     </svg>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <span class="divider-col"></span>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" @click="moveTo('/itemlist/itemlist')">여행상품</a>
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                @click="moveTo('/itemlist/itemlist')"
+                                >여행상품</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" @click="moveTo('/inform/list')">여행정보</a>
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                @click="moveTo('/inform/list')"
+                                >여행정보</a
+                            >
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="navbarDropdownMenuLink"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
                                 게시판
-                                <img class="dropdown-icon" src="@/assets/img/chevron-down.png">
+                                <img
+                                    class="dropdown-icon"
+                                    src="@/assets/img/chevron-down.png"
+                                />
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" @click="moveTo('/board/list')">자유게시판</a></li>
-                                <li><a class="dropdown-item" @click="moveTo('/qna')">Q&A</a></li>
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="navbarDropdownMenuLink"
+                            >
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        @click="moveTo('/board/list')"
+                                        >자유게시판</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        @click="moveTo('/qna')"
+                                        >Q&A</a
+                                    >
+                                </li>
                             </ul>
                         </li>
                     </ul>
-                <form class="d-flex main-searchbar" role="search">
-                    <input class="form-control search-input me-2" type="search" placeholder="검색어 입력" aria-label="Search" @keyup="searchKeyword()">
-                    <img src="@/assets/img/search_icon.png" class="search-icon"/>
-                </form>
-                <img class="header-icon" src="@/assets/img/login.png" alt="login" @click="moveTo('/login')">
-                <img class="header-icon" src="@/assets/img/signup.png" alt="signup" @click="moveTo('/signup')">
+                    <form class="d-flex main-searchbar" role="search">
+                        <input
+                            class="form-control search-input me-2"
+                            type="search"
+                            placeholder="검색어 입력"
+                            aria-label="Search"
+                            @keyup="searchKeyword()"
+                        />
+                        <img
+                            src="@/assets/img/search_icon.png"
+                            class="search-icon"
+                        />
+                    </form>
+                    <img
+                        class="header-icon"
+                        src="@/assets/img/login.png"
+                        alt="login"
+                        @click="moveTo('/login')"
+                    />
+                    <img
+                        class="header-icon"
+                        src="@/assets/img/signup.png"
+                        alt="signup"
+                        @click="moveTo('/signup')"
+                    />
                 </div>
             </div>
         </nav>
@@ -42,14 +119,19 @@
         <section class="my-page">
             <Nuxt />
         </section>
+
         <!-- 푸터 -->
         <footer>
             <div class="footer-content">
-                <img class="logo-img" src="@/assets/img/omym_logo.png" alt="logo">
+                <img
+                    class="logo-img"
+                    src="@/assets/img/omym_logo.png"
+                    alt="logo"
+                />
                 <div class="footer-icons">
-                    <img class="footer-icon" src="@/assets/img/facebook.svg">
-                    <img class="footer-icon" src="@/assets/img/github.svg">
-                    <img class="footer-icon" src="@/assets/img/google.svg">
+                    <img class="footer-icon" src="@/assets/img/facebook.svg" />
+                    <img class="footer-icon" src="@/assets/img/github.svg" />
+                    <img class="footer-icon" src="@/assets/img/google.svg" />
                 </div>
                 <p class="footer-text">
                     만든 이 | 유인환, 박진우, 김영근, 하보석, 김준섭
@@ -61,123 +143,122 @@
     </div>
 </template>
 <script>
-export default {
-    
-}
+export default {};
 </script>
 <style>
-    * { 
-        font-family: 'Noto Sans KR', sans-serif;
-    }
-    .my-page {
-        min-width: 700px;
-        min-height: 599px;
-        margin: 0 auto;
-        padding-bottom: 50px;
-    }
-    .form-control:focus {
-        box-shadow: none;
-        border-color: #a30000;
-    }
-    .form-control {
-        font-size: 14px;
-        font-weight: 300;
-    }
+* {
+    font-family: "Noto Sans KR", sans-serif;
+}
+.my-page {
+    min-width: 700px;
+    min-height: 599px;
+    height: 1330px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #a30000;
+}
+.form-control {
+    font-size: 14px;
+    font-weight: 300;
+}
 
-    /* header */
-    nav {
-        box-sizing: border-box;
-        height: 60px;
-        background: #ffffff;
-        border-bottom: 1px solid #E5E5E5;
-    }
-    .container-fluid {
-        width: 1024px;
-        margin: 0 auto;
-    }
-    .main-searchbar {
-        width: 250px;
-        position: relative;
-    }
-    .search-input::placeholder {
-        color: #dfdfdf;
-        font-weight: 400;
-        font-size: 14px;
-    }
-    .search-input {
-        width: 100%;
-        border-radius: 0px;
-        border: none;
-        border-bottom: 2px solid #A30000;
-        padding-right: 40px;
-    }
-    .search-icon {
-        position: absolute;
-        width: 17px;
-        margin: 0;
-        top: 10px;
-        right: 20px;
-    }
-    .logo-img {
-        width: 150px;
-    }
-    .divider-col {
-        width: 2px;
-        height: 30px;
-        background: #959595;
-        margin: 0 20px;
-    }
-    .nav-link {
-        font-weight: 500;
-        font-size: 18px;
-        display: inline-flex;
-        align-items: center;
-        cursor: pointer;
-    }
-    .nav-item {
-        padding-right: 10px;
-    }
-    #navbarNavDropdown {
-        background: #ffffff;
-        width: 300px;
-    }
-    .collapse-btn {
-        border: none;
-        background: none;
-    }
-    .dropdown-icon {
-        width: 20px;
-        height: 15px;
-    }
-    .header-icon {
-        width: 25px;
-        margin: 0 10px;
-        padding: 15px 0;
-    }
+/* header */
+nav {
+    box-sizing: border-box;
+    height: 60px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.container-fluid {
+    width: 1024px;
+    margin: 0 auto;
+}
+.main-searchbar {
+    width: 250px;
+    position: relative;
+}
+.search-input::placeholder {
+    color: #dfdfdf;
+    font-weight: 400;
+    font-size: 14px;
+}
+.search-input {
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid #a30000;
+    padding-right: 40px;
+}
+.search-icon {
+    position: absolute;
+    width: 17px;
+    margin: 0;
+    top: 10px;
+    right: 20px;
+}
+.logo-img {
+    width: 150px;
+}
+.divider-col {
+    width: 2px;
+    height: 30px;
+    background: #959595;
+    margin: 0 20px;
+}
+.nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-item {
+    padding-right: 10px;
+}
+#navbarNavDropdown {
+    background: #ffffff;
+    width: 300px;
+}
+.collapse-btn {
+    border: none;
+    background: none;
+}
+.dropdown-icon {
+    width: 20px;
+    height: 15px;
+}
+.header-icon {
+    width: 25px;
+    margin: 0 10px;
+    padding: 15px 0;
+}
 
-    /* footer */
-    footer {
-        width: 100%;
-        height: 250px;
-        padding: 30px 100px;
-        background: #eaebee;
-        bottom: 0;
-    }
-    .footer-content {
-        width: 1024px;
-        margin: 0 auto;
-    }
-    .footer-icons {
-        display: flex;
-    }
-    .footer-icon {
-        margin: 30px 10px 20px 0;
-        width: 30px;
-    }
-    .footer-text {
-        color: rgb(26, 26, 26);
-        font-weight: 300;
-        font-size: 15px;
-        margin-top: 20px;
-    }
+/* footer */
+footer {
+    width: 100%;
+    height: 250px;
+    padding: 30px 100px;
+    background: #eaebee;
+    bottom: 0;
+}
+.footer-content {
+    width: 1024px;
+    margin: 0 auto;
+}
+.footer-icons {
+    display: flex;
+}
+.footer-icon {
+    margin: 30px 10px 20px 0;
+    width: 30px;
+}
+.footer-text {
+    color: rgb(26, 26, 26);
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 20px;
+}
 </style>

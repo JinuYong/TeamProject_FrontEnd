@@ -7,6 +7,13 @@
     "_name": "_d2627ce8"
   },
   {
+    "name": "CheckPayment",
+    "path": "/CheckPayment",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPayment.vue",
+    "chunkName": "pages/CheckPayment",
+    "_name": "_f3bfcc36"
+  },
+  {
     "name": "CheckPwd",
     "path": "/CheckPwd",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPwd.vue",
