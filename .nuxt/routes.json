@@ -2,148 +2,127 @@
   {
     "name": "CheckId",
     "path": "/CheckId",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/CheckId.vue",
-    "chunkName": "pages/CheckId",
-    "_name": "_451f00fd"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\CheckId.vue",
+    "chunkName": "pages/CheckId"
   },
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/CheckPayment.vue",
-    "chunkName": "pages/CheckPayment",
-    "_name": "_e81a4dd8"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\CheckPayment.vue",
+    "chunkName": "pages/CheckPayment"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/CheckPwd.vue",
-    "chunkName": "pages/CheckPwd",
-    "_name": "_175ddc6a"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\CheckPwd.vue",
+    "chunkName": "pages/CheckPwd"
   },
   {
     "name": "CheckSignUp",
     "path": "/CheckSignUp",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/CheckSignUp.vue",
-    "chunkName": "pages/CheckSignUp",
-    "_name": "_5fc8959a"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\CheckSignUp.vue",
+    "chunkName": "pages/CheckSignUp"
   },
   {
     "name": "FindId",
     "path": "/FindId",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/FindId.vue",
-    "chunkName": "pages/FindId",
-    "_name": "_14f7552c"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\FindId.vue",
+    "chunkName": "pages/FindId"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/FindPwd.vue",
-    "chunkName": "pages/FindPwd",
-    "_name": "_50964afe"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\FindPwd.vue",
+    "chunkName": "pages/FindPwd"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/LogIn.vue",
-    "chunkName": "pages/LogIn",
-    "_name": "_6380e47a"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\LogIn.vue",
+    "chunkName": "pages/LogIn"
   },
   {
     "name": "MypageUpdate",
     "path": "/MypageUpdate",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/MypageUpdate.vue",
-    "chunkName": "pages/MypageUpdate",
-    "_name": "_27c2411a"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\MypageUpdate.vue",
+    "chunkName": "pages/MypageUpdate"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/Qna.vue",
-    "chunkName": "pages/Qna",
-    "_name": "_7e5559c4"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\Qna.vue",
+    "chunkName": "pages/Qna"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/SignUp.vue",
-    "chunkName": "pages/SignUp",
-    "_name": "_a78f2824"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\SignUp.vue",
+    "chunkName": "pages/SignUp"
   },
   {
     "name": "board-Detail",
     "path": "/board/Detail",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/board/Detail.vue",
-    "chunkName": "pages/board/Detail",
-    "_name": "_156822d0"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\board\\\\Detail.vue",
+    "chunkName": "pages/board/Detail"
   },
   {
     "name": "board-List",
     "path": "/board/List",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/board/List.vue",
-    "chunkName": "pages/board/List",
-    "_name": "_42828b46"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\board\\\\List.vue",
+    "chunkName": "pages/board/List"
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/inform/Detail.vue",
-    "chunkName": "pages/inform/Detail",
-    "_name": "_d1fc919e"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\inform\\\\Detail.vue",
+    "chunkName": "pages/inform/Detail"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/inform/List.vue",
-    "chunkName": "pages/inform/List",
-    "_name": "_66781a04"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\inform\\\\List.vue",
+    "chunkName": "pages/inform/List"
   },
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/ItemList/ItemList.vue",
-    "chunkName": "pages/ItemList/ItemList",
-    "_name": "_300eeca9"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\ItemList\\\\ItemList.vue",
+    "chunkName": "pages/ItemList/ItemList"
   },
   {
     "name": "payment-Payment",
     "path": "/payment/Payment",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/payment/Payment.vue",
-    "chunkName": "pages/payment/Payment",
-    "_name": "_45f0be92"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\payment\\\\Payment.vue",
+    "chunkName": "pages/payment/Payment"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/shoppingCart/ShoppingCart.vue",
-    "chunkName": "pages/shoppingCart/ShoppingCart",
-    "_name": "_5359ddae"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
+    "chunkName": "pages/shoppingCart/ShoppingCart"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/tourItemDetails/TourItemDetail.vue",
-    "chunkName": "pages/tourItemDetails/TourItemDetail",
-    "_name": "_fba9b16c"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\tourItemDetails\\\\TourItemDetail.vue",
+    "chunkName": "pages/tourItemDetails/TourItemDetail"
   },
   {
     "name": "tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/components/KakaoMapApiCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/tourItemDetails/components/KakaoMapApiCom.vue",
-    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
-    "_name": "_0cf48fbb"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
+    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom"
   },
   {
     "name": "tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/components/ReviewsCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/tourItemDetails/components/ReviewsCom.vue",
-    "chunkName": "pages/tourItemDetails/components/ReviewsCom",
-    "_name": "_5dc15cbe"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ReviewsCom"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_1/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_787e42a8"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
