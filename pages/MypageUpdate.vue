@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="headers">마이페이지</h1>
+        <h3 class="headers">마이페이지</h3>
         <hr />
 
         <!-- 좌측 버튼 파트 시작 -->
@@ -13,7 +13,7 @@
             >
                 <!-- 좌측 버튼 파트 시작 -->
                 <button
-                    class="nav-link active"
+                    class="btn active"
                     id="v-pills-home-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#v-pills-home"
@@ -25,7 +25,7 @@
                     내 정보
                 </button>
                 <button
-                    class="nav-link"
+                    class="btn"
                     id="v-pills-profile-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#v-pills-profile"
@@ -50,16 +50,16 @@
                     <div class="login_box">
                         <div class="left">
                             <form class="signup">
-                                <h1 class="text-center">내 정보</h1>
+                                <h3 class="text-center">내 정보</h3>
                                 <div class="mt-5">
-                                    <h4>
+                                    <p>
                                         프로필
                                         <img
                                             src="@/assets/img/user.png"
                                             alt="userImg"
                                             class="user"
                                         />
-                                    </h4>
+                                    </p>
                                 </div>
 
                                 <!-- 아이디 -->
@@ -73,6 +73,7 @@
                                         type="text"
                                         class="form-control"
                                         id="id"
+                                        disabled
                                     />
                                 </div>
 
@@ -87,6 +88,7 @@
                                         type="password"
                                         class="form-control"
                                         id="password"
+                                        disabled
                                     />
                                 </div>
 
@@ -101,6 +103,7 @@
                                         type="password"
                                         class="form-control"
                                         id="password"
+                                        disabled
                                     />
                                 </div>
 
@@ -115,6 +118,7 @@
                                         type="text"
                                         class="form-control"
                                         id="formGroupExampleInput2"
+                                        disabled
                                     />
                                 </div>
                                 <!-- 이름 -->
@@ -128,6 +132,7 @@
                                         type="text"
                                         class="form-control"
                                         id="formGroupExampleInput2"
+                                        disabled
                                     />
                                 </div>
 
@@ -142,6 +147,7 @@
                                         type="text"
                                         class="form-control"
                                         id="formGroupExampleInput2"
+                                        disabled
                                     />
                                 </div>
 
@@ -157,22 +163,23 @@
                                         class="form-control"
                                         id="id"
                                         v-model="address"
+                                        disabled
                                     />
                                     <div class="mt-1">
                                         <input
                                             type="text"
                                             class="form-control mt-2"
                                             id="formGroupExampleInput2"
+                                            disabled="disabled"
                                         />
                                     </div>
                                 </div>
                                 <div>
-                                    <button
-                                        class="w-100 mt-3 mb-3 btn btn-lg"
-                                        type="submit"
-                                    >
-                                        수정하기
-                                    </button>
+                                    <input
+                                        class="w-100 mt-3 mb-3 btn btn-md btnDisable"
+                                        type="button"
+                                        value="수정하기"
+                                    />
                                 </div>
                                 <hr />
                                 <div class="logoPic-flex">
@@ -198,7 +205,6 @@
                     </div>
                 </div>
                 <!-- 내 정보 수정 파트 끝 -->
-
 
                 <!-- 결제 내역 파트 시작 -->
                 <div
@@ -265,15 +271,15 @@
                                                     ></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <h3>
-                                                        예약일시 : 2022.06.28
-                                                    </h3>
-                                                    <hr />
                                                     <h5>
-                                                        결제 금액 : 200,000원
+                                                        예약일시 : 2022.06.28
                                                     </h5>
+                                                    <hr />
                                                     <h6>
-                                                        실 결제금액 : 200,000원
+                                                        총 결제 금액 : 200,000원
+                                                    </h6>
+                                                    <h6>
+                                                        실 결제 금액 : 200,000원
                                                     </h6>
                                                     <h6>포인트 사용 : 0</h6>
                                                     <hr />
@@ -293,14 +299,14 @@
                                                 <div class="modal-footer">
                                                     <button
                                                         type="button"
-                                                        class="btn"
+                                                        class="btn btn-md"
                                                         data-bs-dismiss="modal"
                                                     >
                                                         취소
                                                     </button>
                                                     <button
                                                         type="button"
-                                                        class="btn"
+                                                        class="btn btn-md"
                                                     >
                                                         확인
                                                     </button>
@@ -479,6 +485,7 @@
 <script>
 export default {
     layout: "MyPage",
+    methods: {},
 };
 </script>
 
@@ -502,6 +509,12 @@ export default {
     height: 1100px;
     border-radius: 10px;
     padding: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.signup input {
+    border-radius: 0;
 }
 
 .btn {
@@ -510,7 +523,7 @@ export default {
     color: white;
 }
 
-.btn:hover {
+.btn:hover .btn:focus .btn:active {
     color: white;
     box-shadow: none;
     background: #a30000;
@@ -582,10 +595,16 @@ export default {
     height: 1100px;
 }
 
-/* TEST */
+/* 결제 내역 파트 */
+table {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* updateBox */
 .login_box {
     width: 1300px;
-    height: 1100px;
+    height: 1050px;
     position: absolute;
     top: 90%;
     left: 50%;
@@ -611,9 +630,5 @@ export default {
     height: 100%;
     position: relative;
     transform: translate(0%, 45%);
-}
-
-.tab-content {
-    margin: 0 auto;
 }
 </style>

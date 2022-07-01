@@ -1,23 +1,21 @@
 <template>
     <div class="common-container">
         <div class="common">
-            <h1 class="h1 mb-5 fw-normal text-center">결제 완료!</h1>
+            <h4 class="mb-5 fw-normal text-center">결제가 완료되었습니다.</h4>
 
             <div class="mt-5 text-center">
-                <input
-                    class="btn"
-                    type="submit"
-                    value="메인으로 돌아가기"
-                    onClick="*"
-                />
+                <button class="btn" type="submit" onClick="location.href='/'">
+                    메인으로 돌아가기
+                </button>
             </div>
             <div class="mt-3 mb-4 text-center">
-                <input
+                <button
                     class="btn"
                     type="submit"
-                    value="결제내역 확인하기"
-                    onClick="*"
-                />
+                    onClick="location.href='/mypageupdate'"
+                >
+                    결제내역 확인하기
+                </button>
             </div>
             <hr />
             <div class="logoPic-flex">
