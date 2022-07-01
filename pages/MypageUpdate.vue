@@ -199,6 +199,7 @@
                 </div>
                 <!-- 내 정보 수정 파트 끝 -->
 
+
                 <!-- 결제 내역 파트 시작 -->
                 <div
                     class="tab-pane fade"
@@ -610,5 +611,9 @@ export default {
     height: 100%;
     position: relative;
     transform: translate(0%, 45%);
+}
+
+.tab-content {
+    margin: 0 auto;
 }
 </style>
