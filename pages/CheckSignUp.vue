@@ -32,6 +32,18 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 @import "@/assets/css/project_hbs.css";
+
+.form-control {
+    border-bottom: 2px solid #a30000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #a30000;
+}
 </style>
