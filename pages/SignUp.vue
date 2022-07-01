@@ -1,16 +1,16 @@
 <template>
     <div class="signup-container">
         <form class="signup">
-            <h1>회원가입</h1>
+            <h3 class="text-center">회원가입</h3>
             <div class="mt-4">
-                <h4>
+                <h6>
                     프로필
                     <img
                         src="@/assets/img/user.png"
                         alt="userImg"
                         class="user"
                     />
-                </h4>
+                </h6>
             </div>
 
             <!-- 아이디 -->
@@ -30,7 +30,9 @@
                     />
                 </div>
                 <div class="col-auto">
-                    <button type="submit" class="btn mb-3">중복확인</button>
+                    <button type="submit" class="btn btn-md mb-3">
+                        중복확인
+                    </button>
                 </div>
             </div>
 
@@ -122,7 +124,11 @@
                     />
                 </div>
                 <div class="col-auto">
-                    <button v-on:click="search" type="submit" class="btn">
+                    <button
+                        v-on:click="search"
+                        type="submit"
+                        class="btn btn-md"
+                    >
                         주소검색
                     </button>
                 </div>
@@ -139,7 +145,7 @@
                 </div>
             </div>
             <div>
-                <button class="w-100 mt-5 btn btn-lg" type="submit">
+                <button class="w-100 mt-5 mb-3 btn btn-md" type="submit">
                     가입하기
                 </button>
             </div>
@@ -206,6 +212,10 @@ export default {
     border: 5px solid #a30000;
     border-radius: 10px;
     padding: 40px;
+}
+
+.signup input {
+    border-radius: 0;
 }
 
 .user {
