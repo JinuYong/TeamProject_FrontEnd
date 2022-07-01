@@ -190,7 +190,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 .signup-container {
     width: 100%;
     display: flex;

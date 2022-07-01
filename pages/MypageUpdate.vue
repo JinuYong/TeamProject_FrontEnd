@@ -482,7 +482,7 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 .headers {
     text-align: center;
     margin-top: 50px;
