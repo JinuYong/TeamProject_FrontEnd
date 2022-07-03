@@ -62,125 +62,130 @@
                                     </p>
                                 </div>
 
-                                <!-- 아이디 -->
-                                <div class="mb-3">
-                                    <label
-                                        for="formGroupExampleInput2"
-                                        class="form-label"
-                                        >아이디</label
-                                    >
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        id="id"
-                                        disabled
-                                    />
-                                </div>
-
-                                <!-- 비밀번호 -->
-                                <div class="mb-3">
-                                    <label
-                                        for="formGroupExampleInput2"
-                                        class="form-label"
-                                        >비밀번호</label
-                                    >
-                                    <input
-                                        type="password"
-                                        class="form-control"
-                                        id="password"
-                                        disabled
-                                    />
-                                </div>
-
-                                <!-- 비밀번호 확인 -->
-                                <div class="mb-3">
-                                    <label
-                                        for="formGroupExampleInput2"
-                                        class="form-label"
-                                        >비밀번호 확인</label
-                                    >
-                                    <input
-                                        type="password"
-                                        class="form-control"
-                                        id="password"
-                                        disabled
-                                    />
-                                </div>
-
-                                <!-- 이메일 -->
-                                <div class="mb-3">
-                                    <label
-                                        for="formGroupExampleInput2"
-                                        class="form-label"
-                                        >이메일</label
-                                    >
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        id="formGroupExampleInput2"
-                                        disabled
-                                    />
-                                </div>
-                                <!-- 이름 -->
-                                <div class="mb-3">
-                                    <label
-                                        for="formGroupExampleInput2"
-                                        class="form-label"
-                                        >이름</label
-                                    >
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        id="formGroupExampleInput2"
-                                        disabled
-                                    />
-                                </div>
-
-                                <!-- 연락처 -->
-                                <div class="mb-3">
-                                    <label
-                                        for="formGroupExampleInput2"
-                                        class="form-label"
-                                        >연락처</label
-                                    >
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        id="formGroupExampleInput2"
-                                        disabled
-                                    />
-                                </div>
-
-                                <!-- 주소 -->
-                                <div class="mb-3">
-                                    <label
-                                        for="formGroupExampleInput2"
-                                        class="form-label"
-                                        >주소</label
-                                    >
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        id="id"
-                                        v-model="address"
-                                        disabled
-                                    />
-                                    <div class="mt-1">
+                                <!-- 버튼 활성화 비활성화 -->
+                                <div>
+                                    <!-- 아이디 -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="formGroupExampleInput2"
+                                            class="form-label"
+                                        >
+                                            아이디</label
+                                        >
                                         <input
                                             type="text"
-                                            class="form-control mt-2"
-                                            id="formGroupExampleInput2"
-                                            disabled="disabled"
+                                            class="form-control"
+                                            disabled
+                                            id="actives1"
+                                        />
+                                    </div>
+
+                                    <!-- 비밀번호 -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="formGroupExampleInput2"
+                                            class="form-label"
+                                            >비밀번호</label
+                                        >
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            disabled
+                                            id="actives2"
+                                        />
+                                    </div>
+
+                                    <!-- 비밀번호 확인 -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="formGroupExampleInput2"
+                                            class="form-label"
+                                            >비밀번호 확인</label
+                                        >
+                                        <input
+                                            type="password"
+                                            class="form-control"
+                                            disabled
+                                            id="actives3"
+                                        />
+                                    </div>
+
+                                    <!-- 이메일 -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="formGroupExampleInput2"
+                                            class="form-label"
+                                            >이메일</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            disabled
+                                            id="actives4"
+                                        />
+                                    </div>
+                                    <!-- 이름 -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="formGroupExampleInput2"
+                                            class="form-label"
+                                            >이름</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            disabled
+                                            id="actives5"
+                                        />
+                                    </div>
+
+                                    <!-- 연락처 -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="formGroupExampleInput2"
+                                            class="form-label"
+                                            >연락처</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            disabled
+                                            id="actives6"
+                                        />
+                                    </div>
+
+                                    <!-- 주소 -->
+                                    <div class="mb-3">
+                                        <label
+                                            for="formGroupExampleInput2"
+                                            class="form-label"
+                                            >주소</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            disabled
+                                            id="actives7"
+                                        />
+                                        <div class="mt-1">
+                                            <input
+                                                type="text"
+                                                class="form-control mt-2"
+                                                disabled
+                                                id="actives8"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input
+                                            class="w-100 mt-3 mb-3 btn btn-md"
+                                            type="button"
+                                            value="수정하기"
+                                            v-on:click="activeInp()"
                                         />
                                     </div>
                                 </div>
-                                <div>
-                                    <input
-                                        class="w-100 mt-3 mb-3 btn btn-md btnDisable"
-                                        type="button"
-                                        value="수정하기"
-                                    />
-                                </div>
+
                                 <hr />
                                 <div class="logoPic-flex">
                                     <div>
@@ -371,9 +376,11 @@
                                                             action="./save"
                                                         >
                                                             <fieldset>
-                                                                <legend>
+                                                                <div
+                                                                    class="file-upload-form mt-3"
+                                                                >
                                                                     별점평가
-                                                                </legend>
+                                                                </div>
                                                                 <input
                                                                     type="radio"
                                                                     name="rating"
@@ -422,24 +429,51 @@
                                                             </fieldset>
                                                         </form>
                                                         <div class="mb-3">
-                                                            <label
-                                                                for="formFileSm"
-                                                                class="form-label"
-                                                                >이미지
-                                                                업로드</label
+                                                            <div
+                                                                class="file-upload-form mt-3"
                                                             >
-                                                            <input
-                                                                class="form-control form-control-sm"
-                                                                id="formFileSm"
-                                                                type="file"
-                                                            />
+                                                                이미지를 선택해
+                                                                주세요.
+                                                                <div
+                                                                    class="image-preview"
+                                                                    v-if="
+                                                                        imageData.length >
+                                                                        0
+                                                                    "
+                                                                >
+                                                                    <img
+                                                                        class="preview mt-3"
+                                                                        :src="
+                                                                            imageData
+                                                                        "
+                                                                    />
+                                                                </div>
+                                                                <input
+                                                                    class="form-control form-control-sm mt-2"
+                                                                    type="file"
+                                                                    @change="
+                                                                        previewImage
+                                                                    "
+                                                                    accept="image/*"
+                                                                />
+                                                            </div>
                                                         </div>
                                                         <div>
+                                                            <div
+                                                                class="file-upload-form mt-2 mb-2"
+                                                            >
+                                                                고객님의 소중한
+                                                                후기를
+                                                                남겨주세요.
+                                                            </div>
                                                             <textarea
+                                                                style="
+                                                                    resize: none;
+                                                                "
                                                                 name="reviewText"
                                                                 id="reviewText"
                                                                 cols="50"
-                                                                rows="20"
+                                                                rows="10"
                                                             ></textarea>
                                                         </div>
                                                     </div>
@@ -485,7 +519,50 @@
 <script>
 export default {
     layout: "MyPage",
-    methods: {},
+    data() {
+        return {
+            actives: false,
+            imageData: "", // 리뷰 작성 파트 이미지
+        };
+    },
+    methods: {
+        previewImage: function (event) {
+            // Reference to the DOM input element
+            var input = event.target;
+            // Ensure that you have a file before attempting to read it
+            if (input.files && input.files[0]) {
+                // create a new FileReader to read this image and convert to base64 format
+                var reader = new FileReader();
+                // Define a callback function to run, when FileReader finishes its job
+                reader.onload = (e) => {
+                    // Note: arrow function used here, so that "this.imageData" refers to the imageData of Vue component
+                    // Read image as base64 and set to imageData
+                    this.imageData = e.target.result;
+                };
+                // Start the reader job - read file as a data url (base64 format)
+                reader.readAsDataURL(input.files[0]);
+            }
+        },
+        activeInp() {
+            let target1 = document.getElementById("actives1");
+            let target2 = document.getElementById("actives2");
+            let target3 = document.getElementById("actives3");
+            let target4 = document.getElementById("actives4");
+            let target5 = document.getElementById("actives5");
+            let target6 = document.getElementById("actives6");
+            let target7 = document.getElementById("actives7");
+            let target8 = document.getElementById("actives8");
+
+            target1.disabled = false;
+            target2.disabled = false;
+            target3.disabled = false;
+            target4.disabled = false;
+            target5.disabled = false;
+            target6.disabled = false;
+            target7.disabled = false;
+            target8.disabled = false;
+        },
+    },
 };
 </script>
 
@@ -572,20 +649,25 @@ export default {
     border: 0; /* 필드셋 테두리 제거 */
     direction: rtl;
 }
+
 #myform input[type="radio"] {
     display: none; /* 라디오박스 감춤 */
 }
+
 #myform label {
     font-size: 3em; /* 이모지 크기 */
     color: transparent; /* 기존 이모지 컬러 제거 */
     text-shadow: 0 0 0 gray; /* 새 이모지 색상 부여 */
 }
+
 #myform label:hover {
     text-shadow: 0 0 0 #a30000; /* 마우스 호버 */
 }
+
 #myform label:hover ~ label {
     text-shadow: 0 0 0 #a30000; /* 마우스 호버 뒤에오는 이모지들 */
 }
+
 #myform input[type="radio"]:checked ~ label {
     text-shadow: 0 0 0 #a30000; /* 마우스 클릭 체크 */
 }
@@ -630,5 +712,11 @@ table {
     height: 100%;
     position: relative;
     transform: translate(0%, 45%);
+}
+
+/* 리뷰 작성 사진 업로드 */
+.preview {
+    width: 200px;
+    height: 200px;
 }
 </style>
