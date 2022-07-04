@@ -1,7 +1,7 @@
 # omym-frontend
 
 ## 깃 허브 쓰는방법
-> 1. 작업 전에는 항상 development를 최신화(git pull origin development) 먼저 하고 
+> 1. 작업 전에는 항상 최신화(git pull origin main) 먼저 하고 
 > 2. 새로운 브랜치를 만들어서(git checkout -b "브랜치이름") 작업한다
 > 3. 작업 후에는 내가 작업한 브랜치를 리모트에 푸시(git push origin "브랜치이름")하고 
 > 4. github 페이지에서 pull request를 생성 한 후(base 브랜치 (타겟 브랜치)가 development (main이 아님) ) , 
