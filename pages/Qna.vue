@@ -27,7 +27,7 @@
                 >
                     <div class="accordion-body row">
                         <div class="qa-ai col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -58,7 +58,7 @@
                 >
                     <div class="accordion-body row">
                         <div class="qa-ai col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -89,7 +89,7 @@
                 >
                     <div class="accordion-body row">
                         <div class="qa-ai col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -120,7 +120,7 @@
                 >
                     <div class="accordion-body row">
                         <div class="qa-ai col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -151,7 +151,7 @@
                 >
                     <div class="accordion-body row">
                         <div class="qa-ai col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -185,7 +185,7 @@ export default {
 .qna-title {
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     margin-bottom: 20px;
     border-bottom: 2px solid #a30000;
 }
@@ -194,7 +194,7 @@ export default {
     font-weight: 300;
 }
 .qa-q {
-    font-size: 18.5px;
+    font-size: 17px;
     font-weight: 300;
 }
 .qa-ai {
@@ -202,6 +202,10 @@ export default {
     font-size: 20px;
     font-weight: 300;
 }
+.qa-a {
+    font-size: 15px;
+}
+
 .accordion-button {
     box-shadow: none;
 }
