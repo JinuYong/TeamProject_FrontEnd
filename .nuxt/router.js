@@ -23,8 +23,15 @@ const _1b59b06e = () => interopDefault(import('..\\pages\\ItemList\\ItemList.vue
 const _3fe77c87 = () => interopDefault(import('..\\pages\\payment\\Payment.vue' /* webpackChunkName: "pages/payment/Payment" */))
 const _039f4d97 = () => interopDefault(import('..\\pages\\shoppingCart\\ShoppingCart.vue' /* webpackChunkName: "pages/shoppingCart/ShoppingCart" */))
 const _4acab808 = () => interopDefault(import('..\\pages\\tourItemDetails\\TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
+const _eb61c56c = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\CardSliderCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/CardSliderCom" */))
+const _a951dce8 = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\ImgGalleryCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/ImgGalleryCom" */))
 const _12e23fd6 = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\KakaoMapApiCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/KakaoMapApiCom" */))
 const _44f17188 = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\ReviewsCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/ReviewsCom" */))
+const _c44003ba = () => interopDefault(import('..\\pages\\tourItemDetails\\tourItemDetails\\TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/tourItemDetails/TourItemDetail" */))
+const _1a1db4c3 = () => interopDefault(import('..\\pages\\tourItemDetails\\tourItemDetails\\components\\CardSliderCom.vue' /* webpackChunkName: "pages/tourItemDetails/tourItemDetails/components/CardSliderCom" */))
+const _3b25a905 = () => interopDefault(import('..\\pages\\tourItemDetails\\tourItemDetails\\components\\ImgGalleryCom.vue' /* webpackChunkName: "pages/tourItemDetails/tourItemDetails/components/ImgGalleryCom" */))
+const _7ce6977d = () => interopDefault(import('..\\pages\\tourItemDetails\\tourItemDetails\\components\\KakaoMapApiCom.vue' /* webpackChunkName: "pages/tourItemDetails/tourItemDetails/components/KakaoMapApiCom" */))
+const _313f8a63 = () => interopDefault(import('..\\pages\\tourItemDetails\\tourItemDetails\\components\\ReviewsCom.vue' /* webpackChunkName: "pages/tourItemDetails/tourItemDetails/components/ReviewsCom" */))
 const _603576fb = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -115,6 +122,14 @@ export const routerOptions = {
     component: _4acab808,
     name: "tourItemDetails-TourItemDetail"
   }, {
+    path: "/tourItemDetails/components/CardSliderCom",
+    component: _eb61c56c,
+    name: "tourItemDetails-components-CardSliderCom"
+  }, {
+    path: "/tourItemDetails/components/ImgGalleryCom",
+    component: _a951dce8,
+    name: "tourItemDetails-components-ImgGalleryCom"
+  }, {
     path: "/tourItemDetails/components/KakaoMapApiCom",
     component: _12e23fd6,
     name: "tourItemDetails-components-KakaoMapApiCom"
@@ -122,6 +137,26 @@ export const routerOptions = {
     path: "/tourItemDetails/components/ReviewsCom",
     component: _44f17188,
     name: "tourItemDetails-components-ReviewsCom"
+  }, {
+    path: "/tourItemDetails/tourItemDetails/TourItemDetail",
+    component: _c44003ba,
+    name: "tourItemDetails-tourItemDetails-TourItemDetail"
+  }, {
+    path: "/tourItemDetails/tourItemDetails/components/CardSliderCom",
+    component: _1a1db4c3,
+    name: "tourItemDetails-tourItemDetails-components-CardSliderCom"
+  }, {
+    path: "/tourItemDetails/tourItemDetails/components/ImgGalleryCom",
+    component: _3b25a905,
+    name: "tourItemDetails-tourItemDetails-components-ImgGalleryCom"
+  }, {
+    path: "/tourItemDetails/tourItemDetails/components/KakaoMapApiCom",
+    component: _7ce6977d,
+    name: "tourItemDetails-tourItemDetails-components-KakaoMapApiCom"
+  }, {
+    path: "/tourItemDetails/tourItemDetails/components/ReviewsCom",
+    component: _313f8a63,
+    name: "tourItemDetails-tourItemDetails-components-ReviewsCom"
   }, {
     path: "/",
     component: _603576fb,

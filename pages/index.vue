@@ -82,7 +82,58 @@
                         </div>
                     </div> -->
                     <div>
-                        <input type="text" class="col-md-12 area-search" placeholder="어디로 떠날까요?">
+                        <input
+                            type="text"
+                            class="col-md-12 area-search"
+                            placeholder="어디로 떠날까요?"
+                            @click="show = !show"
+                        />
+                        <div class="area-search-box" v-show="!show">
+                            <br />
+                            <div class="row">
+                                <h6 style="margin-left: 5px" class="col">
+                                    지역
+                                </h6>
+                                <button
+                                    type="button"
+                                    class="btn-close col"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col mb-content">
+                                    <a href="#">서울</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">양양</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mb-content">
+                                    <a href="#">강릉</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">경주</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col mb-content">
+                                    <a href="#">부산</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">통영</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col" style="padding: 0 0 0 24px">
+                                    <a href="#">포항</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">제주도</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- 출발 위치 -->
@@ -113,11 +164,11 @@
                         />
                     </div>
 
-                    <hr class="select-line"/>
+                    <hr class="select-line" />
 
                     <!-- 버튼 -->
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-primary search-btn">
+                        <button type="button" class="btn search-btn">
                             검색
                         </button>
                     </div>
@@ -290,8 +341,6 @@
         <!-- 본문 끝 -->
 
         <script>
-
-
             <!-- datepicker 시작 -->
             $(function () {
                 $(".datepicker").datepicker();
@@ -343,6 +392,11 @@
 <script>
 export default {
     name: "IndexPage",
+    data() {
+        return {
+            show: true,
+        };
+    },
 };
 
 // TODO: 위치 왜 ?
@@ -384,8 +438,24 @@ a:hover {
 }
 
 .area-search::placeholder {
-        color: #dfdfdf;
+    color: #dfdfdf;
 }
+
+.area-search-box {
+    z-index: 2;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 150px;
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 0.25em;
+}
+
+/* .area-search-title {
+    display: flex;
+    justify-content: space-between;
+} */
 
 .select-pick {
     display: flex;
@@ -443,7 +513,6 @@ a:hover {
 }
 
 .search-btn {
-    /* font-size: 20px; */
     font-weight: 400;
     color: white;
     height: 45px;
@@ -453,10 +522,10 @@ a:hover {
 }
 
 .search-btn:hover {
-        color: white;
+    color: white;
     background: #a30000;
     border: #a30000;
-    border-radius: 0.25em;
+    /* border-radius: 0.25em; */
 }
 
 /* select창 끝 */
@@ -474,11 +543,6 @@ a:hover {
 .jump {
     display: flex;
     justify-content: space-between;
-}
-
-.jump-img {
-    width: 180px;
-    height: 130px;
 }
 
 .badge {

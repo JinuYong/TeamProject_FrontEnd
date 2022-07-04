@@ -91,8 +91,11 @@
 export default {
     layout: "MyPage"
 }
+
 </script>
 <style scoped>
+    
+
     .main-container .sub-title{
         margin: 40px 0 40px 18vw;
     }
@@ -122,7 +125,7 @@ export default {
 
     .list-container {
         /* width: 100vw; */
-        margin-left: 13%;
+        margin-left: 350px;
     }
     .top-banner {
         /* background-image: url(@/assets/img/topbanner.png); */

@@ -1,7 +1,7 @@
 <template>
     <div class="common-container">
         <form class="common">
-            <h1 class="h1 mb-4 fw-normal text-center">로그인</h1>
+            <h4 class="mb-4 fw-normal text-center">로그인</h4>
             <div class="form-floating">
                 <input
                     type="text"
@@ -14,7 +14,7 @@
             <div class="form-floating">
                 <input
                     type="password"
-                    class="form-control mb-2"
+                    class="form-control me-2 mb-2"
                     id="floatingPassword"
                     placeholder="Password"
                 />
@@ -27,7 +27,7 @@
                     저장하기
                 </label>
             </div>
-            <button class="w-100 mt-3 mb-3 btn btn-lg" type="submit">
+            <button class="btn btn-md w-100 mt-3 mb-3" type="submit">
                 로그인
             </button>
             <hr />
@@ -36,10 +36,9 @@
         아이디|비밀번호찾기
       </button> -->
             <div>
-                <a href="/signup" class="aTag">아직 회원이 아니신가요?</a><br />
-                <a href="/findid" class="aTag"
-                    >아이디 또는 비밀번호를 잊으셨나요?</a
-                >
+                아직 <a href="/signup" class="aTag">회원</a>이 아니신가요?<br />
+                <a href="/findid" class="aTag">아이디</a> 또는
+                <a href="/findpwd" class="aTag">비밀번호</a>를 잊으셨나요?
             </div>
             <hr />
             <div class="logoPic-flex">
@@ -78,11 +77,10 @@ export default {
 }
 
 .aTag {
-    text-decoration-line: none;
-    color: black;
+    color: #a30000;
 }
 
 .aTag:hover {
-    color: black;
+    color: #a30000;
 }
 </style>

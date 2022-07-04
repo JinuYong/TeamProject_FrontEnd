@@ -34,6 +34,7 @@
                         src="@/assets/img/ItemListImage/ItemListImg1.jpg"
                         class="d-block w-100"
                         alt="..."
+                        width="700" height="500"
                     />
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
@@ -48,6 +49,7 @@
                         src="@/assets/img/ItemListImage/ItemListImg2.jpg"
                         class="d-block w-100"
                         alt="..."
+                        width="700" height="500"
                     />
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Second slide label</h5>
@@ -59,9 +61,10 @@
                 </div>
                 <div class="carousel-item">
                     <img
-                        src="@/assets/img/ItemListImage/ItemListImg4.jpg"
+                        src="@/assets/img/ItemListImage/ItemListImg5.jpg"
                         class="d-block w-100"
                         alt="..."
+                        width="700" height="500"
                     />
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
@@ -104,15 +107,15 @@
                 <div class="button-group">
                     <span class="area-title">지역</span>
                     <span class="divider"></span>
-                    <button type="button" class="btn btn-outline area-btn">전체</button>
-                    <button type="button" class="btn btn-outline area-btn">서울</button>
-                    <button type="button" class="btn btn-outline area-btn">부산</button>
-                    <button type="button" class="btn btn-outline area-btn">제주</button>
-                    <button type="button" class="btn btn-outline area-btn">광주</button>
-                    <button type="button" class="btn btn-outline area-btn">포항</button>
-                    <button type="button" class="btn btn-outline area-btn">전주</button>
-                    <button type="button" class="btn btn-outline area-btn">대구</button>
-                    <button type="button" class="btn btn-outline area-btn">기타</button>
+                    <button type="button" class="btn area-btn on">전체</button>
+                    <button type="button" class="btn area-btn">서울</button>
+                    <button type="button" class="btn area-btn">부산</button>
+                    <button type="button" class="btn area-btn">제주</button>
+                    <button type="button" class="btn area-btn">광주</button>
+                    <button type="button" class="btn area-btn">포항</button>
+                    <button type="button" class="btn area-btn">전주</button>
+                    <button type="button" class="btn area-btn">대구</button>
+                    <button type="button" class="btn area-btn">기타</button>
                 </div>
             </div>
         </div> <!--    지역 카테고리 end-->
@@ -143,19 +146,19 @@
                             <p class="card-text">Content</p>
                             <div class="position-relative">
                                 <div
-                                    class="badge rounded-pill bg-light text-dark"
+                                    class="badge rounded-pill area"
                                 >
                                     서울
                                 </div>
                                 <div
-                                    class="position-absolute bottom-100 end-0 badge bg-dark"
+                                    class="position-absolute bottom-100 end-0 badge price"
                                 >
-                                    Price
+                                    &#8361 200,000
                                 </div>
                                 <div
-                                    class="position-absolute bottom-0 end-0 badge bg-dark"
+                                    class="position-absolute bottom-0 end-0 badge sale-price"
                                 >
-                                    Sale Price
+                                    &#8361 150,000
                                 </div>
                             </div>
                         </div>
@@ -176,19 +179,19 @@
                             <p class="card-text">Content</p>
                             <div class="position-relative">
                                 <div
-                                    class="badge rounded-pill bg-light text-dark"
+                                    class="badge rounded-pill area"
                                 >
                                     부산
                                 </div>
                                 <div
-                                    class="position-absolute bottom-100 end-0 badge bg-dark"
+                                    class="position-absolute bottom-100 end-0 badge price"
                                 >
-                                    Price
+                                    &#8361 200,000
                                 </div>
                                 <div
-                                    class="position-absolute bottom-0 end-0 badge bg-dark"
+                                    class="position-absolute bottom-0 end-0 badge sale-price"
                                 >
-                                    Sale Price
+                                    &#8361 150,000
                                 </div>
                             </div>
                         </div>
@@ -209,19 +212,19 @@
                             <p class="card-text">Content</p>
                             <div class="position-relative">
                                 <div
-                                    class="badge rounded-pill bg-light text-dark"
+                                    class="badge rounded-pill area"
                                 >
                                     대구
                                 </div>
                                 <div
-                                    class="position-absolute bottom-100 end-0 badge bg-dark"
+                                    class="position-absolute bottom-100 end-0 badge price"
                                 >
-                                    Price
+                                    &#8361 200,000
                                 </div>
                                 <div
-                                    class="position-absolute bottom-0 end-0 badge bg-dark"
+                                    class="position-absolute bottom-0 end-0 badge sale-price"
                                 >
-                                    Sale Price
+                                    &#8361 150,000
                                 </div>
                             </div>
                         </div>
@@ -242,19 +245,19 @@
                             <p class="card-text">Content</p>
                             <div class="position-relative">
                                 <div
-                                    class="badge rounded-pill bg-light text-dark"
+                                    class="badge rounded-pill area"
                                 >
                                     울산
                                 </div>
                                 <div
-                                    class="position-absolute bottom-100 end-0 badge bg-dark"
+                                    class="position-absolute bottom-100 end-0 badge price"
                                 >
-                                    Price
+                                    &#8361 200,000
                                 </div>
                                 <div
-                                    class="position-absolute bottom-0 end-0 badge bg-dark"
+                                    class="position-absolute bottom-0 end-0 badge sale-price"
                                 >
-                                    Sale Price
+                                    &#8361 150,000
                                 </div>
                             </div>
                         </div>
@@ -279,19 +282,19 @@
                             <p class="card-text">Content</p>
                             <div class="position-relative">
                                 <div
-                                    class="badge rounded-pill bg-light text-dark"
+                                    class="badge rounded-pill area"
                                 >
                                     포항
                                 </div>
                                 <div
-                                    class="position-absolute bottom-100 end-0 badge bg-dark"
+                                    class="position-absolute bottom-100 end-0 badge price"
                                 >
-                                    Price
+                                    &#8361 200,000
                                 </div>
                                 <div
-                                    class="position-absolute bottom-0 end-0 badge bg-dark"
+                                    class="position-absolute bottom-0 end-0 badge sale-price"
                                 >
-                                    Sale Price
+                                    &#8361 150,000
                                 </div>
                             </div>
                         </div>
@@ -312,19 +315,19 @@
                             <p class="card-text">Content</p>
                             <div class="position-relative">
                                 <div
-                                    class="badge rounded-pill bg-light text-dark"
+                                    class="badge rounded-pill area"
                                 >
                                     전주
                                 </div>
                                 <div
-                                    class="position-absolute bottom-100 end-0 badge bg-dark"
+                                    class="position-absolute bottom-100 end-0 badge price"
                                 >
-                                    Price
+                                    &#8361 200,000
                                 </div>
                                 <div
-                                    class="position-absolute bottom-0 end-0 badge bg-dark"
+                                    class="position-absolute bottom-0 end-0 badge sale-price"
                                 >
-                                    Sale Price
+                                    &#8361 150,000
                                 </div>
                             </div>
                         </div>
@@ -345,19 +348,19 @@
                             <p class="card-text">Content</p>
                             <div class="position-relative">
                                 <div
-                                    class="badge rounded-pill bg-light text-dark"
+                                    class="badge rounded-pill area"
                                 >
                                     광주
                                 </div>
                                 <div
-                                    class="position-absolute bottom-100 end-0 badge bg-dark"
+                                    class="position-absolute bottom-100 end-0 badge price"
                                 >
-                                    Price
+                                    &#8361 200,000
                                 </div>
                                 <div
-                                    class="position-absolute bottom-0 end-0 badge bg-dark"
+                                    class="position-absolute bottom-0 end-0 badge sale-price"
                                 >
-                                    Sale Price
+                                    &#8361 150,000
                                 </div>
                             </div>
                         </div>
@@ -378,19 +381,19 @@
                             <p class="card-text">Content</p>
                             <div class="position-relative">
                                 <div
-                                    class="badge rounded-pill bg-light text-dark"
+                                    class="badge rounded-pill area"
                                 >
                                     서울
                                 </div>
                                 <div
-                                    class="position-absolute bottom-100 end-0 badge bg-dark"
+                                    class="position-absolute bottom-100 end-0 badge price"
                                 >
-                                    Price
+                                    &#8361 200,000
                                 </div>
                                 <div
-                                    class="position-absolute bottom-0 end-0 badge bg-dark"
+                                    class="position-absolute bottom-0 end-0 badge sale-price"
                                 >
-                                    Sale Price
+                                    &#8361 150,000
                                 </div>
                             </div>
                         </div>
@@ -409,11 +412,25 @@
 
 export default {
     name: "item",
+
 };
 </script>
 
 <style scoped>
-.btn-outline {
+.btn {
+    background-color: #E5E5E5;
+    color: #000000;
+    border: none;
+}
+.btn:focus {
+    /*background-color: #a30000;*/
+    /*color: #ffffff;*/
+}
+.btn:hover {
+    background-color: #a30000;
+    color: #ffffff;
+}
+.btn.on {
     background-color: #a30000;
     color: #ffffff;
 }
@@ -438,8 +455,21 @@ export default {
     font-size: 14px;
     border-radius: 30px 30px;
 }
+.area {
+    background-color: #a30000;
+    color: #ffffff;
+}
+.price {
+    background-color: #ffffff;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration:line-through;
+}
+.sale-price {
+    background-color: #ffffff;
+    color: black;
+    font-size: 15px;
+}
 
-/* .btn-outline:hover {
-    outline-color: #E5E5E5;
-} */
 </style>

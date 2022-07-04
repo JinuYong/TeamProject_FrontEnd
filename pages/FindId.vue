@@ -1,11 +1,10 @@
 <template>
     <div class="common-container">
         <form class="common">
-            <h1 class="h1 mb-4 fw-normal text-center">아이디찾기</h1>
-            <h1 class="h5 mb-4 fw-normal text-center">
-                계정 생성 시 등록한 이름과 이메일을 <br />
-                입력해 주세요.
-            </h1>
+            <h4 class="mb-4 fw-normal text-center">아이디찾기</h4>
+            <p class="mb-5 fw-normal text-center">
+                계정 생성 시 등록한 이름과 이메일을 입력해 주세요.
+            </p>
 
             <div class="form-floating">
                 <input
@@ -25,7 +24,7 @@
                 />
                 <label for="floatingEmail">이메일</label>
             </div>
-            <button class="w-100 mt-5 mb-5 btn btn-lg" type="submit">
+            <button class="w-100 mt-5 mb-5 btn btn-md" type="submit">
                 확인
             </button>
             <hr />
