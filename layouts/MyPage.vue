@@ -149,10 +149,13 @@ export default {};
 * {
     font-family: "Noto Sans KR", sans-serif;
 }
+.btn {
+        border-radius: 3px !important;
+}
 .my-page {
     min-width: 700px;
     min-height: 599px;
-    height: 1330px;
+    /* height: 1330px; */
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -173,7 +176,7 @@ nav {
     border-bottom: 1px solid #e5e5e5;
 }
 .container-fluid {
-    width: 1024px;
+    width: 1200px;
     margin: 0 auto;
 }
 .main-searchbar {
@@ -245,7 +248,7 @@ footer {
     bottom: 0;
 }
 .footer-content {
-    width: 1024px;
+    width: 1200px;
     margin: 0 auto;
 }
 .footer-icons {

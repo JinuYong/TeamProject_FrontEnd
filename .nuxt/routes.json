@@ -2,127 +2,175 @@
   {
     "name": "CheckId",
     "path": "/CheckId",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\CheckId.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckId.vue",
     "chunkName": "pages/CheckId"
   },
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\CheckPayment.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPayment.vue",
     "chunkName": "pages/CheckPayment"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\CheckPwd.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPwd.vue",
     "chunkName": "pages/CheckPwd"
   },
   {
     "name": "CheckSignUp",
     "path": "/CheckSignUp",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\CheckSignUp.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckSignUp.vue",
     "chunkName": "pages/CheckSignUp"
   },
   {
     "name": "FindId",
     "path": "/FindId",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\FindId.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\FindId.vue",
     "chunkName": "pages/FindId"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\FindPwd.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\FindPwd.vue",
     "chunkName": "pages/FindPwd"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\LogIn.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\LogIn.vue",
     "chunkName": "pages/LogIn"
   },
   {
     "name": "MypageUpdate",
     "path": "/MypageUpdate",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\MypageUpdate.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\MypageUpdate.vue",
     "chunkName": "pages/MypageUpdate"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\Qna.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Qna.vue",
     "chunkName": "pages/Qna"
+  },
+  {
+    "name": "SearchResult",
+    "path": "/SearchResult",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SearchResult.vue",
+    "chunkName": "pages/SearchResult"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\SignUp.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp.vue",
     "chunkName": "pages/SignUp"
   },
   {
     "name": "board-Detail",
     "path": "/board/Detail",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\board\\\\Detail.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\Detail.vue",
     "chunkName": "pages/board/Detail"
   },
   {
     "name": "board-List",
     "path": "/board/List",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\board\\\\List.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\List.vue",
     "chunkName": "pages/board/List"
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\inform\\\\Detail.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\Detail.vue",
     "chunkName": "pages/inform/Detail"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\inform\\\\List.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\List.vue",
     "chunkName": "pages/inform/List"
   },
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\ItemList\\\\ItemList.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\ItemList\\\\ItemList.vue",
     "chunkName": "pages/ItemList/ItemList"
   },
   {
     "name": "payment-Payment",
     "path": "/payment/Payment",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\payment\\\\Payment.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\payment\\\\Payment.vue",
     "chunkName": "pages/payment/Payment"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
     "chunkName": "pages/shoppingCart/ShoppingCart"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\tourItemDetails\\\\TourItemDetail.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\TourItemDetail.vue",
     "chunkName": "pages/tourItemDetails/TourItemDetail"
+  },
+  {
+    "name": "tourItemDetails-components-CardSliderCom",
+    "path": "/tourItemDetails/components/CardSliderCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\CardSliderCom.vue",
+    "chunkName": "pages/tourItemDetails/components/CardSliderCom"
+  },
+  {
+    "name": "tourItemDetails-components-ImgGalleryCom",
+    "path": "/tourItemDetails/components/ImgGalleryCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom"
   },
   {
     "name": "tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/components/KakaoMapApiCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
     "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom"
   },
   {
     "name": "tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/components/ReviewsCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
     "chunkName": "pages/tourItemDetails/components/ReviewsCom"
+  },
+  {
+    "name": "tourItemDetails-tourItemDetails-TourItemDetail",
+    "path": "/tourItemDetails/tourItemDetails/TourItemDetail",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\TourItemDetail.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/TourItemDetail"
+  },
+  {
+    "name": "tourItemDetails-tourItemDetails-components-CardSliderCom",
+    "path": "/tourItemDetails/tourItemDetails/components/CardSliderCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\CardSliderCom.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/CardSliderCom"
+  },
+  {
+    "name": "tourItemDetails-tourItemDetails-components-ImgGalleryCom",
+    "path": "/tourItemDetails/tourItemDetails/components/ImgGalleryCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ImgGalleryCom"
+  },
+  {
+    "name": "tourItemDetails-tourItemDetails-components-KakaoMapApiCom",
+    "path": "/tourItemDetails/tourItemDetails/components/KakaoMapApiCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/KakaoMapApiCom"
+  },
+  {
+    "name": "tourItemDetails-tourItemDetails-components-ReviewsCom",
+    "path": "/tourItemDetails/tourItemDetails/components/ReviewsCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ReviewsCom"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\220701Front\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
   }
 ]
