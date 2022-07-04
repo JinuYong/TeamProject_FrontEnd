@@ -143,7 +143,16 @@
     </div>
 </template>
 <script>
-export default {};
+export default {
+    data() {
+        return {};
+    },
+    methods: {
+        moveTo(url) {
+            $nuxt.$router.push(url);
+        },
+    }
+}
 </script>
 <style>
 * {
@@ -154,7 +163,7 @@ export default {};
 }
 .my-page {
     min-width: 700px;
-    min-height: 599px;
+    min-height: calc(100vh - 310px);
     /* height: 1330px; */
     margin: 0 auto;
     padding-bottom: 50px;

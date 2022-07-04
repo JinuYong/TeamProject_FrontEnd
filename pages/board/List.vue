@@ -75,7 +75,7 @@ export default {
         border-color: #A30000;
     }
     .container {
-        margin-top: 50px;
+        padding-top: 50px;
     }
     .page-title {
         text-align: center;

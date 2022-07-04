@@ -4,21 +4,25 @@
             <h3 class="text-center">회원가입</h3>
             <div class="signup-inputs">
                 프로필 이미지
-                <img :src=profileImg alt="userImg" class="user-profile" />
+                <img :src="profileImg" alt="userImg" class="user-profile" />
             </div>
 
             <!-- 아이디 -->
             <div class="row">
-                <label for="user_id" class="form-label">
-                    아이디
-                </label>
+                <label for="user_id" class="form-label"> 아이디 </label>
                 <div class="col-lg-9">
-                    <input type="text" class="form-control" id="user_id" placeholder="5~15자 내외로 입력해 주세요." required minlength="5" maxlength="15" />
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="user_id"
+                        placeholder="5~15자 내외로 입력해 주세요."
+                        required
+                        minlength="5"
+                        maxlength="15"
+                    />
                 </div>
                 <div class="col-auto">
-                    <button class="btn btn-md mb-3">
-                        중복확인
-                    </button>
+                    <button class="btn btn-md mb-3">중복확인</button>
                 </div>
             </div>
 
@@ -38,7 +42,9 @@
 
             <!-- 비밀번호 확인 -->
             <div class="mb-3">
-                <label for="re_password" class="form-label">비밀번호 확인</label>
+                <label for="re_password" class="form-label"
+                    >비밀번호 확인</label
+                >
                 <input
                     type="password"
                     class="form-control"
@@ -52,9 +58,7 @@
 
             <!-- 이메일 -->
             <div class="mb-3">
-                <label for="user_email" class="form-label"
-                    >이메일</label
-                >
+                <label for="user_email" class="form-label">이메일</label>
                 <input
                     type="text"
                     class="form-control"
@@ -64,9 +68,7 @@
             </div>
             <!-- 이름 -->
             <div class="mb-3">
-                <label for="user_name" class="form-label"
-                    >이름</label
-                >
+                <label for="user_name" class="form-label">이름</label>
                 <input
                     type="text"
                     class="form-control"
@@ -78,9 +80,7 @@
 
             <!-- 연락처 -->
             <div class="mb-3">
-                <label for="user_phone" class="form-label"
-                    >연락처</label
-                >
+                <label for="user_phone" class="form-label">연락처</label>
                 <input
                     type="text"
                     class="form-control"
@@ -89,17 +89,20 @@
                     v-model="phoneNum"
                     @keyup="addHyphen()"
                     required
+                    maxlength="13"
                 />
             </div>
 
             <!-- 주소 -->
             <div class="row">
-                <label for="user_address" class="form-label"
-                    >주소</label
-                >
+                <label for="user_address" class="form-label">주소</label>
                 <div class="col-lg-6">
-                    <input type="text" id="postcode" class="form-control postcode-input" disabled>
-                    
+                    <input
+                        type="text"
+                        id="postcode"
+                        class="form-control postcode-input"
+                        disabled
+                    />
                 </div>
                 <div class="col-auto">
                     <button @click="address_search()" class="btn btn-md mb-1">
@@ -128,7 +131,10 @@
                 </div>
             </div>
             <div>
-                <button class="w-100 mt-5 mb-3 btn btn-md" @click="joinConfirm()">
+                <button
+                    class="w-100 mt-5 mb-3 btn btn-md"
+                    @click="joinConfirm()"
+                >
                     가입하기
                 </button>
             </div>
@@ -154,69 +160,67 @@ export default {
     name: "signup",
     data() {
         return {
-            profileImg: "@/assets/img/user.png",
+            profileImg: require("@/assets/img/user.png"),
             postOpen: false,
-            phoneNum: ""
+            phoneNum: "",
         };
     },
     components: {
         VueDaumPostcode,
     },
-    watch: {
-        phoneNum: function(val, oldVal) {
-            console.log(val);
-            if (val.length > 2) {
-                this.phoneNum += "-";
-                return this.phoneNum;
-            }
-        }
-    },
     methods: {
+
         addHyphen() {
-            if (this.phoneNum.length >=3 && this.phoneNum < 4) {
-                this.phoneNum + "-";
-            }
-            if (this.phoneNum.length >=6 && this.phoneNum < 7) {
-                this.phoneNum + "-";
+            this.phoneNum = this.phoneNum.replace(/[^0-9]/g, "");
+            if (this.phoneNum.length < 4) {
+                return
+            } else if(this.phoneNum.length < 8) {
+                this.phoneNum = this.phoneNum.substr(0,3) + "-" + this.phoneNum.substr(3);
+            } else if(this.phoneNum.length < 12) {
+                this.phoneNum = this.phoneNum.substr(0,3) + "-" + this.phoneNum.substr(3,4) + "-" + this.phoneNum.substr(7);
             }
         },
-        
         address_search() {
             this.postOpen = true;
         },
-        oncomplete: function (data) {
-            var addr = ''; // 주소 변수
-            var extraAddr = ''; // 참고항목 변수
-            
-            if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+        oncomplete(data) {
+            var addr = ""; // 주소 변수
+            var extraAddr = ""; // 참고항목 변수
+
+            if (data.userSelectedType === "R") {
+                // 사용자가 도로명 주소를 선택했을 경우
                 addr = data.roadAddress;
-            } else { // 사용자가 지번 주소를 선택했을 경우(J)
+            } else {
+                // 사용자가 지번 주소를 선택했을 경우(J)
                 addr = data.jibunAddress;
             }
 
-            if(data.userSelectedType === 'R'){
-                if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+            if (data.userSelectedType === "R") {
+                if (data.bname !== "" && /[동|로|가]$/g.test(data.bname)) {
                     extraAddr += data.bname;
                 }
-                if(data.buildingName !== '' && data.apartment === 'Y'){
-                    extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                if (data.buildingName !== "" && data.apartment === "Y") {
+                    extraAddr +=
+                        extraAddr !== ""
+                            ? ", " + data.buildingName
+                            : data.buildingName;
                 }
-                if(extraAddr !== ''){
-                    extraAddr = ' (' + extraAddr + ')';
+                if (extraAddr !== "") {
+                    extraAddr = " (" + extraAddr + ")";
                 }
-                document.getElementById("address").value = addr + " " + extraAddr;
-                
+                document.getElementById("address").value =
+                    addr + " " + extraAddr;
             } else {
                 document.getElementById("address").value = addr;
             }
-            document.getElementById('postcode').value = data.zonecode;
+            document.getElementById("postcode").value = data.zonecode;
             document.getElementById("detail_address").focus();
             this.postOpen = false;
         },
-        joinConfirm() {
+        async joinConfirm() {
             // e.preventDefault();
             //공백
-            const pattern_blank = /[\s]/g;	
+            const pattern_blank = /[\s]/g;
             //한글만
             const patten_kor = /^[가-힣]+$/;
             //ID
@@ -228,10 +232,11 @@ export default {
             //특수문자
             const pattern_spc = /[~!@#$%^&*()_+|<>?:{}]/;
             //email
-            const pattern_email = /^([\w\.\_\-])*[a-zA-Z0-9]+([\w\.\_\-])*([a-zA-Z0-9])+([\w\.\_\-])+@([a-zA-Z0-9]+\.)+[a-zA-Z0-9]{2,8}$/;
-            
+            const pattern_email =
+                /^([\w\.\_\-])*[a-zA-Z0-9]+([\w\.\_\-])*([a-zA-Z0-9])+([\w\.\_\-])+@([a-zA-Z0-9]+\.)+[a-zA-Z0-9]{2,8}$/;
+
             // let validate_result = true
-            
+
             var id = this.$el.querySelector("#user_id").value;
             var name = this.$el.querySelector("#user_name").value;
             var password = this.$el.querySelector("#user_password").value;
@@ -239,49 +244,60 @@ export default {
             var phone = this.$el.querySelector("#user_phone").value;
             // var phone2 = document.querySelector("#phone2").value;
             // var phone3 = document.querySelector("#phone3").value;
-            
-            if(
-                id == '' || !password || !re_password || !name
-                || !phone || !phone2 
-                || !phone3
+
+            if (
+                id == "" ||
+                !password ||
+                !re_password ||
+                !name ||
+                !phone ||
+                !phone2 ||
+                !phone3
             ) {
-                alert("모든 값을 입력해 주세요")
-                return
+                alert("모든 값을 입력해 주세요");
+                return;
             }
             //아이디 소문자, 숫자만 사용
-            console.log(!patten_id)
-            if(!patten_id.test(id)){
-                alert("아이디를 확인해 주세요")
-                return
+            console.log(!patten_id);
+            if (!patten_id.test(id)) {
+                alert("아이디를 확인해 주세요");
+                return;
             }
             //이름 체크. 한글만
-            console.log(!patten_kor.test(name))
-            if(!patten_kor.test(name)){
-                alert("이름을 확인해 주세요")
-                return
+            console.log(!patten_kor.test(name));
+            if (!patten_kor.test(name)) {
+                alert("이름을 확인해 주세요");
+                return;
             }
             //비밀번호 체크
-            console.log(pattern_spc.test(password) || patten_kor.test(password))
-            if(pattern_spc.test(password) || patten_kor.test(password)) {
-                alert("비밀번호를 확인해 주세요")
-                return
+            console.log(
+                pattern_spc.test(password) || patten_kor.test(password)
+            );
+            if (pattern_spc.test(password) || patten_kor.test(password)) {
+                alert("비밀번호를 확인해 주세요");
+                return;
             }
             //비밀번호 재확인 비교
-            if(password != re_password){
-                alert("비밀번호 재확인을 확인해 주세요")
+            if (password != re_password) {
+                alert("비밀번호 재확인을 확인해 주세요");
+                return;
+            }
+
+            //최종확인!
+            console.log(!validate_result);
+            if (!validate_result) {
+                alert("인풋을 재확인 해주세요");
                 return
             }
             
-            //최종확인!
-            console.log(!validate_result)
-            if(!validate_result){
-                alert("인풋을 재확인 해주세요")
-            }else {
-            
-                this.$router.push('/')
+            try {
+                let res = await this.$axios.post()
+                
+            } catch(e) {
+
             }
         },
-    }
+    },
 };
 </script>
 
