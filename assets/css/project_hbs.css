@@ -13,12 +13,19 @@
     border: 5px solid #a30000;
     border-radius: 10px;
     padding: 40px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.common input {
+    border-radius: 0;
 }
 
 .btn {
     background: #a30000;
     color: white;
     box-shadow: none;
+    border-radius: 5px;
 }
 
 .btn:hover {

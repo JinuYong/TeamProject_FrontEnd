@@ -1,9 +1,6 @@
 <template>
-    <div>
-        <h1 class="display-4 row justify-content-center" style="margin-top: 50px">Q&A</h1>
-        <br />
-        <hr class="qna-line"/>
-        <br />
+    <div class="container">
+        <h4 class="row justify-content-center qna-title">Q&A</h4>
         <!-- 아코디언 시작 -->
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
@@ -16,8 +13,8 @@
                         aria-expanded="false"
                         aria-controls="flush-collapseOne"
                     >
-                        <div class="qa col-1">Q</div>
-                        <div class="col-10">
+                        <div class="qa-qi col-1 ">Q</div>
+                        <div class="qa-q col-10 ">
                             졸릴 때 오징어가 도움이 되나요?
                         </div>
                     </button>
@@ -29,8 +26,8 @@
                     data-bs-parent="#accordionFlushExample"
                 >
                     <div class="accordion-body row">
-                        <div class="qa col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-ai col-1">A</div>
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -47,8 +44,8 @@
                         aria-expanded="false"
                         aria-controls="flush-collapseTwo"
                     >
-                        <div class="qa col-1">Q</div>
-                        <div class="col-10">
+                        <div class="qa-qi col-1">Q</div>
+                        <div class="qa-q col-10">
                             졸릴 때 오징어가 도움이 되나요?
                         </div>
                     </button>
@@ -60,8 +57,8 @@
                     data-bs-parent="#accordionFlushExample"
                 >
                     <div class="accordion-body row">
-                        <div class="qa col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-ai col-1">A</div>
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -78,8 +75,8 @@
                         aria-expanded="false"
                         aria-controls="flush-collapseThree"
                     >
-                        <div class="qa col-1">Q</div>
-                        <div class="col-10">
+                        <div class="qa-qi col-1">Q</div>
+                        <div class="qa-q col-10">
                             졸릴 때 오징어가 도움이 되나요?
                         </div>
                     </button>
@@ -91,8 +88,8 @@
                     data-bs-parent="#accordionFlushExample"
                 >
                     <div class="accordion-body row">
-                        <div class="qa col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-ai col-1">A</div>
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -109,8 +106,8 @@
                         aria-expanded="false"
                         aria-controls="flush-collapseFour"
                     >
-                        <div class="qa col-1">Q</div>
-                        <div class="col-10">
+                        <div class="qa-qi col-1">Q</div>
+                        <div class="qa-q col-10">
                             졸릴 때 오징어가 도움이 되나요?
                         </div>
                     </button>
@@ -122,8 +119,8 @@
                     data-bs-parent="#accordionFlushExample"
                 >
                     <div class="accordion-body row">
-                        <div class="qa col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-ai col-1">A</div>
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -140,8 +137,8 @@
                         aria-expanded="false"
                         aria-controls="flush-collapseFive"
                     >
-                        <div class="qa col-1">Q</div>
-                        <div class="col-10">
+                        <div class="qa-qi col-1">Q</div>
+                        <div class="qa-q col-10">
                             졸릴 때 오징어가 도움이 되나요?
                         </div>
                     </button>
@@ -153,8 +150,8 @@
                     data-bs-parent="#accordionFlushExample"
                 >
                     <div class="accordion-body row">
-                        <div class="qa col-1">A</div>
-                        <div class="col-10 align-self-center">
+                        <div class="qa-ai col-1">A</div>
+                        <div class="qa-a col-10 align-self-center">
                             지루한 시간에 오징어를 씹으면 잠이 달아납니다.
                             마이페이지에서 오징어를 씹어보세요.
                         </div>
@@ -165,11 +162,11 @@
         <!-- 아코디언 끝 -->
 
         <div class="container">
-          <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-          </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
         </div>
     </div>
 </template>
@@ -181,12 +178,51 @@ export default {
 };
 </script>
 
-<style>
-.qna-line {
-    color: #a30000;
+<style scoped>
+.container {
+    margin-top: 50px;
 }
-.qa {
-    font-size: 40px;
+.qna-title {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 90px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #a30000;
+}
+.qa-qi {
+    font-size: 22px;
     font-weight: 300;
+}
+.qa-q {
+    font-size: 17px;
+    font-weight: 300;
+}
+.qa-ai {
+    color: #a30000;
+    font-size: 20px;
+    font-weight: 300;
+}
+.qa-a {
+    font-size: 15px;
+}
+
+.accordion-button {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    /* color:black; */
+    background-color: white;
+    box-shadow: none;
+    /* font-weight: bold; */
+}
+
+.accordion-item {
+    font-weight: 300;
+}
+
+.accordion-body {
+    background: #dfdfdf;
+    margin: 0;
+    padding: 16px 10px;
 }
 </style>

@@ -4,85 +4,58 @@
             <div class="row top">
                 <!-- select 창 -->
                 <div class="select-pick col-md-3">
-                    <!-- 목적지 -->
-                    <!-- Button trigger modal -->
-                    <!-- <div class="d-grid gap-2">
-                        <button
-                            type="button"
-                            class="btn btn-light sbox"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
-                        >
-                            어디로 떠나세요?
-                        </button>
-                    </div> -->
-                    <!-- Modal -->
-                    <!-- <div
-                        class="modal fade"
-                        id="exampleModal"
-                        tabindex="-1"
-                        aria-labelledby="exampleModalLabel"
-                        aria-hidden="true"
-                    >
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5
-                                        class="modal-title"
-                                        id="exampleModalLabel"
-                                        style="margin-left: 5px"
-                                    >
-                                        목적지
-                                    </h5>
-                                    <button
-                                        type="button"
-                                        class="btn-close"
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close"
-                                    ></button>
+                    <div>
+                        <input
+                            type="text"
+                            class="col-md-12 area-search"
+                            placeholder="어디로 떠날까요?"
+                            @click="show = !show"
+                        />
+                        <div class="area-search-box" v-show="!show">
+                            <br />
+                            <div class="row">
+                                <h6 class="col-md-9 offset-md-1 asb-title">지역</h6>
+                                <button
+                                    type="button"
+                                    class="btn-close col-md-1 asb-btn"
+                                    aria-label="Close"
+                                    @click="show = !show"
+                                ></button>
+                            </div>
+                            <hr class="arb-line"/>
+                            <div class="row sb-con"> 
+                                <div class="col mb-content">
+                                    <a href="#">서울</a>
                                 </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col mb-content">
-                                            <a href="#">서울</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="#">양양</a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col mb-content">
-                                            <a href="#">강릉</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="#">경주</a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col mb-content">
-                                            <a href="#">부산</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="#">통영</a>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div
-                                            class="col"
-                                            style="padding: 0 0 0 24px"
-                                        >
-                                            <a href="#">포항</a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="#">제주도</a>
-                                        </div>
-                                    </div>
+                                <div class="col">
+                                    <a href="#">양양</a>
+                                </div>
+                            </div>
+                            <div class="row sb-con">
+                                <div class="col mb-content">
+                                    <a href="#">강릉</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">경주</a>
+                                </div>
+                            </div>
+                            <div class="row sb-con">
+                                <div class="col mb-content">
+                                    <a href="#">부산</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">통영</a>
+                                </div>
+                            </div>
+                            <div class="row sb-con">
+                                <div class="col mb-content">
+                                    <a href="#">포항</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">제주도</a>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
-                    <div>
-                        <input type="text" class="col-md-12 area-search" placeholder="어디로 떠날까요?">
                     </div>
 
                     <!-- 출발 위치 -->
@@ -113,11 +86,11 @@
                         />
                     </div>
 
-                    <hr class="select-line"/>
+                    <hr class="select-line" />
 
                     <!-- 버튼 -->
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-primary search-btn">
+                        <button type="button" class="btn search-btn">
                             검색
                         </button>
                     </div>
@@ -290,8 +263,6 @@
         <!-- 본문 끝 -->
 
         <script>
-
-
             <!-- datepicker 시작 -->
             $(function () {
                 $(".datepicker").datepicker();
@@ -343,12 +314,14 @@
 <script>
 export default {
     name: "IndexPage",
+    data() {
+        return {
+            show: true,
+        };
+    },
 };
 
-// TODO: 위치 왜 ?
-// $(function () {
-//     $(".datepicker").datepicker();
-// });
+// TODO:  datepicker 위치 왜 ?
 </script>
 
 <style scoped>
@@ -384,14 +357,41 @@ a:hover {
 }
 
 .area-search::placeholder {
-        color: #dfdfdf;
+    color: #dfdfdf;
+}
+
+.area-search-box {
+    z-index: 2;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 165px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 0.25em;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.asb-title {
+    font-size: 17px;
+    margin-left: 25px;
+}
+.asb-btn {
+    margin-left: 23px;
+}
+.arb-line {
+    color: gray;
+}
+.sb-con {
+    font-size: 15px;
+    font-weight:300;
 }
 
 .select-pick {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* margin: 12px 0 12px 0; */
+    margin: 12px 0 12px 0;
     border: 1px solid #a30000;
 }
 
@@ -403,7 +403,7 @@ a:hover {
 }
 
 .mb-content {
-    padding: 0 0 15px 24px;
+    padding: 0 0 15px 30px;
 }
 
 .sbox {
@@ -443,7 +443,6 @@ a:hover {
 }
 
 .search-btn {
-    /* font-size: 20px; */
     font-weight: 400;
     color: white;
     height: 45px;
@@ -453,12 +452,11 @@ a:hover {
 }
 
 .search-btn:hover {
-        color: white;
+    color: white;
     background: #a30000;
     border: #a30000;
-    border-radius: 0.25em;
+    /* border-radius: 0.25em; */
 }
-
 /* select창 끝 */
 
 /* 본문 시작 */
@@ -476,11 +474,6 @@ a:hover {
     justify-content: space-between;
 }
 
-.jump-img {
-    width: 180px;
-    height: 130px;
-}
-
 .badge {
     background-color: #a30000 !important;
 }
@@ -490,187 +483,5 @@ a:hover {
 }
 /* 본문 끝 */
 
-/* datepicker 시작 */
-.ui-widget-header {
-    border: 0px solid #dddddd;
-    background: #fff;
-}
-
-.ui-datepicker-calendar > thead > tr > th {
-    font-size: 14px !important;
-}
-
-.ui-datepicker .ui-datepicker-header {
-    position: relative;
-    padding: 10px 0;
-}
-
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default,
-.ui-button,
-html .ui-button.ui-state-disabled:hover,
-html .ui-button.ui-state-disabled:active {
-    border: 0px solid #c5c5c5;
-    background-color: transparent;
-    font-weight: normal;
-    color: #454545;
-    text-align: center;
-}
-
-.ui-datepicker .ui-datepicker-title {
-    margin: 0 0em;
-    line-height: 16px;
-    text-align: center;
-    font-size: 14px;
-    padding: 0px;
-    font-weight: bold;
-}
-
-.ui-datepicker {
-    display: none;
-    background-color: #fff;
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 20px;
-    padding-bottom: 10px;
-    width: 300px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
-}
-
-.ui-widget.ui-widget-content {
-    border: 1px solid #eee;
-}
-
-#datepicker:focus > .ui-datepicker {
-    display: block;
-}
-
-.ui-datepicker-prev,
-.ui-datepicker-next {
-    cursor: pointer;
-}
-
-.ui-datepicker-next {
-    float: right;
-}
-
-.ui-state-disabled {
-    cursor: auto;
-    color: hsla(0, 0%, 80%, 1);
-}
-
-.ui-datepicker-title {
-    text-align: center;
-    padding: 10px;
-    font-weight: 100;
-    font-size: 20px;
-}
-
-.ui-datepicker-calendar {
-    width: 100%;
-}
-
-.ui-datepicker-calendar > thead > tr > th {
-    padding: 5px;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.ui-datepicker-calendar > tbody > tr > td > a {
-    color: #000;
-    font-size: 12px !important;
-    font-weight: bold !important;
-    text-decoration: none;
-}
-
-.ui-datepicker-calendar > tbody > tr > .ui-state-disabled:hover {
-    cursor: auto;
-    background-color: #fff;
-}
-
-.ui-datepicker-calendar > tbody > tr > td {
-    border-radius: 100%;
-    width: 44px;
-    height: 30px;
-    cursor: pointer;
-    padding: 5px;
-    font-weight: 100;
-    text-align: center;
-    font-size: 12px;
-}
-
-.ui-datepicker-calendar > tbody > tr > td:hover {
-    background-color: transparent;
-    opacity: 0.6;
-}
-
-.ui-state-hover,
-.ui-widget-content .ui-state-hover,
-.ui-widget-header .ui-state-hover,
-.ui-state-focus,
-.ui-widget-content .ui-state-focus,
-.ui-widget-header .ui-state-focus,
-.ui-button:hover,
-.ui-button:focus {
-    border: 0px solid #cccccc;
-    background-color: transparent;
-    font-weight: normal;
-    color: #2b2b2b;
-}
-
-.ui-widget-header .ui-icon {
-    background-image: url("@/assets/img/main/btns.png");
-}
-
-.ui-icon-circle-triangle-e {
-    background-position: -20px 0px;
-    background-size: 36px;
-}
-
-.ui-icon-circle-triangle-w {
-    background-position: -0px -0px;
-    background-size: 36px;
-}
-
-.ui-datepicker-calendar > tbody > tr > td:first-child a {
-    color: red !important;
-}
-
-.ui-datepicker-calendar > tbody > tr > td:last-child a {
-    color: #0099ff !important;
-}
-
-.ui-datepicker-calendar > thead > tr > th:first-child {
-    color: red !important;
-}
-
-.ui-datepicker-calendar > thead > tr > th:last-child {
-    color: #0099ff !important;
-}
-
-.ui-state-highlight,
-.ui-widget-content .ui-state-highlight,
-.ui-widget-header .ui-state-highlight {
-    border: 0px;
-    background: #f1f1f1;
-    border-radius: 50%;
-    /* padding-top: 10px;
-  padding-bottom: 10px; */
-}
-
-.inp {
-    padding: 10px 10px;
-    background-color: #f1f1f1;
-    border-radius: 4px;
-    border: 0px;
-}
-
-.inp:focus {
-    outline: none;
-    background-color: #eee;
-}
-/* datepicker 끝 */
+/* datepicker 적용x -> layouts/default로 이동 */
 </style>
