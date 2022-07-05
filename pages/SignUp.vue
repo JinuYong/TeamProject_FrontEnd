@@ -4,7 +4,9 @@
             <h3 class="text-center">회원가입</h3>
             <div class="signup-inputs">
                 프로필 이미지
-                <img :src="profileImg" alt="userImg" class="user-profile" />
+                <img :src="profileImg" alt="프로필이미지" class="user-profile" ref="userProfile">
+                <label class="profile-label" for="profile-change"></label>
+                <input type="file" class="profile-input" id="profile-change" accept="image/*" @change="profileChange()" ref="profile">
             </div>
 
             <!-- 아이디 -->
@@ -19,6 +21,7 @@
                         required
                         minlength="5"
                         maxlength="15"
+                        v-model="userForm.id"
                     />
                 </div>
                 <div class="col-auto">
@@ -37,6 +40,7 @@
                     required
                     minlength="8"
                     maxlength="20"
+                    v-model="userForm.password"
                 />
             </div>
 
@@ -53,6 +57,7 @@
                     required
                     minlength="8"
                     maxlength="20"
+                    v-model="userForm.rePassword"
                 />
             </div>
 
@@ -64,6 +69,7 @@
                     class="form-control"
                     id="user_email"
                     placeholder="example12@naver.com"
+                    v-model="userForm.eamil"
                 />
             </div>
             <!-- 이름 -->
@@ -75,6 +81,8 @@
                     id="user_name"
                     placeholder="공백 없이 입력해 주세요."
                     required
+                    maxlength="6"
+                    v-model="userForm.name"
                 />
             </div>
 
@@ -127,6 +135,7 @@
                         class="form-control mt-2"
                         id="detail_address"
                         placeholder="상세 주소를 입력해 주세요."
+                        v-model="userForm.detailAddress"
                     />
                 </div>
             </div>
@@ -161,15 +170,30 @@ export default {
     data() {
         return {
             profileImg: require("@/assets/img/user.png"),
+            profileFile: {},
             postOpen: false,
             phoneNum: "",
+            userForm: {
+                profile: "",
+                id: "",
+                password: "",
+                rePassword: "",
+                email: "",
+                name: "",
+                postcode: "",
+                address: "",
+                detailAddress: ""
+            },
         };
     },
     components: {
         VueDaumPostcode,
     },
     methods: {
-
+        profileChange() {
+            this.profileFile = this.$refs.profile.files[0];
+            this.profileImg = URL.createObjectURL(this.profileFile);
+        },
         addHyphen() {
             this.phoneNum = this.phoneNum.replace(/[^0-9]/g, "");
             if (this.phoneNum.length < 4) {
@@ -215,6 +239,9 @@ export default {
             }
             document.getElementById("postcode").value = data.zonecode;
             document.getElementById("detail_address").focus();
+            this.userForm.postcode = data.zonecode;
+            this.userForm.address = addr;
+
             this.postOpen = false;
         },
         async joinConfirm() {
@@ -250,9 +277,7 @@ export default {
                 !password ||
                 !re_password ||
                 !name ||
-                !phone ||
-                !phone2 ||
-                !phone3
+                !phone
             ) {
                 alert("모든 값을 입력해 주세요");
                 return;
@@ -291,12 +316,30 @@ export default {
             }
             
             try {
-                let res = await this.$axios.post()
+                let user = this.saveUser;
+                let res = await this.$axios.post('/api/signup', user);
+                console.log(user);
+                console.log(res);
                 
             } catch(e) {
 
             }
         },
+        saveUser() {
+            let user = {
+                profile: this.profileFile,
+                id: this.userForm.id,
+                password: this.userForm.password,
+                rePassword: this.userForm.rePassword,
+                email: this.userForm.email,
+                name: this.userForm.name,
+                phone: this.phoneNum,
+                postCode: this.userForm.postcode,
+                address: this.userForm.address,
+                detailAddress: this.userForm.detailAddress
+            }
+            return user;
+        }
     },
 };
 </script>
@@ -322,13 +365,28 @@ export default {
 .signup input {
     border-radius: 0;
 }
+.signup-inputs {
+    display: flex;
+    align-items: center;
+}
 
 .user-profile {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin-left: 30px;
+    margin: 20px 0 20px 30px
 }
+.profile-label {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateX(-80px);
+}
+.profile-input {
+    display: none;
+}
+
 
 .adds {
     border-bottom: 2px solid #a30000;

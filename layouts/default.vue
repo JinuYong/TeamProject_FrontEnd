@@ -170,7 +170,7 @@ export default {
     border-radius: 3px !important;
 }
 .default {
-    width: 1200px;
+    /* width: 1200px; */
     min-width: 700px;
     min-height: calc(100vh - 310px);
     margin: 0 auto;

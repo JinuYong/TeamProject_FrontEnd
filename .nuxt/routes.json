@@ -2,204 +2,204 @@
   {
     "name": "CheckId",
     "path": "/CheckId",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\CheckId.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckId.vue",
     "chunkName": "pages/CheckId",
-    "_name": "_6b9c1f4a"
+    "_name": "_d2627ce8"
   },
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\CheckPayment.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPayment.vue",
     "chunkName": "pages/CheckPayment",
-    "_name": "_4e765714"
+    "_name": "_f3bfcc36"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\CheckPwd.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPwd.vue",
     "chunkName": "pages/CheckPwd",
-    "_name": "_119c0e2d"
+    "_name": "_4ecd39c8"
   },
   {
     "name": "CheckSignUp",
     "path": "/CheckSignUp",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\CheckSignUp.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckSignUp.vue",
     "chunkName": "pages/CheckSignUp",
-    "_name": "_38f8a5f8"
+    "_name": "_491112ae"
   },
   {
     "name": "FindId",
     "path": "/FindId",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\FindId.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\FindId.vue",
     "chunkName": "pages/FindId",
-    "_name": "_4e71fb68"
+    "_name": "_30ba720a"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\FindPwd.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\FindPwd.vue",
     "chunkName": "pages/FindPwd",
-    "_name": "_54ad8b48"
+    "_name": "_bb73e8e6"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\LogIn.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\LogIn.vue",
     "chunkName": "pages/LogIn",
-    "_name": "_0f62bca1"
+    "_name": "_6ab42612"
   },
   {
     "name": "MypageUpdate",
     "path": "/MypageUpdate",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\MypageUpdate.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\MypageUpdate.vue",
     "chunkName": "pages/MypageUpdate",
-    "_name": "_74943c7c"
+    "_name": "_21ef81eb"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Qna.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Qna.vue",
     "chunkName": "pages/Qna",
-    "_name": "_47dabd08"
+    "_name": "_a23c99a6"
   },
   {
     "name": "SearchResult",
     "path": "/SearchResult",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\SearchResult.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SearchResult.vue",
     "chunkName": "pages/SearchResult",
-    "_name": "_39f5ee06"
+    "_name": "_df3f6328"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\SignUp.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp.vue",
     "chunkName": "pages/SignUp",
-    "_name": "_e109ce60"
+    "_name": "_c3524502"
   },
   {
     "name": "board-Detail",
     "path": "/board/Detail",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\board\\\\Detail.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\Detail.vue",
     "chunkName": "pages/board/Detail",
-    "_name": "_13e9530f"
+    "_name": "_11f6bb80"
   },
   {
     "name": "board-List",
     "path": "/board/List",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\board\\\\List.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\List.vue",
     "chunkName": "pages/board/List",
-    "_name": "_33fcee5c"
+    "_name": "_530881e6"
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\Detail.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\Detail.vue",
     "chunkName": "pages/inform/Detail",
-    "_name": "_4f54f65c"
+    "_name": "_c815aafe"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\List.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\List.vue",
     "chunkName": "pages/inform/List",
-    "_name": "_7a40b4df"
+    "_name": "_279bfa4e"
   },
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\ItemList\\\\ItemList.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\ItemList\\\\ItemList.vue",
     "chunkName": "pages/ItemList/ItemList",
-    "_name": "_11281ccc"
+    "_name": "_1b59b06e"
   },
   {
     "name": "payment-Payment",
     "path": "/payment/Payment",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\payment\\\\Payment.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\payment\\\\Payment.vue",
     "chunkName": "pages/payment/Payment",
-    "_name": "_34caf2d0"
+    "_name": "_3fe77c87"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
     "chunkName": "pages/shoppingCart/ShoppingCart",
-    "_name": "_37bdb668"
+    "_name": "_039f4d97"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\TourItemDetail.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\TourItemDetail.vue",
     "chunkName": "pages/tourItemDetails/TourItemDetail",
-    "_name": "_65e215cb"
+    "_name": "_4acab808"
   },
   {
     "name": "tourItemDetails-components-CardSliderCom",
     "path": "/tourItemDetails/components/CardSliderCom",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\components\\\\CardSliderCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\CardSliderCom.vue",
     "chunkName": "pages/tourItemDetails/components/CardSliderCom",
-    "_name": "_c16877ca"
+    "_name": "_eb61c56c"
   },
   {
     "name": "tourItemDetails-components-ImgGalleryCom",
     "path": "/tourItemDetails/components/ImgGalleryCom",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
     "chunkName": "pages/tourItemDetails/components/ImgGalleryCom",
-    "_name": "_7f588f46"
+    "_name": "_a951dce8"
   },
   {
     "name": "tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/components/KakaoMapApiCom",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
     "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
-    "_name": "_c50b19b6"
+    "_name": "_12e23fd6"
   },
   {
     "name": "tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/components/ReviewsCom",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
     "chunkName": "pages/tourItemDetails/components/ReviewsCom",
-    "_name": "_4a237a0b"
+    "_name": "_44f17188"
   },
   {
     "name": "tourItemDetails-tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/tourItemDetails/TourItemDetail",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\TourItemDetail.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\TourItemDetail.vue",
     "chunkName": "pages/tourItemDetails/tourItemDetails/TourItemDetail",
-    "_name": "_ff82f798"
+    "_name": "_c44003ba"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-CardSliderCom",
     "path": "/tourItemDetails/tourItemDetails/components/CardSliderCom",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\CardSliderCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\CardSliderCom.vue",
     "chunkName": "pages/tourItemDetails/tourItemDetails/components/CardSliderCom",
-    "_name": "_305b6a12"
+    "_name": "_1a1db4c3"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-ImgGalleryCom",
     "path": "/tourItemDetails/tourItemDetails/components/ImgGalleryCom",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
     "chunkName": "pages/tourItemDetails/tourItemDetails/components/ImgGalleryCom",
-    "_name": "_51635e54"
+    "_name": "_3b25a905"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/tourItemDetails/components/KakaoMapApiCom",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
     "chunkName": "pages/tourItemDetails/tourItemDetails/components/KakaoMapApiCom",
-    "_name": "_2e5f8c0e"
+    "_name": "_7ce6977d"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/tourItemDetails/components/ReviewsCom",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
     "chunkName": "pages/tourItemDetails/tourItemDetails/components/ReviewsCom",
-    "_name": "_ff792118"
+    "_name": "_313f8a63"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_04e40d8a"
+    "_name": "_603576fb"
   }
 ]
