@@ -6,7 +6,7 @@
                 프로필 이미지
                 <img :src="profileImg" alt="프로필이미지" class="user-profile" ref="userProfile">
                 <label class="profile-label" for="profile-change"></label>
-                <input type="file" class="profile-input" id="profile-change" accept="image/*" @change="profileChange()" ref="profile">
+                <input type="file" class="profile-input" id="profile-change" accept="image/*" @change="profileChange" ref="profile">
             </div>
 
             <!-- 아이디 -->
@@ -69,7 +69,7 @@
                     class="form-control"
                     id="user_email"
                     placeholder="example12@naver.com"
-                    v-model="userForm.eamil"
+                    v-model="userForm.email"
                 />
             </div>
             <!-- 이름 -->
@@ -95,7 +95,6 @@
                     id="user_phone"
                     placeholder="ex) 010-1111-1111"
                     v-model="phoneNum"
-                    @keyup="addHyphen()"
                     required
                     maxlength="13"
                 />
@@ -113,7 +112,7 @@
                     />
                 </div>
                 <div class="col-auto">
-                    <button @click="address_search()" class="btn btn-md mb-1">
+                    <button @click="address_search" class="btn btn-md mb-1">
                         주소검색
                     </button>
                 </div>
@@ -142,7 +141,7 @@
             <div>
                 <button
                     class="w-100 mt-5 mb-3 btn btn-md"
-                    @click="joinConfirm()"
+                    @click="joinConfirm"
                 >
                     가입하기
                 </button>
@@ -189,12 +188,8 @@ export default {
     components: {
         VueDaumPostcode,
     },
-    methods: {
-        profileChange() {
-            this.profileFile = this.$refs.profile.files[0];
-            this.profileImg = URL.createObjectURL(this.profileFile);
-        },
-        addHyphen() {
+    watch: {
+        phoneNum() {
             this.phoneNum = this.phoneNum.replace(/[^0-9]/g, "");
             if (this.phoneNum.length < 4) {
                 return
@@ -203,9 +198,16 @@ export default {
             } else if(this.phoneNum.length < 12) {
                 this.phoneNum = this.phoneNum.substr(0,3) + "-" + this.phoneNum.substr(3,4) + "-" + this.phoneNum.substr(7);
             }
+        }
+    },
+    methods: {
+        profileChange(e) {
+            this.profileFile = e.target.files;
+            this.profileImg = URL.createObjectURL(this.profileFile[0]);
         },
-        address_search() {
-            this.postOpen = true;
+        address_search(e) {
+            e.preventDefault();
+            this.postOpen = !this.postOpen;
         },
         oncomplete(data) {
             var addr = ""; // 주소 변수
@@ -244,8 +246,8 @@ export default {
 
             this.postOpen = false;
         },
-        async joinConfirm() {
-            // e.preventDefault();
+        async joinConfirm(e) {
+            e.preventDefault();
             //공백
             const pattern_blank = /[\s]/g;
             //한글만
@@ -269,8 +271,6 @@ export default {
             var password = this.$el.querySelector("#user_password").value;
             var re_password = this.$el.querySelector("#re_password").value;
             var phone = this.$el.querySelector("#user_phone").value;
-            // var phone2 = document.querySelector("#phone2").value;
-            // var phone3 = document.querySelector("#phone3").value;
 
             if (
                 id == "" ||
@@ -304,37 +304,39 @@ export default {
             }
             //비밀번호 재확인 비교
             if (password != re_password) {
-                alert("비밀번호 재확인을 확인해 주세요");
+                alert("동일한 비밀번호를 입력해주세요");
                 return;
             }
 
-            //최종확인!
-            console.log(!validate_result);
-            if (!validate_result) {
-                alert("인풋을 재확인 해주세요");
-                return
-            }
+            // //최종확인!
+            // console.log(!validate_result);
+            // if (!validate_result) {
+            //     alert("인풋을 재확인 해주세요");
+            //     return
+            // }
             
             try {
-                let user = this.saveUser;
-                let res = await this.$axios.post('/api/signup', user);
+                let user = this.saveUser();
+                if (this.profileFile.length == undefined) {
+                    user.profile = null
+                }
                 console.log(user);
-                console.log(res);
-                
+                await this.$axios.post('/api/signup', user);
+                this.$router.push('/signupComplete/'+user.id );
             } catch(e) {
-
+                console.log(e);
+                alert("회원가입에 실패했습니다. 다시 시도해주세요.");
             }
         },
         saveUser() {
             let user = {
-                profile: this.profileFile,
+                // profile: this.profileFile,
                 id: this.userForm.id,
                 password: this.userForm.password,
-                rePassword: this.userForm.rePassword,
                 email: this.userForm.email,
                 name: this.userForm.name,
                 phone: this.phoneNum,
-                postCode: this.userForm.postcode,
+                postcode: this.userForm.postcode,
                 address: this.userForm.address,
                 detailAddress: this.userForm.detailAddress
             }

@@ -3,203 +3,174 @@
     "name": "CheckId",
     "path": "/CheckId",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckId.vue",
-    "chunkName": "pages/CheckId",
-    "_name": "_d2627ce8"
+    "chunkName": "pages/CheckId"
   },
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPayment.vue",
-    "chunkName": "pages/CheckPayment",
-    "_name": "_f3bfcc36"
+    "chunkName": "pages/CheckPayment"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPwd.vue",
-    "chunkName": "pages/CheckPwd",
-    "_name": "_4ecd39c8"
-  },
-  {
-    "name": "CheckSignUp",
-    "path": "/CheckSignUp",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckSignUp.vue",
-    "chunkName": "pages/CheckSignUp",
-    "_name": "_491112ae"
+    "chunkName": "pages/CheckPwd"
   },
   {
     "name": "FindId",
     "path": "/FindId",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\FindId.vue",
-    "chunkName": "pages/FindId",
-    "_name": "_30ba720a"
+    "chunkName": "pages/FindId"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\FindPwd.vue",
-    "chunkName": "pages/FindPwd",
-    "_name": "_bb73e8e6"
+    "chunkName": "pages/FindPwd"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\LogIn.vue",
-    "chunkName": "pages/LogIn",
-    "_name": "_6ab42612"
+    "chunkName": "pages/LogIn"
   },
   {
     "name": "MypageUpdate",
     "path": "/MypageUpdate",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\MypageUpdate.vue",
-    "chunkName": "pages/MypageUpdate",
-    "_name": "_21ef81eb"
+    "chunkName": "pages/MypageUpdate"
   },
   {
     "name": "Qna",
     "path": "/Qna",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Qna.vue",
-    "chunkName": "pages/Qna",
-    "_name": "_a23c99a6"
+    "chunkName": "pages/Qna"
   },
   {
     "name": "SearchResult",
     "path": "/SearchResult",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SearchResult.vue",
-    "chunkName": "pages/SearchResult",
-    "_name": "_df3f6328"
+    "chunkName": "pages/SearchResult"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp.vue",
-    "chunkName": "pages/SignUp",
-    "_name": "_c3524502"
+    "chunkName": "pages/SignUp"
+  },
+  {
+    "name": "SignupComplete",
+    "path": "/SignupComplete",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignupComplete.vue",
+    "chunkName": "pages/SignupComplete"
   },
   {
     "name": "board-Detail",
     "path": "/board/Detail",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\Detail.vue",
-    "chunkName": "pages/board/Detail",
-    "_name": "_11f6bb80"
+    "chunkName": "pages/board/Detail"
   },
   {
     "name": "board-List",
     "path": "/board/List",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\List.vue",
-    "chunkName": "pages/board/List",
-    "_name": "_530881e6"
+    "chunkName": "pages/board/List"
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\Detail.vue",
-    "chunkName": "pages/inform/Detail",
-    "_name": "_c815aafe"
+    "chunkName": "pages/inform/Detail"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\List.vue",
-    "chunkName": "pages/inform/List",
-    "_name": "_279bfa4e"
+    "chunkName": "pages/inform/List"
   },
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\ItemList\\\\ItemList.vue",
-    "chunkName": "pages/ItemList/ItemList",
-    "_name": "_1b59b06e"
+    "chunkName": "pages/ItemList/ItemList"
   },
   {
     "name": "payment-Payment",
     "path": "/payment/Payment",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\payment\\\\Payment.vue",
-    "chunkName": "pages/payment/Payment",
-    "_name": "_3fe77c87"
+    "chunkName": "pages/payment/Payment"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
-    "chunkName": "pages/shoppingCart/ShoppingCart",
-    "_name": "_039f4d97"
+    "chunkName": "pages/shoppingCart/ShoppingCart"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\TourItemDetail.vue",
-    "chunkName": "pages/tourItemDetails/TourItemDetail",
-    "_name": "_4acab808"
+    "chunkName": "pages/tourItemDetails/TourItemDetail"
   },
   {
     "name": "tourItemDetails-components-CardSliderCom",
     "path": "/tourItemDetails/components/CardSliderCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\CardSliderCom.vue",
-    "chunkName": "pages/tourItemDetails/components/CardSliderCom",
-    "_name": "_eb61c56c"
+    "chunkName": "pages/tourItemDetails/components/CardSliderCom"
   },
   {
     "name": "tourItemDetails-components-ImgGalleryCom",
     "path": "/tourItemDetails/components/ImgGalleryCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
-    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom",
-    "_name": "_a951dce8"
+    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom"
   },
   {
     "name": "tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/components/KakaoMapApiCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
-    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
-    "_name": "_12e23fd6"
+    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom"
   },
   {
     "name": "tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/components/ReviewsCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
-    "chunkName": "pages/tourItemDetails/components/ReviewsCom",
-    "_name": "_44f17188"
+    "chunkName": "pages/tourItemDetails/components/ReviewsCom"
   },
   {
     "name": "tourItemDetails-tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/tourItemDetails/TourItemDetail",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\TourItemDetail.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/TourItemDetail",
-    "_name": "_c44003ba"
+    "chunkName": "pages/tourItemDetails/tourItemDetails/TourItemDetail"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-CardSliderCom",
     "path": "/tourItemDetails/tourItemDetails/components/CardSliderCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\CardSliderCom.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/components/CardSliderCom",
-    "_name": "_1a1db4c3"
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/CardSliderCom"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-ImgGalleryCom",
     "path": "/tourItemDetails/tourItemDetails/components/ImgGalleryCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ImgGalleryCom",
-    "_name": "_3b25a905"
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ImgGalleryCom"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/tourItemDetails/components/KakaoMapApiCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/components/KakaoMapApiCom",
-    "_name": "_7ce6977d"
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/KakaoMapApiCom"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/tourItemDetails/components/ReviewsCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ReviewsCom",
-    "_name": "_313f8a63"
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ReviewsCom"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_603576fb"
+    "chunkName": "pages/index"
   }
 ]

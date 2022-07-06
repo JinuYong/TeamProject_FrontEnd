@@ -7,7 +7,6 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _d2627ce8 = () => interopDefault(import('..\\pages\\CheckId.vue' /* webpackChunkName: "pages/CheckId" */))
 const _f3bfcc36 = () => interopDefault(import('..\\pages\\CheckPayment.vue' /* webpackChunkName: "pages/CheckPayment" */))
 const _4ecd39c8 = () => interopDefault(import('..\\pages\\CheckPwd.vue' /* webpackChunkName: "pages/CheckPwd" */))
-const _491112ae = () => interopDefault(import('..\\pages\\CheckSignUp.vue' /* webpackChunkName: "pages/CheckSignUp" */))
 const _30ba720a = () => interopDefault(import('..\\pages\\FindId.vue' /* webpackChunkName: "pages/FindId" */))
 const _bb73e8e6 = () => interopDefault(import('..\\pages\\FindPwd.vue' /* webpackChunkName: "pages/FindPwd" */))
 const _6ab42612 = () => interopDefault(import('..\\pages\\LogIn.vue' /* webpackChunkName: "pages/LogIn" */))
@@ -15,6 +14,7 @@ const _21ef81eb = () => interopDefault(import('..\\pages\\MypageUpdate.vue' /* w
 const _a23c99a6 = () => interopDefault(import('..\\pages\\Qna.vue' /* webpackChunkName: "pages/Qna" */))
 const _df3f6328 = () => interopDefault(import('..\\pages\\SearchResult.vue' /* webpackChunkName: "pages/SearchResult" */))
 const _c3524502 = () => interopDefault(import('..\\pages\\SignUp.vue' /* webpackChunkName: "pages/SignUp" */))
+const _e18d0990 = () => interopDefault(import('..\\pages\\SignupComplete.vue' /* webpackChunkName: "pages/SignupComplete" */))
 const _11f6bb80 = () => interopDefault(import('..\\pages\\board\\Detail.vue' /* webpackChunkName: "pages/board/Detail" */))
 const _530881e6 = () => interopDefault(import('..\\pages\\board\\List.vue' /* webpackChunkName: "pages/board/List" */))
 const _c815aafe = () => interopDefault(import('..\\pages\\inform\\Detail.vue' /* webpackChunkName: "pages/inform/Detail" */))
@@ -58,10 +58,6 @@ export const routerOptions = {
     component: _4ecd39c8,
     name: "CheckPwd"
   }, {
-    path: "/CheckSignUp",
-    component: _491112ae,
-    name: "CheckSignUp"
-  }, {
     path: "/FindId",
     component: _30ba720a,
     name: "FindId"
@@ -89,6 +85,10 @@ export const routerOptions = {
     path: "/SignUp",
     component: _c3524502,
     name: "SignUp"
+  }, {
+    path: "/SignupComplete",
+    component: _e18d0990,
+    name: "SignupComplete"
   }, {
     path: "/board/Detail",
     component: _11f6bb80,
