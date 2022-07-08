@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="position: relative; min-height: 100%">
         <!-- 헤더 -->
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid">
@@ -254,7 +254,6 @@ footer {
     height: 250px;
     padding: 30px 100px;
     background: #eaebee;
-    bottom: 0;
 }
 .footer-content {
     width: 1200px;

@@ -258,6 +258,7 @@ nav {
     width: 25px;
     margin: 0 10px;
     padding: 15px 0;
+    cursor: pointer;
 }
 
 /* footer */

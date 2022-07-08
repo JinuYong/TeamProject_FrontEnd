@@ -18,14 +18,13 @@
                         class="form-control"
                         id="user_id"
                         placeholder="5~15자 내외로 입력해 주세요."
-                        required
                         minlength="5"
                         maxlength="15"
                         v-model="userForm.id"
                     />
                 </div>
                 <div class="col-auto">
-                    <button class="btn btn-md mb-3">중복확인</button>
+                    <button class="btn btn-md mb-3" @click="duplicateConfirm">중복확인</button>
                 </div>
             </div>
 
@@ -37,7 +36,6 @@
                     class="form-control"
                     id="user_password"
                     placeholder="대,소문자 포함 8~20자 내외로 입력해 주세요."
-                    required
                     minlength="8"
                     maxlength="20"
                     v-model="userForm.password"
@@ -54,7 +52,6 @@
                     class="form-control"
                     id="re_password"
                     placeholder="입력한 비밀번호를 다시 입력해 주세요."
-                    required
                     minlength="8"
                     maxlength="20"
                     v-model="userForm.rePassword"
@@ -80,7 +77,6 @@
                     class="form-control"
                     id="user_name"
                     placeholder="공백 없이 입력해 주세요."
-                    required
                     maxlength="6"
                     v-model="userForm.name"
                 />
@@ -95,7 +91,6 @@
                     id="user_phone"
                     placeholder="ex) 010-1111-1111"
                     v-model="phoneNum"
-                    required
                     maxlength="13"
                 />
             </div>
@@ -171,9 +166,9 @@ export default {
             profileImg: require("@/assets/img/user.png"),
             profileFile: {},
             postOpen: false,
+            idConfirm: false,
             phoneNum: "",
             userForm: {
-                profile: "",
                 id: "",
                 password: "",
                 rePassword: "",
@@ -190,17 +185,41 @@ export default {
     },
     watch: {
         phoneNum() {
-            this.phoneNum = this.phoneNum.replace(/[^0-9]/g, "");
-            if (this.phoneNum.length < 4) {
-                return
-            } else if(this.phoneNum.length < 8) {
-                this.phoneNum = this.phoneNum.substr(0,3) + "-" + this.phoneNum.substr(3);
-            } else if(this.phoneNum.length < 12) {
-                this.phoneNum = this.phoneNum.substr(0,3) + "-" + this.phoneNum.substr(3,4) + "-" + this.phoneNum.substr(7);
-            }
+                this.phoneNum = this.phoneNum.replace(/[^0-9]/g, "");
+                if (this.phoneNum.length < 4) {
+                    return
+                } else if(this.phoneNum.length < 8) {
+                    this.phoneNum = this.phoneNum.substr(0,3) + "-" + this.phoneNum.substr(3);
+                } else if(this.phoneNum.length < 12) {
+                    this.phoneNum = this.phoneNum.substr(0,3) + "-" + this.phoneNum.substr(3,4) + "-" + this.phoneNum.substr(7);
+                }
         }
     },
     methods: {
+        async duplicateConfirm(e) {
+            e.preventDefault();
+            if (this.userForm.id == "") {
+                alert("아이디를 입력해주세요. ")
+            } else {
+                console.log(this.userForm.id);
+                await this.$axios.post('/api/signup', this.userForm).then(res => {
+                    try {
+                        console.log(res);
+                        if (res.data) {
+                            alert("사용 가능한 아이디입니다. ");
+                            this.idConfirm = true;
+                        } else {
+                            alert("사용 중인 아이디입니다. ");
+                            this.idConfirm = false;
+                            console.log(this.idConfirm);
+                        }
+                    } catch(e) {
+                        console.log(e);
+                        alert("잠시 후, 다시 시도해주세요.");
+                    }
+                });
+            }
+        },
         profileChange(e) {
             this.profileFile = e.target.files;
             this.profileImg = URL.createObjectURL(this.profileFile[0]);
@@ -253,7 +272,7 @@ export default {
             //한글만
             const patten_kor = /^[가-힣]+$/;
             //ID
-            const patten_id = /^[a-z0-9]{5,20}$/;
+            const patten_id = /^[a-z0-9]{5,15}$/;
             //숫자포함
             const patten_include_num = /[0-9]/;
             //영어포함
@@ -266,11 +285,12 @@ export default {
 
             // let validate_result = true
 
-            var id = this.$el.querySelector("#user_id").value;
-            var name = this.$el.querySelector("#user_name").value;
-            var password = this.$el.querySelector("#user_password").value;
-            var re_password = this.$el.querySelector("#re_password").value;
-            var phone = this.$el.querySelector("#user_phone").value;
+            let id = this.userForm.id;
+            console.log(id);
+            let name = this.userForm.name;
+            let password = this.userForm.password;
+            let re_password = this.userForm.rePassword;
+            let phone = this.phoneNum;
 
             if (
                 id == "" ||
@@ -286,6 +306,12 @@ export default {
             console.log(!patten_id);
             if (!patten_id.test(id)) {
                 alert("아이디를 확인해 주세요");
+                return;
+            // 중복확인
+            }
+            if (!this.idConfirm) {
+                console.log(this.idConfirm);
+                alert("아이디 중복확인을 해주세요");
                 return;
             }
             //이름 체크. 한글만
@@ -316,32 +342,53 @@ export default {
             // }
             
             try {
-                let user = this.saveUser();
+                let userData = this.saveUser();
+
                 if (this.profileFile.length == undefined) {
                     user.profile = null
                 }
-                console.log(user);
-                await this.$axios.post('/api/signup', user);
-                this.$router.push('/signupComplete/'+user.id );
+                console.log(userData);
+                await this.$axios.post('/api/signup/register', userData, {
+                    header: {
+                        "Context-Type" : "multipart/form-data"
+                    }
+                });
+                this.$router.push('/signupComplete/');
             } catch(e) {
                 console.log(e);
                 alert("회원가입에 실패했습니다. 다시 시도해주세요.");
             }
         },
         saveUser() {
-            let user = {
-                // profile: this.profileFile,
-                id: this.userForm.id,
-                password: this.userForm.password,
-                email: this.userForm.email,
-                name: this.userForm.name,
-                phone: this.phoneNum,
-                postcode: this.userForm.postcode,
-                address: this.userForm.address,
-                detailAddress: this.userForm.detailAddress
-            }
+            let user = new FormData();
+            user.append("id", this.userForm.id);
+            user.append("password", this.userForm.password);
+            user.append("email", this.userForm.email);
+            user.append("name", this.userForm.name);
+            user.append("phone", this.phoneNum);
+            user.append("postcode", this.userForm.postcode);
+            user.append("address", this.userForm.address);
+            user.append("detailAddress", this.userForm.detailAddress);
+            return user;
+            // return data = [user, this.profileFile];
+            
+            // user.append("profile", this.profileFile);
+
+            // {
+            //     // profile: this.profileFile,
+            //     id: this.userForm.id,
+            //     password: this.userForm.password,
+            //     email: this.userForm.email,
+            //     name: this.userForm.name,
+            //     phone: this.phoneNum,
+            //     postcode: this.userForm.postcode,
+            //     address: this.userForm.address,
+            //     detailAddress: this.userForm.detailAddress
+            // }
             return user;
         }
+    },
+    mounted() {
     },
 };
 </script>
