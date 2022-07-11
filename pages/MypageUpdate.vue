@@ -39,8 +39,6 @@
             </div>
             <!-- 좌측 버튼 파트 끝 -->
 
-            <span class="tap-divider"></span>
-
             <!-- 내 정보 수정 파트 시작 -->
             <div class="tab-content" id="v-pills-tabContent">
                 <div
@@ -725,15 +723,12 @@ export default {
 
 <style scoped>
 .float-left {
-    float: left;
-}
-.tap-divider {
-    background: #e5e5e5;
-    width: 1px;
-    height: 100%;
+    display: flex;
 }
 .tap-container {
     padding: 10px 30px 10px 30px;
+    padding-bottom: 20%;
+    border-right: #e5e5e5 solid 1px;
 }
 .tap-button {
     width: 200px;

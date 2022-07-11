@@ -10,6 +10,7 @@ const _4ecd39c8 = () => interopDefault(import('..\\pages\\CheckPwd.vue' /* webpa
 const _30ba720a = () => interopDefault(import('..\\pages\\FindId.vue' /* webpackChunkName: "pages/FindId" */))
 const _bb73e8e6 = () => interopDefault(import('..\\pages\\FindPwd.vue' /* webpackChunkName: "pages/FindPwd" */))
 const _6ab42612 = () => interopDefault(import('..\\pages\\LogIn.vue' /* webpackChunkName: "pages/LogIn" */))
+const _0f145d60 = () => interopDefault(import('..\\pages\\mypage\\index.vue' /* webpackChunkName: "pages/mypage/index" */))
 const _21ef81eb = () => interopDefault(import('..\\pages\\MypageUpdate.vue' /* webpackChunkName: "pages/MypageUpdate" */))
 const _a23c99a6 = () => interopDefault(import('..\\pages\\Qna.vue' /* webpackChunkName: "pages/Qna" */))
 const _df3f6328 = () => interopDefault(import('..\\pages\\SearchResult.vue' /* webpackChunkName: "pages/SearchResult" */))
@@ -69,6 +70,10 @@ export const routerOptions = {
     path: "/LogIn",
     component: _6ab42612,
     name: "LogIn"
+  }, {
+    path: "/mypage",
+    component: _0f145d60,
+    name: "mypage"
   }, {
     path: "/MypageUpdate",
     component: _21ef81eb,

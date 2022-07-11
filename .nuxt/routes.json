@@ -42,6 +42,13 @@
     "_name": "_6ab42612"
   },
   {
+    "name": "mypage",
+    "path": "/mypage",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\mypage\\\\index.vue",
+    "chunkName": "pages/mypage/index",
+    "_name": "_0f145d60"
+  },
+  {
     "name": "MypageUpdate",
     "path": "/MypageUpdate",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\MypageUpdate.vue",

@@ -1,7 +1,7 @@
 <template>
     <div class="signup-container">
         <form class="signup">
-            <h3 class="text-center">회원가입</h3>
+            <!-- <h3 class="text-center">내 정보</h3> -->
             <div class="signup-inputs">
                 프로필 이미지
                 <img :src="profileImg" alt="프로필이미지" class="user-profile" ref="userProfile">
@@ -13,18 +13,7 @@
             <div class="row">
                 <label for="user_id" class="form-label"> 아이디 </label>
                 <div class="col-lg-9">
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="user_id"
-                        placeholder="5~15자 내외로 입력해 주세요."
-                        minlength="5"
-                        maxlength="15"
-                        v-model="userForm.id"
-                    />
-                </div>
-                <div class="col-auto">
-                    <button class="btn btn-md mb-3" @click="duplicateConfirm">중복확인</button>
+                    userId
                 </div>
             </div>
 
@@ -138,7 +127,7 @@
                     class="w-100 mt-5 mb-3 btn btn-md"
                     @click="joinConfirm"
                 >
-                    가입하기
+                    수정
                 </button>
             </div>
             <hr />
@@ -154,18 +143,16 @@
         </form>
     </div>
 </template>
-
 <script>
 import { VueDaumPostcode } from "vue-daum-postcode";
 
 /* eslint-disable */
 export default {
-    name: "signup",
+    name: "MyInform",
     data() {
         return {
             profileImg: require("@/assets/img/user.png"),
             postOpen: false,
-            idConfirm: false,
             phoneNum: "",
             userForm: {
                 id: "",
@@ -178,6 +165,7 @@ export default {
                 detailAddress: "",
                 profileFile: {}
             },
+            editStatus: false
         };
     },
     components: {
@@ -202,21 +190,22 @@ export default {
                 alert("아이디를 입력해주세요. ")
             } else {
                 console.log(this.userForm.id);
-                try {
-                    let res = await this.$axios.post('/api/signup', this.userForm);
-                    console.log(res);
-                    if (res.data) {
-                        alert("사용 가능한 아이디입니다. ");
-                        this.idConfirm = true;
-                    } else {
-                        alert("사용 중인 아이디입니다. ");
-                        this.idConfirm = false;
-                        console.log(this.idConfirm);
-                    }
-                } catch(e) {
-                    console.log(e);
-                    alert("잠시 후, 다시 시도해주세요.");
-                }
+                let res = await this.$axios.post('/api/signup');
+                console.log(res);
+                // try {
+                //     console.log(res);
+                //     if (res.data) {
+                //         alert("사용 가능한 아이디입니다. ");
+                //         this.idConfirm = true;
+                //     } else {
+                //         alert("사용 중인 아이디입니다. ");
+                //         this.idConfirm = false;
+                //         console.log(this.idConfirm);
+                //     }
+                // } catch(e) {
+                //     console.log(e);
+                //     alert("잠시 후, 다시 시도해주세요.");
+                // }
             };
         },
         profileChange(e) {
@@ -362,93 +351,89 @@ export default {
             }
         }
     },
-    mounted() {
-    },
-};
+}
 </script>
 
 <style scoped>
-.signup-container {
+    .signup-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 599px;
-}
+    }
 
-.signup {
-    min-width: 500px;
-    width: 550px;
-    margin-top: 50px;
-    border: 5px solid #a30000;
-    border-radius: 10px;
-    padding: 40px;
-}
+    .signup {
+        /* min-width: 500px; */
+        width: 480px;
+        /* border: 5px solid #a30000; */
+        border-radius: 10px;
+    }
 
-.signup input {
-    border-radius: 0;
-}
-.signup-inputs {
-    display: flex;
-    align-items: center;
-}
+    .signup input {
+        border-radius: 0;
+    }
+    .signup-inputs {
+        display: flex;
+        align-items: center;
+    }
 
-.user-profile {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 20px 0 20px 30px
-}
-.profile-label {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    cursor: pointer;
-    transform: translateX(-80px);
-}
-.profile-input {
-    display: none;
-}
+    .user-profile {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 20px 0 20px 30px
+    }
+    .profile-label {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+        transform: translateX(-80px);
+    }
+    .profile-input {
+        display: none;
+    }
 
 
-.adds {
-    border-bottom: 2px solid #a30000;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
+    .adds {
+        border-bottom: 2px solid #a30000;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
 
-.btn {
-    background: #a30000;
-    color: white;
-}
+    .btn {
+        background: #a30000;
+        color: white;
+    }
 
-.logoPic {
-    width: 150px;
-    height: 40px;
-}
+    .logoPic {
+        width: 150px;
+        height: 40px;
+    }
 
-.logoPic-flex {
-    display: flex;
-    justify-content: center;
-}
+    .logoPic-flex {
+        display: flex;
+        justify-content: center;
+    }
 
-.form-control {
-    border-bottom: 2px solid #a30000;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
+    .form-control {
+        border-bottom: 2px solid #a30000;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
 
-.form-control:focus {
-    box-shadow: none;
-    border-color: #a30000;
-}
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #a30000;
+    }
 
-.row {
-    justify-content: space-between;
-}
-.postcode-input {
-    width: 100px;
-}
+    .row {
+        justify-content: space-between;
+    }
+    .postcode-input {
+        width: 100px;
+    }
 </style>
