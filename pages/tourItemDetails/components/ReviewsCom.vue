@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white b p-4 mb-4 restaurant-detailed-ratings-and-reviews">
 
-        <div class="reviews-members py-4">
+        <div class="reviews-members py-4" id="review-start">
             <div class="media">
                 <a href="#"><img alt="Generic placeholder image" src="http://bootdey.com/img/Content/avatar/avatar1.png"
                                  class="mr-3 rounded-pill"></a>
@@ -16,7 +16,7 @@
                                        inline
                                        variant="warning">
                         </b-form-rating>
-                        <h6 class="mb-1"><a class="text-black" href="#">Singh Osahan</a></h6>
+                        <h6 class="mb-1"><a class="text-black" href="#">Singh Osahan1</a></h6>
                         <p class="text-gray mb-2">Tue, 20 Mar 2020</p>
                     </div>
                     <div class="reviews-members-body">
@@ -45,7 +45,7 @@
                                        inline
                                        variant="warning">
                         </b-form-rating>
-                        <h6 class="mb-1"><a class="text-black" href="#">Singh Osahan</a></h6>
+                        <h6 class="mb-1"><a class="text-black" href="#">Singh Osahan2</a></h6>
                         <p class="text-gray mb-2">Tue, 20 Mar 2020</p>
                     </div>
                     <div class="reviews-members-body">
@@ -59,7 +59,49 @@
             </div>
         </div>
         <hr>
-        <a class="text-center w-100 d-block mt-4 font-weight-bold" href="#">See All Reviews</a>
+
+<!--        리뷰 보기 -->
+        <div v-show="reviewShow">
+            <div class="reviews-members pt-4 pb-4">
+                <div class="media">
+                    <a href="#"><img alt="Generic placeholder image" src="http://bootdey.com/img/Content/avatar/avatar1.png"
+                                     class="mr-3 rounded-pill"></a>
+                    <div class="media-body">
+                        <div class="reviews-members-header">
+                            <!-- rating -->
+                            <b-form-rating class="p-0"
+                                           id="rating-no-border"
+                                           v-model="value"
+                                           no-border
+                                           size="md"
+                                           inline
+                                           variant="warning">
+                            </b-form-rating>
+                            <h6 class="mb-1"><a class="text-black" href="#">Singh Osahan4</a></h6>
+                            <p class="text-gray mb-2">Tue, 20 Mar 2020</p>
+                        </div>
+                        <div class="reviews-members-body">
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                                classical Latin literature from 45 BC, making it over 2000 years oldrom 45 BC,
+                                making it over 2000 years old.</p>
+                        </div>
+                    </div>
+                    <a href="#"><img alt="Generic placeholder image" src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
+                                     class="ml-3 image-fluid"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <hr>
+        <a class="text-center w-100 d-block mt-4 font-weight-bold review-hover"
+           @click="reviewShow = !reviewShow" href="#review-start">
+            <p v-show="!reviewShow">모든리뷰 보기</p>
+        </a>
+        <a class="text-center w-100 d-block mt-4 font-weight-bold review-hover"
+           @click="reviewShow = !reviewShow" >
+            <p v-show="reviewShow">리뷰닫기</p>
+        </a>
     </div>
 </template>
 
@@ -68,7 +110,8 @@ export default {
     name: "Reviews",
     data() {
         return {
-            value: 4
+            value: 4,
+            reviewShow: false
         }
     }
 }
@@ -290,7 +333,15 @@ body {
     height: 30px;
 }
 
-.text-gray{
+.text-gray {
     color: gray;
+}
+
+.review-hover {
+    cursor: pointer;
+}
+
+a {
+    color: black;
 }
 </style>
