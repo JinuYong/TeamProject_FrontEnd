@@ -100,7 +100,7 @@
                             class="search-icon"
                         />
                     </form>
-                    <img
+                    <!-- <img
                         class="header-icon"
                         src="@/assets/img/header/login.svg"
                         alt="login"
@@ -111,7 +111,43 @@
                         src="@/assets/img/header/person_add.svg"
                         alt="signup"
                         @click="moveTo('/signup')"
-                    />
+                    /> -->
+                    <!-- TODO: -->
+                    <!--      로그인 태그 추가-->
+
+                    <div v-if="!currentUser">
+                        <img
+                            class="header-icon"
+                            src="@/assets/img/header/login.svg"
+                            alt="login"
+                            @click="moveTo('/login')"
+                        />
+                        <img
+                            class="header-icon"
+                            src="@/assets/img/header/person_add.svg"
+                            alt="signup"
+                            @click="moveTo('/signup')"
+                        />
+                    </div>
+
+                    <!--      로그아웃 태그 추가-->
+                    <!--      유저가 로그인하면 아래 메뉴가 보임 : 로그아웃 -->
+                    <div v-if="currentUser">
+                        <img
+                            class="header-icon"
+                            src="@/assets/img/header/person.svg"
+                            alt="profile"
+                            @click="moveTo('/mypageupdate')"
+                        />
+                        {{ currentUser.username }}
+                        <a href @click.prevent="logOut">
+                            <img
+                                class="header-icon"
+                                src="@/assets/img/header/logout.svg"
+                                alt="logout"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -148,12 +184,31 @@ export default {
     data() {
         return {};
     },
+    // TODO:
+    // html에서 변수처럼 호출 : 뒤에 () 붙이면 안됨 예) currentUser
+    // 속도는 computed 빠름
+    computed: {
+        currentUser() {
+            // 공유저장소의 전역변수(공유변수 : user )
+            // 자동으로 로그인되었으면 loggedIn = true, user객체 있음
+            // 아니면 loggedIn = false, user객체 = null
+            return this.$store.state.auth.user;
+            // return true; // Todo: 화면 디자인 테스트용
+        },
+    },
     methods: {
         moveTo(url) {
             $nuxt.$router.push(url);
         },
         searchKeyword() {
             // 검색기능 구현
+        },
+        // TODO:
+        logOut() {
+            // dispatch 호출하는 메소드 : actions 있는 메소드를 호출함
+            this.$store.dispatch("auth/logout");
+            //   로그아웃 후 이동할 페이지 지정 : login 페이지
+            this.$router.push("/login");
         },
     },
 };
