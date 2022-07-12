@@ -176,7 +176,7 @@ export default {
                 postcode: "",
                 address: "",
                 detailAddress: "",
-                profileFile: {}
+                profileFile: null
             },
         };
     },
@@ -220,8 +220,9 @@ export default {
             };
         },
         profileChange(e) {
-            this.user.profileFile = e.target.files;
-            this.profileImg = URL.createObjectURL(this.user.profileFile[0]);
+            this.userForm.profileFile = e.target.files[0];
+            this.profileImg = URL.createObjectURL(this.userForm.profileFile);
+            console.log(this.userForm.profileFile);
         },
         address_search(e) {
             e.preventDefault();
@@ -340,13 +341,14 @@ export default {
             //     return
             // }
             
-            if (this.user.profileFile.length == undefined) {
-                user.profile = null
-            }
+            console.log(this.userForm.profileFile)
             let userData = new FormData();
             for (const key in this.userForm) {
                 userData.append(key, this.userForm[key]);
             }
+            userData.delete("rePassword");
+            userData.append("phone", this.phoneNum);
+            console.log(userData.phone);
             try {
                 console.log(userData);
                 let res = await this.$axios.post('/api/signup/register', userData, {
