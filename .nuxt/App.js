@@ -6,8 +6,17 @@ import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
+<<<<<<< HEAD
 import _6f6c098b from '..\\layouts\\default.vue'
 import _48c355f1 from '..\\layouts\\MyPage.vue'
+=======
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+
+import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
+
+import _6f6c098b from '../layouts/default.vue'
+import _48c355f1 from '../layouts/MyPage.vue'
+>>>>>>> eaaf329395f3102bd30fda9ad6ae0c865b32e42c
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b),"_MyPage": sanitizeComponent(_48c355f1) }
 
