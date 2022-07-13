@@ -2,193 +2,225 @@
   {
     "name": "CheckId",
     "path": "/CheckId",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/CheckId.vue",
-    "chunkName": "pages/CheckId"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/CheckId.vue",
+    "chunkName": "pages/CheckId",
+    "_name": "_4d0c81ea"
   },
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/CheckPayment.vue",
-    "chunkName": "pages/CheckPayment"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/CheckPayment.vue",
+    "chunkName": "pages/CheckPayment",
+    "_name": "_1efa9874"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/CheckPwd.vue",
-    "chunkName": "pages/CheckPwd"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/CheckPwd.vue",
+    "chunkName": "pages/CheckPwd",
+    "_name": "_2963d506"
   },
   {
     "name": "CheckSignUp",
     "path": "/CheckSignUp",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/CheckSignUp.vue",
-    "chunkName": "pages/CheckSignUp"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/CheckSignUp.vue",
+    "chunkName": "pages/CheckSignUp",
+    "_name": "_a54cc6b0"
   },
   {
     "name": "FindId",
     "path": "/FindId",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/FindId.vue",
-    "chunkName": "pages/FindId"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/FindId.vue",
+    "chunkName": "pages/FindId",
+    "_name": "_e21ac4c8"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/FindPwd.vue",
-    "chunkName": "pages/FindPwd"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/FindPwd.vue",
+    "chunkName": "pages/FindPwd",
+    "_name": "_361dede8"
   },
   {
     "name": "http-common",
     "path": "/http-common",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/http-common.js",
-    "chunkName": "pages/http-common"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/http-common.js",
+    "chunkName": "pages/http-common",
+    "_name": "_05cb2157"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/LogIn.vue",
-    "chunkName": "pages/LogIn"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/LogIn.vue",
+    "chunkName": "pages/LogIn",
+    "_name": "_7aa3115e"
   },
   {
     "name": "MypageUpdate",
     "path": "/MypageUpdate",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/MypageUpdate.vue",
-    "chunkName": "pages/MypageUpdate"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/MypageUpdate.vue",
+    "chunkName": "pages/MypageUpdate",
+    "_name": "_e75bc868"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/Qna.vue",
-    "chunkName": "pages/Qna"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/Qna.vue",
+    "chunkName": "pages/Qna",
+    "_name": "_09256fa8"
   },
   {
     "name": "SearchResult",
     "path": "/SearchResult",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/SearchResult.vue",
-    "chunkName": "pages/SearchResult"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/SearchResult.vue",
+    "chunkName": "pages/SearchResult",
+    "_name": "_0a7a2f66"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/SignUp.vue",
-    "chunkName": "pages/SignUp"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/SignUp.vue",
+    "chunkName": "pages/SignUp",
+    "_name": "_45a6b420"
   },
   {
     "name": "board-Detail",
     "path": "/board/Detail",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/board/Detail.vue",
-    "chunkName": "pages/board/Detail"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/board/Detail.vue",
+    "chunkName": "pages/board/Detail",
+    "_name": "_79f7fd82"
   },
   {
     "name": "board-List",
     "path": "/board/List",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/board/List.vue",
-    "chunkName": "pages/board/List"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/board/List.vue",
+    "chunkName": "pages/board/List",
+    "_name": "_0a89998f"
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/inform/Detail.vue",
-    "chunkName": "pages/inform/Detail"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/inform/Detail.vue",
+    "chunkName": "pages/inform/Detail",
+    "_name": "_77259a82"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/inform/List.vue",
-    "chunkName": "pages/inform/List"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/inform/List.vue",
+    "chunkName": "pages/inform/List",
+    "_name": "_1a54fa0c"
   },
   {
     "name": "ItemList-ItemList",
     "path": "/ItemList/ItemList",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/ItemList/ItemList.vue",
-    "chunkName": "pages/ItemList/ItemList"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/ItemList/ItemList.vue",
+    "chunkName": "pages/ItemList/ItemList",
+    "_name": "_7d15f137"
   },
   {
     "name": "service-ShoppingCartDataService",
     "path": "/service/ShoppingCartDataService",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/service/ShoppingCartDataService.js",
-    "chunkName": "pages/service/ShoppingCartDataService"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/service/ShoppingCartDataService.js",
+    "chunkName": "pages/service/ShoppingCartDataService",
+    "_name": "_fe9cddc4"
   },
   {
     "name": "service-UserDataService",
     "path": "/service/UserDataService",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/service/UserDataService.js",
-    "chunkName": "pages/service/UserDataService"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/service/UserDataService.js",
+    "chunkName": "pages/service/UserDataService",
+    "_name": "_53873dfe"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/shoppingCart/ShoppingCart.vue",
-    "chunkName": "pages/shoppingCart/ShoppingCart"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/shoppingCart/ShoppingCart.vue",
+    "chunkName": "pages/shoppingCart/ShoppingCart",
+    "_name": "_7c0ba7b7"
   },
   {
     "name": "tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/TourItemDetail",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/TourItemDetail.vue",
-    "chunkName": "pages/tourItemDetails/TourItemDetail"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/TourItemDetail.vue",
+    "chunkName": "pages/tourItemDetails/TourItemDetail",
+    "_name": "_ce9f0d08"
   },
   {
     "name": "tourItemDetails-components-CardSliderCom",
     "path": "/tourItemDetails/components/CardSliderCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/components/CardSliderCom.vue",
-    "chunkName": "pages/tourItemDetails/components/CardSliderCom"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/components/CardSliderCom.vue",
+    "chunkName": "pages/tourItemDetails/components/CardSliderCom",
+    "_name": "_c2bb0f12"
   },
   {
     "name": "tourItemDetails-components-ImgGalleryCom",
     "path": "/tourItemDetails/components/ImgGalleryCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/components/ImgGalleryCom.vue",
-    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/components/ImgGalleryCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom",
+    "_name": "_80ab268e"
   },
   {
     "name": "tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/components/KakaoMapApiCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/components/KakaoMapApiCom.vue",
-    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/components/KakaoMapApiCom.vue",
+    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
+    "_name": "_ee0b6b6e"
   },
   {
     "name": "tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/components/ReviewsCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/components/ReviewsCom.vue",
-    "chunkName": "pages/tourItemDetails/components/ReviewsCom"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/components/ReviewsCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ReviewsCom",
+    "_name": "_9556f9a2"
   },
   {
     "name": "tourItemDetails-tourItemDetails-TourItemDetail",
     "path": "/tourItemDetails/tourItemDetails/TourItemDetail",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/tourItemDetails/TourItemDetail.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/TourItemDetail"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/tourItemDetails/TourItemDetail.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/TourItemDetail",
+    "_name": "_a8ff5f58"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-CardSliderCom",
     "path": "/tourItemDetails/tourItemDetails/components/CardSliderCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/tourItemDetails/components/CardSliderCom.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/components/CardSliderCom"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/tourItemDetails/components/CardSliderCom.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/CardSliderCom",
+    "_name": "_edd4bd62"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-ImgGalleryCom",
     "path": "/tourItemDetails/tourItemDetails/components/ImgGalleryCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/tourItemDetails/components/ImgGalleryCom.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ImgGalleryCom"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/tourItemDetails/components/ImgGalleryCom.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ImgGalleryCom",
+    "_name": "_abc4d4de"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-KakaoMapApiCom",
     "path": "/tourItemDetails/tourItemDetails/components/KakaoMapApiCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/tourItemDetails/components/KakaoMapApiCom.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/components/KakaoMapApiCom"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/tourItemDetails/components/KakaoMapApiCom.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/KakaoMapApiCom",
+    "_name": "_2627871e"
   },
   {
     "name": "tourItemDetails-tourItemDetails-components-ReviewsCom",
     "path": "/tourItemDetails/tourItemDetails/components/ReviewsCom",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/tourItemDetails/tourItemDetails/components/ReviewsCom.vue",
-    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ReviewsCom"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/tourItemDetails/tourItemDetails/components/ReviewsCom.vue",
+    "chunkName": "pages/tourItemDetails/tourItemDetails/components/ReviewsCom",
+    "_name": "_e5b46d52"
   },
   {
     "name": "payment-userIdx",
     "path": "/payment/:userIdx?",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/payment/_userIdx.vue",
-    "chunkName": "pages/payment/_userIdx"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/payment/_userIdx.vue",
+    "chunkName": "pages/payment/_userIdx",
+    "_name": "_d3f91738"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/hwan/Fullstack_cource/team/front/7_12_git/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Users/hwan/Fullstack_cource/team/front/7_13_git/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_8fa06f8c"
   }
 ]

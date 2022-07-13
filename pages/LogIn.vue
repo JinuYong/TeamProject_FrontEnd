@@ -152,7 +152,12 @@ export default {
                             (error) => {
                                 this.loading = false;
                                 this.message =
-                                    error.message || error.toString();
+                                    (error.response &&
+                                        error.response.data &&
+                                        error.response.data.message) ||
+                                    error.message ||
+                                    error.toString();
+                                // error.message || error.toString();
                             }
                         );
                 }
