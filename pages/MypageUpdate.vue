@@ -4,16 +4,16 @@
         <hr />
 
         <!-- 좌측 버튼 파트 시작 -->
-        <div class="d-flex align-items-start">
+        <div class="align-items-start float-left">
             <div
-                class="nav flex-column nav-pills me-3"
+                class="nav flex-column nav-pills tap-container"
                 id="v-pills-tab"
                 role="tablist"
                 aria-orientation="vertical"
             >
                 <!-- 좌측 버튼 파트 시작 -->
                 <button
-                    class="btn active"
+                    class="btn active tap-button"
                     id="v-pills-home-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#v-pills-home"
@@ -25,7 +25,7 @@
                     내 정보
                 </button>
                 <button
-                    class="btn"
+                    class="btn tap-button"
                     id="v-pills-profile-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#v-pills-profile"
@@ -47,7 +47,162 @@
                     role="tabpanel"
                     aria-labelledby="v-pills-home-tab"
                 >
-                    <div class="login_box">
+                <form class="signup">
+            <h3 class="text-center">내 정보</h3>
+            <div class="signup-inputs">
+                프로필 이미지
+                <img :src="profileImg" alt="프로필이미지" class="user-profile" ref="userProfile">
+                <label class="profile-label" for="profile-change"></label>
+                <input type="file" class="profile-input" id="profile-change" accept="image/*" @change="profileChange" ref="profile">
+            </div>
+
+            <!-- 아이디 -->
+            <div class="row">
+                <label for="user_id" class="form-label"> 아이디 </label>
+                <div class="col-lg-9">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="user_id"
+                        placeholder="5~15자 내외로 입력해 주세요."
+                        minlength="5"
+                        maxlength="15"
+                        v-model="userForm.id"
+                    />
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-md mb-3" @click="duplicateConfirm">중복확인</button>
+                </div>
+            </div>
+
+            <!-- 비밀번호 -->
+            <div class="mb-3">
+                <label for="user_password" class="form-label">비밀번호</label>
+                <input
+                    type="password"
+                    class="form-control"
+                    id="user_password"
+                    placeholder="대,소문자 포함 8~20자 내외로 입력해 주세요."
+                    minlength="8"
+                    maxlength="20"
+                    v-model="userForm.password"
+                />
+            </div>
+
+            <!-- 비밀번호 확인 -->
+            <div class="mb-3">
+                <label for="re_password" class="form-label"
+                    >비밀번호 확인</label
+                >
+                <input
+                    type="password"
+                    class="form-control"
+                    id="re_password"
+                    placeholder="입력한 비밀번호를 다시 입력해 주세요."
+                    minlength="8"
+                    maxlength="20"
+                    v-model="userForm.rePassword"
+                />
+            </div>
+
+            <!-- 이메일 -->
+            <div class="mb-3">
+                <label for="user_email" class="form-label">이메일</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="user_email"
+                    placeholder="example12@naver.com"
+                    v-model="userForm.email"
+                />
+            </div>
+            <!-- 이름 -->
+            <div class="mb-3">
+                <label for="user_name" class="form-label">이름</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="user_name"
+                    placeholder="공백 없이 입력해 주세요."
+                    maxlength="6"
+                    v-model="userForm.name"
+                />
+            </div>
+
+            <!-- 연락처 -->
+            <div class="mb-3">
+                <label for="user_phone" class="form-label">연락처</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="user_phone"
+                    placeholder="ex) 010-1111-1111"
+                    v-model="phoneNum"
+                    maxlength="13"
+                />
+            </div>
+
+            <!-- 주소 -->
+            <div class="row">
+                <label for="user_address" class="form-label">주소</label>
+                <div class="col-lg-6">
+                    <input
+                        type="text"
+                        id="postcode"
+                        class="form-control postcode-input"
+                        disabled
+                    />
+                </div>
+                <div class="col-auto">
+                    <button @click="address_search" class="btn btn-md mb-1">
+                        주소검색
+                    </button>
+                </div>
+                <div class="post-box" v-if="postOpen">
+                    <VueDaumPostcode @complete="oncomplete" />
+                </div>
+                <div class="mt-2">
+                    <input
+                        type="text"
+                        class="form-control"
+                        disabled
+                        id="address"
+                        placeholder="우측의 '주소검색' 버튼을 클릭하세요."
+                    />
+                </div>
+                <div class="mt-2">
+                    <input
+                        type="text"
+                        class="form-control mt-2"
+                        id="detail_address"
+                        placeholder="상세 주소를 입력해 주세요."
+                        v-model="userForm.detailAddress"
+                    />
+                </div>
+            </div>
+            <div>
+                <button
+                    class="w-100 mt-5 mb-3 btn btn-md"
+                    @click="joinConfirm"
+                >
+                    가입하기
+                </button>
+            </div>
+            <hr />
+            <div class="logoPic-flex">
+                <div>
+                    <img
+                        src="@/assets/img/omym_logo.png"
+                        alt="logoPic"
+                        class="logoPic mt-3"
+                    />
+                </div>
+            </div>
+        </form>
+
+
+
+                    <!-- <div class="login_box">
                         <div class="left">
                             <form class="signup">
                                 <h3 class="text-center">내 정보</h3>
@@ -62,9 +217,9 @@
                                     </p>
                                 </div>
 
-                                <!-- 버튼 활성화 비활성화 -->
+                                버튼 활성화 비활성화
                                 <div>
-                                    <!-- 아이디 -->
+                                    아이디
                                     <div class="mb-3">
                                         <label
                                             for="formGroupExampleInput2"
@@ -78,10 +233,10 @@
                                             disabled
                                             id="actives1"
                                         />
-                                    </div>
+                                    </div> -->
 
                                     <!-- 비밀번호 -->
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <label
                                             for="formGroupExampleInput2"
                                             class="form-label"
@@ -93,10 +248,10 @@
                                             disabled
                                             id="actives2"
                                         />
-                                    </div>
+                                    </div> -->
 
                                     <!-- 비밀번호 확인 -->
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <label
                                             for="formGroupExampleInput2"
                                             class="form-label"
@@ -108,10 +263,10 @@
                                             disabled
                                             id="actives3"
                                         />
-                                    </div>
+                                    </div> -->
 
                                     <!-- 이메일 -->
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <label
                                             for="formGroupExampleInput2"
                                             class="form-label"
@@ -123,9 +278,9 @@
                                             disabled
                                             id="actives4"
                                         />
-                                    </div>
+                                    </div> -->
                                     <!-- 이름 -->
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <label
                                             for="formGroupExampleInput2"
                                             class="form-label"
@@ -137,10 +292,10 @@
                                             disabled
                                             id="actives5"
                                         />
-                                    </div>
+                                    </div> -->
 
                                     <!-- 연락처 -->
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <label
                                             for="formGroupExampleInput2"
                                             class="form-label"
@@ -152,10 +307,10 @@
                                             disabled
                                             id="actives6"
                                         />
-                                    </div>
+                                    </div> -->
 
                                     <!-- 주소 -->
-                                    <div class="mb-3">
+                                    <!-- <div class="mb-3">
                                         <label
                                             for="formGroupExampleInput2"
                                             class="form-label"
@@ -197,8 +352,8 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
-                        <div class="right">
+                        </div> -->
+                        <!-- <div class="right">
                             <div class="right-inductor">
                                 <img
                                     src="@/assets/img/beach.jpg"
@@ -206,7 +361,7 @@
                                     class="sidePic"
                                 />
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- 내 정보 수정 파트 끝 -->
@@ -512,7 +667,7 @@
                 </div>
             </div>
             <!-- 결제 내역 파트 종료 -->
-        </div>
+        
     </div>
 </template>
 
@@ -523,25 +678,25 @@ export default {
         return {
             actives: false,
             imageData: "", // 리뷰 작성 파트 이미지
+            profileImg: require("@/assets/img/user.png"),
+            profileFile: {},
+            userForm: {
+                profile: "",
+                id: "",
+                password: "",
+                rePassword: "",
+                email: "",
+                name: "",
+                postcode: "",
+                address: "",
+                detailAddress: ""
+            },
         };
     },
     methods: {
-        previewImage: function (event) {
-            // Reference to the DOM input element
-            var input = event.target;
-            // Ensure that you have a file before attempting to read it
-            if (input.files && input.files[0]) {
-                // create a new FileReader to read this image and convert to base64 format
-                var reader = new FileReader();
-                // Define a callback function to run, when FileReader finishes its job
-                reader.onload = (e) => {
-                    // Note: arrow function used here, so that "this.imageData" refers to the imageData of Vue component
-                    // Read image as base64 and set to imageData
-                    this.imageData = e.target.result;
-                };
-                // Start the reader job - read file as a data url (base64 format)
-                reader.readAsDataURL(input.files[0]);
-            }
+        profileChange(e) {
+            this.profileFile = e.target.files;
+            this.profileImg = URL.createObjectURL(this.profileFile[0]);
         },
         activeInp() {
             let target1 = document.getElementById("actives1");
@@ -567,43 +722,68 @@ export default {
 </script>
 
 <style scoped>
+.float-left {
+    display: flex;
+}
+.tap-container {
+    padding: 10px 30px 10px 30px;
+    padding-bottom: 20%;
+    border-right: #e5e5e5 solid 1px;
+}
+.tap-button {
+    width: 200px;
+}
 .headers {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 /* 내 정보 수정 부분 */
-.user {
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-}
-
 .signup {
-    min-width: 350px;
-    width: 400px;
-    height: 1100px;
+    min-width: 500px;
+    width: 550px;
+    /* border: 5px solid #a30000; */
     border-radius: 10px;
-    padding: 20px;
-    font-size: 14px;
-    font-weight: 300;
+    padding: 40px;
 }
 
 .signup input {
     border-radius: 0;
 }
+.signup-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px 0 20px 30px
+}
+.profile-label {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateX(-80px);
+}
+.profile-input {
+    display: none;
+}
+
+
+.adds {
+    border-bottom: 2px solid #a30000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
 
 .btn {
     background: #a30000;
-    box-shadow: none;
     color: white;
-}
-
-.btn:hover .btn:focus .btn:active {
-    color: white;
-    box-shadow: none;
-    background: #a30000;
 }
 
 .logoPic {
@@ -628,6 +808,12 @@ export default {
     border-color: #a30000;
 }
 
+.row {
+    justify-content: space-between;
+}
+.postcode-input {
+    width: 100px;
+}
 /* 좌측 메뉴 버튼 */
 .nav-link {
     width: 150px;
@@ -673,8 +859,11 @@ export default {
 }
 
 .sidePic {
-    width: 900px;
-    height: 1100px;
+    /* width: 700px; */
+    height: 1050px;
+    /* position: absolute;
+    transform: translate(500px, -1050px); */
+    object-fit: cover;
 }
 
 /* 결제 내역 파트 */
@@ -685,21 +874,22 @@ table {
 
 /* updateBox */
 .login_box {
-    width: 1300px;
+    /* width: 65vw; */
     height: 1050px;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 90%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
     background: #fff;
     border-radius: 10px;
     box-shadow: 1px 4px 22px -8px #0004;
-    display: flex;
+    /* display: flex; */
     overflow: hidden;
+    position: relative;
 }
 
 .login_box .left {
-    width: 41%;
+    width: 50%;
     height: 100%;
     padding: 25px 25px;
 }
@@ -708,11 +898,6 @@ table {
     background: linear-gradient(-45deg, #dcd7e0, #fff);
 }
 
-.right .right-text {
-    height: 100%;
-    position: relative;
-    transform: translate(0%, 45%);
-}
 
 /* 리뷰 작성 사진 업로드 */
 .preview {

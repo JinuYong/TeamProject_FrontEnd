@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="position: relative; min-height: 100%">
         <!-- 헤더 -->
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid">
@@ -225,9 +225,9 @@ export default {
     border-radius: 3px !important;
 }
 .default {
-    width: 1200px;
+    /* width: 1200px; */
     min-width: 700px;
-    min-height: 599px;
+    min-height: calc(100vh - 310px);
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -313,6 +313,7 @@ nav {
     width: 25px;
     margin: 0 10px;
     padding: 15px 0;
+    cursor: pointer;
 }
 
 /* footer */
@@ -321,7 +322,6 @@ footer {
     height: 250px;
     padding: 30px 100px;
     background: #eaebee;
-    bottom: 0;
 }
 .footer-content {
     width: 1200px;

@@ -89,7 +89,15 @@
 </template>
 <script>
 export default {
-    layout: "MyPage"
+    layout: "MyPage",
+    data() {
+        return {
+            
+        }
+    },
+    methods: {
+        
+    },
 }
 
 </script>

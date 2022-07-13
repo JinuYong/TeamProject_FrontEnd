@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="position: relative; min-height: 100%">
         <!-- 헤더 -->
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid">
@@ -143,7 +143,16 @@
     </div>
 </template>
 <script>
-export default {};
+export default {
+    data() {
+        return {};
+    },
+    methods: {
+        moveTo(url) {
+            $nuxt.$router.push(url);
+        },
+    }
+}
 </script>
 <style>
 * {
@@ -154,7 +163,7 @@ export default {};
 }
 .my-page {
     min-width: 700px;
-    min-height: 599px;
+    min-height: calc(100vh - 310px);
     /* height: 1330px; */
     margin: 0 auto;
     padding-bottom: 50px;
@@ -245,7 +254,6 @@ footer {
     height: 250px;
     padding: 30px 100px;
     background: #eaebee;
-    bottom: 0;
 }
 .footer-content {
     width: 1200px;
