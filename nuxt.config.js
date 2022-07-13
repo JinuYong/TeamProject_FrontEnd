@@ -1,6 +1,7 @@
 export default {
     // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
     ssr: false,
+    lintOnSave: false,
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
@@ -78,6 +79,10 @@ export default {
             {
                 src: "https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js",
             },
+            // import 라이브러리
+            {
+                src: "https://cdn.iamport.kr/js/iamport.payment-1.2.0.js",
+            },
         ],
     },
 
@@ -85,7 +90,10 @@ export default {
     css: [],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [],
+    plugins: [
+        "~/plugins/validate.js",
+        // '~/plugins/route.js'
+    ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,

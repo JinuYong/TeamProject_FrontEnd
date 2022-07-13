@@ -1,5 +1,5 @@
 import Vue from 'vue'
-
+import Vuex from 'vuex'
 import Meta from 'vue-meta'
 import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
@@ -9,12 +9,19 @@ import NuxtError from './components/nuxt-error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
+import { createStore } from './store.js'
 
 /* Plugins */
 
+<<<<<<< HEAD
 import nuxt_plugin_plugin_7f17a183 from 'nuxt_plugin_plugin_7f17a183' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_bootstrapvue_4b146e48 from 'nuxt_plugin_bootstrapvue_4b146e48' // Source: ./bootstrap-vue.js (mode: 'all')
 import nuxt_plugin_axios_ccd48dce from 'nuxt_plugin_axios_ccd48dce' // Source: ./axios.js (mode: 'all')
+=======
+import nuxt_plugin_plugin_805207e4 from 'nuxt_plugin_plugin_805207e4' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_axios_60f84c24 from 'nuxt_plugin_axios_60f84c24' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_validate_709b3feb from 'nuxt_plugin_validate_709b3feb' // Source: ../plugins/validate.js (mode: 'all')
+>>>>>>> d9e045ae25bd56a6721ea874b8f4102f0c4dc297
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -56,16 +63,36 @@ Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n
 
 const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
+const originalRegisterModule = Vuex.Store.prototype.registerModule
+
+function registerModule (path, rawModule, options = {}) {
+  const preserveState = process.client && (
+    Array.isArray(path)
+      ? !!path.reduce((namespacedState, path) => namespacedState && namespacedState[path], this.state)
+      : path in this.state
+  )
+  return originalRegisterModule.call(this, path, rawModule, { preserveState, ...options })
+}
+
 async function createApp(ssrContext, config = {}) {
   const router = await createRouter(ssrContext, config)
+
+  const store = createStore(ssrContext)
+  // Add this.$router into store actions/mutations
+  store.$router = router
 
   // Create Root instance
 
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
+<<<<<<< HEAD
     head: {"title":"omym-frontend","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fcss\u002Fbootstrap.min.css","rel":"stylesheet","integrity":"sha384-0evHe\u002FX+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor","crossorigin":"anonymous"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.css","integrity":"sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap-icons@1.8.3\u002Ffont\u002Fbootstrap-icons.css"},{"href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fsummernote@0.8.18\u002Fdist\u002Fsummernote.min.css","rel":"stylesheet"}],"script":[{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fjs\u002Fbootstrap.bundle.min.js","integrity":"sha384-pprn3073KE6tl6bjs2QrFaJGz5\u002FSUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2","crossorigin":"anonymous"},{"src":"\u002F\u002Ft1.daumcdn.net\u002Fmapjsapi\u002Fbundle\u002Fpostcode\u002Fprod\u002Fpostcode.v2.js"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjquery\u002F3.6.0\u002Fjquery.min.js","integrity":"sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn\u002F+\u002F3e7Jo4EaG7TubfWGUrMQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.js","integrity":"sha512-uto9mlQzrs59VwILcLiRYeLKPPbS\u002FbT71da\u002FOEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"src":"\u002F\u002Fdapi.kakao.com\u002Fv2\u002Fmaps\u002Fsdk.js?appkey=2347b9f93173423c7fe7580ee45e5589&libraries=services,clusterer,drawing"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fsummernote@0.8.18\u002Fdist\u002Fsummernote.min.js"}],"style":[]},
+=======
+    head: {"title":"omym-frontend","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fcss\u002Fbootstrap.min.css","rel":"stylesheet","integrity":"sha384-0evHe\u002FX+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor","crossorigin":"anonymous"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.css","integrity":"sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap-icons@1.8.3\u002Ffont\u002Fbootstrap-icons.css"}],"script":[{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fjs\u002Fbootstrap.bundle.min.js","integrity":"sha384-pprn3073KE6tl6bjs2QrFaJGz5\u002FSUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2","crossorigin":"anonymous"},{"src":"\u002F\u002Ft1.daumcdn.net\u002Fmapjsapi\u002Fbundle\u002Fpostcode\u002Fprod\u002Fpostcode.v2.js"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjquery\u002F3.6.0\u002Fjquery.min.js","integrity":"sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn\u002F+\u002F3e7Jo4EaG7TubfWGUrMQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.js","integrity":"sha512-uto9mlQzrs59VwILcLiRYeLKPPbS\u002FbT71da\u002FOEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"src":"\u002F\u002Fdapi.kakao.com\u002Fv2\u002Fmaps\u002Fsdk.js?appkey=2347b9f93173423c7fe7580ee45e5589&libraries=services,clusterer,drawing"},{"src":"https:\u002F\u002Fcdn.iamport.kr\u002Fjs\u002Fiamport.payment-1.2.0.js"}],"style":[]},
+>>>>>>> d9e045ae25bd56a6721ea874b8f4102f0c4dc297
 
+    store,
     router,
     nuxt: {
       defaultTransition,
@@ -110,6 +137,9 @@ async function createApp(ssrContext, config = {}) {
     ...App
   }
 
+  // Make app available into store via this.app
+  store.app = app
+
   const next = ssrContext ? ssrContext.next : location => app.router.push(location)
   // Resolve route
   let route
@@ -122,6 +152,7 @@ async function createApp(ssrContext, config = {}) {
 
   // Set context to app.context
   await setContext(app, {
+    store,
     route,
     next,
     error: app.nuxt.error.bind(app),
@@ -148,6 +179,9 @@ async function createApp(ssrContext, config = {}) {
       app.context[key] = value
     }
 
+    // Add into store
+    store[key] = app[key]
+
     // Check if plugin not already installed
     const installKey = '__nuxt_' + key + '_installed__'
     if (Vue[installKey]) {
@@ -169,6 +203,13 @@ async function createApp(ssrContext, config = {}) {
   // Inject runtime config as $config
   inject('config', config)
 
+  if (process.client) {
+    // Replace store state before plugins execution
+    if (window.__NUXT__ && window.__NUXT__.state) {
+      store.replaceState(window.__NUXT__.state)
+    }
+  }
+
   // Add enablePreview(previewData = {}) in context for plugins
   if (process.static && process.client) {
     app.context.enablePreview = function (previewData = {}) {
@@ -178,6 +219,7 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
+<<<<<<< HEAD
   if (typeof nuxt_plugin_plugin_7f17a183 === 'function') {
     await nuxt_plugin_plugin_7f17a183(app.context, inject)
   }
@@ -188,6 +230,18 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_ccd48dce === 'function') {
     await nuxt_plugin_axios_ccd48dce(app.context, inject)
+=======
+  if (typeof nuxt_plugin_plugin_805207e4 === 'function') {
+    await nuxt_plugin_plugin_805207e4(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_axios_60f84c24 === 'function') {
+    await nuxt_plugin_axios_60f84c24(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_validate_709b3feb === 'function') {
+    await nuxt_plugin_validate_709b3feb(app.context, inject)
+>>>>>>> d9e045ae25bd56a6721ea874b8f4102f0c4dc297
   }
 
   // Lock enablePreview in context
@@ -226,6 +280,7 @@ async function createApp(ssrContext, config = {}) {
   })
 
   return {
+    store,
     app,
     router
   }
