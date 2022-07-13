@@ -4,7 +4,7 @@ import http from "~/pages/http-common";
 class UserDataService {
 
     getUser(userIdx) {
-        return http.get(`/user/${userIdx}`)
+        return http.get(`/users/${userIdx}`)
     }
 
 }
