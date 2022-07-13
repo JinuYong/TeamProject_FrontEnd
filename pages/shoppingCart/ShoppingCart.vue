@@ -14,7 +14,7 @@
                             <th class="text-center py-3 px-4" style="min-width: 350px;">상품명 &amp; 상품상세</th>
                             <th class="text-center py-3 px-4" style="width: 100px;">가격</th>
                             <th class="text-center py-3 px-4" style="width: 120px;">여행인원</th>
-                            <th class="text-center py-3 px-4" style="width: 150px;">총</th>
+                            <th class="text-center py-3 px-4" style="width: 130px;">총</th>
                             <th class="text-center align-middle py-3 px-0" style="width: 40px;">
                                 <a href="#"
                                    class="shop-tooltip float-none text-light"
@@ -32,7 +32,7 @@
                                     <img src="https://bootdey.com/img/Content/avatar/avatar1.png"
                                          class="d-block ui-w-40 ui-bordered mr-4" alt="">
                                     <div class="media-body">
-                                        <a href="#" class="d-block text-dark">{{ cart.title }}</a>
+                                        <p href="#" class="d-block text-dark">{{ cart.title }}</p>
                                         <small>
                                             <span class="text-muted">지역: </span>{{ cart.area }}
                                             <span class="text-muted">여행시작: </span>{{ cart.itemDate }}
@@ -147,8 +147,8 @@ export default {
 
     methods: {
         // UserCart 불러오기
-        retrieveCart() {
-            ShoppingCartDataService.getUserCart(1)
+        retrieveCart(idx) {
+            ShoppingCartDataService.getUserCart(idx)
                 .then(response => {
                     this.carts = response.data;
                     // springboot에서 받은 총 데이터 건수
@@ -228,7 +228,9 @@ export default {
         },
     },
     mounted() {
-        this.retrieveCart()
+        localStorage.setItem("idx", "1")
+        localStorage.getItem("idx")
+        this.retrieveCart(localStorage.getItem("idx"))
     }
 }
 </script>
