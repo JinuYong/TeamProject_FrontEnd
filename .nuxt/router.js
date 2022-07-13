@@ -26,7 +26,6 @@ const _69eee654 = () => interopDefault(import('../pages/service/ReviewDataServic
 const _666c88b8 = () => interopDefault(import('../pages/service/ShoppingCartDataService.js' /* webpackChunkName: "pages/service/ShoppingCartDataService" */))
 const _14db1cf2 = () => interopDefault(import('../pages/service/UserDataService.js' /* webpackChunkName: "pages/service/UserDataService" */))
 const _1c788171 = () => interopDefault(import('../pages/shoppingCart/ShoppingCart.vue' /* webpackChunkName: "pages/shoppingCart/ShoppingCart" */))
-const _366eb7fc = () => interopDefault(import('../pages/tourItemDetails/TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
 const _21c3b37d = () => interopDefault(import('../pages/tourItemDetails/components/CardSliderCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/CardSliderCom" */))
 const _42cba7bf = () => interopDefault(import('../pages/tourItemDetails/components/ImgGalleryCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/ImgGalleryCom" */))
 const _6a007003 = () => interopDefault(import('../pages/tourItemDetails/components/KakaoMapApiCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/KakaoMapApiCom" */))
@@ -136,10 +135,6 @@ export const routerOptions = {
     path: "/shoppingCart/ShoppingCart",
     component: _1c788171,
     name: "shoppingCart-ShoppingCart"
-  }, {
-    path: "/tourItemDetails/TourItemDetail",
-    component: _366eb7fc,
-    name: "tourItemDetails-TourItemDetail"
   }, {
     path: "/tourItemDetails/components/CardSliderCom",
     component: _21c3b37d,

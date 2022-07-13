@@ -8,11 +8,7 @@
                 <table class="table m-0">
                     <thead>
                     <tr>
-                        <!-- Set columns width -->
-                        <!--                        <th class="text-center py-3" style="min-width: 5%;">-->
-                        <!--                            선택-->
-                        <!--                        </th>-->
-                        <th class="text-center py-3 px-4" style="min-width: 45%;">상품정보</th>
+                        <th class="text-center py-3 px-4" style="width: 45%;">상품정보</th>
                         <th class="text-center py-3 px-4" style="width: 15%;">가격</th>
                         <th class="text-center py-3 px-4" style="width: 15%;">여행인원</th>
                         <th class="text-center py-3 px-4" style="width: 20%;">상품금액</th>
@@ -310,7 +306,7 @@ export default {
         }
     },
     mounted() {
-        localStorage.setItem("idx","1")
+        localStorage.setItem("idx", "1")
         localStorage.getItem("idx")
         // console.log("userIdx : " + this.$route.params.userIdx)
         // 유저의 카트내역 표시

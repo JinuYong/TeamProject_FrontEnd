@@ -154,13 +154,6 @@
     "_name": "_1c788171"
   },
   {
-    "name": "tourItemDetails-TourItemDetail",
-    "path": "/tourItemDetails/TourItemDetail",
-    "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/tourItemDetails/TourItemDetail.vue",
-    "chunkName": "pages/tourItemDetails/TourItemDetail",
-    "_name": "_366eb7fc"
-  },
-  {
     "name": "tourItemDetails-components-CardSliderCom",
     "path": "/tourItemDetails/components/CardSliderCom",
     "component": "/Users/gim-yeong-geun/Documents/TeamProject/TeamProject_FrontEnd/pages/tourItemDetails/components/CardSliderCom.vue",
