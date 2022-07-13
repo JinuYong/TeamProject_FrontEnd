@@ -136,11 +136,11 @@
             </div>
 
             <div>
-                <button
-                    class="w-100 mt-5 mb-3 btn btn-md"
-                    @click="joinConfirm"
-                >
-                    수정
+                <button v-if="editStatus" class="w-100 mt-5 mb-3 btn btn-md" @click="toggleEditStatus">
+                    수정하기
+                </button>
+                <button v-if="!editStatus" class="w-100 mt-5 mb-3 btn btn-md" @click="joinConfirm">
+                    확인
                 </button>
             </div>
             <hr />
@@ -176,8 +176,7 @@
                                     v-model="newPassword"
                                     class="form-control"
                                 />
-
-                            <!-- 비밀번호 확인 -->
+                                <!-- 비밀번호 확인 -->
                                 <label for="re_password" class="form-label"
                                     >비밀번호 확인</label
                                 >
@@ -193,12 +192,12 @@
                             </div>
                         </div>
                         <div v-else class="input-title">
-                            <p>비밀번호가 변경되었습니다!</p>
+                            <p>{{changeSuccess ? "비밀번호가 변경되었습니다!" : "비밀번호 변경에 실패했습니다. 다시 시도해주세요. "}}</p>
                         </div>
                     </div>
                     <div class="modal-footer inform-inputs">
-                        <button type="button" class="btn" data-bs-dismiss="modal" v-if="!changeSuccess">취소</button>
-                        <button type="button" class="btn" @click="passwordChange">확인</button>
+                        <button type="button" class="btn" data-bs-dismiss="modal" @click="modalReset">{{changeSuccess ? "확인" : "취소"}}</button>
+                        <button type="button" class="btn" @click="passwordChange" v-if="!changeSuccess">확인</button>
                     </div>
                 </div>
             </div>
@@ -228,10 +227,9 @@ export default {
                 profileFile: null
             },
             newPassword: "",
-            user: null,
-            editStatus: false,
+            editStatus: true,
             changeSuccess: false,
-            validateResult: true
+            validateResult: false,
         };
     },
     components: {
@@ -250,6 +248,10 @@ export default {
         }
     },
     methods: {
+        toggleEditStatus(e) {
+            e.preventDefault();
+            this.editStatus = false;
+        },
         async getUserInform(userId) {
             console.log(userId);
             let res = this.$axios.post('/api/myinform/get', userId).then(res => {
@@ -259,17 +261,22 @@ export default {
             })
         },
         async passwordChange() {
-            if (userForm.password == userForm.rePassword) {
-                let res = this.$axios.post('/api/myinform/changepw', this.userForm.id, this.userForm.password);
-                console.log(res);
-                this.changeSuccess = true;
+            if (this.newPassword == this.userForm.rePassword) {
+                this.$axios.post('/api/myinform/changepw', {id:this.userForm.id, password:this.newPassword}).then(res => {
+                    if (res.data) {
+                        this.changeSuccess = true;
+                    }
+                });
             } else {
-                this.validateResult = false;
+                this.validateResult = true;
             }
         },
+        modalReset() {
+            this.$router.go(0);
+        },
         profileChange(e) {
-            this.user.profileFile = e.target.files;
-            this.profileImg = URL.createObjectURL(this.user.profileFile[0]);
+            this.userForm.profileFile = e.target.files;
+            this.profileImg = URL.createObjectURL(this.userForm.profileFile[0]);
         },
         address_search(e) {
             e.preventDefault();
@@ -318,60 +325,21 @@ export default {
             const pattern_blank = /[\s]/g;
             //한글만
             const patten_kor = /^[가-힣]+$/;
-            //ID
-            const patten_id = /^[a-z0-9]{5,15}$/;
-            //숫자포함
-            const patten_include_num = /[0-9]/;
-            //영어포함
-            const patten_include_eng = /[a-zA-Z]/;
-            //특수문자
-            const pattern_spc = /[~!@#$%^&*()_+|<>?:{}]/;
-            //email
-            const pattern_email =
-                /^([\w\.\_\-])*[a-zA-Z0-9]+([\w\.\_\-])*([a-zA-Z0-9])+([\w\.\_\-])+@([a-zA-Z0-9]+\.)+[a-zA-Z0-9]{2,8}$/;
-
-            // let validate_result = true
-
-            let id = this.userForm.id;
-            console.log(id);
+            //완전한글포함
+            const patten_complete_kor = /[가-힣]/;
+            
             let name = this.userForm.name;
-            let password = this.userForm.password;
-            let re_password = this.userForm.rePassword;
             let phone = this.phoneNum;
 
-            if (
-                id == "" ||
-                !password ||
-                !re_password ||
-                !name ||
-                !phone
-            ) {
+            if (!name || !phone) {
                 alert("모든 값을 입력해 주세요");
-                return;
-            }
-            //아이디 소문자, 숫자만 사용
-            console.log(!patten_id);
-            if (!patten_id.test(id)) {
-                alert("아이디를 확인해 주세요");
-                return;
-            // 중복확인
-            }
-            if (!this.idConfirm) {
-                console.log(this.idConfirm);
-                alert("아이디 중복확인을 해주세요");
-                return;
-            }
-            //이름 체크. 한글만
-            console.log(!patten_kor.test(name));
-            if (!patten_kor.test(name)) {
-                alert("이름을 확인해 주세요");
                 return;
             }
             //비밀번호 체크
             console.log(
-                pattern_spc.test(password) || patten_kor.test(password)
+                pattern_blank.test(password) || patten_kor.test(password)
             );
-            if (pattern_spc.test(password) || patten_kor.test(password)) {
+            if (pattern_blank.test(password) || patten_kor.test(password)) {
                 alert("비밀번호를 확인해 주세요");
                 return;
             }
@@ -380,17 +348,7 @@ export default {
                 alert("동일한 비밀번호를 입력해주세요");
                 return;
             }
-
-            // //최종확인!
-            // console.log(!validate_result);
-            // if (!validate_result) {
-            //     alert("인풋을 재확인 해주세요");
-            //     return
-            // }
             
-            if (this.user.profileFile.length == undefined) {
-                user.profile = null
-            }
             let userData = new FormData();
             for (const key in this.userForm) {
                 userData.append(key, this.userForm[key]);

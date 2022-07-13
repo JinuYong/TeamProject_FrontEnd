@@ -92,6 +92,7 @@
                     placeholder="ex) 010-1111-1111"
                     v-model="phoneNum"
                     maxlength="13"
+                    minlength="13"
                 />
             </div>
 
@@ -271,6 +272,8 @@ export default {
             const pattern_blank = /[\s]/g;
             //한글만
             const patten_kor = /^[가-힣]+$/;
+            //완전한글포함
+            const patten_complete_kor = /[가-힣]/;
             //ID
             const patten_id = /^[a-z0-9]{5,15}$/;
             //숫자포함
@@ -321,10 +324,11 @@ export default {
                 return;
             }
             //비밀번호 체크
+            console.log(password);
             console.log(
-                pattern_spc.test(password) || patten_kor.test(password)
+                "pattern_blank=" + pattern_blank.test(password) + "patten_complete_kor" + patten_complete_kor.test(password)
             );
-            if (pattern_spc.test(password) || patten_kor.test(password)) {
+            if (pattern_blank.test(password) || patten_complete_kor.test(password)) {
                 alert("비밀번호를 확인해 주세요");
                 return;
             }
