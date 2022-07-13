@@ -180,7 +180,7 @@ export default {
 
 <style scoped>
 .container {
-    margin-top: 50px;
+    padding-top: 50px;
 }
 .qna-title {
     text-align: center;

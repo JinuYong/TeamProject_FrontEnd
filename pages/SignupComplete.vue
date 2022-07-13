@@ -4,7 +4,10 @@
             <h4 class="mb-5 fw-normal text-center">회원가입 완료!</h4>
 
             <div class="mt-5 text-center">
-                <button class="btn mb-3" type="submit" onClick="*">
+                <button class="btn mb-3" @click="moveTo('/login')">
+                    로그인
+                </button>
+                <button class="btn mb-3" @click="moveTo('/')">
                     메인으로 돌아가기
                 </button>
             </div>
@@ -25,7 +28,15 @@
 <script>
 /* eslint-disable */
 export default {
-    name: "checksignup",
+    name: "signupcomplete",
+    methods: {
+        moveTo(url) {
+            this.$router.push(url);
+        }
+    },
+    mounted() {
+        console.log(this.$route.params);
+    },
 };
 </script>
 

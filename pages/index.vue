@@ -343,7 +343,8 @@ a:hover {
 
 /* select창 시작 */
 .top {
-    margin: 20px -12px 0 1px;
+    margin: 0px -12px 0 1px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
