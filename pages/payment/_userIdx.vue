@@ -30,7 +30,7 @@
                                 <img src="https://bootdey.com/img/Content/avatar/avatar1.png"
                                      class="d-block ui-w-40 ui-bordered mr-4" alt="">
                                 <div class="media-body">
-                                    <a href="#" class="d-block text-dark">{{ cart.title }}</a>
+                                    <p href="#" class="d-block text-dark">{{ cart.title }}</p>
                                     <small>
                                         <span class="text-muted">지역: </span>{{ cart.area }}
                                         <span class="text-muted">여행시작: </span>{{ cart.itemDate }}
@@ -101,63 +101,14 @@
                                     <hr>
                                     <small><strong>결제 :</strong></small>
                                     <br>
-                                    <!--                                    <div class="col-md">-->
-                                    <!--                                        <div class="row">-->
-                                    <!--                                            &lt;!&ndash;                                            결제 방법 버튼 &ndash;&gt;-->
-                                    <!--                                            <div class="col-md-4 text-center">-->
-                                    <!--                                                <input type="radio"-->
-                                    <!--                                                       v-model="selectPayment"-->
-                                    <!--                                                       value="bankBook"-->
-                                    <!--                                                       id="bankBook"-->
-                                    <!--                                                >-->
-                                    <!--                                                <label class="mb-0" for="pay-type">일반결제</label>-->
-                                    <!--                                            </div>-->
-                                    <!--                                            <div class="col-md-4 text-center">-->
-                                    <!--                                                <input type="radio"-->
-                                    <!--                                                       v-model="selectPayment"-->
-                                    <!--                                                       value="easyPay"-->
-                                    <!--                                                       id="easyPay">-->
-                                    <!--                                                <label class="mb-0">간편결제</label>-->
-                                    <!--                                            </div>-->
-                                    <!--                                            <div class="col-md-4 text-center">-->
-                                    <!--                                                <input-->
-                                    <!--                                                    type="radio"-->
-                                    <!--                                                    v-model="selectPayment"-->
-                                    <!--                                                    value="generalPay"-->
-                                    <!--                                                    id="pay">-->
-                                    <!--                                                <label class="mb-0">일반결제</label>-->
-                                    <!--                                            </div>-->
-                                    <!--                                        </div>-->
-                                    <!--                                        <hr>-->
-                                    <!--                                        <div class="row">-->
-                                    <!--                                            <div class="col" v-show="selectPayment=='bankBook'">-->
-                                    <!--                                                <div class="container b">-->
-                                    <!--                                                    <button type="button"-->
-                                    <!--                                                            class="btn btn-lg main-hover"-->
-                                    <!--                                                            @click="requestPayKcp">-->
-                                    <!--                                                        결제하기-->
-                                    <!--                                                    </button>-->
-                                    <!--                                                </div>-->
-                                    <!--                                            </div>-->
-                                    <!--                                            <div class="col" v-show="selectPayment=='easyPay'">-->
-                                    <!--                                                <div class="container b">-->
-                                    <!--                                                    <button type="button"-->
-                                    <!--                                                            class="btn btn-lg main-hover"-->
-                                    <!--                                                            @click="requestPayKakao()">-->
-                                    <!--                                                        결제하기-->
-                                    <!--                                                    </button>-->
-                                    <!--                                                </div>-->
-                                    <!--                                            </div>-->
-                                    <!--                                            <div class="col" v-show="selectPayment=='generalPay'">일반결제 선택시 보여집니다.</div>-->
-                                    <!--                                        </div>-->
-                                    <!--                                    </div>-->
                                     <br>
                                     <div class="row">
                                         <div class="col">
                                             <div class="container text-right">
                                                 <button type="button"
                                                         class="btn btn-mi w-100 main-hover"
-                                                        @click="requestPayKcp">
+                                                        @click="BootPay"
+                                                >
                                                     결제하기
                                                 </button>
                                             </div>
@@ -170,38 +121,18 @@
                 </div>
             </div>
         </div>
-        <!--        <script>-->
-        <!--            IMP.init("imp54677160");-->
-
-        <!--            function requestPayKakao() {-->
-        <!--                IMP.request_pay({-->
-        <!--                    pg: 'kakaopay',-->
-        <!--                    pay_method: 'card',-->
-        <!--                    merchant_uid: 'omymTour_' + new Date().getTime(),-->
-        <!--                    name: this.payData.name,-->
-        <!--                    amount: this.payData.amount,-->
-        <!--                    buyer_email: this.user.email,-->
-        <!--                    buyer_name: this.user.name,-->
-        <!--                    buyer_tel: this.user.phone,-->
-        <!--                    buyer_addr: this.user.address,-->
-        <!--                    buyer_postcode: this.user.postcode-->
-        <!--                }, function (rsp) { // callback-->
-        <!--                    if (rsp.success) {-->
-        <!--                        console.log(rsp);-->
-        <!--                    } else {-->
-        <!--                        console.log(rsp);-->
-        <!--                    }-->
-        <!--                });-->
-        <!--            }-->
-        <!--        </script>-->
     </div>
 </template>
 
 <script>
 import ShoppingCartDataService from "~/pages/service/ShoppingCartDataService";
 import UserDataService from "~/pages/service/UserDataService";
+import {Bootpay} from '@bootpay/client-js'
+import axios from "axios";
+
 
 export default {
+
     name: "Payment",
     data() {
         return {
@@ -209,6 +140,8 @@ export default {
             carts: [],
             user: [],
             title: "",
+            userIdx: 0,
+            cartIdx: 0,
             payData: {
                 name: "",
                 amount: 0
@@ -224,6 +157,7 @@ export default {
                     // this.count = totalItems;
                     this.payData.name = this.carts[0].title
                     this.title = this.carts[0].title
+                    this.cartIdx = this.carts[0].idx
 
                     console.log(this.carts)
                 })
@@ -238,37 +172,99 @@ export default {
                     this.user = response.data;
                     // springboot에서 받은 총 데이터 건수
                     // this.count = totalItems;
+                    this.userIdx = response.idx
                 })
                 .catch(err => {
                     console.log(err)
                     alert(err)
                 })
         },
-        requestPayKcp() {
-            console.log(this.title)
-            console.log(this.title)
-            IMP.request_pay({
-                pg: 'html5_inicis',
-                pay_method: 'card',
-                merchant_uid: 'omymTour_' + new Date().getTime(),
-                name: this.payDataName,
-                amount: this.totalSalePrice,
-                buyer_email: this.user.email,
-                buyer_name: this.user.name,
-                buyer_tel: this.user.phone,
-                buyer_addr: this.user.address,
-                buyer_postcode: this.user.postcode,
-                m_redirect_url: 'https://example.com/mobile/complete', // 모바일 결제시 사용할 url
-                digital: true, // 실제 물품인지 무형의 상품인지(핸드폰 결제에서 필수 파라미터)
-                app_scheme: '' // 돌아올 app scheme
-            }, function (rsp) { // callback
-                if (rsp.success) {
-                    console.log(rsp);
-                } else {
-                    console.log(rsp);
+        BootPay: async function () {
+            try {
+                const response = await Bootpay.requestPayment({
+                    "application_id": "62cb877ee38c3000245afd26",
+                    "price": 100,
+                    "order_name": this.payDataName,
+                    "order_id": 'omymTour_' + new Date().getTime(),
+                    "pg": "danal",
+                    "method": "카드",
+                    "tax_free": 0,
+                    "user": {
+                        "id": this.user.id,
+                        "username": this.user.name,
+                        "phone": this.user.phone,
+                        "email": this.user.email
+                    },
+                    "items": [
+                        {
+                            "id": this.cartIdx,
+                            "name": this.payDataName,
+                            "qty": 1,
+                            "price": 100
+                        }
+                    ],
+                    "extra": {
+                        "open_type": "iframe",
+                        "card_quota": "0,2,3",
+                        "escrow": false
+                    }
+                })
+                if (response.event === 'issued') {// 가상계좌 입금 완료 처리
+                } else if (response.event === 'done') {
+                    // 결제 완료 처리
+                    console.log(response)
+                    // 결제 완료 처리
+                    this.$router.push({path: ("/CheckPayment")})
+                } else if (response.event === 'confirm') {
+                    //payload.extra.separately_confirmed = true; 일 경우 승인 전 해당 이벤트가 호출됨
+                    console.log(response.receipt_id);
+                    /**
+                     * 1. 클라이언트 승인을 하고자 할때
+                     * // validationQuantityFromServer(); //예시) 재고확인과 같은 내부 로직을 처리하기 한다.
+                     */
+
+                    const confirmedData = await Bootpay.confirm() //결제를 승인한다
+                    if (confirmedData.event === 'done') {
+                        alert("결제 완료 처리")
+                        console.log(response)
+                        // 결제 완료 처리
+                        this.$router.push({path: ("/CheckPayment")})
+                    } else if (confirmedData.event === 'error') {
+                        //결제 승인 실패
+                        console.log(response)
+                        alert("오류가 발생하였습니다. 다시 시도해 주세요.")
+                        this.$router.push({path: ("/payment/:userIdx?")})
+                    }
+
+                    /**
+                     * 2. 서버 승인을 하고자 할때
+                     * // requestServerConfirm();
+                     * //예시) 서버 승인을 할 수 있도록  API를 호출한다. 서버에서는 재고확인과 로직 검증 후 서버승인을 요청한다.
+                     * Bootpay.destroy(); //결제창을 닫는다.
+                     */
                 }
-            });
-        }
+            } catch (e) {
+                // 결제 진행중 오류 발생
+                // e.error_code - 부트페이 오류 코드
+                // e.pg_error_code - PG 오류 코드
+                // e.message - 오류 내용
+                // console.log(e.message)
+                switch (e.event) {
+                    case 'cancel':
+                        // 사용자가 결제창을 닫을때 호출
+                        console.log(e.message);
+                        alert(e.message)
+                        break
+                    case 'error':
+                        // 결제 승인 중 오류 발생시 호출
+                        console.log(e.error_code);
+                        alert(e.error_code)
+                        break
+                }
+            }
+        },
+
+
     },
     filters: {
         numberFormat: (value, numFix) => {
@@ -314,14 +310,14 @@ export default {
         }
     },
     mounted() {
-        console.log("userIdx : " + this.$route.params.userIdx)
+        localStorage.setItem("idx","1")
+        localStorage.getItem("idx")
+        // console.log("userIdx : " + this.$route.params.userIdx)
         // 유저의 카트내역 표시
-        this.getUserCart(this.$route.params.userIdx);
+        this.getUserCart(localStorage.getItem("idx"));
         // 유저정보
-        this.getUserData(this.$route.params.userIdx);
+        this.getUserData(localStorage.getItem("idx"));
 
-        // 아임포트 초기화
-        IMP.init("imp54677160");
     }
 }
 </script>

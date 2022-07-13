@@ -27,6 +27,11 @@ export default {
                     "sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor",
                 crossorigin: "anonymous",
             },
+            {
+                rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css",
+                integrity: "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
+                crossorigin: "anonymous"
+            },
             // jQuery
             {
                 rel: "stylesheet",
@@ -78,10 +83,6 @@ export default {
             // SummerNote
             {
                 src: "https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js",
-            },
-            // import 라이브러리
-            {
-                src: "https://cdn.iamport.kr/js/iamport.payment-1.2.0.js",
             },
         ],
     },
