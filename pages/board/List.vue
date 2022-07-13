@@ -93,61 +93,8 @@
         </form>
     </div>
 </template>
-<<<<<<< HEAD
 <script>
-export default {
-    
-}
-</script>
-<style scoped>
-    .pagination-custom {
-        margin-top: 80px;
-        border-bottom: none;
-    }
-    .page-item {
-        --bs-pagination-color: #494949;
-        --bs-pagination-hover-color: #A30000;
-    }
-    .page-link.active {
-        background-color: #A30000;
-        border-color: #A30000;
-    }
-    .container {
-        padding-top: 50px;
-    }
-    .page-title {
-        text-align: center;
-        width: 150px;
-        padding-bottom: 10px;
-        margin: 0 auto;
-        margin-bottom: 80px;
-    }
-    th {
-        font-weight: 400;
-        border-top: 2px solid #959595;
-        padding: 15px 10px;
-    }
-    tbody {
-        font-weight: 300;
-        font-size: 16px;
-    }
-    td {
-        padding: 12px 10px;
-    }
-    /* table { 
-        text-align: center;
-    } */
-    .board-searchbar {
-        margin-left: auto;
-        margin-bottom: 10px;
-        width: 300px;
-        position: relative;
-    }
-=======
->>>>>>> eaaf329395f3102bd30fda9ad6ae0c865b32e42c
-
-<script>
-import BoardDataService from "../../services/BoardDataService";
+import BoardDataService from "@/services/BoardDataService";
 
 /* eslint-disable */
 export default {
@@ -233,9 +180,51 @@ export default {
     },
 };
 </script>
-
 <style scoped>
-.btn {
+    .pagination-custom {
+        margin-top: 80px;
+        border-bottom: none;
+    }
+    .page-item {
+        --bs-pagination-color: #494949;
+        --bs-pagination-hover-color: #A30000;
+    }
+    .page-link.active {
+        background-color: #A30000;
+        border-color: #A30000;
+    }
+    .container {
+        padding-top: 50px;
+    }
+    .page-title {
+        text-align: center;
+        width: 150px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    th {
+        font-weight: 400;
+        border-top: 2px solid #959595;
+        padding: 15px 10px;
+    }
+    tbody {
+        font-weight: 300;
+        font-size: 16px;
+    }
+    td {
+        padding: 12px 10px;
+    }
+    /* table { 
+        text-align: center;
+    } */
+    .board-searchbar {
+        margin-left: auto;
+        margin-bottom: 10px;
+        width: 300px;
+        position: relative;
+    }
+    .btn {
     border: none;
     background-color: #a30000;
     color: white;
@@ -243,59 +232,59 @@ export default {
     display: flex;
 }
 
-.pagination-custom {
-    margin-top: 80px;
-    border-bottom: none;
-}
-.page-item {
-    --bs-pagination-color: #494949;
-    --bs-pagination-hover-color: #a30000;
-}
-.page-link.active {
-    background-color: #a30000;
-    border-color: #a30000;
-}
-.container {
-    margin-top: 50px;
-}
-.page-title {
-    text-align: center;
-    width: 150px;
-    padding-bottom: 10px;
-    margin: 0 auto;
-    margin-bottom: 80px;
-}
-th {
-    font-weight: 400;
-    border-top: 2px solid #959595;
-    padding: 15px 10px;
-}
-tbody {
-    font-weight: 300;
-    font-size: 16px;
-}
-td {
-    padding: 12px 10px;
-}
-/* table {
-    text-align: center;
-} */
+    .pagination-custom {
+        margin-top: 80px;
+        border-bottom: none;
+    }
+    .page-item {
+        --bs-pagination-color: #494949;
+        --bs-pagination-hover-color: #a30000;
+    }
+    .page-link.active {
+        background-color: #a30000;
+        border-color: #a30000;
+    }
+    .container {
+        margin-top: 50px;
+    }
+    .page-title {
+        text-align: center;
+        width: 150px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+    th {
+        font-weight: 400;
+        border-top: 2px solid #959595;
+        padding: 15px 10px;
+    }
+    tbody {
+        font-weight: 300;
+        font-size: 16px;
+    }
+    td {
+        padding: 12px 10px;
+    }
+    /* table {
+        text-align: center;
+    } */
 
-.board-searchbar {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    width: 400px;
-    display: flex;
-    position: relative;
-}
+    .board-searchbar {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 400px;
+        display: flex;
+        position: relative;
+    }
 
-.form-control:focus {
-    border-color: lightgray !important;
-    box-shadow: none !important;
-}
-input::placeholder {
-    color: #dfdfdf;
-    font-weight: 400;
-    font-size: 14px;
-}
+    .form-control:focus {
+        border-color: lightgray !important;
+        box-shadow: none !important;
+    }
+    input::placeholder {
+        color: #dfdfdf;
+        font-weight: 400;
+        font-size: 14px;
+    }
 </style>
