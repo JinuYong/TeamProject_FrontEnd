@@ -39,7 +39,7 @@
                             <a
                                 class="nav-link"
                                 aria-current="page"
-                                @click="moveTo('/itemlist/itemlist')"
+                                @click="moveTo('/Items/List')"
                                 >여행상품</a
                             >
                         </li>
@@ -100,18 +100,39 @@
                             class="search-icon"
                         />
                     </form>
-                    <img
-                        class="header-icon"
-                        src="@/assets/img/login.png"
-                        alt="login"
-                        @click="moveTo('/login')"
-                    />
-                    <img
-                        class="header-icon"
-                        src="@/assets/img/signup.png"
-                        alt="signup"
-                        @click="moveTo('/signup')"
-                    />
+                    <div v-if="!currentUser">
+                        <img
+                            class="header-icon"
+                            src="@/assets/img/header/login.svg"
+                            alt="login"
+                            @click="moveTo('/login')"
+                        />
+                        <img
+                            class="header-icon"
+                            src="@/assets/img/header/person_add.svg"
+                            alt="signup"
+                            @click="moveTo('/signup')"
+                        />
+                    </div>
+
+                    <!--      로그아웃 태그 추가-->
+                    <!--      유저가 로그인하면 아래 메뉴가 보임 : 로그아웃 -->
+                    <div v-if="currentUser">
+                        <img
+                            class="header-icon"
+                            src="@/assets/img/header/person.svg"
+                            alt="profile"
+                            @click="moveTo('/mypage/')"
+                        />
+                        {{ currentUser.username }}
+                        <a href @click.prevent="logOut">
+                            <img
+                                class="header-icon"
+                                src="@/assets/img/header/logout.svg"
+                                alt="logout"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>

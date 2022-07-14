@@ -39,7 +39,7 @@
                             <a
                                 class="nav-link"
                                 aria-current="page"
-                                @click="moveTo('/itemlist/itemlist')"
+                                @click="moveTo('/Items/List')"
                                 >여행상품</a
                             >
                         </li>
@@ -137,7 +137,7 @@
                             class="header-icon"
                             src="@/assets/img/header/person.svg"
                             alt="profile"
-                            @click="moveTo('/mypageupdate')"
+                            @click="moveTo('/mypage/')"
                         />
                         {{ currentUser.username }}
                         <a href @click.prevent="logOut">

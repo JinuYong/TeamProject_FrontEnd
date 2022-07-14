@@ -139,7 +139,7 @@
                 <button v-if="editStatus" class="w-100 mt-5 mb-3 btn btn-md" @click="toggleEditStatus">
                     수정하기
                 </button>
-                <button v-if="!editStatus" class="w-100 mt-5 mb-3 btn btn-md" @click="joinConfirm">
+                <button v-if="!editStatus" class="w-100 mt-5 mb-3 btn btn-md" @click="updateUser">
                     확인
                 </button>
             </div>
@@ -156,7 +156,7 @@
         </form>
 
         <!-- Modal -->
-        <div class="modal fade" id="passwordChange" tabindex="-1" aria-labelledby="passwordChangeLabel" aria-hidden="true">
+        <div class="modal fade" id="passwordChange" data-bs-backdrop="static" tabindex="-1" aria-labelledby="passwordChangeLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -171,8 +171,6 @@
                                 <input
                                     type="password"
                                     placeholder="대,소문자 포함 8~20자 내외로 입력해 주세요."
-                                    minlength="8"
-                                    maxlength="20"
                                     v-model="newPassword"
                                     class="form-control"
                                 />
@@ -183,12 +181,10 @@
                                 <input
                                     type="password"
                                     placeholder="입력한 비밀번호를 다시 입력해 주세요."
-                                    minlength="8"
-                                    maxlength="20"
                                     v-model="userForm.rePassword"
                                     class="form-control"
                                 />
-                                <p v-if="validateResult" class="validateError">비밀번호가 일치하지 않습니다!</p>
+                                <p v-if="validateResult" class="validateError">{{validateErrorMsg}}</p>
                             </div>
                         </div>
                         <div v-else class="input-title">
@@ -230,6 +226,7 @@ export default {
             editStatus: true,
             changeSuccess: false,
             validateResult: false,
+            validateErrorMsg: ""
         };
     },
     components: {
@@ -261,6 +258,15 @@ export default {
             })
         },
         async passwordChange() {
+            //비밀번호 체크
+            const pattern_blank = /[\s]/g;
+            const patten_complete_kor = /[가-힣]/;
+            if (pattern_blank.test(this.newPassword) || patten_complete_kor.test(this.newPassword) 
+            || this.newPassword.length < 8 || this.newPassword.length > 20) {
+                this.validateErrorMsg = "비밀번호는 대, 소문자 8~20자로 구성해주세요. ";
+                this.validateResult = true;
+                return;
+            }
             if (this.newPassword == this.userForm.rePassword) {
                 this.$axios.post('/api/myinform/changepw', {id:this.userForm.id, password:this.newPassword}).then(res => {
                     if (res.data) {
@@ -268,6 +274,7 @@ export default {
                     }
                 });
             } else {
+                this.validateErrorMsg = "비밀번호가 일치하지 않습니다!";
                 this.validateResult = true;
             }
         },
@@ -319,43 +326,42 @@ export default {
 
             this.postOpen = false;
         },
-        async joinConfirm(e) {
+        async updateUser(e) {
             e.preventDefault();
-            //공백
-            const pattern_blank = /[\s]/g;
             //한글만
             const patten_kor = /^[가-힣]+$/;
-            //완전한글포함
-            const patten_complete_kor = /[가-힣]/;
+            const pattern_email =
+                /^([\w\.\_\-])*[a-zA-Z0-9]+([\w\.\_\-])*([a-zA-Z0-9])+([\w\.\_\-])+@([a-zA-Z0-9]+\.)+[a-zA-Z0-9]{2,8}$/;
             
             let name = this.userForm.name;
             let phone = this.phoneNum;
+            let email = this.userForm.email;
 
-            if (!name || !phone) {
+            if (!name || !phone || !email) {
                 alert("모든 값을 입력해 주세요");
                 return;
             }
-            //비밀번호 체크
-            console.log(
-                pattern_blank.test(password) || patten_kor.test(password)
-            );
-            if (pattern_blank.test(password) || patten_kor.test(password)) {
-                alert("비밀번호를 확인해 주세요");
+            // 이름
+            console.log(!patten_kor.test(name));
+            if (!patten_kor.test(name)) {
+                alert("이름을 확인해 주세요");
                 return;
             }
-            //비밀번호 재확인 비교
-            if (password != re_password) {
-                alert("동일한 비밀번호를 입력해주세요");
+            if (!pattern_email.test(email)) {
+                alert("이메일을 확인해 주세요");
                 return;
             }
             
+            // validation 체크 후 전송
             let userData = new FormData();
             for (const key in this.userForm) {
                 userData.append(key, this.userForm[key]);
             }
+            userData.delete("rePassword");
+            userData.append("phone", this.phoneNum);
             try {
                 console.log(userData);
-                let res = await this.$axios.post('/api/signup/register', userData, {
+                let res = await this.$axios.put('/api/signup/register', userData, {
                     headers: {
                         "Content-Type" : "multipart/form-data"
                     }

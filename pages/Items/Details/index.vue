@@ -165,10 +165,10 @@
 </template>
 
 <script>
-import KakaoMapApi from "~/pages/tourItemDetails/components/KakaoMapApiCom";
-import reviewsCom from "~/pages/tourItemDetails/components/ReviewsCom";
-import ImgGalleryCom from "~/pages/tourItemDetails/components/ImgGalleryCom";
-import CardSliderCom from "~/pages/tourItemDetails/components/CardSliderCom";
+import KakaoMapApi from "~/pages/Items/Details/components/KakaoMapApiCom";
+import reviewsCom from "~/pages/Items/Details/components/ReviewsCom";
+import ImgGalleryCom from "~/pages/Items/Details/components/ImgGalleryCom";
+import CardSliderCom from "~/pages/Items/Details/components/CardSliderCom";
 
 export default {
     name: "TourItemDetail",

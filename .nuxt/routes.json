@@ -102,10 +102,16 @@
     "chunkName": "pages/inform/List"
   },
   {
-    "name": "ItemList-ItemList",
-    "path": "/ItemList/ItemList",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\ItemList\\\\ItemList.vue",
-    "chunkName": "pages/ItemList/ItemList"
+    "name": "Items-Details",
+    "path": "/Items/Details",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\index.vue",
+    "chunkName": "pages/Items/Details/index"
+  },
+  {
+    "name": "Items-List",
+    "path": "/Items/List",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\List.vue",
+    "chunkName": "pages/Items/List"
   },
   {
     "name": "service-ItemDetailDataService",
@@ -138,34 +144,28 @@
     "chunkName": "pages/shoppingCart/ShoppingCart"
   },
   {
-    "name": "tourItemDetails-TourItemDetail",
-    "path": "/tourItemDetails/TourItemDetail",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\TourItemDetail.vue",
-    "chunkName": "pages/tourItemDetails/TourItemDetail"
+    "name": "Items-Details-components-CardSliderCom",
+    "path": "/Items/Details/components/CardSliderCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\CardSliderCom.vue",
+    "chunkName": "pages/Items/Details/components/CardSliderCom"
   },
   {
-    "name": "tourItemDetails-components-CardSliderCom",
-    "path": "/tourItemDetails/components/CardSliderCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\CardSliderCom.vue",
-    "chunkName": "pages/tourItemDetails/components/CardSliderCom"
+    "name": "Items-Details-components-ImgGalleryCom",
+    "path": "/Items/Details/components/ImgGalleryCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ImgGalleryCom.vue",
+    "chunkName": "pages/Items/Details/components/ImgGalleryCom"
   },
   {
-    "name": "tourItemDetails-components-ImgGalleryCom",
-    "path": "/tourItemDetails/components/ImgGalleryCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
-    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom"
+    "name": "Items-Details-components-KakaoMapApiCom",
+    "path": "/Items/Details/components/KakaoMapApiCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\KakaoMapApiCom.vue",
+    "chunkName": "pages/Items/Details/components/KakaoMapApiCom"
   },
   {
-    "name": "tourItemDetails-components-KakaoMapApiCom",
-    "path": "/tourItemDetails/components/KakaoMapApiCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\KakaoMapApiCom.vue",
-    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom"
-  },
-  {
-    "name": "tourItemDetails-components-ReviewsCom",
-    "path": "/tourItemDetails/components/ReviewsCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\components\\\\ReviewsCom.vue",
-    "chunkName": "pages/tourItemDetails/components/ReviewsCom"
+    "name": "Items-Details-components-ReviewsCom",
+    "path": "/Items/Details/components/ReviewsCom",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ReviewsCom.vue",
+    "chunkName": "pages/Items/Details/components/ReviewsCom"
   },
   {
     "name": "board-detail-update-idx",
@@ -180,16 +180,16 @@
     "chunkName": "pages/board/detail/_idx"
   },
   {
+    "name": "Items-Details-idx",
+    "path": "/Items/Details/:idx",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\_idx.vue",
+    "chunkName": "pages/Items/Details/_idx"
+  },
+  {
     "name": "payment-userIdx",
     "path": "/payment/:userIdx?",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\payment\\\\_userIdx.vue",
     "chunkName": "pages/payment/_userIdx"
-  },
-  {
-    "name": "tourItemDetails-idx",
-    "path": "/tourItemDetails/:idx?",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\tourItemDetails\\\\_idx.vue",
-    "chunkName": "pages/tourItemDetails/_idx"
   },
   {
     "name": "index",

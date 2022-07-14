@@ -21,21 +21,21 @@ const _530881e6 = () => interopDefault(import('..\\pages\\board\\List.vue' /* we
 const _1e80fa00 = () => interopDefault(import('..\\pages\\board\\Write.vue' /* webpackChunkName: "pages/board/Write" */))
 const _c815aafe = () => interopDefault(import('..\\pages\\inform\\Detail.vue' /* webpackChunkName: "pages/inform/Detail" */))
 const _279bfa4e = () => interopDefault(import('..\\pages\\inform\\List.vue' /* webpackChunkName: "pages/inform/List" */))
-const _1b59b06e = () => interopDefault(import('..\\pages\\ItemList\\ItemList.vue' /* webpackChunkName: "pages/ItemList/ItemList" */))
+const _e6074d8e = () => interopDefault(import('..\\pages\\Items\\Details\\index.vue' /* webpackChunkName: "pages/Items/Details/index" */))
+const _7344b172 = () => interopDefault(import('..\\pages\\Items\\List.vue' /* webpackChunkName: "pages/Items/List" */))
 const _49dfe476 = () => interopDefault(import('..\\pages\\service\\ItemDetailDataService.js' /* webpackChunkName: "pages/service/ItemDetailDataService" */))
 const _fb0a72ec = () => interopDefault(import('..\\pages\\service\\ReviewDataService.js' /* webpackChunkName: "pages/service/ReviewDataService" */))
 const _a503c94c = () => interopDefault(import('..\\pages\\service\\ShoppingCartDataService.js' /* webpackChunkName: "pages/service/ShoppingCartDataService" */))
 const _ce363186 = () => interopDefault(import('..\\pages\\service\\UserDataService.js' /* webpackChunkName: "pages/service/UserDataService" */))
 const _039f4d97 = () => interopDefault(import('..\\pages\\shoppingCart\\ShoppingCart.vue' /* webpackChunkName: "pages/shoppingCart/ShoppingCart" */))
-const _4acab808 = () => interopDefault(import('..\\pages\\tourItemDetails\\TourItemDetail.vue' /* webpackChunkName: "pages/tourItemDetails/TourItemDetail" */))
-const _eb61c56c = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\CardSliderCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/CardSliderCom" */))
-const _a951dce8 = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\ImgGalleryCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/ImgGalleryCom" */))
-const _12e23fd6 = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\KakaoMapApiCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/KakaoMapApiCom" */))
-const _44f17188 = () => interopDefault(import('..\\pages\\tourItemDetails\\components\\ReviewsCom.vue' /* webpackChunkName: "pages/tourItemDetails/components/ReviewsCom" */))
+const _c4ca9dbe = () => interopDefault(import('..\\pages\\Items\\Details\\components\\CardSliderCom.vue' /* webpackChunkName: "pages/Items/Details/components/CardSliderCom" */))
+const _82bab53a = () => interopDefault(import('..\\pages\\Items\\Details\\components\\ImgGalleryCom.vue' /* webpackChunkName: "pages/Items/Details/components/ImgGalleryCom" */))
+const _690926df = () => interopDefault(import('..\\pages\\Items\\Details\\components\\KakaoMapApiCom.vue' /* webpackChunkName: "pages/Items/Details/components/KakaoMapApiCom" */))
+const _9575ca76 = () => interopDefault(import('..\\pages\\Items\\Details\\components\\ReviewsCom.vue' /* webpackChunkName: "pages/Items/Details/components/ReviewsCom" */))
 const _149ebe32 = () => interopDefault(import('..\\pages\\board\\detail\\update\\_idx.vue' /* webpackChunkName: "pages/board/detail/update/_idx" */))
 const _fc276844 = () => interopDefault(import('..\\pages\\board\\detail\\_idx.vue' /* webpackChunkName: "pages/board/detail/_idx" */))
+const _6a0b7ce7 = () => interopDefault(import('..\\pages\\Items\\Details\\_idx.vue' /* webpackChunkName: "pages/Items/Details/_idx" */))
 const _003fe0e2 = () => interopDefault(import('..\\pages\\payment\\_userIdx.vue' /* webpackChunkName: "pages/payment/_userIdx" */))
-const _3c65a91e = () => interopDefault(import('..\\pages\\tourItemDetails\\_idx.vue' /* webpackChunkName: "pages/tourItemDetails/_idx" */))
 const _603576fb = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -118,9 +118,13 @@ export const routerOptions = {
     component: _279bfa4e,
     name: "inform-List"
   }, {
-    path: "/ItemList/ItemList",
-    component: _1b59b06e,
-    name: "ItemList-ItemList"
+    path: "/Items/Details",
+    component: _e6074d8e,
+    name: "Items-Details"
+  }, {
+    path: "/Items/List",
+    component: _7344b172,
+    name: "Items-List"
   }, {
     path: "/service/ItemDetailDataService",
     component: _49dfe476,
@@ -142,25 +146,21 @@ export const routerOptions = {
     component: _039f4d97,
     name: "shoppingCart-ShoppingCart"
   }, {
-    path: "/tourItemDetails/TourItemDetail",
-    component: _4acab808,
-    name: "tourItemDetails-TourItemDetail"
+    path: "/Items/Details/components/CardSliderCom",
+    component: _c4ca9dbe,
+    name: "Items-Details-components-CardSliderCom"
   }, {
-    path: "/tourItemDetails/components/CardSliderCom",
-    component: _eb61c56c,
-    name: "tourItemDetails-components-CardSliderCom"
+    path: "/Items/Details/components/ImgGalleryCom",
+    component: _82bab53a,
+    name: "Items-Details-components-ImgGalleryCom"
   }, {
-    path: "/tourItemDetails/components/ImgGalleryCom",
-    component: _a951dce8,
-    name: "tourItemDetails-components-ImgGalleryCom"
+    path: "/Items/Details/components/KakaoMapApiCom",
+    component: _690926df,
+    name: "Items-Details-components-KakaoMapApiCom"
   }, {
-    path: "/tourItemDetails/components/KakaoMapApiCom",
-    component: _12e23fd6,
-    name: "tourItemDetails-components-KakaoMapApiCom"
-  }, {
-    path: "/tourItemDetails/components/ReviewsCom",
-    component: _44f17188,
-    name: "tourItemDetails-components-ReviewsCom"
+    path: "/Items/Details/components/ReviewsCom",
+    component: _9575ca76,
+    name: "Items-Details-components-ReviewsCom"
   }, {
     path: "/board/detail/update/:idx?",
     component: _149ebe32,
@@ -170,13 +170,13 @@ export const routerOptions = {
     component: _fc276844,
     name: "board-detail-idx"
   }, {
+    path: "/Items/Details/:idx",
+    component: _6a0b7ce7,
+    name: "Items-Details-idx"
+  }, {
     path: "/payment/:userIdx?",
     component: _003fe0e2,
     name: "payment-userIdx"
-  }, {
-    path: "/tourItemDetails/:idx?",
-    component: _3c65a91e,
-    name: "tourItemDetails-idx"
   }, {
     path: "/",
     component: _603576fb,
