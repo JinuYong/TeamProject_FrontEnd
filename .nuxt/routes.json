@@ -3,198 +3,231 @@
     "name": "CheckId",
     "path": "/CheckId",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckId.vue",
-    "chunkName": "pages/CheckId"
+    "chunkName": "pages/CheckId",
+    "_name": "_d2627ce8"
   },
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPayment.vue",
-    "chunkName": "pages/CheckPayment"
+    "chunkName": "pages/CheckPayment",
+    "_name": "_f3bfcc36"
   },
   {
     "name": "CheckPwd",
     "path": "/CheckPwd",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPwd.vue",
-    "chunkName": "pages/CheckPwd"
+    "chunkName": "pages/CheckPwd",
+    "_name": "_4ecd39c8"
   },
   {
     "name": "FindId",
     "path": "/FindId",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\FindId.vue",
-    "chunkName": "pages/FindId"
+    "chunkName": "pages/FindId",
+    "_name": "_30ba720a"
   },
   {
     "name": "FindPwd",
     "path": "/FindPwd",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\FindPwd.vue",
-    "chunkName": "pages/FindPwd"
+    "chunkName": "pages/FindPwd",
+    "_name": "_bb73e8e6"
   },
   {
     "name": "http-common",
     "path": "/http-common",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\http-common.js",
-    "chunkName": "pages/http-common"
+    "chunkName": "pages/http-common",
+    "_name": "_650cf994"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\LogIn.vue",
-    "chunkName": "pages/LogIn"
+    "chunkName": "pages/LogIn",
+    "_name": "_6ab42612"
   },
   {
     "name": "mypage",
     "path": "/mypage",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\mypage\\\\index.vue",
-    "chunkName": "pages/mypage/index"
+    "chunkName": "pages/mypage/index",
+    "_name": "_0f145d60"
   },
   {
     "name": "MypageUpdate",
     "path": "/MypageUpdate",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\MypageUpdate.vue",
-    "chunkName": "pages/MypageUpdate"
+    "chunkName": "pages/MypageUpdate",
+    "_name": "_21ef81eb"
   },
   {
     "name": "Qna",
     "path": "/Qna",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Qna.vue",
-    "chunkName": "pages/Qna"
+    "chunkName": "pages/Qna",
+    "_name": "_a23c99a6"
   },
   {
     "name": "SearchResult",
     "path": "/SearchResult",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SearchResult.vue",
-    "chunkName": "pages/SearchResult"
+    "chunkName": "pages/SearchResult",
+    "_name": "_df3f6328"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp.vue",
-    "chunkName": "pages/SignUp"
+    "chunkName": "pages/SignUp",
+    "_name": "_c3524502"
   },
   {
     "name": "SignupComplete",
     "path": "/SignupComplete",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignupComplete.vue",
-    "chunkName": "pages/SignupComplete"
+    "chunkName": "pages/SignupComplete",
+    "_name": "_e18d0990"
   },
   {
     "name": "board-List",
     "path": "/board/List",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\List.vue",
-    "chunkName": "pages/board/List"
+    "chunkName": "pages/board/List",
+    "_name": "_530881e6"
   },
   {
     "name": "board-Write",
     "path": "/board/Write",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\Write.vue",
-    "chunkName": "pages/board/Write"
+    "chunkName": "pages/board/Write",
+    "_name": "_1e80fa00"
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\Detail.vue",
-    "chunkName": "pages/inform/Detail"
+    "chunkName": "pages/inform/Detail",
+    "_name": "_c815aafe"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\List.vue",
-    "chunkName": "pages/inform/List"
+    "chunkName": "pages/inform/List",
+    "_name": "_279bfa4e"
   },
   {
     "name": "Items-Details",
     "path": "/Items/Details",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\index.vue",
-    "chunkName": "pages/Items/Details/index"
+    "chunkName": "pages/Items/Details/index",
+    "_name": "_e6074d8e"
   },
   {
     "name": "Items-List",
     "path": "/Items/List",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\List.vue",
-    "chunkName": "pages/Items/List"
+    "chunkName": "pages/Items/List",
+    "_name": "_7344b172"
   },
   {
     "name": "service-ItemDetailDataService",
     "path": "/service/ItemDetailDataService",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ItemDetailDataService.js",
-    "chunkName": "pages/service/ItemDetailDataService"
+    "chunkName": "pages/service/ItemDetailDataService",
+    "_name": "_49dfe476"
   },
   {
     "name": "service-ReviewDataService",
     "path": "/service/ReviewDataService",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ReviewDataService.js",
-    "chunkName": "pages/service/ReviewDataService"
+    "chunkName": "pages/service/ReviewDataService",
+    "_name": "_fb0a72ec"
   },
   {
     "name": "service-ShoppingCartDataService",
     "path": "/service/ShoppingCartDataService",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ShoppingCartDataService.js",
-    "chunkName": "pages/service/ShoppingCartDataService"
+    "chunkName": "pages/service/ShoppingCartDataService",
+    "_name": "_a503c94c"
   },
   {
     "name": "service-UserDataService",
     "path": "/service/UserDataService",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\UserDataService.js",
-    "chunkName": "pages/service/UserDataService"
+    "chunkName": "pages/service/UserDataService",
+    "_name": "_ce363186"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
-    "chunkName": "pages/shoppingCart/ShoppingCart"
+    "chunkName": "pages/shoppingCart/ShoppingCart",
+    "_name": "_039f4d97"
   },
   {
     "name": "Items-Details-components-CardSliderCom",
     "path": "/Items/Details/components/CardSliderCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\CardSliderCom.vue",
-    "chunkName": "pages/Items/Details/components/CardSliderCom"
+    "chunkName": "pages/Items/Details/components/CardSliderCom",
+    "_name": "_c4ca9dbe"
   },
   {
     "name": "Items-Details-components-ImgGalleryCom",
     "path": "/Items/Details/components/ImgGalleryCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ImgGalleryCom.vue",
-    "chunkName": "pages/Items/Details/components/ImgGalleryCom"
+    "chunkName": "pages/Items/Details/components/ImgGalleryCom",
+    "_name": "_82bab53a"
   },
   {
     "name": "Items-Details-components-KakaoMapApiCom",
     "path": "/Items/Details/components/KakaoMapApiCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\KakaoMapApiCom.vue",
-    "chunkName": "pages/Items/Details/components/KakaoMapApiCom"
+    "chunkName": "pages/Items/Details/components/KakaoMapApiCom",
+    "_name": "_690926df"
   },
   {
     "name": "Items-Details-components-ReviewsCom",
     "path": "/Items/Details/components/ReviewsCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ReviewsCom.vue",
-    "chunkName": "pages/Items/Details/components/ReviewsCom"
+    "chunkName": "pages/Items/Details/components/ReviewsCom",
+    "_name": "_9575ca76"
   },
   {
     "name": "board-detail-update-idx",
     "path": "/board/detail/update/:idx?",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\detail\\\\update\\\\_idx.vue",
-    "chunkName": "pages/board/detail/update/_idx"
+    "chunkName": "pages/board/detail/update/_idx",
+    "_name": "_149ebe32"
   },
   {
     "name": "board-detail-idx",
     "path": "/board/detail/:idx?",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\detail\\\\_idx.vue",
-    "chunkName": "pages/board/detail/_idx"
+    "chunkName": "pages/board/detail/_idx",
+    "_name": "_fc276844"
   },
   {
     "name": "Items-Details-idx",
     "path": "/Items/Details/:idx",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\_idx.vue",
-    "chunkName": "pages/Items/Details/_idx"
+    "chunkName": "pages/Items/Details/_idx",
+    "_name": "_6a0b7ce7"
   },
   {
     "name": "payment-userIdx",
     "path": "/payment/:userIdx?",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\payment\\\\_userIdx.vue",
-    "chunkName": "pages/payment/_userIdx"
+    "chunkName": "pages/payment/_userIdx",
+    "_name": "_003fe0e2"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_603576fb"
   }
 ]

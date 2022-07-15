@@ -4,9 +4,10 @@
             <!-- <h3 class="text-center">내 정보</h3> -->
             <div class="signup-inputs form-label">
                 프로필 이미지
-                <img :src="profileImg" alt="프로필이미지" class="user-profile" ref="userProfile">
-                <label class="profile-label" for="profile-change"></label>
-                <input type="file" class="profile-input" id="profile-change" accept="image/*" @change="profileChange" ref="profile">
+                <!-- <img :src="profileImg" alt="프로필이미지" class="user-profile" ref="userProfile"> -->
+                <img :src="this.imgSrc" alt="프로필이미지" class="user-profile" ref="userProfile">
+                <label class="profile-label" :class="{cursordisable:!editStatus}" for="profile-change"></label>
+                <input type="file" class="profile-input" id="profile-change" accept="image/*" @change="profileChange" ref="profile" disabled>
             </div>
 
             <!-- 아이디 -->
@@ -226,7 +227,9 @@ export default {
             editStatus: true,
             changeSuccess: false,
             validateResult: false,
-            validateErrorMsg: ""
+            validateErrorMsg: "",
+            imgSrc: "",
+            profileUrl: ""
         };
     },
     components: {
@@ -248,14 +251,24 @@ export default {
         toggleEditStatus(e) {
             e.preventDefault();
             this.editStatus = false;
+            console.log(this.$refs.profile);
+            this.$refs.profile.disabled="";
+            console.log(this.$refs.profile);
         },
         async getUserInform(userId) {
             console.log(userId);
-            let res = this.$axios.post('/api/myinform/get', userId).then(res => {
+            let res = await this.$axios.post('/api/myinform/get', userId).then(res => {
                 console.log(res);
                 this.userForm = res.data;
                 this.phoneNum = res.data.phone;
+                this.profileUrl = res.data.profileUrl;
+                // this.imgSrc = "http://localhost:8000/profile/" + res.data.profileUrl;
+                // console.log("this.imgSrc = ", this.imgSrc);
             })
+            await this.$axios.get('/profile/'+ this.profileUrl).then(res => {
+                console.log(res);
+            })
+
         },
         async passwordChange() {
             //비밀번호 체크
@@ -263,7 +276,7 @@ export default {
             const patten_complete_kor = /[가-힣]/;
             if (pattern_blank.test(this.newPassword) || patten_complete_kor.test(this.newPassword) 
             || this.newPassword.length < 8 || this.newPassword.length > 20) {
-                this.validateErrorMsg = "비밀번호는 대, 소문자 8~20자로 구성해주세요. ";
+                this.validateErrorMsg = "비밀번호는 공백없이 8~20자로 구성해주세요. ";
                 this.validateResult = true;
                 return;
             }
@@ -281,9 +294,11 @@ export default {
         modalReset() {
             this.$router.go(0);
         },
-        profileChange(e) {
-            this.userForm.profileFile = e.target.files;
-            this.profileImg = URL.createObjectURL(this.userForm.profileFile[0]);
+        profileChange() {
+            if (this.$refs.profile.files.length > 0) {
+                this.userForm.profileFile = this.$refs.profile.files;
+                this.profileImg = URL.createObjectURL(this.$refs.profile.files[0]);
+            }
         },
         address_search(e) {
             e.preventDefault();
@@ -361,13 +376,13 @@ export default {
             userData.append("phone", this.phoneNum);
             try {
                 console.log(userData);
-                let res = await this.$axios.put('/api/signup/register', userData, {
+                let res = await this.$axios.put('/api/myinform/updateinform', userData, {
                     headers: {
                         "Content-Type" : "multipart/form-data"
                     }
                 });
                 console.log(res);
-                this.$router.push('/signupComplete/');
+                this.$router.go(0);
             } catch(e) {
                 console.log(e);
                 alert("회원가입에 실패했습니다. 다시 시도해주세요.");
@@ -375,12 +390,10 @@ export default {
         }
     },
     mounted() {
-        localStorage.setItem("id", "jinuyong1");
-        let userId = localStorage.getItem("id");
-        console.log(userId);
-        this.getUserInform(userId);
+        localStorage.setItem("id", "jinu11");
+        console.log(localStorage.getItem("id"));
+        this.getUserInform(localStorage.getItem("id"));
         console.log(this.userForm);
-        this.userForm.password = "";
     },
 }
 </script>
@@ -436,8 +449,10 @@ export default {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        cursor: pointer;
         transform: translateX(-80px);
+    }
+    .cursordisable {
+        cursor: pointer;
     }
     .profile-input {
         display: none;

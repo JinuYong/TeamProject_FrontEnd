@@ -36,8 +36,6 @@
                     class="form-control"
                     id="user_password"
                     placeholder="대,소문자 포함 8~20자 내외로 입력해 주세요."
-                    minlength="8"
-                    maxlength="20"
                     v-model="userForm.password"
                 />
             </div>
@@ -52,8 +50,6 @@
                     class="form-control"
                     id="re_password"
                     placeholder="입력한 비밀번호를 다시 입력해 주세요."
-                    minlength="8"
-                    maxlength="20"
                     v-model="userForm.rePassword"
                 />
             </div>
@@ -177,7 +173,7 @@ export default {
                 postcode: "",
                 address: "",
                 detailAddress: "",
-                profileFile: null
+                profileFile: ""
             },
         };
     },
@@ -220,9 +216,11 @@ export default {
                 }
             };
         },
-        profileChange(e) {
-            this.userForm.profileFile = e.target.files[0];
-            this.profileImg = URL.createObjectURL(this.userForm.profileFile);
+        profileChange() {
+            if (this.$refs.profile.files.length > 0) {
+                this.userForm.profileFile = this.$refs.profile.files[0];
+                this.profileImg = URL.createObjectURL(this.userForm.profileFile);
+            }
             console.log(this.userForm.profileFile);
         },
         address_search(e) {
@@ -328,8 +326,9 @@ export default {
             console.log(
                 "pattern_blank=" + pattern_blank.test(password) + "patten_complete_kor" + patten_complete_kor.test(password)
             );
-            if (pattern_blank.test(password) || patten_complete_kor.test(password)) {
-                alert("비밀번호를 확인해 주세요");
+            if (pattern_blank.test(password) || patten_complete_kor.test(password)
+            || password.length < 8 || password.length > 20) {
+                alert("비밀번호는 공백없이 8~20자 내외로 입력해주세요");
                 return;
             }
             //비밀번호 재확인 비교
