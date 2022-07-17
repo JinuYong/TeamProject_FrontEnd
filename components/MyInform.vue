@@ -5,7 +5,7 @@
             <div class="signup-inputs form-label">
                 프로필 이미지
                 <!-- <img :src="profileImg" alt="프로필이미지" class="user-profile" ref="userProfile"> -->
-                <img :src="this.imgSrc" alt="프로필이미지" class="user-profile" ref="userProfile">
+                <img v-if="profileUrl" :src="'http://localhost:8000/image/' + profileUrl" alt="프로필이미지" class="user-profile" ref="userProfile">
                 <label class="profile-label" :class="{cursordisable:!editStatus}" for="profile-change"></label>
                 <input type="file" class="profile-input" id="profile-change" accept="image/*" @change="profileChange" ref="profile" disabled>
             </div>
@@ -229,7 +229,8 @@ export default {
             validateResult: false,
             validateErrorMsg: "",
             imgSrc: "",
-            profileUrl: ""
+            profileUrl: "",
+            oldProfileFile: null
         };
     },
     components: {
@@ -262,13 +263,8 @@ export default {
                 this.userForm = res.data;
                 this.phoneNum = res.data.phone;
                 this.profileUrl = res.data.profileUrl;
-                // this.imgSrc = "http://localhost:8000/profile/" + res.data.profileUrl;
                 // console.log("this.imgSrc = ", this.imgSrc);
             })
-            await this.$axios.get('/profile/'+ this.profileUrl).then(res => {
-                console.log(res);
-            })
-
         },
         async passwordChange() {
             //비밀번호 체크
@@ -296,8 +292,9 @@ export default {
         },
         profileChange() {
             if (this.$refs.profile.files.length > 0) {
-                this.userForm.profileFile = this.$refs.profile.files;
-                this.profileImg = URL.createObjectURL(this.$refs.profile.files[0]);
+                this.userForm.profileFile = this.$refs.profile.files[0];
+                // this.profileImg = URL.createObjectURL(this.$refs.profile.files[0]);
+                this.$refs.userProfile.src = URL.createObjectURL(this.$refs.profile.files[0]);
             }
         },
         address_search(e) {
@@ -373,10 +370,10 @@ export default {
                 userData.append(key, this.userForm[key]);
             }
             userData.delete("rePassword");
-            userData.append("phone", this.phoneNum);
+            userData.set("phone", this.phoneNum);
             try {
                 console.log(userData);
-                let res = await this.$axios.put('/api/myinform/updateinform', userData, {
+                let res = await this.$axios.post('/api/myinform/updateinform', userData, {
                     headers: {
                         "Content-Type" : "multipart/form-data"
                     }
@@ -390,7 +387,7 @@ export default {
         }
     },
     mounted() {
-        localStorage.setItem("id", "jinu11");
+        localStorage.setItem("id", "jinu12");
         console.log(localStorage.getItem("id"));
         this.getUserInform(localStorage.getItem("id"));
         console.log(this.userForm);

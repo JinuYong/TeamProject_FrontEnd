@@ -165,9 +165,9 @@
                     alt="logo"
                 />
                 <div class="footer-icons">
-                    <img class="footer-icon" src="@/assets/img/facebook.svg" />
-                    <img class="footer-icon" src="@/assets/img/github.svg" />
-                    <img class="footer-icon" src="@/assets/img/google.svg" />
+                    <a href="https://ko-kr.facebook.com/"><img class="footer-icon" src="@/assets/img/facebook.svg"/></a>
+                    <a href="https://github.com/"><img class="footer-icon" src="@/assets/img/github.svg"/></a>
+                    <a href="https://www.google.co.kr"><img class="footer-icon" src="@/assets/img/google.svg"/></a>
                 </div>
                 <p class="footer-text">
                     만든 이 | 유인환, 박진우, 김영근, 하보석, 김준섭

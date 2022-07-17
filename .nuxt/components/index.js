@@ -1,4 +1,5 @@
 export { default as MyInform } from '../..\\components\\MyInform.vue'
+export { default as Payment } from '../..\\components\\Payment.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

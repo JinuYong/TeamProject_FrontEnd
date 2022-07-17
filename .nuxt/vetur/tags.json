@@ -1,5 +1,8 @@
 {
   "MyInform": {
     "description": "Auto imported from components/MyInform.vue"
+  },
+  "Payment": {
+    "description": "Auto imported from components/Payment.vue"
   }
 }

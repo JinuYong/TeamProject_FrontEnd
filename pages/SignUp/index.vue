@@ -360,7 +360,7 @@ export default {
                     }
                 });
                 console.log(res);
-                this.$router.push('/signupComplete/');
+                this.$router.push('/signup/complete');
             } catch(e) {
                 console.log(e);
                 alert("회원가입에 실패했습니다. 다시 시도해주세요.");
