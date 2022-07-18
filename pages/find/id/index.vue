@@ -8,23 +8,25 @@
 
             <div class="form-floating">
                 <input
-                    type="email"
+                    type="text"
                     class="form-control mb-1"
-                    id="floatingInput"
-                    placeholder="name@example.com"
+                    id="user_name"
+                    placeholder="name"
+                    v-model="user.name"
                 />
-                <label for="floatingInput">이름</label>
+                <label for="user_name">이름</label>
             </div>
             <div class="form-floating">
                 <input
                     type="email"
                     class="form-control"
-                    id="floatingEmail"
+                    id="user_email"
                     placeholder="Password"
+                    v-model="user.email"
                 />
-                <label for="floatingEmail">이메일</label>
+                <label for="user_email">이메일</label>
             </div>
-            <button class="w-100 mt-5 mb-5 btn btn-md" type="submit">
+            <button class="w-100 mt-5 mb-5 btn btn-md" @click="findUserId">
                 확인
             </button>
             <hr />
@@ -45,6 +47,24 @@
 /* eslint-disable */
 export default {
     name: "findid",
+    data() {
+        return {
+            user: {
+                name: "",
+                email: ""
+            }
+        }
+    },
+    methods: {
+        async findUserId(e) {
+            e.preventDefault();
+            
+            let res = await this.$axios.post("/api/find/id", this.user
+            ).then(res => {
+                console.log(res);
+            })
+        }
+    },
 };
 </script>
 

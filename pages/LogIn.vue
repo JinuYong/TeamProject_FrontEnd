@@ -70,8 +70,8 @@
       </button> -->
             <div>
                 아직 <a href="/signup" class="aTag">회원</a>이 아니신가요?<br />
-                <a href="/findid" class="aTag">아이디</a> 또는
-                <a href="/findpwd" class="aTag">비밀번호</a>를 잊으셨나요?
+                <a href="/find/id/" class="aTag">아이디</a> 또는
+                <a href="/find/password/" class="aTag">비밀번호</a>를 잊으셨나요?
             </div>
             <hr />
             <div class="logoPic-flex">
@@ -115,7 +115,7 @@ export default {
         // 로그인이 되었으면 사용자를 프로필 페이지로 안내
         if (this.loggedIn) {
             //  profile 페이지로 강제 이동함
-            this.$router.push("/mypageupdate");
+            this.$router.push("/");
         }
     },
     methods: {
@@ -136,6 +136,7 @@ export default {
                 //  로그인 절차 진행
                 //  springboot 서버와 통신
                 if (this.user.username && this.user.password) {
+                    console.log(this.user);
                     //  springboot로 username, password 전송해서 로그인 진행
                     //  공유저장소의 비동기 메소드 호출 ( login )
                     this.$store
@@ -146,7 +147,7 @@ export default {
                             //  성공
                             () => {
                                 // 로그인 성공시 자동 페이지 전환 : /profile 페이지
-                                this.$router.push("/mypageupdate");
+                                this.$router.push("/");
                             },
                             //  실패
                             (error) => {

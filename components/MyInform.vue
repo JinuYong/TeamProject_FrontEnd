@@ -387,9 +387,10 @@ export default {
         }
     },
     mounted() {
-        localStorage.setItem("id", "jinu12");
-        console.log(localStorage.getItem("id"));
-        this.getUserInform(localStorage.getItem("id"));
+        let userId = JSON.parse(localStorage.getItem("user")).username;
+        console.log(userId);
+        this.getUserInform(userId);
+        // console.log(localStorage.getItem("user"));
         console.log(this.userForm);
     },
 }
@@ -440,7 +441,8 @@ export default {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        margin: 20px 0 20px 30px
+        margin: 20px 0 20px 30px;
+        object-fit: cover;
     }
     .profile-label {
         width: 80px;
