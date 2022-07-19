@@ -236,8 +236,8 @@ export default {
         width: 150px;
     }
     .divider-col {
-        width: 2px;
-        height: 30px;
+        width: 1px;
+        height: 35px;
         background: #959595;
         margin: 0 20px;
     }

@@ -29,7 +29,7 @@ export default {
 .default {
     /* width: 1200px; */
     min-width: 700px;
-    min-height: calc(100vh - 310px);
+    min-height: calc(100vh - 320px);
     margin: 0 auto;
     padding-bottom: 50px;
 }
