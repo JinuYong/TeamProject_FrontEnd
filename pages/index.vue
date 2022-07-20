@@ -1,74 +1,19 @@
 <template>
     <div id="app">
         <!-- 배너 -->
-        <div class="row main-img">
+        <div class="container p-0 main-img">
             <video muted autoplay loop>
                 <source src="@/assets/img/main/main-video.mp4" type="video/mp4">
             </video>
-            <!--            <div-->
-            <!--                id="carouselExampleFade"-->
-            <!--                class="carousel slide carousel-fade "-->
-            <!--                data-bs-ride="carousel">-->
-            <!--                <div class="carousel-inner ">-->
-            <!--                    <div-->
-            <!--                        class="carousel-item active"-->
-            <!--                        data-bs-interval="4000"-->
-            <!--                    >-->
-            <!--                        <img-->
-            <!--                            src="@/assets/img/main/yunlin.jpg"-->
-            <!--                            class="d-block  w-100"-->
-            <!--                            alt="..."-->
-            <!--                        />-->
-            <!--                    </div>-->
-            <!--                    <div class="carousel-item" data-bs-interval="4000">-->
-            <!--                        <img-->
-            <!--                            src="@/assets/img/main/jusang.jpg"-->
-            <!--                            class="d-block w-100"-->
-            <!--                            alt="..."-->
-            <!--                        />-->
-            <!--                    </div>-->
-            <!--                    <div class="carousel-item" data-bs-interval="4000">-->
-            <!--                        <img-->
-            <!--                            src="@/assets/img/main/scenery.jpg"-->
-            <!--                            class="d-block w-100"-->
-            <!--                            alt="..."-->
-            <!--                        />-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <button-->
-            <!--                    class="carousel-control-prev"-->
-            <!--                    type="button"-->
-            <!--                    data-bs-target="#carouselExampleFade"-->
-            <!--                    data-bs-slide="prev"-->
-            <!--                >-->
-            <!--                        <span-->
-            <!--                            class="carousel-control-prev-icon"-->
-            <!--                            aria-hidden="true"-->
-            <!--                        ></span>-->
-            <!--                    <span class="visually-hidden">Previous</span>-->
-            <!--                </button>-->
-            <!--                <button-->
-            <!--                    class="carousel-control-next"-->
-            <!--                    type="button"-->
-            <!--                    data-bs-target="#carouselExampleFade"-->
-            <!--                    data-bs-slide="next"-->
-            <!--                >-->
-            <!--                        <span-->
-            <!--                            class="carousel-control-next-icon"-->
-            <!--                            aria-hidden="true"-->
-            <!--                        ></span>-->
-            <!--                    <span class="visually-hidden">Next</span>-->
-            <!--                </button>-->
-            <!--            </div>-->
         </div>
         <!-- 배너 끝 -->
         <!-- 검색창 시작  -->
         <div class="container search">
-            <div class="row ">
-                <div class="text-center py-3">
+            <div class="row">
+                <div class="col-12 text-center py-3">
                     <img class="seoul-jeju-img" src="@/assets/img/main/seoul-jeju-white.png">
                 </div>
-                <div class="container col-md text-center select-color">
+                <div class="col-md-12 select-color m-auto">
                     <div class="text-left pt-3 px-2">
                         <p class="color-white fw-light">
                             위치를 선택해 주세요
@@ -101,7 +46,7 @@
                                         ></button>
                                     </div>
                                     <hr class="arb-line"/>
-                                    <div class="">
+                                    <div class="pl-5">
                                         <div class="row sb-con">
                                             <div class="col mb-content">
                                                 <a @click="searchAreaValue1('서울')"
@@ -196,7 +141,7 @@
                                         ></button>
                                     </div>
                                     <hr class="arb-line"/>
-                                    <div class="">
+                                    <div class="ml-5">
                                         <div class="row sb-con">
                                             <div class="col mb-content">
                                                 <a @click="searchAreaValue2('서울')"
@@ -273,339 +218,207 @@
                 </div>
             </div>
         </div>
-        <!--        <div class="container search">-->
-        <!--            <div class="row">-->
-        <!--                &lt;!&ndash; select 창 &ndash;&gt;-->
-        <!--                <div class="select-pick select-color">-->
-        <!--                    <div>-->
-        <!--                        <div class="pt-4">-->
-        <!--                            <input-->
-        <!--                                id="areaPic"-->
-        <!--                                type="text"-->
-        <!--                                class="area-search "-->
-        <!--                                placeholder="어디로 떠날까요?"-->
-        <!--                                style="width: 100%"-->
-        <!--                                @click="show = !show"-->
-        <!--                                v-model:value="this.areaValue"-->
-        <!--                            />-->
-        <!--                        </div>-->
 
-        <!--                        <div class="area-search-box" v-show="!show">-->
-        <!--                            <br/>-->
-        <!--                            <div class="row">-->
-        <!--                                <h6 class="col-md-9 offset-md-1 asb-title">지역</h6>-->
-        <!--                                <button-->
-        <!--                                    type="button"-->
-        <!--                                    class="btn-close col-md-1 asb-btn"-->
-        <!--                                    aria-label="Close"-->
-        <!--                                    @click="show = !show"-->
-        <!--                                ></button>-->
-        <!--                            </div>-->
-        <!--                            <hr class="arb-line"/>-->
-        <!--                            <div class="">-->
-        <!--                                <div class="row sb-con">-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a @click="searchAreaValue('서울')"-->
-        <!--                                           href="#"-->
-        <!--                                           class="text-hover">서울</a>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a @click="searchAreaValue('양양')"-->
-        <!--                                           href="#"-->
-        <!--                                           class="text-hover">양양</a>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="row sb-con">-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a @click="searchAreaValue('강릉')"-->
-        <!--                                           href="#"-->
-        <!--                                           class="text-hover">강릉</a>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a @click="searchAreaValue('경주')"-->
-        <!--                                           href="#"-->
-        <!--                                           class="text-hover">경주</a>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="row sb-con">-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a @click="searchAreaValue('부산')"-->
-        <!--                                           href="#"-->
-        <!--                                           class="text-hover">부산</a>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a @click="searchAreaValue('통영')"-->
-        <!--                                           href="#"-->
-        <!--                                           class="text-hover">통영</a>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="row sb-con">-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a @click="searchAreaValue('포항')"-->
-        <!--                                           href="#"-->
-        <!--                                           class="text-hover">포항</a>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a href="#"-->
-        <!--                                           @click="searchAreaValue('제주도')"-->
-        <!--                                           class="text-hover">제주도</a>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="row sb-con">-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a @click="searchAreaValue('여수')"-->
-        <!--                                           href="#"-->
-        <!--                                           class="text-hover">여수</a>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col mb-content">-->
-        <!--                                        <a href="#"-->
-        <!--                                           @click="searchAreaValue('담양')"-->
-        <!--                                           class="text-hover">담양</a>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
 
-        <!--                        </div>-->
-        <!--                    </div>-->
-
-        <!--                    &lt;!&ndash; 출발 위치 &ndash;&gt;-->
-        <!--                    <div class="pt-4">-->
-        <!--                        &lt;!&ndash; <div class="spt">출발 위치</div> &ndash;&gt;-->
-        <!--                        <select-->
-        <!--                            class="form-select area-select"-->
-        <!--                            aria-label="Default select example"-->
-        <!--                        >-->
-        <!--                            <option selected>출발지역</option>-->
-        <!--                            <option value="1">서울</option>-->
-        <!--                            <option value="2">양양</option>-->
-        <!--                            <option value="3">대구</option>-->
-        <!--                            <option value="4">여수</option>-->
-        <!--                        </select>-->
-        <!--                    </div>-->
-
-        <!--                    &lt;!&ndash; TODO: input 앞에 아이콘? &ndash;&gt;-->
-        <!--                    &lt;!&ndash; 날짜 &ndash;&gt;-->
-        <!--                    <div class="pt-4">-->
-        <!--                        &lt;!&ndash; <div class="spt">날짜</div> &ndash;&gt;-->
-        <!--                        <input-->
-        <!--                            id="datePic"-->
-        <!--                            type="text"-->
-        <!--                            maxlength="10"-->
-        <!--                            class="datepicker col-md-12 date-input"-->
-        <!--                            placeholder="여행시작일 선택"-->
-        <!--                        />-->
-        <!--                    </div>-->
-
-        <!--                    <hr class="select-line"/>-->
-
-        <!--                    &lt;!&ndash; 버튼 &ndash;&gt;-->
-        <!--                    <router-link :to="{path: '/SearchResult', query: {area:areaValue, date: searchDate}}">-->
-        <!--                        <div class="d-grid gap-2 py-4">-->
-        <!--                            <button type="button" class="btn search-btn" @click="searchDateValue">-->
-        <!--                                검색-->
-        <!--                            </button>-->
-        <!--                        </div>-->
-        <!--                    </router-link>-->
-        <!--                </div>-->
-        <!--                &lt;!&ndash; select창 끝 &ndash;&gt;-->
-        <!--            </div>-->
-        <!--        </div>-->
-
+        <div style="height: 600px"></div>
         <!-- 본문 시작 1 -->
-        <div class="container">
-            <div class="py-3 slider-div">
-                <div class="container px-0 pt-1">
-                    <div class="h4 m-4">급상승 여행지</div>
-                    <div class="outerDiv pt-2" id="container">
-                        <div class="innerDiv mb-5 px-3" v-for="item in items">
-                            <!-- 클릭시 해당 아이템으로 이동 -->
-                            <router-link :to="'/tourItemDetails/'+ item.idx">
-                                <div class="card h-100 item-card">
-                                    <!-- Sale badge-->
-                                    <div class="badge bg-dark text-white position-absolute"
-                                         style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top card-image"
-                                         :src="'data:image/*;base64,' + item.data"
-                                         :alt="item.name"/>
-                                    <!-- Product details-->
-                                    <div class="card-body p-3">
-                                        <div class="text-left">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">{{ item.title }}</h5>
-                                            <p class="fw">{{ item.content }}</p>
+        <div class="content-start">
+            <div class="">
+                <div class="py-3 slider-div">
+                    <div class="container px-0 pt-1">
+                        <div class="h4 m-4">급상승 여행지</div>
+                        <div class="outerDiv pt-2" id="container">
+                            <div class="innerDiv mb-5 px-3" v-for="(item,index) in items" v-show="index % 3 == 0">
+                                <!-- 클릭시 해당 아이템으로 이동 -->
+                                <router-link :to="'/tourItemDetails/'+ item.idx">
+                                    <div class="card h-100 item-card">
+                                        <!-- Sale badge-->
+                                        <div class="badge bg-dark text-white position-absolute"
+                                             style="top: 0.5rem; right: 0.5rem">
+                                            Sale
+                                        </div>
+                                        <!-- Product image-->
+                                        <img class="card-img-top card-image"
+                                             :src="'data:image/*;base64,' + item.data"
+                                             :alt="item.name"/>
+                                        <!-- Product details-->
+                                        <div class="card-body p-3">
+                                            <div class="text-left">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">{{ item.title }}</h5>
+                                                <p class="fw">{{ item.content }}</p>
 
-                                            <ul style="float: left; margin: 0">
-                                                <li>&nbsp;</li>
-                                                <li>
-                                                    <p class="badge rounded-pill bg-c1 m-0">{{ item.area }}</p>
-                                                </li>
-                                            </ul>
-                                            <!-- Product price-->
-                                            <ul style="float: right; margin: 0; padding: 0">
-                                                <li>
+                                                <ul style="float: left; margin: 0">
+                                                    <li>&nbsp;</li>
+                                                    <li>
+                                                        <p class="badge rounded-pill bg-c1 m-0">{{ item.area }}</p>
+                                                    </li>
+                                                </ul>
+                                                <!-- Product price-->
+                                                <ul style="float: right; margin: 0; padding: 0">
+                                                    <li>
                                             <span
                                                 class="text-muted text-decoration-line-through text-right">{{
                                                     item.price | numberFormat
                                                 }}</span>
-                                                </li>
-                                                <li>
+                                                    </li>
+                                                    <li>
                                                 <span
                                                     class="b-sidebar-right">{{
                                                         item.price * (1 - (item.discountPer / 100))|numberFormat
                                                     }}</span>
-                                                </li>
-                                            </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </router-link>
+                                </router-link>
+                            </div>
+                            <button id="slideLeft" type="button" @click="buttonLeft" class="slider-left">
+                                <img src="@/assets/img/itemDetails/left.png" class="img-fluid">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button id="slideRight" type="button" @click="buttonRight" class="slider-right">
+                                <img src="@/assets/img/itemDetails/right.png" class="img-fluid">
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button id="slideLeft" type="button" @click="buttonLeft" class="slider-left">
-                            <img src="@/assets/img/itemDetails/left.png" class="img-fluid">
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button id="slideRight" type="button" @click="buttonRight" class="slider-right">
-                            <img src="@/assets/img/itemDetails/right.png" class="img-fluid">
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 본문 끝 -->
-        <!-- 본문 시작 2 -->
-        <div class="container">
-            <div class="py-3 slider-div">
-                <div class="container px-0 pt-1">
-                    <div class="h4 m-4">최신 여행지</div>
-                    <div class="outerDiv pt-2" id="container2">
-                        <div class="innerDiv mb-5 px-3" v-for="item in items">
-                            <!-- 클릭시 해당 아이템으로 이동 -->
-                            <router-link :to="'/tourItemDetails/'+ item.idx">
-                                <div class="card h-100 item-card">
-                                    <!-- Sale badge-->
-                                    <div class="badge bg-dark text-white position-absolute"
-                                         style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top card-image"
-                                         :src="'data:image/*;base64,' + item.data"
-                                         :alt="item.name"/>
-                                    <!-- Product details-->
-                                    <div class="card-body p-3">
-                                        <div class="text-left">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">{{ item.title }}</h5>
-                                            <p class="fw">{{ item.content }}</p>
+            <!-- 본문 끝 -->
+            <!-- 본문 시작 2 -->
+            <div class="">
+                <div class="py-3 slider-div">
+                    <div class="container px-0 pt-1">
+                        <div class="h4 m-4">최신 여행지</div>
+                        <div class="outerDiv pt-2" id="container2">
+                            <div class="innerDiv mb-5 px-3" v-for="(item,index) in items" v-show="index % 2 == 0">
+                                <!-- 클릭시 해당 아이템으로 이동 -->
+                                <router-link :to="'/tourItemDetails/'+ item.idx">
+                                    <div class="card h-100 item-card">
+                                        <!-- Sale badge-->
+                                        <div class="badge bg-dark text-white position-absolute"
+                                             style="top: 0.5rem; right: 0.5rem">
+                                            Sale
+                                        </div>
+                                        <!-- Product image-->
+                                        <img class="card-img-top card-image"
+                                             :src="'data:image/*;base64,' + item.data"
+                                             :alt="item.name"/>
+                                        <!-- Product details-->
+                                        <div class="card-body p-3">
+                                            <div class="text-left">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">{{ item.title }}</h5>
+                                                <p class="fw">{{ item.content }}</p>
 
-                                            <ul style="float: left; margin: 0">
-                                                <li>&nbsp;</li>
-                                                <li>
-                                                    <p class="badge rounded-pill bg-c1 m-0">{{ item.area }}</p>
-                                                </li>
-                                            </ul>
-                                            <!-- Product price-->
-                                            <ul style="float: right; margin: 0; padding: 0">
-                                                <li>
+                                                <ul style="float: left; margin: 0">
+                                                    <li>&nbsp;</li>
+                                                    <li>
+                                                        <p class="badge rounded-pill bg-c1 m-0">{{ item.area }}</p>
+                                                    </li>
+                                                </ul>
+                                                <!-- Product price-->
+                                                <ul style="float: right; margin: 0; padding: 0">
+                                                    <li>
                                             <span
                                                 class="text-muted text-decoration-line-through text-right">{{
                                                     item.price | numberFormat
                                                 }}</span>
-                                                </li>
-                                                <li>
+                                                    </li>
+                                                    <li>
                                                 <span
                                                     class="b-sidebar-right">{{
                                                         item.price * (1 - (item.discountPer / 100))|numberFormat
                                                     }}</span>
-                                                </li>
-                                            </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </router-link>
+                                </router-link>
+                            </div>
+                            <button id="slideLeft" type="button" @click="buttonLeft2" class="slider-left">
+                                <img src="@/assets/img/itemDetails/left.png" class="img-fluid">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button id="slideRight" type="button" @click="buttonRight2" class="slider-right">
+                                <img src="@/assets/img/itemDetails/right.png" class="img-fluid">
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button id="slideLeft" type="button" @click="buttonLeft2" class="slider-left">
-                            <img src="@/assets/img/itemDetails/left.png" class="img-fluid">
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button id="slideRight" type="button" @click="buttonRight2" class="slider-right">
-                            <img src="@/assets/img/itemDetails/right.png" class="img-fluid">
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 본문 끝 -->
-        <!-- 본문 시작 3 -->
-        <div class="container">
-            <div class="py-3 slider-div">
-                <div class="container px-0 pt-1">
-                    <div class="h4 m-4">프라이빗 여행지</div>
-                    <div class="outerDiv pt-2" id="container3">
-                        <div class="innerDiv mb-5 px-3" v-for="(item,index) in items">
-                            <!-- 클릭시 해당 아이템으로 이동 -->
-                            <router-link :to="'/tourItemDetails/'+ item.idx">
-                                <div class="card h-100 item-card">
-                                    <!-- Sale badge-->
-                                    <div class="badge bg-dark  text-white position-absolute"
-                                         style="top: 0.5rem; right: 0.5rem">
-                                        Sale
-                                    </div>
-                                    <!-- Product image-->
-                                    <img id="item-image"
-                                         class="card-img-top card-image"
-                                         :src="'data:image/*;base64,' + item.data"
-                                         :alt="item.name"/>
-                                    <!-- Product details-->
-                                    <div class="card-body p-3">
-                                        <div class="text-left">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">{{ item.title }}</h5>
-                                            <p class="fw">{{ item.content }}</p>
+            <!-- 본문 끝 -->
+            <!-- 본문 시작 3 -->
+            <div class="">
+                <div class="py-3 slider-div">
+                    <div class="container px-0 pt-1">
+                        <div class="h4 m-4">체험 여행지</div>
+                        <div class="outerDiv pt-2" id="container3">
+                            <div class="innerDiv mb-5 px-3" v-for="(item,index) in items">
+                                <!-- 클릭시 해당 아이템으로 이동 -->
+                                <router-link :to="'/tourItemDetails/'+ item.idx">
+                                    <div class="card h-100 item-card">
+                                        <!-- Sale badge-->
+                                        <div class="badge bg-dark  text-white position-absolute"
+                                             style="top: 0.5rem; right: 0.5rem">
+                                            Sale
+                                        </div>
+                                        <!-- Product image-->
+                                        <img id="item-image"
+                                             class="card-img-top card-image"
+                                             :src="'data:image/*;base64,' + item.data"
+                                             :alt="item.name"/>
+                                        <!-- Product details-->
+                                        <div class="card-body p-3">
+                                            <div class="text-left">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">{{ item.title }}</h5>
+                                                <p class="fw">{{ item.content }}</p>
 
-                                            <ul style="float: left; margin: 0">
-                                                <li>&nbsp;</li>
-                                                <li>
-                                                    <p class="badge rounded-pill bg-c1 m-0">{{ item.area }}</p>
-                                                </li>
-                                            </ul>
-                                            <!-- Product price-->
-                                            <ul style="float: right; margin: 0; padding: 0">
-                                                <li>
+                                                <ul style="float: left; margin: 0">
+                                                    <li>&nbsp;</li>
+                                                    <li>
+                                                        <p class="badge rounded-pill bg-c1 m-0">{{ item.area }}</p>
+                                                    </li>
+                                                </ul>
+                                                <!-- Product price-->
+                                                <ul style="float: right; margin: 0; padding: 0">
+                                                    <li>
                                             <span
                                                 class="text-muted text-decoration-line-through text-right">{{
                                                     item.price | numberFormat
                                                 }}</span>
-                                                </li>
-                                                <li>
+                                                    </li>
+                                                    <li>
                                                 <span
                                                     class="b-sidebar-right">{{
                                                         item.price * (1 - (item.discountPer / 100))|numberFormat
                                                     }}</span>
-                                                </li>
-                                            </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </router-link>
+                                </router-link>
+                            </div>
+                            <button id="slideLeft" type="button" @click="buttonLeft3" class="slider-left">
+                                <img src="@/assets/img/itemDetails/left.png" class="img-fluid">
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button id="slideRight" type="button" @click="buttonRight3" class="slider-right">
+                                <img src="@/assets/img/itemDetails/right.png" class="img-fluid">
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button id="slideLeft" type="button" @click="buttonLeft3" class="slider-left">
-                            <img src="@/assets/img/itemDetails/left.png" class="img-fluid">
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button id="slideRight" type="button" @click="buttonRight3" class="slider-right">
-                            <img src="@/assets/img/itemDetails/right.png" class="img-fluid">
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- 본문 끝 -->
 
         <script>
@@ -772,9 +585,7 @@ export default {
             // console.log(url)
         }
     },
-    computed: {
-
-    },
+    computed: {},
     filters: {
         numberFormat: (value, numFix) => {
             value = parseFloat(value);
@@ -809,8 +620,6 @@ a:hover {
 }
 
 /* 공통 끝 */
-
-/* main img */
 .main-img {
     z-index: 0;
     opacity: 0.9;
@@ -818,7 +627,8 @@ a:hover {
 }
 
 .main-img video {
-    width: 100%;
+    position: absolute;
+    height: 600px;
 }
 
 .main-img img {
@@ -842,6 +652,7 @@ a:hover {
     background-color: rgba(49, 49, 49, 0.8);
     position: relative;
     border-radius: 0.25em;
+    width: 900px;
 }
 
 .search-height {
@@ -849,6 +660,7 @@ a:hover {
     top: 50px;
     width: 100%;
 }
+
 
 .text-hover:hover {
     color: #a30000;
@@ -1007,6 +819,7 @@ a:hover {
 }
 
 .right-arrow-img {
+    text-align: center;
     background-color: white;
     border: 1px solid lightgrey;
     border-radius: 30px;
@@ -1027,6 +840,7 @@ a:hover {
 .card {
     min-width: 222px;
 }
+
 .card-image {
     width: 248px;
     height: 248px;
@@ -1133,6 +947,10 @@ a {
     position: absolute;
     right: 0px;
     height: 70%;
+}
+
+.content-start {
+    height: 100%;
 }
 
 /* datepicker 적용x -> layouts/default로 이동 */

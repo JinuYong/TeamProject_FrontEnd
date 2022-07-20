@@ -63,6 +63,13 @@
     "_name": "_c7c40006"
   },
   {
+    "name": "UploadImage",
+    "path": "/UploadImage",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/UploadImage.vue",
+    "chunkName": "pages/UploadImage",
+    "_name": "_5aebca88"
+  },
+  {
     "name": "board-List",
     "path": "/board/List",
     "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/board/List.vue",

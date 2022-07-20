@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="">
         <div>
             <div class="row">
                 <div class="col-md h4 p-3 text-center" id="search-title">
