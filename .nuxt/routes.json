@@ -2,209 +2,243 @@
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPayment.vue",
-    "chunkName": "pages/CheckPayment"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\CheckPayment.vue",
+    "chunkName": "pages/CheckPayment",
+    "_name": "_4e765714"
   },
   {
     "name": "http-common",
     "path": "/http-common",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\http-common.js",
-    "chunkName": "pages/http-common"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\http-common.js",
+    "chunkName": "pages/http-common",
+    "_name": "_5f04a3f2"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\LogIn.vue",
-    "chunkName": "pages/LogIn"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\LogIn.vue",
+    "chunkName": "pages/LogIn",
+    "_name": "_0f62bca1"
   },
   {
     "name": "MapExample",
     "path": "/MapExample",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\MapExample.vue",
-    "chunkName": "pages/MapExample"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\MapExample.vue",
+    "chunkName": "pages/MapExample",
+    "_name": "_5ebd2506"
   },
   {
     "name": "mypage",
     "path": "/mypage",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\mypage\\\\index.vue",
-    "chunkName": "pages/mypage/index"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\mypage\\\\index.vue",
+    "chunkName": "pages/mypage/index",
+    "_name": "_1106f4ef"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Qna.vue",
-    "chunkName": "pages/Qna"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Qna.vue",
+    "chunkName": "pages/Qna",
+    "_name": "_47dabd08"
   },
   {
     "name": "SearchResult",
     "path": "/SearchResult",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SearchResult.vue",
-    "chunkName": "pages/SearchResult"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\SearchResult.vue",
+    "chunkName": "pages/SearchResult",
+    "_name": "_39f5ee06"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp\\\\index.vue",
-    "chunkName": "pages/SignUp/index"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\SignUp\\\\index.vue",
+    "chunkName": "pages/SignUp/index",
+    "_name": "_b4be9c9c"
   },
   {
     "name": "board-List",
     "path": "/board/List",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\List.vue",
-    "chunkName": "pages/board/List"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\board\\\\List.vue",
+    "chunkName": "pages/board/List",
+    "_name": "_33fcee5c"
   },
   {
     "name": "board-Write",
     "path": "/board/Write",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\Write.vue",
-    "chunkName": "pages/board/Write"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\board\\\\Write.vue",
+    "chunkName": "pages/board/Write",
+    "_name": "_43643d91"
   },
   {
     "name": "find-id",
     "path": "/find/id",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\id.vue",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\find\\\\id.vue",
     "chunkName": "pages/find/id",
     "children": [
       {
         "name": "find-id-Complete",
         "path": "Complete",
-        "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\id\\\\Complete.vue",
-        "chunkName": "pages/find/id/Complete"
+        "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\find\\\\id\\\\Complete.vue",
+        "chunkName": "pages/find/id/Complete",
+        "_name": "_6ea662b6"
       }
-    ]
+    ],
+    "_name": "_2b59134c"
   },
   {
     "name": "find-password",
     "path": "/find/password",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\password.vue",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\find\\\\password.vue",
     "chunkName": "pages/find/password",
     "children": [
       {
         "name": "find-password-Complete",
         "path": "Complete",
-        "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\password\\\\Complete.vue",
-        "chunkName": "pages/find/password/Complete"
+        "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\find\\\\password\\\\Complete.vue",
+        "chunkName": "pages/find/password/Complete",
+        "_name": "_f5795536"
       }
-    ]
+    ],
+    "_name": "_eb35ebe8"
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\Detail.vue",
-    "chunkName": "pages/inform/Detail"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\Detail.vue",
+    "chunkName": "pages/inform/Detail",
+    "_name": "_4f54f65c"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\List.vue",
-    "chunkName": "pages/inform/List"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\List.vue",
+    "chunkName": "pages/inform/List",
+    "_name": "_7a40b4df"
   },
   {
     "name": "Items-Details",
     "path": "/Items/Details",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\index.vue",
-    "chunkName": "pages/Items/Details/index"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\Details\\\\index.vue",
+    "chunkName": "pages/Items/Details/index",
+    "_name": "_a6bc1c70"
   },
   {
     "name": "Items-List",
     "path": "/Items/List",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\List.vue",
-    "chunkName": "pages/Items/List"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\List.vue",
+    "chunkName": "pages/Items/List",
+    "_name": "_23ded696"
   },
   {
     "name": "service-ItemDetailDataService",
     "path": "/service/ItemDetailDataService",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ItemDetailDataService.js",
-    "chunkName": "pages/service/ItemDetailDataService"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\service\\\\ItemDetailDataService.js",
+    "chunkName": "pages/service/ItemDetailDataService",
+    "_name": "_68a77e05"
   },
   {
     "name": "service-ItemListDataService",
     "path": "/service/ItemListDataService",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ItemListDataService.js",
-    "chunkName": "pages/service/ItemListDataService"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\service\\\\ItemListDataService.js",
+    "chunkName": "pages/service/ItemListDataService",
+    "_name": "_1f5fb4dc"
   },
   {
     "name": "service-ReviewDataService",
     "path": "/service/ReviewDataService",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ReviewDataService.js",
-    "chunkName": "pages/service/ReviewDataService"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\service\\\\ReviewDataService.js",
+    "chunkName": "pages/service/ReviewDataService",
+    "_name": "_a51900ce"
   },
   {
     "name": "service-ShoppingCartDataService",
     "path": "/service/ShoppingCartDataService",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ShoppingCartDataService.js",
-    "chunkName": "pages/service/ShoppingCartDataService"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\service\\\\ShoppingCartDataService.js",
+    "chunkName": "pages/service/ShoppingCartDataService",
+    "_name": "_38c58d29"
   },
   {
     "name": "service-UserDataService",
     "path": "/service/UserDataService",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\UserDataService.js",
-    "chunkName": "pages/service/UserDataService"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\service\\\\UserDataService.js",
+    "chunkName": "pages/service/UserDataService",
+    "_name": "_6586980c"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
-    "chunkName": "pages/shoppingCart/ShoppingCart"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
+    "chunkName": "pages/shoppingCart/ShoppingCart",
+    "_name": "_37bdb668"
   },
   {
     "name": "SignUp-Complete",
     "path": "/SignUp/Complete",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp\\\\Complete.vue",
-    "chunkName": "pages/SignUp/Complete"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\SignUp\\\\Complete.vue",
+    "chunkName": "pages/SignUp/Complete",
+    "_name": "_27b8bf29"
   },
   {
     "name": "Items-Details-components-CardSliderCom",
     "path": "/Items/Details/components/CardSliderCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\CardSliderCom.vue",
-    "chunkName": "pages/Items/Details/components/CardSliderCom"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\Details\\\\components\\\\CardSliderCom.vue",
+    "chunkName": "pages/Items/Details/components/CardSliderCom",
+    "_name": "_53f56c30"
   },
   {
     "name": "Items-Details-components-ImgGalleryCom",
     "path": "/Items/Details/components/ImgGalleryCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ImgGalleryCom.vue",
-    "chunkName": "pages/Items/Details/components/ImgGalleryCom"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\Details\\\\components\\\\ImgGalleryCom.vue",
+    "chunkName": "pages/Items/Details/components/ImgGalleryCom",
+    "_name": "_74fd6072"
   },
   {
     "name": "Items-Details-components-KakaoMapApiCom",
     "path": "/Items/Details/components/KakaoMapApiCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\KakaoMapApiCom.vue",
-    "chunkName": "pages/Items/Details/components/KakaoMapApiCom"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\Details\\\\components\\\\KakaoMapApiCom.vue",
+    "chunkName": "pages/Items/Details/components/KakaoMapApiCom",
+    "_name": "_7e05cdb0"
   },
   {
     "name": "Items-Details-components-ReviewsCom",
     "path": "/Items/Details/components/ReviewsCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ReviewsCom.vue",
-    "chunkName": "pages/Items/Details/components/ReviewsCom"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\Details\\\\components\\\\ReviewsCom.vue",
+    "chunkName": "pages/Items/Details/components/ReviewsCom",
+    "_name": "_c0005bd4"
   },
   {
     "name": "board-detail-update-idx",
     "path": "/board/detail/update/:idx?",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\detail\\\\update\\\\_idx.vue",
-    "chunkName": "pages/board/detail/update/_idx"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\board\\\\detail\\\\update\\\\_idx.vue",
+    "chunkName": "pages/board/detail/update/_idx",
+    "_name": "_455f5236"
   },
   {
     "name": "board-detail-idx",
     "path": "/board/detail/:idx?",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\detail\\\\_idx.vue",
-    "chunkName": "pages/board/detail/_idx"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\board\\\\detail\\\\_idx.vue",
+    "chunkName": "pages/board/detail/_idx",
+    "_name": "_1fecbc2d"
   },
   {
     "name": "Items-Details-idx",
     "path": "/Items/Details/:idx",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\_idx.vue",
-    "chunkName": "pages/Items/Details/_idx"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\Details\\\\_idx.vue",
+    "chunkName": "pages/Items/Details/_idx",
+    "_name": "_e7cdd310"
   },
   {
     "name": "payment-userIdx",
     "path": "/payment/:userIdx?",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\payment\\\\_userIdx.vue",
-    "chunkName": "pages/payment/_userIdx"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\payment\\\\_userIdx.vue",
+    "chunkName": "pages/payment/_userIdx",
+    "_name": "_10ee18f1"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_04e40d8a"
   }
 ]
