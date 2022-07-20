@@ -1,18 +1,18 @@
 <template>
     <div>
         <div class="mt-5">
-            <h5 class="text-center mb-5">자유게시판 글쓰기</h5>
+            <h5 class="text-center mb-5">여행정보 글쓰기</h5>
         </div>
 
         <div v-if="!submitted">
             <span class="btns">
                 <input
-                    class="btn btn-sm"
+                    class="writeBtn btn mt-2"
                     type="button"
                     value="이전"
-                    onclick="location.href='/board/list'"
+                    onclick="location.href='/inform/list'"
                 />
-                <button class="btn btn-sm" @click="upload">등록</button>
+                <button class="writeBtn btn mt-2" @click="upload">등록</button>
             </span>
             <hr />
             <div class="form-group mt-4">
@@ -22,15 +22,15 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="제목을 입력해 주세요."
-                    v-model="board.boardTitle"
+                    v-model="inform.title"
                 />
             </div>
             <div>
                 <p>내용</p>
                 <textarea
+                    v-model="inform.content"
                     cols="147"
                     rows="20"
-                    v-model="board.content"
                 ></textarea>
             </div>
         </div>
@@ -57,7 +57,7 @@
             <!-- row 끝 -->
 
             <!-- 프로그래스 바 시작-->
-            <div v-if="board.currentImage" class="progress">
+            <div v-if="inform.currentImage" class="progress">
                 <div
                     class="progress-bar progress-bar-info"
                     role="progressbar"
@@ -90,7 +90,7 @@
             <!-- v-for 시작 -->
             <div
                 class="card mt-3"
-                v-for="(image, index) in board.imageInfo"
+                v-for="(image, index) in inform.imageInfo"
                 :key="index"
             >
                 <div class="card-header">이미지 번호 : {{ image.fileId }}</div>
@@ -112,20 +112,20 @@
 </template>
 
 <script>
-import BoardUploadService from "~/services/BoardUploadService";
+import InformUploadService from "@/services/InformUploadService";
 
 /* eslint-disable */
 export default {
-    name: "write",
+    name: "inform-detail-write",
     data() {
         return {
-            board: {
+            inform: {
                 idx: null,
-                boardTitle: "",
+                title: "",
                 content: "",
                 userIdx: 141,
                 currentImage: null, // 현재 이미지
-                imageInfo: [], // 이미지 정보 객체배열
+                imageInfo: [], // 이미지 정보 객체 배열
             },
             submitted: false,
             previewImage: undefined, // 미리보기 이미지
@@ -137,9 +137,9 @@ export default {
         // 이미지를 선택하면 변수에 저장하는 메소드
         selectImage() {
             // 파일선택상자에서 첫번째로 선택한 이미지가 저장됨
-            this.board.currentImage = this.$refs.file.files.item(0);
+            this.inform.currentImage = this.$refs.file.files.item(0);
             // 아래는 미리보기 이미지를 위한 주소가 저장됨
-            this.previewImage = URL.createObjectURL(this.board.currentImage);
+            this.previewImage = URL.createObjectURL(this.inform.currentImage);
             this.progress = 0;
             this.message = "";
         },
@@ -148,11 +148,11 @@ export default {
             this.progress = 0;
 
             // 서버에 이미지 업로드 요청(insert 문 실행)
-            BoardUploadService.upload(
-                this.board.boardTitle,
-                this.board.content,
-                this.board.userIdx,
-                this.board.currentImage,
+            InformUploadService.upload(
+                this.inform.title,
+                this.inform.content,
+                this.inform.userIdx,
+                this.inform.currentImage,
                 (event) => {
                     // 파일이 업로드될때 진척상황이 저장됨(%)
                     this.progress = Math.round(
@@ -164,8 +164,8 @@ export default {
                 .then((response) => {
                     // 서버쪽 응답 메시지 저장
                     // this.message = response.data.message;
-                    alert("자유게시판 게시물 작성 완료");
-                    this.$router.push("/board/list");
+                    alert("여행정보 게시물 작성 완료");
+                    this.$router.push("/inform/list");
                     // 서버쪽에 insert가 잘되었는지
                     // select문 호출
                     // return UploadService.getFiles();
@@ -190,6 +190,13 @@ hr {
     background-color: #a30000;
 }
 
+/* .writeBtn {
+    border: none;
+    background-color: #a30000;
+    color: white;
+    margin-right: 5px;
+} */
+
 .btn {
     border: none;
     background-color: #a30000;
@@ -198,11 +205,13 @@ hr {
     /* display: flex; */
 }
 
-.btn:active,
-.btn:hover .btn:focus {
-    background-color: #a30000;
+/* .btn {
     border: none;
-}
+    background-color: #a30000;
+    color: white;
+    margin-right: auto;
+    display: flex;
+} */
 
 .preview {
     max-width: 200px;
