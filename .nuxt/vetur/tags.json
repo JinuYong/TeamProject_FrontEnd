@@ -5,6 +5,9 @@
   "Header": {
     "description": "Auto imported from components/Header.vue"
   },
+  "KakaoMapApiCom": {
+    "description": "Auto imported from components/KakaoMapApiCom.vue"
+  },
   "MyInform": {
     "description": "Auto imported from components/MyInform.vue"
   },

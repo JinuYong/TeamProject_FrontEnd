@@ -1,5 +1,6 @@
 export { default as Footer } from '../..\\components\\Footer.vue'
 export { default as Header } from '../..\\components\\Header.vue'
+export { default as KakaoMapApiCom } from '../..\\components\\KakaoMapApiCom.vue'
 export { default as MyInform } from '../..\\components\\MyInform.vue'
 export { default as Payment } from '../..\\components\\Payment.vue'
 

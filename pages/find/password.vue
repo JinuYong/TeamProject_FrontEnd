@@ -1,6 +1,6 @@
 <template>
     <div class="common-container">
-        <form class="common">
+        <form class="common" @submit.prevent>
             <h4 class="mb-4 fw-normal text-center">비밀번호찾기</h4>
             <p class="mb-5 fw-normal text-center">
                 계정 생성 시 등록한 아이디와 이메일을 입력해 주세요.
@@ -90,6 +90,24 @@
                 </div>
             </div>
         </div>
+
+        <!-- 모달 -->
+        <div class="modal fade" tabindex="-1" ref="confirmModal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @click="refresh"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>입력한 정보와 일치하는 회원정보를 찾을 수 없습니다. </p>
+                        <p>다시 입력해주세요. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @click="refresh">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -110,13 +128,16 @@ export default {
         }
     },
     methods: {
+        refresh() {
+            this.$router.go(0);
+        },
         async findUserPassword(e) {
             e.preventDefault();
             
             let res = await this.$axios.post("/api/find/password", this.user
             ).then(res => {
                 console.log(res);
-                if (res.data && this.user.id == res.data.id) {
+                if (res.data != "" && this.user.id == res.data.id) {
                     $('#passwordChange').modal('show');
                 } else {
                     $('#myModal').modal('show');

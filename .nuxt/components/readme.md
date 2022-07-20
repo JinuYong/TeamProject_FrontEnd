@@ -8,5 +8,6 @@ You can directly use them in pages and other components without the need to impo
 
 - `<Footer>` | `<footer>` (components/Footer.vue)
 - `<Header>` | `<header>` (components/Header.vue)
+- `<KakaoMapApiCom>` | `<kakao-map-api-com>` (components/KakaoMapApiCom.vue)
 - `<MyInform>` | `<my-inform>` (components/MyInform.vue)
 - `<Payment>` | `<payment>` (components/Payment.vue)

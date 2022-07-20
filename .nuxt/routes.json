@@ -7,6 +7,13 @@
     "_name": "_4e765714"
   },
   {
+    "name": "file-http-common",
+    "path": "/file-http-common",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\file-http-common.js",
+    "chunkName": "pages/file-http-common",
+    "_name": "_5022b8b8"
+  },
+  {
     "name": "http-common",
     "path": "/http-common",
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\http-common.js",
@@ -74,15 +81,6 @@
     "path": "/find/id",
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\find\\\\id.vue",
     "chunkName": "pages/find/id",
-    "children": [
-      {
-        "name": "find-id-Complete",
-        "path": "Complete",
-        "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\find\\\\id\\\\Complete.vue",
-        "chunkName": "pages/find/id/Complete",
-        "_name": "_6ea662b6"
-      }
-    ],
     "_name": "_2b59134c"
   },
   {
@@ -90,23 +88,7 @@
     "path": "/find/password",
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\find\\\\password.vue",
     "chunkName": "pages/find/password",
-    "children": [
-      {
-        "name": "find-password-Complete",
-        "path": "Complete",
-        "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\find\\\\password\\\\Complete.vue",
-        "chunkName": "pages/find/password/Complete",
-        "_name": "_f5795536"
-      }
-    ],
     "_name": "_eb35ebe8"
-  },
-  {
-    "name": "inform-Detail",
-    "path": "/inform/Detail",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\Detail.vue",
-    "chunkName": "pages/inform/Detail",
-    "_name": "_4f54f65c"
   },
   {
     "name": "inform-List",
@@ -114,6 +96,13 @@
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\List.vue",
     "chunkName": "pages/inform/List",
     "_name": "_7a40b4df"
+  },
+  {
+    "name": "inform-Write",
+    "path": "/inform/Write",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\Write.vue",
+    "chunkName": "pages/inform/Write",
+    "_name": "_74cd7124"
   },
   {
     "name": "Items-Details",
@@ -128,6 +117,13 @@
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\List.vue",
     "chunkName": "pages/Items/List",
     "_name": "_23ded696"
+  },
+  {
+    "name": "service-IndexDataService",
+    "path": "/service/IndexDataService",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\service\\\\IndexDataService.js",
+    "chunkName": "pages/service/IndexDataService",
+    "_name": "_1e8f5189"
   },
   {
     "name": "service-ItemDetailDataService",
@@ -158,6 +154,13 @@
     "_name": "_38c58d29"
   },
   {
+    "name": "service-UploadFilesService",
+    "path": "/service/UploadFilesService",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\service\\\\UploadFilesService.js",
+    "chunkName": "pages/service/UploadFilesService",
+    "_name": "_1cafaba3"
+  },
+  {
     "name": "service-UserDataService",
     "path": "/service/UserDataService",
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\service\\\\UserDataService.js",
@@ -179,6 +182,13 @@
     "_name": "_27b8bf29"
   },
   {
+    "name": "tourItemDetails-components-ImgGalleryCom",
+    "path": "/tourItemDetails/components/ImgGalleryCom",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\components\\\\ImgGalleryCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom",
+    "_name": "_7f588f46"
+  },
+  {
     "name": "Items-Details-components-CardSliderCom",
     "path": "/Items/Details/components/CardSliderCom",
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\Details\\\\components\\\\CardSliderCom.vue",
@@ -191,13 +201,6 @@
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\Details\\\\components\\\\ImgGalleryCom.vue",
     "chunkName": "pages/Items/Details/components/ImgGalleryCom",
     "_name": "_74fd6072"
-  },
-  {
-    "name": "Items-Details-components-KakaoMapApiCom",
-    "path": "/Items/Details/components/KakaoMapApiCom",
-    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\Items\\\\Details\\\\components\\\\KakaoMapApiCom.vue",
-    "chunkName": "pages/Items/Details/components/KakaoMapApiCom",
-    "_name": "_7e05cdb0"
   },
   {
     "name": "Items-Details-components-ReviewsCom",
@@ -214,11 +217,25 @@
     "_name": "_455f5236"
   },
   {
+    "name": "inform-detail-update-idx",
+    "path": "/inform/detail/update/:idx?",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\detail\\\\update\\\\_idx.vue",
+    "chunkName": "pages/inform/detail/update/_idx",
+    "_name": "_4e43b2b9"
+  },
+  {
     "name": "board-detail-idx",
     "path": "/board/detail/:idx?",
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\board\\\\detail\\\\_idx.vue",
     "chunkName": "pages/board/detail/_idx",
     "_name": "_1fecbc2d"
+  },
+  {
+    "name": "inform-detail-idx",
+    "path": "/inform/detail/:idx?",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\detail\\\\_idx.vue",
+    "chunkName": "pages/inform/detail/_idx",
+    "_name": "_400f4fb0"
   },
   {
     "name": "Items-Details-idx",
@@ -233,6 +250,13 @@
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\payment\\\\_userIdx.vue",
     "chunkName": "pages/payment/_userIdx",
     "_name": "_10ee18f1"
+  },
+  {
+    "name": "tourItemDetails-idx",
+    "path": "/tourItemDetails/:idx?",
+    "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\tourItemDetails\\\\_idx.vue",
+    "chunkName": "pages/tourItemDetails/_idx",
+    "_name": "_5c0b41ad"
   },
   {
     "name": "index",

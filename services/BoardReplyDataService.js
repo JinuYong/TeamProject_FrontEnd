@@ -2,8 +2,8 @@ import http from "../http-common";
 
 class BoardReplyDataService {
     // 리뷰 전체 조회
-    getAll() {
-        return http.get(`/board/detail/reply`);
+    get(idx) {
+        return http.get(`/board/detail/reply/${idx}`);
     }
 
     // 리뷰 생성

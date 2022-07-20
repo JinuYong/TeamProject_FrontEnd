@@ -23,7 +23,7 @@
                         <!--                        </td>-->
                         <td class="p-4">
                             <div class="media align-items-center">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                                <img src="@/assets/img/itemDetails/review_1.jpg"
                                      class="d-block ui-w-40 ui-bordered mr-4" alt="">
                                 <div class="media-body">
                                     <p href="#" class="d-block text-dark">{{ cart.title }}</p>
@@ -182,7 +182,7 @@ export default {
                     "price": 100,
                     "order_name": this.payDataName,
                     "order_id": 'omymTour_' + new Date().getTime(),
-                    "pg": "danal",
+                    "pg": "케이씨피",
                     "method": "카드",
                     "tax_free": 0,
                     "user": {

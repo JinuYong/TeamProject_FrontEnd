@@ -3,20 +3,29 @@ import http from "~/pages/http-common";
 // springboot 연결하기 위한 메소드 정의
 class ItemDetailDataService {
 
+    getItemAll() {
+        return http.get(`/items`);
+    }
+
     getItemData(idx) {
         return http.get(`/item/${idx}`);
     }
 
     insertCart(data) {
-        return http.post(`/cart`,data);
+        return http.post(`/cart`, data);
     }
-    // return http.get(`/tutorials?title=${title}`);
+
     getItemByArea(area) {
-        return http.get(`/item/area/${area}`);
+        return http.get(`/item/area/${area}`)
     }
-    // setCartData(userIdx, data) {
-    //     return http.put(`/cart/${idx}`,data)
+
+    // getSearchData(area, itemDate) {
+    //     return http.get(`/search?area=${area}&itemDate=${itemDate}`,);
     // }
+
+    getSearchData(params) {
+        return http.get(`/search`,{params})
+    }
 
 }
 
