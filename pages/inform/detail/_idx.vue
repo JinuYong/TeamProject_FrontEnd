@@ -2,51 +2,48 @@
     <div>
         <div>
             <!-- 여행정보 게시물 출력 파트 시작 -->
-            <!--            TODO: 아래 출력했음 -->
-            <h4 class="board-title">
-                {{ boards.idx }} | {{ boards.boardTitle }}
-            </h4>
+            <h4 class="board-title">{{ inform.idx }} | {{ inform.title }}</h4>
 
             <div class="board-info">
                 <div>
                     <img
-                        v-if="this.boards.profileUrl"
+                        v-if="this.inform.profileUrl"
                         class="profile-img"
                         :src="
-                            'http://localhost:8000/image/' + boards.profileUrl
+                            'http://localhost:8000/image/' + inform.profileUrl
                         "
                         alt="프로필"
                     />
-                    {{ boards.id }}
+                    {{ inform.id }}
                 </div>
                 <span
-                    >{{ boards.insertTime }} | 조회수 {{ boards.count }} |
-                    댓글수 {{ replyCounts }}
+                    >{{ inform.insertTime }} | 조회수 {{ inform.count }} |
+                    댓글수 {{ replyInformCounts }}
                 </span>
             </div>
             <hr />
 
             <div class="content2">
-                <img :src="boards.url" alt="boardsPic" class="boardsPic" />
+                <img :src="inform.url" alt="boardsPic" class="boardsPic" />
             </div>
             <div class="content1">
                 <div class="textareas">
-                    {{ boards.content }}
+                    {{ inform.content }}
                 </div>
             </div>
         </div>
         <hr />
 
         <div class="btns">
-            <button class="btn" onclick="location.href=`/board/list`">
+            <button class="btn" onclick="location.href=`/inform/list`">
                 목록
             </button>
             <div class="edit-btns">
                 <button class="btn" @click="moveTo">수정</button>
-                <button class="btn" @click="deleteBoard">삭제</button>
+                <button class="btn" @click="deleteInform">삭제</button>
             </div>
         </div>
-        <!-- 게시물 상세 파트 종료 -->
+        <!-- 여행정보 게시물 출력 파트 종료 -->
 
         <!-- 댓글 파트 시작 -->
         <hr class="divider-row" />
@@ -54,52 +51,50 @@
             <textarea
                 class="form-control reply-input"
                 placeholder="댓글을 작성해주세요"
-                style="height: 100px; width: 900px"
-                v-model="boardReply.content"
+                v-model="informReply.content"
             ></textarea>
-            <button class="btn" @click="saveBoardReply">등록</button>
+            <button class="btn" @click="saveInformReply">등록</button>
         </div>
 
         <hr />
         <h6>댓글</h6>
         <div
             class="bg-white b p-4 mb-4 restaurant-detailed-ratings-and-reviews"
-            v-for="(boardReplys, index) in boardReplies"
+            v-for="(informReply, index) in informReplies"
             :key="index"
         >
             <div class="reviews-members py-4">
                 <div class="media">
                     <a href="#">
                         <img
-                            v-if="boardReplys.profileUrl"
+                            v-if="informReply.profileUrl"
                             alt="Generic placeholder image"
                             :src="
                                 'http://localhost:8000/image/' +
-                                boardReplys.profileUrl
+                                informReply.profileUrl
                             "
                             class="mr-3 rounded-pill"
                         />
                     </a>
-
                     <div class="media-body">
                         <div class="reviews-members-header">
                             <h6 class="mb-1">
                                 <a class="text-black" href="#">{{
-                                    boardReplys.id
+                                    informReply.id
                                 }}</a>
                             </h6>
                             <p class="text-gray mb-2">
-                                {{ boardReplys.insertTime }}
+                                {{ informReply.insertTime }}
                             </p>
                         </div>
                         <div class="reviews-members-body">
                             <p>
-                                {{ boardReplys.content }}
+                                {{ informReply.content }}
                             </p>
                         </div>
                         <div>
                             <button
-                                @click="updateBoardReplies"
+                                @click="updateInformReplies"
                                 class="btn replyBtn"
                             >
                                 수정
@@ -107,13 +102,13 @@
                             <div v-if="sameId" style="margin: 5px">
                                 <input
                                     type="text"
-                                    v-model="boardReplys.content"
+                                    v-model="informReply.content"
                                 />
                                 <button
                                     @click="
-                                        updateBoardReply(
-                                            boardReplys.idx,
-                                            boardReplys
+                                        updateInformReply(
+                                            informReply.idx,
+                                            informReply
                                         )
                                     "
                                     class="btn"
@@ -122,7 +117,7 @@
                                 </button>
                             </div>
                             <button
-                                @click="deleteBoardReply(boardReplys.idx)"
+                                @click="deleteInformReply(informReply.idx)"
                                 class="btn replyBtn"
                             >
                                 삭제
@@ -138,40 +133,41 @@
 </template>
 
 <script>
-import BoardReplyDataService from "@/services/BoardReplyDataService";
-import BoardUploadService from "~/services/BoardUploadService";
+import InformUploadService from "@/services/InformUploadService";
+import InformReplyDataService from "@/services/InformReplyDataService";
 
 /* eslint-disable */
 export default {
-    name: "boardDetails",
+    name: "informDetail",
     data() {
         return {
-            replyCounts: 0,
-            boards: [],
-            boardReply: {
-                idx: null,
-                profileUrl: "",
+            inform: [],
+            informReply: {
                 id: "",
+                idx: null,
                 insertTime: 0,
                 content: "",
+                profileUrl: "",
             },
-            boardReplies: null,
+            informReplies: [],
             // idx: this.$route.params.idx,
             sameId: false,
             value: 4,
             count: 0,
-            // viewBtn:
-            //     localStorage.getItem("idx") == this.boardReplies[0].userIdx
-            //         ? true
-            //         : false,
+            replyInformCounts: 0,
         };
     },
     methods: {
-        viewBtn() {
-            if (localStorage.getItem("idx") == this.boardReplies.userIdx) {
-            }
+        retrieveInformReplyCount(idx) {
+            InformUploadService.getReplyCount(idx)
+                .then((response) => {
+                    this.replyInformCounts = response.data;
+                })
+                .catch((e) => {
+                    alert(e);
+                });
         },
-        updateBoardReplies() {
+        updateInformReplies() {
             if (this.sameId == false) {
                 this.sameId = true;
             } else {
@@ -179,39 +175,30 @@ export default {
             }
         },
         moveTo() {
-            this.$router.push("/board/detail/update/" + this.boards.idx);
-        },
-        retrieveReplyCount(idx) {
-            BoardUploadService.getReplyCount(idx)
-                .then((response) => {
-                    this.replyCounts = response.data;
-                })
-                .catch((e) => {
-                    alert(e);
-                });
+            this.$router.push("/inform/detail/update/" + this.inform.idx);
         },
         retrieveCounts(idx) {
-            BoardUploadService.detail(idx).then(() => {
+            InformUploadService.get(idx).then(() => {
                 console.log("");
             });
         },
-        retrieveBoardUploadImage(idx) {
-            BoardUploadService.getDetailFile(idx)
+        retrieveInformUploadImage(idx) {
+            InformUploadService.getDetailFiles(idx)
                 .then((response) => {
-                    this.boards = response.data;
+                    this.inform = response.data;
                 })
                 .catch((e) => {
                     alert(e);
                 });
         },
-        deleteBoard() {
+        deleteInform() {
             //  axios 이용해서 회원 삭제 요청( springboot )
-            BoardUploadService.delete(this.boards.idx)
+            InformUploadService.delete(this.inform.idx)
                 //  성공하면 then으로 결과 데이터가 들어옴
                 .then(() => {
                     // 화면 이동 : customers 화면으로 이동됨
-                    alert("자유게시판 게시물 삭제 완료");
-                    this.$router.push("/board/list");
+                    alert("여행정보 게시물 삭제 완료");
+                    this.$router.push("/inform/list");
                 })
                 .catch((e) => {
                     alert(e);
@@ -219,27 +206,18 @@ export default {
         },
 
         // 댓글 조회 서비스
-        retrieveBoardReply() {
-            BoardReplyDataService.get(this.$route.params.idx)
+        retrieveInformReply() {
+            InformReplyDataService.get(this.$route.params.idx)
                 .then((response) => {
-                    this.boardReplies = response.data;
-                    // let arr = [];
-                    // // this.boardReplies = response.data;
-                    // for (let i = 0; i < response.data.length; i++) {
-                    //     console.log(response.data[0]);
-                    //     console.log(response);
-                    //     this.boardReplies.push(response.data);
-                    // }
-                    // console.log(this.boardReplies);
-                    // this.boardReplies = arr;
+                    this.informReplies = response.data;
                 })
                 .catch((e) => {
                     alert(e);
                 });
         },
         // 댓글 수정 서비스
-        updateBoardReply(idx, boards) {
-            BoardReplyDataService.update(idx, boards)
+        updateInformReply(idx, inform) {
+            InformReplyDataService.update(idx, inform)
                 .then(() => {
                     alert("댓글 수정 완료");
                     location.reload();
@@ -249,9 +227,8 @@ export default {
                 });
         },
         // 댓글 삭제 서비스
-        deleteBoardReply(idx) {
-            //  axios 이용해서 회원 삭제 요청( springboot )
-            BoardReplyDataService.delete(idx)
+        deleteInformReply(idx) {
+            InformReplyDataService.delete(idx)
                 .then(() => {
                     alert("댓글 삭제 완료");
                     location.reload();
@@ -261,16 +238,16 @@ export default {
                 });
         },
         // 댓글 추가 서비스
-        saveBoardReply() {
+        saveInformReply() {
             let data = {
-                idx: this.boardReply.idx,
-                content: this.boardReply.content,
-                userIdx: 2,
-                boardIdx: this.boards.idx,
+                idx: this.informReply.idx,
+                content: this.informReply.content,
+                userIdx: 141,
+                informIdx: this.inform.idx,
             };
-            BoardReplyDataService.create(data)
+            InformReplyDataService.create(data)
                 .then((response) => {
-                    this.boardReply = response.data;
+                    this.informReply = response.data;
                     alert("댓글 등록 완료");
                     location.reload();
                 })
@@ -280,12 +257,10 @@ export default {
         },
     },
     mounted() {
-        this.retrieveReplyCount(this.$route.params.idx);
-        this.retrieveBoardReply();
-        this.retrieveBoardUploadImage(this.$route.params.idx);
+        this.retrieveInformReplyCount(this.$route.params.idx);
+        this.retrieveInformReply();
+        this.retrieveInformUploadImage(this.$route.params.idx);
         this.retrieveCounts(this.$route.params.idx);
-        localStorage.setItem("idx", "141");
-        localStorage.getItem("idx");
     },
 };
 </script>
@@ -331,7 +306,7 @@ export default {
 }
 .btn {
     width: 60px;
-    height: 35px;
+    height: 38px;
     color: #ffffff;
     background: #a30000;
     font-weight: 300;
@@ -356,16 +331,21 @@ export default {
 .reply-input {
     margin-right: 10px;
     resize: none;
+    width: 900px;
+    height: 100px;
 }
 .divider-row {
     margin: 30px 0 0 0;
 }
+
 .text-start {
     float: left;
 }
+
 .text-end {
     float: right;
 }
+
 .justify-content-md-start {
     float: left;
 }
@@ -584,15 +564,8 @@ body {
     border-radius: 0;
     height: 30px;
 }
-
 .text-gray {
     color: gray;
-}
-
-.textareas {
-    text-align: left;
-    white-space: pre-line;
-    padding: 15px;
 }
 .boardsPic {
     width: 100%;
@@ -600,6 +573,11 @@ body {
     display: flex;
     padding: 1%;
     margin: 0 auto;
+}
+.textareas {
+    text-align: left;
+    white-space: pre-line;
+    padding: 15px;
 }
 .replyBtn {
     border: none;
