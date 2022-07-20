@@ -122,13 +122,16 @@ export default {
                 geocoder.addressSearch(this.locations[i].position, (result, status) => {
                     if (status === kakao.maps.services.Status.OK) {
                         this.locations[i].position = new kakao.maps.LatLng(result[0].y, result[0].x)
-                }});
+                console.log(this.locations[i].position);
+                }
+                
 
                 let pos = {
                     content: '<div class="customoverlay">' + '<a>' + '<span class="text">' + this.locations[i].title + '</span>' + '</a>' + '</div>',
                     latlng: this.locations[i].position
                 }
                 positions.push(pos);
+                });
             }
             console.log(positions);
             // let positions = [

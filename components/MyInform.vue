@@ -387,7 +387,8 @@ export default {
         }
     },
     mounted() {
-        let userId = JSON.parse(localStorage.getItem("user")).username;
+        // let userId = JSON.parse(localStorage.getItem("user")).username;
+        let userId = 'jinu12';
         console.log(userId);
         this.getUserInform(userId);
         // console.log(localStorage.getItem("user"));
