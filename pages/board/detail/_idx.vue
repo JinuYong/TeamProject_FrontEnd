@@ -265,7 +265,7 @@ export default {
             let data = {
                 idx: this.boardReply.idx,
                 content: this.boardReply.content,
-                userIdx: 2,
+                userIdx: JSON.parse(localStorage.getItem("idx")).idx,
                 boardIdx: this.boards.idx,
             };
             BoardReplyDataService.create(data)
@@ -284,8 +284,8 @@ export default {
         this.retrieveBoardReply();
         this.retrieveBoardUploadImage(this.$route.params.idx);
         this.retrieveCounts(this.$route.params.idx);
-        localStorage.setItem("idx", "141");
-        localStorage.getItem("idx");
+        // localStorage.setItem("idx", "141");
+        // localStorage.getItem("idx");
     },
 };
 </script>

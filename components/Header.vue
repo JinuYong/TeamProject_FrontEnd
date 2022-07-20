@@ -181,7 +181,7 @@ export default {
             $nuxt.$router.push(url);
         },
         searchKeyword() {
-            this.$router.push({
+            $nuxt.$router.push({
                 path:'/SearchResult',
                 query:{
                     keyword:this.keyword
@@ -261,6 +261,7 @@ export default {
     }
     .nav-link:hover {
         color: #a30000;
+        cursor: pointer;
     }
     .nav-item {
         padding-right: 10px;
@@ -281,6 +282,9 @@ export default {
         width: 25px;
         margin: 0 10px;
         padding: 15px 0;
+        cursor: pointer;
+    }
+    .dropdown-item{
         cursor: pointer;
     }
 </style>
