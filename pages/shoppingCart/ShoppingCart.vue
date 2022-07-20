@@ -1,5 +1,5 @@
 <template>
-    <div class="container px-3 my-5 clearfix">
+    <div class=" px-3 my-5 clearfix">
         <!-- Shopping cart table -->
         <div class="card">
             <div class="card-header">

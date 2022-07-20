@@ -13,6 +13,7 @@ const _1b73e120 = () => interopDefault(import('../pages/mypage/index.vue' /* web
 const _75859d92 = () => interopDefault(import('../pages/Qna.vue' /* webpackChunkName: "pages/Qna" */))
 const _137d45a7 = () => interopDefault(import('../pages/SearchResult.vue' /* webpackChunkName: "pages/SearchResult" */))
 const _c7c40006 = () => interopDefault(import('../pages/SignUp/index.vue' /* webpackChunkName: "pages/SignUp/index" */))
+const _5aebca88 = () => interopDefault(import('../pages/UploadImage.vue' /* webpackChunkName: "pages/UploadImage" */))
 const _a5e0f52e = () => interopDefault(import('../pages/board/List.vue' /* webpackChunkName: "pages/board/List" */))
 const _26b6efb8 = () => interopDefault(import('../pages/board/Write.vue' /* webpackChunkName: "pages/board/Write" */))
 const _0d0dd102 = () => interopDefault(import('../pages/find/id.vue' /* webpackChunkName: "pages/find/id" */))
@@ -92,6 +93,10 @@ export const routerOptions = {
     path: "/SignUp",
     component: _c7c40006,
     name: "SignUp"
+  }, {
+    path: "/UploadImage",
+    component: _5aebca88,
+    name: "UploadImage"
   }, {
     path: "/board/List",
     component: _a5e0f52e,

@@ -1,5 +1,5 @@
 <template>
-    <div class="container px-0">
+    <div class=" px-0">
         <!--    상품 이미지, 상품명 및 결제 관련  -->
         <!--      상품 이미지 -->
         <div class="row mx-2 mt-3">
@@ -13,14 +13,14 @@
                                      style="width:450px; height:420px;">
                             </div>
                         </div>
-<!--                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">-->
-<!--                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--                            <span class="visually-hidden">Previous</span>-->
-<!--                        </button>-->
-<!--                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">-->
-<!--                            <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--                            <span class="visually-hidden">Next</span>-->
-<!--                        </button>-->
+                        <!--                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">-->
+                        <!--                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                        <!--                            <span class="visually-hidden">Previous</span>-->
+                        <!--                        </button>-->
+                        <!--                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">-->
+                        <!--                            <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                        <!--                            <span class="visually-hidden">Next</span>-->
+                        <!--                        </button>-->
                     </div>
                 </div>
 
@@ -109,7 +109,8 @@
                         <div class="d-grid gap-2">
                             <button class="btn main-hover"
                                     type="button"
-                                    @click="addCart">
+                                    @click="!userIdx?
+                                        $nuxt.$router.push({path:'/login'}):addCart()">
                                 장바구니 추가
                             </button>
                         </div>
@@ -127,7 +128,7 @@
         <!--            상품설명 및 리뷰 란 -->
         <div class="row mx-4 ">
             <!-- 상세정보로 이동-->
-            <a href="#item-detail" class="p-0 col-md-6 sticky-top" style="z-index: 1; top: 58px">
+            <a href="#item-detail" class="p-0 col-md-6 sticky-top" style="z-index: 1;">
                 <div class="d-grid gap-2">
                     <button class="b item-detail btn btn-light">
                         상세정보
@@ -135,7 +136,7 @@
                 </div>
             </a>
             <!-- 상품리뷰로 이동-->
-            <a href="#item-review" class="p-0 col-md-6 sticky-top" style="z-index: 1; top: 58px">
+            <a href="#item-review" class="p-0 col-md-6 sticky-top" style="z-index: 1;">
                 <div class="d-grid gap-2">
                     <button class="b item-detail btn btn-light">리뷰</button>
                 </div>
@@ -152,14 +153,10 @@
             <div class="my-3"></div>
         </div>
 
-        <div class="my-5">
-            <hr style="background-color: black">
-        </div>
-
-        <div class="my-3"></div>
+        <hr style="background-color: black">
 
         <!--            카카오 지도 API -->
-        <div class="row">
+        <div class="row" >
             <div class="col-md">
                 <div class="h5 m-4">여행지 한눈에 보기</div>
                 <div class="px-3">
@@ -172,8 +169,8 @@
 
         <!-- 상품 card slider -->
         <!-- Related items section-->
-        <div class="py-3 slider-div">
-            <div class="container px-0 pt-1">
+        <div class="py-3 slider-div" >
+            <div class=" px-0 pt-1">
                 <div class="h5 m-4">관련여행상품 추천</div>
                 <div class="outerDiv pt-2" id="container">
                     <div class="innerDiv mb-5 px-3" v-for="item in itemsArea"
@@ -281,7 +278,7 @@
                                     </div>
                                 </div>
                                 <img alt="Generic placeholder image"
-                                     src="@/assets/img/itemDetails/review_1.jpg"
+                                     src="@/assets/img/itemDetails/review_1.jpeg"
                                      class="ml-3 image-fluid"
                                      style="width: 150px; height: 150px">
                             </div>
@@ -293,7 +290,7 @@
                              v-for="(review, index) in reviews" v-show="reviewShow && index >= 2">
                             <div class="media">
                                 <img alt="Generic placeholder image"
-                                     src="http://bootdey.com/img/Content/avatar/avatar1.png"
+                                     src="http://bootdey.com/img/Content/avatar/avatar2.png"
                                      class="mr-3 rounded-pill">
                                 <div class="media-body">
                                     <div class="reviews-members-header">
@@ -328,7 +325,7 @@
                                     </div>
                                 </div>
                                 <img alt="Generic placeholder image"
-                                     src="@/assets/img/itemDetails/review_1.jpg"
+                                     src="@/assets/img/itemDetails/review_1.jpeg"
                                      class="ml-3 image-fluid"
                                      style="width: 150px; height: 150px">
                             </div>
@@ -341,7 +338,7 @@
                         </a>
                         <a class="text-center d-block font-weight-bold review-hover sticky-bottom"
                            @click="reviewShow = !reviewShow" href="#review-start">
-                            <p class="review-border m-auto"  v-show="reviewShow">리뷰 닫기</p>
+                            <p class="review-border m-auto" v-show="reviewShow">리뷰 닫기</p>
                         </a>
 
                     </div>
@@ -369,6 +366,7 @@ export default {
     },
     data() {
         return {
+            userIdx: null,
             user: [],
             item: [],
             area: "",
@@ -425,7 +423,7 @@ export default {
                 })
                 .catch(err => {
                     console.log(err)
-                    alert("getUserData:"+ err)
+                    alert("getUserData:" + err)
 
                 })
         },
@@ -441,7 +439,7 @@ export default {
             // cart 임시 객체 만들기
             let data = {
                 idx: null,
-                userIdx: this.user.idx,
+                userIdx: this.userIdx,
                 itemsIdx: this.$route.params.idx,
                 quntyty: this.quntyty
             }
@@ -545,10 +543,12 @@ export default {
         //     require('@/assets/img/itemDetails/contents/' + this.item.thumnail)
 
         // 로그인 관련 설정
+        this.userIdx = localStorage.getItem("idx");
+        console.log("userIdx:"+localStorage.getItem("idx"))
         localStorage.setItem("idx", "1")
         localStorage.getItem("idx")
         this.getItemData(this.$route.params.idx);
-        this.getUserData(localStorage.getItem('idx'));
+        // this.getUserData(JSON.parse(localStorage.getItem("idx")).idx);
         this.reviewsData(this.$route.params.idx);
     }
 }
@@ -607,6 +607,7 @@ li {
     width: 500px;
     height: 400px;
 }
+
 .panel-main img, .thumbs img {
     width: 100%;
     height: auto;

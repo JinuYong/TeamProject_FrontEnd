@@ -113,7 +113,7 @@
         <!--            상품설명 및 리뷰 란 -->
         <div class="row mx-4 ">
             <!-- 상세정보로 이동-->
-            <a href="#item-detail" class="p-0 col-md-6 sticky-top" style="z-index: 1; top: 58px">
+            <a href="#item-detail" class="p-0 col-md-6 sticky-top" style="z-index: 1; top: 0px">
                 <div class="d-grid gap-2">
                     <button class="b item-detail btn btn-light">
                         상세정보
@@ -121,7 +121,7 @@
                 </div>
             </a>
             <!-- 상품리뷰로 이동-->
-            <a href="#item-review" class="p-0 col-md-6 sticky-top" style="z-index: 1; top: 58px">
+            <a href="#item-review" class="p-0 col-md-6 sticky-top" style="z-index: 1;top: 0px">
                 <div class="d-grid gap-2">
                     <button class="b item-detail btn btn-light">리뷰</button>
                 </div>

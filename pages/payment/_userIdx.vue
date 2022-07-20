@@ -1,5 +1,5 @@
 <template>
-    <div class="container px-3 my-5 clearfix">
+    <div class=" px-3 my-5 clearfix" >
         <div class="card">
             <div class="card-header">
                 <h2>주문/결제</h2>
@@ -79,7 +79,7 @@
                                 결제상세
                             </div>
                             <div class="card-body">
-                                <div class="container">
+                                <div class="">
                                     <small><strong>결제금액 :</strong></small>
                                     <div class="right h5 mb-0">
                                         <strong>{{ this.totalSalePrice|numberFormat }}원
@@ -96,7 +96,6 @@
                                     </div>
                                     <hr>
                                     <small><strong>결제 :</strong></small>
-                                    <br>
                                     <br>
                                     <div class="row">
                                         <div class="col">
