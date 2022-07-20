@@ -3,71 +3,61 @@
     "name": "CheckPayment",
     "path": "/CheckPayment",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPayment.vue",
-    "chunkName": "pages/CheckPayment",
-    "_name": "_f3bfcc36"
+    "chunkName": "pages/CheckPayment"
   },
   {
     "name": "http-common",
     "path": "/http-common",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\http-common.js",
-    "chunkName": "pages/http-common",
-    "_name": "_650cf994"
+    "chunkName": "pages/http-common"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\LogIn.vue",
-    "chunkName": "pages/LogIn",
-    "_name": "_6ab42612"
+    "chunkName": "pages/LogIn"
   },
   {
     "name": "MapExample",
     "path": "/MapExample",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\MapExample.vue",
-    "chunkName": "pages/MapExample",
-    "_name": "_5bb8fa35"
+    "chunkName": "pages/MapExample"
   },
   {
     "name": "mypage",
     "path": "/mypage",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\mypage\\\\index.vue",
-    "chunkName": "pages/mypage/index",
-    "_name": "_0f145d60"
+    "chunkName": "pages/mypage/index"
   },
   {
     "name": "Qna",
     "path": "/Qna",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Qna.vue",
-    "chunkName": "pages/Qna",
-    "_name": "_a23c99a6"
+    "chunkName": "pages/Qna"
   },
   {
     "name": "SearchResult",
     "path": "/SearchResult",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SearchResult.vue",
-    "chunkName": "pages/SearchResult",
-    "_name": "_df3f6328"
+    "chunkName": "pages/SearchResult"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp\\\\index.vue",
-    "chunkName": "pages/SignUp/index",
-    "_name": "_b8a3cbba"
+    "chunkName": "pages/SignUp/index"
   },
   {
     "name": "board-List",
     "path": "/board/List",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\List.vue",
-    "chunkName": "pages/board/List",
-    "_name": "_530881e6"
+    "chunkName": "pages/board/List"
   },
   {
     "name": "board-Write",
     "path": "/board/Write",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\Write.vue",
-    "chunkName": "pages/board/Write",
-    "_name": "_1e80fa00"
+    "chunkName": "pages/board/Write"
   },
   {
     "name": "find-id",
@@ -79,11 +69,9 @@
         "name": "find-id-Complete",
         "path": "Complete",
         "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\id\\\\Complete.vue",
-        "chunkName": "pages/find/id/Complete",
-        "_name": "_78d7f658"
+        "chunkName": "pages/find/id/Complete"
       }
-    ],
-    "_name": "_1b532f8a"
+    ]
   },
   {
     "name": "find-password",
@@ -95,143 +83,128 @@
         "name": "find-password-Complete",
         "path": "Complete",
         "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\password\\\\Complete.vue",
-        "chunkName": "pages/find/password/Complete",
-        "_name": "_84a22758"
+        "chunkName": "pages/find/password/Complete"
       }
-    ],
-    "_name": "_4e04afbb"
+    ]
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\Detail.vue",
-    "chunkName": "pages/inform/Detail",
-    "_name": "_c815aafe"
+    "chunkName": "pages/inform/Detail"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\List.vue",
-    "chunkName": "pages/inform/List",
-    "_name": "_279bfa4e"
+    "chunkName": "pages/inform/List"
   },
   {
     "name": "Items-Details",
     "path": "/Items/Details",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\index.vue",
-    "chunkName": "pages/Items/Details/index",
-    "_name": "_e6074d8e"
+    "chunkName": "pages/Items/Details/index"
   },
   {
     "name": "Items-List",
     "path": "/Items/List",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\List.vue",
-    "chunkName": "pages/Items/List",
-    "_name": "_7344b172"
+    "chunkName": "pages/Items/List"
   },
   {
     "name": "service-ItemDetailDataService",
     "path": "/service/ItemDetailDataService",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ItemDetailDataService.js",
-    "chunkName": "pages/service/ItemDetailDataService",
-    "_name": "_49dfe476"
+    "chunkName": "pages/service/ItemDetailDataService"
+  },
+  {
+    "name": "service-ItemListDataService",
+    "path": "/service/ItemListDataService",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ItemListDataService.js",
+    "chunkName": "pages/service/ItemListDataService"
   },
   {
     "name": "service-ReviewDataService",
     "path": "/service/ReviewDataService",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ReviewDataService.js",
-    "chunkName": "pages/service/ReviewDataService",
-    "_name": "_fb0a72ec"
+    "chunkName": "pages/service/ReviewDataService"
   },
   {
     "name": "service-ShoppingCartDataService",
     "path": "/service/ShoppingCartDataService",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ShoppingCartDataService.js",
-    "chunkName": "pages/service/ShoppingCartDataService",
-    "_name": "_a503c94c"
+    "chunkName": "pages/service/ShoppingCartDataService"
   },
   {
     "name": "service-UserDataService",
     "path": "/service/UserDataService",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\UserDataService.js",
-    "chunkName": "pages/service/UserDataService",
-    "_name": "_ce363186"
+    "chunkName": "pages/service/UserDataService"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
-    "chunkName": "pages/shoppingCart/ShoppingCart",
-    "_name": "_039f4d97"
+    "chunkName": "pages/shoppingCart/ShoppingCart"
   },
   {
     "name": "SignUp-Complete",
     "path": "/SignUp/Complete",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp\\\\Complete.vue",
-    "chunkName": "pages/SignUp/Complete",
-    "_name": "_fbf495d0"
+    "chunkName": "pages/SignUp/Complete"
   },
   {
     "name": "Items-Details-components-CardSliderCom",
     "path": "/Items/Details/components/CardSliderCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\CardSliderCom.vue",
-    "chunkName": "pages/Items/Details/components/CardSliderCom",
-    "_name": "_c4ca9dbe"
+    "chunkName": "pages/Items/Details/components/CardSliderCom"
   },
   {
     "name": "Items-Details-components-ImgGalleryCom",
     "path": "/Items/Details/components/ImgGalleryCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ImgGalleryCom.vue",
-    "chunkName": "pages/Items/Details/components/ImgGalleryCom",
-    "_name": "_82bab53a"
+    "chunkName": "pages/Items/Details/components/ImgGalleryCom"
   },
   {
     "name": "Items-Details-components-KakaoMapApiCom",
     "path": "/Items/Details/components/KakaoMapApiCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\KakaoMapApiCom.vue",
-    "chunkName": "pages/Items/Details/components/KakaoMapApiCom",
-    "_name": "_690926df"
+    "chunkName": "pages/Items/Details/components/KakaoMapApiCom"
   },
   {
     "name": "Items-Details-components-ReviewsCom",
     "path": "/Items/Details/components/ReviewsCom",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ReviewsCom.vue",
-    "chunkName": "pages/Items/Details/components/ReviewsCom",
-    "_name": "_9575ca76"
+    "chunkName": "pages/Items/Details/components/ReviewsCom"
   },
   {
     "name": "board-detail-update-idx",
     "path": "/board/detail/update/:idx?",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\detail\\\\update\\\\_idx.vue",
-    "chunkName": "pages/board/detail/update/_idx",
-    "_name": "_149ebe32"
+    "chunkName": "pages/board/detail/update/_idx"
   },
   {
     "name": "board-detail-idx",
     "path": "/board/detail/:idx?",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\detail\\\\_idx.vue",
-    "chunkName": "pages/board/detail/_idx",
-    "_name": "_fc276844"
+    "chunkName": "pages/board/detail/_idx"
   },
   {
     "name": "Items-Details-idx",
     "path": "/Items/Details/:idx",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\_idx.vue",
-    "chunkName": "pages/Items/Details/_idx",
-    "_name": "_6a0b7ce7"
+    "chunkName": "pages/Items/Details/_idx"
   },
   {
     "name": "payment-userIdx",
     "path": "/payment/:userIdx?",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\payment\\\\_userIdx.vue",
-    "chunkName": "pages/payment/_userIdx",
-    "_name": "_003fe0e2"
+    "chunkName": "pages/payment/_userIdx"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_603576fb"
+    "chunkName": "pages/index"
   }
 ]

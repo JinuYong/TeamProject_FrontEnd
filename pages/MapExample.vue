@@ -12,6 +12,12 @@
                 </div>
             </div>
         </div>
+        <ul>
+            <li v-for="(item, idx) in this.items" :key="idx">
+                <p>{{item.title}}</p>
+                <button :class="{nonActive:isActive}">버튼</button>    
+            </li>
+        </ul>
     </div>
 </template>
 <script>
@@ -23,10 +29,16 @@ export default {
                 {title: "멘도롱카페", content: "- "+"제주감귤을 직접 착즙해 만드는 감귤에이드가 맛있는 카페", position: new kakao.maps.LatLng(33.452671, 126.574792)},
                 {title: "제주호텔 임페리얼", content: "- "+"제주바다가 한눈에 보이는 오션뷰의 5성급 호텔", position: new kakao.maps.LatLng(33.451744, 126.572441)},
             ],
+            items: [
+                {title: "흑돼지식당1", payDate: "2022-06-20"},
+                {title: "흑돼지식당2", payDate: "2022-07-25"},
+                {title: "흑돼지식당3", payDate: "2022-08-20"},
+            ],
             coords: [],
             map: null,
             activeList: null,
-            bounds: null
+            bounds: null,
+            isActive: false
         }
     },
     methods: {
@@ -170,11 +182,28 @@ export default {
     },
     mounted() {
         this.kakaoMapShow();
+        let currentDate = new Date();
+        let arr = [];
+        let payDate;
+        for (let i = 0; i < this.items.length; i++) {
+            arr = this.items[i].payDate.split("-");
+            console.log(arr);
+            payDate = new Date(arr[0], arr[1]-1, arr[2]);
+            console.log("paydate = ", payDate);
+            if ((currentDate.getTime-payDate.getTime) / (1000*60*60*24) > 7) {
+                console.log("빼기 = ", (currentDate.getTime-payDate.getTime) / (1000*60*60*24));
+                this.isActive = true;
+            }
+        }
+        console.log("current = ", currentDate);
 
     },
 }
 </script>
 <style>
+    .nonActive {
+        display: none;
+    }
     .map-list {
         width: 500px;
         height: 100px;

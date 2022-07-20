@@ -23,6 +23,7 @@ const _279bfa4e = () => interopDefault(import('..\\pages\\inform\\List.vue' /* w
 const _e6074d8e = () => interopDefault(import('..\\pages\\Items\\Details\\index.vue' /* webpackChunkName: "pages/Items/Details/index" */))
 const _7344b172 = () => interopDefault(import('..\\pages\\Items\\List.vue' /* webpackChunkName: "pages/Items/List" */))
 const _49dfe476 = () => interopDefault(import('..\\pages\\service\\ItemDetailDataService.js' /* webpackChunkName: "pages/service/ItemDetailDataService" */))
+const _bebd177a = () => interopDefault(import('..\\pages\\service\\ItemListDataService.js' /* webpackChunkName: "pages/service/ItemListDataService" */))
 const _fb0a72ec = () => interopDefault(import('..\\pages\\service\\ReviewDataService.js' /* webpackChunkName: "pages/service/ReviewDataService" */))
 const _a503c94c = () => interopDefault(import('..\\pages\\service\\ShoppingCartDataService.js' /* webpackChunkName: "pages/service/ShoppingCartDataService" */))
 const _ce363186 = () => interopDefault(import('..\\pages\\service\\UserDataService.js' /* webpackChunkName: "pages/service/UserDataService" */))
@@ -129,7 +130,7 @@ export const routerOptions = {
     name: "service-ItemDetailDataService"
   }, {
     path: "/service/ItemListDataService",
-    component: _27f11efc,
+    component: _bebd177a,
     name: "service-ItemListDataService"
   }, {
     path: "/service/ReviewDataService",
