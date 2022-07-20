@@ -477,7 +477,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 /* 공통 */
 .b {
