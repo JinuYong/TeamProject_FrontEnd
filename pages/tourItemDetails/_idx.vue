@@ -1,12 +1,27 @@
 <template>
-    <div class="container b px-0">
+    <div class="container px-0">
         <!--    상품 이미지, 상품명 및 결제 관련  -->
         <!--      상품 이미지 -->
         <div class="row mx-2 mt-3">
             <!--      상품 이미지 main -->
             <div class="col-md-6 p-0">
                 <div class="row mt-3 mx-1">
-                    <img-gallery-com/>
+                    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active img-wrapper">
+                                <img :src="'data:image/*;base64,' + item.data" class="d-block w-100" :alt="item.name"
+                                     style="width:450px; height:420px;">
+                            </div>
+                        </div>
+<!--                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">-->
+<!--                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                            <span class="visually-hidden">Previous</span>-->
+<!--                        </button>-->
+<!--                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">-->
+<!--                            <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                            <span class="visually-hidden">Next</span>-->
+<!--                        </button>-->
+                    </div>
                 </div>
 
             </div>
@@ -24,7 +39,6 @@
                         <!--                        상품명 및 상품 설명 -->
                         <div>
                             <div class="h4">{{ item.title }}</div>
-                            <h5>3박 4일</h5>
                             <p>{{ item.content }}</p>
                         </div>
                         <hr>
@@ -130,10 +144,10 @@
 
             <!--                상품설명란 -->
             <div class="b col-md-12 p-0 text-center" id="item-detail">
-                <img class="img-fluid" src="@/assets/img/itemDetails/danang/danang1.png">
-                <img class="img-fluid" src="@/assets/img/itemDetails/danang/danang2.png">
-                <img class="img-fluid" src="@/assets/img/itemDetails/danang/danang3.png">
-                <img class="img-fluid" src="@/assets/img/itemDetails/danang/danang4.png">
+                <img id="content-image"
+                     class="img-fluid"
+                     v-if="this.item.thumnail"
+                     :src="getSrc()">
             </div>
             <div class="my-3"></div>
         </div>
@@ -166,15 +180,16 @@
                          v-show="$route.params.idx != item.idx">
                         <!-- 클릭시 해당 아이템으로 이동 -->
                         <router-link :to="'/tourItemDetails/'+ item.idx">
-                            <div class="card h-80 item-card">
+                            <div class="card h-100 item-card">
                                 <!-- Sale badge-->
                                 <div class="badge bg-dark text-white position-absolute"
                                      style="top: 0.5rem; right: 0.5rem">
                                     Sale
                                 </div>
                                 <!-- Product image-->
-                                <img class="card-img-top" src="https://dummyimage.com/450x450/dee2e6/6c757d.jpg"
-                                     alt="..."/>
+                                <img class="card-img-top card-image"
+                                     :src="'data:image/*;base64,' + item.data"
+                                     :alt="item.name"/>
                                 <!-- Product details-->
                                 <div class="card-body p-3">
                                     <div class="text-left">
@@ -224,7 +239,7 @@
         <div class="row" id="item-review">
             <h5 class="m-3 p-3">상품리뷰</h5>
             <div class="col-md">
-                <div class="px-3">
+                <div class="px-3 ">
                     <div class="bg-white b p-4 mb-4 restaurant-detailed-ratings-and-reviews">
 
                         <div class="reviews-members py-4" id="review-start"
@@ -266,8 +281,9 @@
                                     </div>
                                 </div>
                                 <img alt="Generic placeholder image"
-                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
-                                     class="ml-3 image-fluid">
+                                     src="@/assets/img/itemDetails/review_1.jpg"
+                                     class="ml-3 image-fluid"
+                                     style="width: 150px; height: 150px">
                             </div>
                         </div>
 
@@ -312,21 +328,22 @@
                                     </div>
                                 </div>
                                 <img alt="Generic placeholder image"
-                                     src="https://dummyimage.com/150x150/dee2e6/6c757d.jpg"
-                                     class="ml-3 image-fluid">
+                                     src="@/assets/img/itemDetails/review_1.jpg"
+                                     class="ml-3 image-fluid"
+                                     style="width: 150px; height: 150px">
                             </div>
                         </div>
                         <hr>
 
-                        <hr>
-                        <a class="text-center w-100 d-block mt-4 font-weight-bold review-hover"
+                        <a class="text-center pt-4 d-block font-weight-bold review-hover"
                            @click="reviewShow = !reviewShow" href="#review-start">
-                            <p v-show="!reviewShow">모든리뷰 보기</p>
+                            <p class="review-border m-auto" v-show="!reviewShow">리뷰 보기</p>
                         </a>
-                        <a class="text-center w-100 d-block mt-4 font-weight-bold review-hover"
+                        <a class="text-center d-block font-weight-bold review-hover sticky-bottom"
                            @click="reviewShow = !reviewShow" href="#review-start">
-                            <p v-show="reviewShow">리뷰닫기</p>
+                            <p class="review-border m-auto"  v-show="reviewShow">리뷰 닫기</p>
                         </a>
+
                     </div>
                 </div>
 
@@ -341,6 +358,7 @@ import ImgGalleryCom from "~/pages/tourItemDetails/components/ImgGalleryCom";
 import ItemDetailDataService from "~/pages/service/ItemDetailDataService";
 import UserDataService from "~/pages/service/UserDataService";
 import ReviewDataService from "~/pages/service/ReviewDataService";
+import UploadFilesService from "~/pages/service/UploadFilesService";
 // import dayjs from 'dayjs'
 
 export default {
@@ -358,13 +376,16 @@ export default {
             itemsArea: [],
             reviews: [],
             value: 3,
-            reviewShow: false
+            reviewShow: false,
+            mainImage: {},
+            images: [],
+            isLoading: false,
         }
     },
     methods: {
         // todo : item detail들어올때 param으로 item의 idx값 넘겨주기
         getItemData(idx) {
-            ItemDetailDataService.getItemData(1)
+            ItemDetailDataService.getItemData(idx)
                 .then(res => {
                     this.item = res.data
                     this.area = res.data.area
@@ -375,28 +396,37 @@ export default {
                         .then(res => {
                             this.itemsArea = res.data
                             console.log("ItemsArea : ", this.item.area)
+
                         })
                         .catch(err => {
                             console.log(err)
+
                         })
                 })
                 .catch(err => {
                     console.log(err)
                     alert(err)
+
                 })
         },
-        // todo : user의 idx 받아오는 방법 생각하기
+        getSrc() {
+            // console.log('getSrc',item.thumnail)
+            return require(`@/assets/img/itemDetails/contents/${this.item.thumnail}`)
+        },
         getUserData(idx) {
+
             UserDataService.getUser(idx)
                 .then(response => {
                     this.user = response.data;
                     // springboot에서 받은 총 데이터 건수
                     // this.count = totalItems;
-                    this.userIdx = response.idx
+                    this.userIdx = response.data.idx
+
                 })
                 .catch(err => {
                     console.log(err)
-                    alert(err)
+                    alert("getUserData:"+ err)
+
                 })
         },
         itemCountReduce() {
@@ -407,6 +437,7 @@ export default {
             this.quntyty += 1;
         },
         addCart() {
+
             // cart 임시 객체 만들기
             let data = {
                 idx: null,
@@ -418,20 +449,25 @@ export default {
                 .then(res => {
                     console.log(res)
                     alert("장바구니에 추가하였습니다!")
+
                 })
                 .catch(e => {
                     alert(e);
+
                 })
         },
         reviewsData(idx) {
+
             ReviewDataService.getReview(idx)
                 .then(res => {
                     this.reviews = res.data
                     console.log("review data : {}", this.reviews)
                     console.log("response : {}", res.data)
+
                 })
                 .catch(err => {
                     console.log(err)
+
                 })
         },
         buttonRight() {
@@ -457,7 +493,22 @@ export default {
                     window.clearInterval(slideTimer);
                 }
             }, speed);
-        }
+        },
+        changePic() {
+            var pic = document.querySelector("#pic");
+            // .small의 src
+            var newPic = this.src;
+            // cup의 src를 .small의 src로 세팅
+            pic.src = newPic;
+        },
+        initPic() {
+            var smallPics = document.querySelectorAll(".small");
+
+            for (let i = 0; i < smallPics.length; i++) {
+                smallPics[i].onclick = this.changePic();
+            }
+        },
+
 
     },
     filters: {
@@ -468,6 +519,32 @@ export default {
         },
     },
     mounted() {
+//         const current = document.querySelector("#selected");
+//         const thumbs = document.querySelectorAll(".thumbs img");
+//         const opacity = 0.5;
+// // Set opacity of first image
+//         thumbs[0].style.opacity = opacity;
+//         thumbs.forEach(img => img.addEventListener("click", imgActivate));
+//
+//         function imgActivate(e) {
+//             // Reset opacity on all thumbs
+//             thumbs.forEach(img => (img.style.opacity = 1));
+//             // Change current image to source of clicked image
+//             current.src = e.target.src;
+//             // Add fadeIn class
+//             current.classList.add("fade-in");
+//             // Remove fadeIn class after animation time elapsed
+//             setTimeout(() => current.classList.remove("fade-in"), 500);
+//             // Change opacity to variable value
+//             e.target.style.opacity = opacity;
+//         }
+        // 이미지 불러오기 메소드
+        // this.itemImageData();
+
+        // document.getElementById('content-image').src =
+        //     require('@/assets/img/itemDetails/contents/' + this.item.thumnail)
+
+        // 로그인 관련 설정
         localStorage.setItem("idx", "1")
         localStorage.getItem("idx")
         this.getItemData(this.$route.params.idx);
@@ -525,6 +602,46 @@ li {
     color: black;
 }
 
+/* image gallery */
+.selected {
+    width: 500px;
+    height: 400px;
+}
+.panel-main img, .thumbs img {
+    width: 100%;
+    height: auto;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+.li-img {
+    list-style: none;
+    float: left;
+}
+
+#selected {
+    width: 100%;
+}
+
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+
 /* 상품 이미지, 결제 관련 Css*/
 .discount {
     color: #A30000;
@@ -577,6 +694,13 @@ a:hover {
 }
 
 /* card slider */
+
+.card-image {
+    width: 248px;
+    height: 248px;
+}
+
+
 /* 공통 */
 ul {
     padding: 0;
@@ -780,5 +904,16 @@ a {
     font-size: 1em; /* 이모지 크기 */
     color: transparent; /* 기존 이모지 컬러 제거 */
     text-shadow: 0 0 0 orange; /* 새 이모지 색상 부여 */
+}
+
+.review-border {
+    background-color: #A30000;
+    color: white;
+    font-weight: lighter;
+    width: 110px;
+    height: 28px;
+    border: 1px solid #A30000;
+    border-radius: 50px;
+
 }
 </style>

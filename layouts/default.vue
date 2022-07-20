@@ -93,11 +93,14 @@
                             type="search"
                             placeholder="검색어 입력"
                             aria-label="Search"
-                            @keyup="searchKeyword()"
+                            v-model="keyword"
+                            @keypress.enter.prevent="searchKeyword"
                         />
+
                         <img
                             src="@/assets/img/search_icon.png"
                             class="search-icon"
+                            @click.prevent="searchKeyword"
                         />
                     </form>
                     <!-- <img
@@ -154,6 +157,7 @@
 
         <section class="default">
             <Nuxt />
+<!--            :key="$route.fullPath"-->
         </section>
 
         <!-- 푸터 -->
@@ -182,7 +186,9 @@
 <script>
 export default {
     data() {
-        return {};
+        return {
+            keyword:""
+        };
     },
     // TODO:
     // html에서 변수처럼 호출 : 뒤에 () 붙이면 안됨 예) currentUser
@@ -201,7 +207,12 @@ export default {
             $nuxt.$router.push(url);
         },
         searchKeyword() {
-            // 검색기능 구현
+            this.$router.push({
+                path:'/SearchResult',
+                query:{
+                    keyword:this.keyword
+                }
+            });
         },
         // TODO:
         logOut() {
@@ -273,6 +284,7 @@ nav {
     margin: 0;
     top: 10px;
     right: 20px;
+    cursor: pointer;
 }
 .logo-img {
     width: 150px;

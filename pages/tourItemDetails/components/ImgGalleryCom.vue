@@ -17,26 +17,15 @@
 <!--                </button>-->
 <!--            </div>-->
 <!--        </div>-->
+<!--        https://dummyimage.com/500x400/dee2e6/6c757d.jpg-->
         <div>
-            <img src="https://dummyimage.com/500x400/dee2e6/6c757d.jpg" id="selected">
+            <img :src="mainImage" id="selected">
         </div>
         <div class="thumbs">
             <ul class="d-flex justify-content-center mt-2 p-0">
-                <li class="p-1 li-img">
-                    <img src="https://dummyimage.com/500x400/dee2e6/6c757d.jpg" alt="item-img-small"
+                <li class="p-1 li-img" v-for="image in images">
+                    <img :src="image.url" :alt="image.name"
                          class="img-fluid"
-                         style="width: 50px; height: 50px"/>
-                </li>
-                <li class="p-1 li-img" @click="imgPic">
-                    <img src="https://dummyimage.com/500x400/dee2e6/6c757d.jpg" alt="item-img-small"
-                         style="width: 50px; height: 50px"/>
-                </li>
-                <li class="p-1 li-img" @click="imgPic">
-                    <img src="https://dummyimage.com/500x400/dee2e6/6c757d.jpg" alt="item-img-small"
-                         style="width: 50px; height: 50px"/>
-                </li>
-                <li class="p-1 li-img" @click="imgPic">
-                    <img src="https://dummyimage.com/500x400/dee2e6/6c757d.jpg" alt="item-img-small"
                          style="width: 50px; height: 50px"/>
                 </li>
             </ul>
@@ -45,14 +34,49 @@
 </template>
 
 <script>
+import UploadFilesService from "~/pages/service/UploadFilesService";
+
 export default {
     name: "ImgGalleryCom",
+    data() {
+        return {
+            mainImage: {},
+            images: []
+        }
+    },
+    methods: {
+        itemImageData(itemIdx){
+            UploadFilesService.getItemFiles(itemIdx)
+                .then(res => {
+                    this.mainImage = res.data[0].url
+                    this.images = res.data
+                    console.log(res.data[0].url)
+                })
+                .catch(err => {
+                    console.log(err)
+            })
+        },
+        changePic() {
+            var pic = document.querySelector("#pic");
+            // .small의 src
+            var newPic = this.src;
+            // cup의 src를 .small의 src로 세팅
+            pic.src = newPic;
+        },
+        initPic() {
+            var smallPics = document.querySelectorAll(".small");
+
+            for (let i = 0; i < smallPics.length; i++) {
+                smallPics[i].onclick = this.changePic();
+            }
+        }
+    },
     mounted() {
         const current = document.querySelector("#selected");
         const thumbs = document.querySelectorAll(".thumbs img");
         const opacity = 0.5;
 // Set opacity of first image
-        thumbs[0].style.opacity = opacity;
+//         thumbs[0].style.opacity = opacity;
         thumbs.forEach(img => img.addEventListener("click", imgActivate));
 
         function imgActivate(e) {
@@ -67,24 +91,10 @@ export default {
             // Change opacity to variable value
             e.target.style.opacity = opacity;
         }
+        // 이미지 불러오기 메소드
+        this.itemImageData(this.$route.query.idx);
     },
-    methods: {
-        changePic() {
-            var pic = document.querySelector("#pic");
-            // .small의 src
-            var newPic = this.src;
-            // cup의 src를 .small의 src로 세팅
-            pic.src = newPic;
-        },
-        initPic() {
-            var smallPics = document.querySelectorAll(".small");
 
-            for (let i = 0; i < smallPics.length; i++) {
-                smallPics[i].onclick = this.changePic();
-            }
-
-        }
-    }
 }
 </script>
 

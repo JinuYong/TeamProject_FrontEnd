@@ -344,7 +344,7 @@ export default {
             //     alert("인풋을 재확인 해주세요");
             //     return
             // }
-            
+
             console.log(this.userForm.profileFile)
             let userData = new FormData();
             for (const key in this.userForm) {
@@ -354,7 +354,7 @@ export default {
             userData.append("phone", this.phoneNum);
             console.log(userData.phone);
             try {
-                console.log(userData);
+                console.log("userData", userData);
                 let res = await this.$axios.post('/api/signup/register', userData, {
                     headers: {
                         "Content-Type" : "multipart/form-data"

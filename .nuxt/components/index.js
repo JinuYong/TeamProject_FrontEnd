@@ -1,4 +1,4 @@
-export { default as MyInform } from '../..\\components\\MyInform.vue'
+export { default as MyInform } from '../../components/MyInform.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
