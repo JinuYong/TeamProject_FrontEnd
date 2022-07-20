@@ -4,27 +4,30 @@
         <hr />
         <div class="index-container">
             <div class="menu-container">
-                <a>내정보</a>
-                <a>결제내역</a>
+                <a @click="changeMenu('myInform')">내정보</a>
+                <a @click="changeMenu('payment')">결제내역</a>
             </div>
             <div class="content-container">
                 <div v-if="menuStatus == 'myInform'">
                     <MyInform />
                 </div>
-                <div v-else-if="menuStatus == payment">
-
+                <div v-else-if="menuStatus == 'payment'">
+                    <Payment />
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
-import MyInform from '/components/MyInform.vue'
 export default {
-  components: { MyInform },
     data() {
         return {
             menuStatus: "myInform"
+        }
+    },
+    methods: {
+        changeMenu(val) {
+            this.menuStatus = val;
         }
     },
 }

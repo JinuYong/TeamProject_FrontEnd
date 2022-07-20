@@ -336,8 +336,8 @@
 </template>
 
 <script>
-import KakaoMapApi from "~/pages/tourItemDetails/components/KakaoMapApiCom";
-import ImgGalleryCom from "~/pages/tourItemDetails/components/ImgGalleryCom";
+import KakaoMapApi from "~/pages/Items/Details/components/KakaoMapApiCom";
+import ImgGalleryCom from "~/pages/Items/Details/components/ImgGalleryCom";
 import ItemDetailDataService from "~/pages/service/ItemDetailDataService";
 import UserDataService from "~/pages/service/UserDataService";
 import ReviewDataService from "~/pages/service/ReviewDataService";

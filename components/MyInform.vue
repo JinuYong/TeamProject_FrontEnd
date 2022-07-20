@@ -4,9 +4,10 @@
             <!-- <h3 class="text-center">내 정보</h3> -->
             <div class="signup-inputs form-label">
                 프로필 이미지
-                <img :src="profileImg" alt="프로필이미지" class="user-profile" ref="userProfile">
-                <label class="profile-label" for="profile-change"></label>
-                <input type="file" class="profile-input" id="profile-change" accept="image/*" @change="profileChange" ref="profile">
+                <!-- <img :src="profileImg" alt="프로필이미지" class="user-profile" ref="userProfile"> -->
+                <img v-if="profileUrl" :src="'http://localhost:8000/image/' + profileUrl" alt="프로필이미지" class="user-profile" ref="userProfile">
+                <label class="profile-label" :class="{cursordisable:!editStatus}" for="profile-change"></label>
+                <input type="file" class="profile-input" id="profile-change" accept="image/*" @change="profileChange" ref="profile" disabled>
             </div>
 
             <!-- 아이디 -->
@@ -139,7 +140,7 @@
                 <button v-if="editStatus" class="w-100 mt-5 mb-3 btn btn-md" @click="toggleEditStatus">
                     수정하기
                 </button>
-                <button v-if="!editStatus" class="w-100 mt-5 mb-3 btn btn-md" @click="joinConfirm">
+                <button v-if="!editStatus" class="w-100 mt-5 mb-3 btn btn-md" @click="updateUser">
                     확인
                 </button>
             </div>
@@ -156,7 +157,7 @@
         </form>
 
         <!-- Modal -->
-        <div class="modal fade" id="passwordChange" tabindex="-1" aria-labelledby="passwordChangeLabel" aria-hidden="true">
+        <div class="modal fade" id="passwordChange" data-bs-backdrop="static" tabindex="-1" aria-labelledby="passwordChangeLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -171,8 +172,6 @@
                                 <input
                                     type="password"
                                     placeholder="대,소문자 포함 8~20자 내외로 입력해 주세요."
-                                    minlength="8"
-                                    maxlength="20"
                                     v-model="newPassword"
                                     class="form-control"
                                 />
@@ -183,12 +182,10 @@
                                 <input
                                     type="password"
                                     placeholder="입력한 비밀번호를 다시 입력해 주세요."
-                                    minlength="8"
-                                    maxlength="20"
                                     v-model="userForm.rePassword"
                                     class="form-control"
                                 />
-                                <p v-if="validateResult" class="validateError">비밀번호가 일치하지 않습니다!</p>
+                                <p v-if="validateResult" class="validateError">{{validateErrorMsg}}</p>
                             </div>
                         </div>
                         <div v-else class="input-title">
@@ -230,6 +227,10 @@ export default {
             editStatus: true,
             changeSuccess: false,
             validateResult: false,
+            validateErrorMsg: "",
+            imgSrc: "",
+            profileUrl: "",
+            oldProfileFile: null
         };
     },
     components: {
@@ -251,16 +252,30 @@ export default {
         toggleEditStatus(e) {
             e.preventDefault();
             this.editStatus = false;
+            console.log(this.$refs.profile);
+            this.$refs.profile.disabled="";
+            console.log(this.$refs.profile);
         },
         async getUserInform(userId) {
             console.log(userId);
-            let res = this.$axios.post('/api/myinform/get', userId).then(res => {
+            let res = await this.$axios.post('/api/myinform/get', userId).then(res => {
                 console.log(res);
                 this.userForm = res.data;
                 this.phoneNum = res.data.phone;
+                this.profileUrl = res.data.profileUrl;
+                // console.log("this.imgSrc = ", this.imgSrc);
             })
         },
         async passwordChange() {
+            //비밀번호 체크
+            const pattern_blank = /[\s]/g;
+            const patten_complete_kor = /[가-힣]/;
+            if (pattern_blank.test(this.newPassword) || patten_complete_kor.test(this.newPassword) 
+            || this.newPassword.length < 8 || this.newPassword.length > 20) {
+                this.validateErrorMsg = "비밀번호는 공백없이 8~20자로 구성해주세요. ";
+                this.validateResult = true;
+                return;
+            }
             if (this.newPassword == this.userForm.rePassword) {
                 this.$axios.post('/api/myinform/changepw', {id:this.userForm.id, password:this.newPassword}).then(res => {
                     if (res.data) {
@@ -268,15 +283,19 @@ export default {
                     }
                 });
             } else {
+                this.validateErrorMsg = "비밀번호가 일치하지 않습니다!";
                 this.validateResult = true;
             }
         },
         modalReset() {
             this.$router.go(0);
         },
-        profileChange(e) {
-            this.userForm.profileFile = e.target.files;
-            this.profileImg = URL.createObjectURL(this.userForm.profileFile[0]);
+        profileChange() {
+            if (this.$refs.profile.files.length > 0) {
+                this.userForm.profileFile = this.$refs.profile.files[0];
+                // this.profileImg = URL.createObjectURL(this.$refs.profile.files[0]);
+                this.$refs.userProfile.src = URL.createObjectURL(this.$refs.profile.files[0]);
+            }
         },
         address_search(e) {
             e.preventDefault();
@@ -319,49 +338,48 @@ export default {
 
             this.postOpen = false;
         },
-        async joinConfirm(e) {
+        async updateUser(e) {
             e.preventDefault();
-            //공백
-            const pattern_blank = /[\s]/g;
             //한글만
             const patten_kor = /^[가-힣]+$/;
-            //완전한글포함
-            const patten_complete_kor = /[가-힣]/;
+            const pattern_email =
+                /^([\w\.\_\-])*[a-zA-Z0-9]+([\w\.\_\-])*([a-zA-Z0-9])+([\w\.\_\-])+@([a-zA-Z0-9]+\.)+[a-zA-Z0-9]{2,8}$/;
             
             let name = this.userForm.name;
             let phone = this.phoneNum;
+            let email = this.userForm.email;
 
-            if (!name || !phone) {
+            if (!name || !phone || !email) {
                 alert("모든 값을 입력해 주세요");
                 return;
             }
-            //비밀번호 체크
-            console.log(
-                pattern_blank.test(password) || patten_kor.test(password)
-            );
-            if (pattern_blank.test(password) || patten_kor.test(password)) {
-                alert("비밀번호를 확인해 주세요");
+            // 이름
+            console.log(!patten_kor.test(name));
+            if (!patten_kor.test(name)) {
+                alert("이름을 확인해 주세요");
                 return;
             }
-            //비밀번호 재확인 비교
-            if (password != re_password) {
-                alert("동일한 비밀번호를 입력해주세요");
+            if (!pattern_email.test(email)) {
+                alert("이메일을 확인해 주세요");
                 return;
             }
             
+            // validation 체크 후 전송
             let userData = new FormData();
             for (const key in this.userForm) {
                 userData.append(key, this.userForm[key]);
             }
+            userData.delete("rePassword");
+            userData.set("phone", this.phoneNum);
             try {
                 console.log(userData);
-                let res = await this.$axios.post('/api/signup/register', userData, {
+                let res = await this.$axios.post('/api/myinform/updateinform', userData, {
                     headers: {
                         "Content-Type" : "multipart/form-data"
                     }
                 });
                 console.log(res);
-                this.$router.push('/signupComplete/');
+                this.$router.go(0);
             } catch(e) {
                 console.log(e);
                 alert("회원가입에 실패했습니다. 다시 시도해주세요.");
@@ -369,12 +387,11 @@ export default {
         }
     },
     mounted() {
-        localStorage.setItem("id", "jinuyong1");
-        let userId = localStorage.getItem("id");
+        let userId = JSON.parse(localStorage.getItem("user")).username;
         console.log(userId);
         this.getUserInform(userId);
+        // console.log(localStorage.getItem("user"));
         console.log(this.userForm);
-        this.userForm.password = "";
     },
 }
 </script>
@@ -424,14 +441,17 @@ export default {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        margin: 20px 0 20px 30px
+        margin: 20px 0 20px 30px;
+        object-fit: cover;
     }
     .profile-label {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        cursor: pointer;
         transform: translateX(-80px);
+    }
+    .cursordisable {
+        cursor: pointer;
     }
     .profile-input {
         display: none;

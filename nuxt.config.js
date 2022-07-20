@@ -77,13 +77,20 @@ export default {
                 referrerpolicy: "no-referrer",
             },
             // kakao map 라이브러리 불러오기
+            // {
+            //     src: "//dapi.kakao.com/v2/maps/sdk.js?appkey=2347b9f93173423c7fe7580ee45e5589&libraries=services,clusterer,drawing",
+            // },
             {
-                src: "//dapi.kakao.com/v2/maps/sdk.js?appkey=2347b9f93173423c7fe7580ee45e5589&libraries=services,clusterer,drawing",
+                type: "text/javascript", 
+                src: "//dapi.kakao.com/v2/maps/sdk.js?appkey=9c0ab16c7aa85bf5514d85cb7f46f6dc&libraries=clusterer,services,drawing"
             },
             // SummerNote
             {
-                src: "https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js",
+                src: "https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"
             },
+            {
+                src: "//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"
+            }
         ],
     },
 

@@ -43,7 +43,9 @@
 
         <br />
         <div class="main-container">
-            <h5 class="sub-title">전체 게시글</h5>
+            <div class="list-container">
+                <h5 class="sub-title2">전체 게시글</h5>
+            </div>
             <div class="card board-card">
                 <div class="thumbnail-container col-md-3">
                     <img src="@/assets/img/sample.png" class="img-fluid thumbnail" alt="컨텐츠 이미지">
@@ -102,10 +104,15 @@ export default {
 
 </script>
 <style scoped>
-    
-
-    .main-container .sub-title{
-        margin: 40px 0 40px 18vw;
+    .thumbnail-container {
+        min-height: fit-content;
+    }
+    .sub-title {
+        width: 1100px;
+    }
+    .sub-title2 {
+        width: 880px;
+        padding-bottom: 20px;
     }
     .top3-card {
         position: relative;
@@ -124,7 +131,11 @@ export default {
         padding: 20px 10px 5px 10px;
     }
     .card-footer {
-        line-height: 5;
+        padding: 5px;
+        position: fixed;
+        bottom: 0;
+        border: none;
+        background: none;
     }
     .card-img {
         width: 350px;
@@ -132,8 +143,11 @@ export default {
     }
 
     .list-container {
-        /* width: 100vw; */
-        margin-left: 350px;
+        display: flex;
+        height: 57px;
+        justify-content: center;
+        background: white;
+        align-items: flex-end;
     }
     .top-banner {
         /* background-image: url(@/assets/img/topbanner.png); */
