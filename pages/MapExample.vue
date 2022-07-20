@@ -12,6 +12,12 @@
                 </div>
             </div>
         </div>
+        <ul>
+            <li v-for="(item, idx) in this.items" :key="idx">
+                <p>{{item.title}}</p>
+                <button :class="{nonActive:isActive}">버튼</button>    
+            </li>
+        </ul>
     </div>
 </template>
 <script>
@@ -19,14 +25,20 @@ export default {
     data() {
         return {
             locations: [
-                {title: "흑돼지식당", content: "- "+"맛있는 제주 흑돼지를 먹을 수 있는 숯불구이 전문점", position: new kakao.maps.LatLng(33.452278, 126.567803)},
-                {title: "멘도롱카페", content: "- "+"제주감귤을 직접 착즙해 만드는 감귤에이드가 맛있는 카페", position: new kakao.maps.LatLng(33.452671, 126.574792)},
-                {title: "제주호텔 임페리얼", content: "- "+"제주바다가 한눈에 보이는 오션뷰의 5성급 호텔", position: new kakao.maps.LatLng(33.451744, 126.572441)},
+                {title: "흑돼지식당", content: "- "+"맛있는 제주 흑돼지를 먹을 수 있는 숯불구이 전문점", position: null, address: "부산 부산진구 중앙대로680번길 29"},
+                {title: "멘도롱카페", content: "- "+"제주감귤을 직접 착즙해 만드는 감귤에이드가 맛있는 카페", position: null, address: "부산 부산진구 중앙대로680번가길 49"},
+                {title: "제주호텔 임페리얼", content: "- "+"제주바다가 한눈에 보이는 오션뷰의 5성급 호텔", position: null, address: "부산 부산진구 동천로 105"},
+            ],
+            items: [
+                {title: "흑돼지식당1", payDate: "2022-06-20"},
+                {title: "흑돼지식당2", payDate: "2022-07-25"},
+                {title: "흑돼지식당3", payDate: "2022-08-20"},
             ],
             coords: [],
             map: null,
             activeList: null,
-            bounds: null
+            bounds: null,
+            isActive: false
         }
     },
     methods: {
@@ -53,7 +65,7 @@ export default {
             console.log(idx);
         },
 
-        kakaoMapShow() {
+        async kakaoMapShow() {
             let container = this.$refs.map;
             let options = {
                 center: new kakao.maps.LatLng(33.450701, 126.570667),
@@ -122,13 +134,28 @@ export default {
 
             let positions = []
             let geocoder = new kakao.maps.services.Geocoder();
+            const addressSearch = address => {
+                return new Promise((resolve, reject) => {
+                    geocoder.addressSearch(address, function(result, status) {
+                        console.log(result);
+                        if (status === kakao.maps.services.Status.OK) {
+                            resolve(new kakao.maps.LatLng(result[0].y, result[0].x));
+                        } else {
+                            reject(status);
+                        }
+                    });
+                });
+            };
             let bounds = new kakao.maps.LatLngBounds();
             this.bounds = bounds;
             for (let i = 0; i < this.locations.length; i++) {
-                geocoder.addressSearch(this.locations[i].position, (result, status) => {
-                    if (status === kakao.maps.services.Status.OK) {
-                        this.locations[i].position = new kakao.maps.LatLng(result[0].y, result[0].x)
-                }});
+                let loc = await addressSearch(this.locations[i].address);
+                this.locations[i].position = loc;
+                // geocoder.addressSearch(this.locations[i].address, (result, status) => {
+                //     console.log(result)
+                //     if (status === kakao.maps.services.Status.OK) {
+                //         this.locations[i].position = new kakao.maps.LatLng(result[0].y, result[0].x);
+                // }});
 
                 let pos = {
                     content: '<div class="customoverlay">' + '<a>' + '<span class="text">' + this.locations[i].title + '</span>' + '</a>' + '</div>',
@@ -170,11 +197,28 @@ export default {
     },
     mounted() {
         this.kakaoMapShow();
+        let currentDate = new Date();
+        let arr = [];
+        let payDate;
+        for (let i = 0; i < this.items.length; i++) {
+            arr = this.items[i].payDate.split("-");
+            console.log(arr);
+            payDate = new Date(arr[0], arr[1]-1, arr[2]);
+            console.log("paydate = ", payDate);
+            if ((currentDate.getTime-payDate.getTime) / (1000*60*60*24) > 7) {
+                console.log("빼기 = ", (currentDate.getTime-payDate.getTime) / (1000*60*60*24));
+                this.isActive = true;
+            }
+        }
+        console.log("current = ", currentDate);
 
     },
 }
 </script>
 <style>
+    .nonActive {
+        display: none;
+    }
     .map-list {
         width: 500px;
         height: 100px;

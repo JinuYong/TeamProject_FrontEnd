@@ -149,7 +149,7 @@
             <div class="col-md">
                 <div class="h5 m-4">여행지 한눈에 보기</div>
                 <div class="px-3">
-                    <kakao-map-api/>
+                    <!-- <KaKaoMapApiCom /> -->
                 </div>
 
             </div>
@@ -336,7 +336,6 @@
 </template>
 
 <script>
-import KakaoMapApi from "~/pages/Items/Details/components/KakaoMapApiCom";
 import ImgGalleryCom from "~/pages/Items/Details/components/ImgGalleryCom";
 import ItemDetailDataService from "~/pages/service/ItemDetailDataService";
 import UserDataService from "~/pages/service/UserDataService";
@@ -347,7 +346,6 @@ export default {
     name: "TourItemDetail",
     components: {
         ImgGalleryCom,
-        KakaoMapApi,
     },
     data() {
         return {

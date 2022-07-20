@@ -1,6 +1,6 @@
 <template>
     <div class="common-container">
-        <form class="common">
+        <form class="common" @submit.prevent>
             <h4 class="mb-4 fw-normal text-center">아이디찾기</h4>
             <div v-if="!this.userId">
                 <p class="mb-5 fw-normal text-center">
@@ -48,7 +48,7 @@
                 </p>
                 <h4 class="text-center">{{"[ " + this.userId + " ]"}}</h4>
                 <div class="mt-5 text-center">
-                    <button class="w-50 mt-3 btn btn-md" @click="moveTo('/find/password/')">
+                    <button class="w-50 mt-3 btn btn-md" @click.stop="$router.push('/find/password/')">
                         비밀번호찾기</button
                     ><br />
                     <button class="w-50 mt-3 mb-5 btn btn-md" @click="moveTo('/login')">
