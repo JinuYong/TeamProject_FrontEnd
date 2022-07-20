@@ -128,6 +128,10 @@ export const routerOptions = {
     component: _49dfe476,
     name: "service-ItemDetailDataService"
   }, {
+    path: "/service/ItemListDataService",
+    component: _27f11efc,
+    name: "service-ItemListDataService"
+  }, {
     path: "/service/ReviewDataService",
     component: _fb0a72ec,
     name: "service-ReviewDataService"
