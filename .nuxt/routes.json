@@ -2,236 +2,285 @@
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\CheckPayment.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/CheckPayment.vue",
     "chunkName": "pages/CheckPayment",
-    "_name": "_f3bfcc36"
+    "_name": "_093d1120"
+  },
+  {
+    "name": "file-http-common",
+    "path": "/file-http-common",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/file-http-common.js",
+    "chunkName": "pages/file-http-common",
+    "_name": "_6f837864"
   },
   {
     "name": "http-common",
     "path": "/http-common",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\http-common.js",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/http-common.js",
     "chunkName": "pages/http-common",
-    "_name": "_650cf994"
+    "_name": "_af5de59e"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\LogIn.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/LogIn.vue",
     "chunkName": "pages/LogIn",
-    "_name": "_6ab42612"
+    "_name": "_18070b37"
   },
   {
     "name": "MapExample",
     "path": "/MapExample",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\MapExample.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/MapExample.vue",
     "chunkName": "pages/MapExample",
-    "_name": "_5bb8fa35"
+    "_name": "_36908430"
   },
   {
     "name": "mypage",
     "path": "/mypage",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\mypage\\\\index.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/mypage/index.vue",
     "chunkName": "pages/mypage/index",
-    "_name": "_0f145d60"
+    "_name": "_1b73e120"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Qna.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/Qna.vue",
     "chunkName": "pages/Qna",
-    "_name": "_a23c99a6"
+    "_name": "_75859d92"
   },
   {
     "name": "SearchResult",
     "path": "/SearchResult",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SearchResult.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/SearchResult.vue",
     "chunkName": "pages/SearchResult",
-    "_name": "_df3f6328"
+    "_name": "_137d45a7"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp\\\\index.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/SignUp/index.vue",
     "chunkName": "pages/SignUp/index",
-    "_name": "_b8a3cbba"
+    "_name": "_c7c40006"
   },
   {
     "name": "board-List",
     "path": "/board/List",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\List.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/board/List.vue",
     "chunkName": "pages/board/List",
-    "_name": "_530881e6"
+    "_name": "_a5e0f52e"
   },
   {
     "name": "board-Write",
     "path": "/board/Write",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\Write.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/board/Write.vue",
     "chunkName": "pages/board/Write",
-    "_name": "_1e80fa00"
+    "_name": "_26b6efb8"
   },
   {
     "name": "find-id",
     "path": "/find/id",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\id.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/find/id.vue",
     "chunkName": "pages/find/id",
     "children": [
       {
         "name": "find-id-Complete",
         "path": "Complete",
-        "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\id\\\\Complete.vue",
+        "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/find/id/Complete.vue",
         "chunkName": "pages/find/id/Complete",
-        "_name": "_78d7f658"
+        "_name": "_4eab5419"
       }
     ],
-    "_name": "_1b532f8a"
+    "_name": "_0d0dd102"
   },
   {
     "name": "find-password",
     "path": "/find/password",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\password.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/find/password.vue",
     "chunkName": "pages/find/password",
     "children": [
       {
         "name": "find-password-Complete",
         "path": "Complete",
-        "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\find\\\\password\\\\Complete.vue",
+        "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/find/password/Complete.vue",
         "chunkName": "pages/find/password/Complete",
-        "_name": "_84a22758"
+        "_name": "_162cc0ce"
       }
     ],
-    "_name": "_4e04afbb"
+    "_name": "_634fdbff"
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\Detail.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/inform/Detail.vue",
     "chunkName": "pages/inform/Detail",
-    "_name": "_c815aafe"
+    "_name": "_7a02feb6"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\inform\\\\List.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/inform/List.vue",
     "chunkName": "pages/inform/List",
-    "_name": "_279bfa4e"
+    "_name": "_6ee6ed1c"
   },
   {
     "name": "Items-Details",
     "path": "/Items/Details",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\index.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/Items/Details/index.vue",
     "chunkName": "pages/Items/Details/index",
-    "_name": "_e6074d8e"
+    "_name": "_5d478544"
   },
   {
     "name": "Items-List",
     "path": "/Items/List",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\List.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/Items/List.vue",
     "chunkName": "pages/Items/List",
-    "_name": "_7344b172"
+    "_name": "_64daa422"
+  },
+  {
+    "name": "service-IndexDataService",
+    "path": "/service/IndexDataService",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/service/IndexDataService.js",
+    "chunkName": "pages/service/IndexDataService",
+    "_name": "_11204d9a"
   },
   {
     "name": "service-ItemDetailDataService",
     "path": "/service/ItemDetailDataService",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ItemDetailDataService.js",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/service/ItemDetailDataService.js",
     "chunkName": "pages/service/ItemDetailDataService",
-    "_name": "_49dfe476"
+    "_name": "_9b5336d8"
+  },
+  {
+    "name": "service-ItemListDataService",
+    "path": "/service/ItemListDataService",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/service/ItemListDataService.js",
+    "chunkName": "pages/service/ItemListDataService",
+    "_name": "_b355383e"
   },
   {
     "name": "service-ReviewDataService",
     "path": "/service/ReviewDataService",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ReviewDataService.js",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/service/ReviewDataService.js",
     "chunkName": "pages/service/ReviewDataService",
-    "_name": "_fb0a72ec"
+    "_name": "_0d0205a8"
   },
   {
     "name": "service-ShoppingCartDataService",
     "path": "/service/ShoppingCartDataService",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\ShoppingCartDataService.js",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/service/ShoppingCartDataService.js",
     "chunkName": "pages/service/ShoppingCartDataService",
-    "_name": "_a503c94c"
+    "_name": "_5b55e810"
+  },
+  {
+    "name": "service-UploadFilesService",
+    "path": "/service/UploadFilesService",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/service/UploadFilesService.js",
+    "chunkName": "pages/service/UploadFilesService",
+    "_name": "_a21c3118"
   },
   {
     "name": "service-UserDataService",
     "path": "/service/UserDataService",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\service\\\\UserDataService.js",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/service/UserDataService.js",
     "chunkName": "pages/service/UserDataService",
-    "_name": "_ce363186"
+    "_name": "_3bcd55db"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/shoppingCart/ShoppingCart.vue",
     "chunkName": "pages/shoppingCart/ShoppingCart",
-    "_name": "_039f4d97"
+    "_name": "_486d66c6"
   },
   {
     "name": "SignUp-Complete",
     "path": "/SignUp/Complete",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\SignUp\\\\Complete.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/SignUp/Complete.vue",
     "chunkName": "pages/SignUp/Complete",
-    "_name": "_fbf495d0"
+    "_name": "_67b2c8fe"
+  },
+  {
+    "name": "tourItemDetails-components-ImgGalleryCom",
+    "path": "/tourItemDetails/components/ImgGalleryCom",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/tourItemDetails/components/ImgGalleryCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom",
+    "_name": "_697d9f13"
+  },
+  {
+    "name": "tourItemDetails-components-KakaoMapApiCom",
+    "path": "/tourItemDetails/components/KakaoMapApiCom",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/tourItemDetails/components/KakaoMapApiCom.vue",
+    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
+    "_name": "_198d632f"
   },
   {
     "name": "Items-Details-components-CardSliderCom",
     "path": "/Items/Details/components/CardSliderCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\CardSliderCom.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/Items/Details/components/CardSliderCom.vue",
     "chunkName": "pages/Items/Details/components/CardSliderCom",
-    "_name": "_c4ca9dbe"
+    "_name": "_c41bbb56"
   },
   {
     "name": "Items-Details-components-ImgGalleryCom",
     "path": "/Items/Details/components/ImgGalleryCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ImgGalleryCom.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/Items/Details/components/ImgGalleryCom.vue",
     "chunkName": "pages/Items/Details/components/ImgGalleryCom",
-    "_name": "_82bab53a"
+    "_name": "_820bd2d2"
   },
   {
     "name": "Items-Details-components-KakaoMapApiCom",
     "path": "/Items/Details/components/KakaoMapApiCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\KakaoMapApiCom.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/Items/Details/components/KakaoMapApiCom.vue",
     "chunkName": "pages/Items/Details/components/KakaoMapApiCom",
-    "_name": "_690926df"
+    "_name": "_739fdc2b"
   },
   {
     "name": "Items-Details-components-ReviewsCom",
     "path": "/Items/Details/components/ReviewsCom",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\components\\\\ReviewsCom.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/Items/Details/components/ReviewsCom.vue",
     "chunkName": "pages/Items/Details/components/ReviewsCom",
-    "_name": "_9575ca76"
+    "_name": "_fa7b53de"
   },
   {
     "name": "board-detail-update-idx",
     "path": "/board/detail/update/:idx?",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\detail\\\\update\\\\_idx.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/board/detail/update/_idx.vue",
     "chunkName": "pages/board/detail/update/_idx",
-    "_name": "_149ebe32"
+    "_name": "_0cf9b631"
   },
   {
     "name": "board-detail-idx",
     "path": "/board/detail/:idx?",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\board\\\\detail\\\\_idx.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/board/detail/_idx.vue",
     "chunkName": "pages/board/detail/_idx",
-    "_name": "_fc276844"
+    "_name": "_5cc8d521"
   },
   {
     "name": "Items-Details-idx",
     "path": "/Items/Details/:idx",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\Items\\\\Details\\\\_idx.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/Items/Details/_idx.vue",
     "chunkName": "pages/Items/Details/_idx",
-    "_name": "_6a0b7ce7"
+    "_name": "_36f5237c"
   },
   {
     "name": "payment-userIdx",
     "path": "/payment/:userIdx?",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\payment\\\\_userIdx.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/payment/_userIdx.vue",
     "chunkName": "pages/payment/_userIdx",
-    "_name": "_003fe0e2"
+    "_name": "_3588d684"
+  },
+  {
+    "name": "tourItemDetails-idx",
+    "path": "/tourItemDetails/:idx?",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/tourItemDetails/_idx.vue",
+    "chunkName": "pages/tourItemDetails/_idx",
+    "_name": "_cd467c10"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\jinu\\\\omym-frontend\\\\pages\\\\index.vue",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_603576fb"
+    "_name": "_0d885c20"
   }
 ]
