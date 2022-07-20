@@ -13,9 +13,9 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_d39cc9aa from 'nuxt_plugin_plugin_d39cc9aa' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_117367fd from 'nuxt_plugin_bootstrapvue_117367fd' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_521f9064 from 'nuxt_plugin_axios_521f9064' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_342e1f64 from 'nuxt_plugin_plugin_342e1f64' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_7944f0b6 from 'nuxt_plugin_bootstrapvue_7944f0b6' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_dfa2ecf2 from 'nuxt_plugin_axios_dfa2ecf2' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_validate_709b3feb from 'nuxt_plugin_validate_709b3feb' // Source: ..\\plugins\\validate.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -81,7 +81,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"omym-frontend","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fcss\u002Fbootstrap.min.css","rel":"stylesheet","integrity":"sha384-0evHe\u002FX+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor","crossorigin":"anonymous"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@4.0.0\u002Fdist\u002Fcss\u002Fbootstrap.min.css","integrity":"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW\u002FdAiS6JXm","crossorigin":"anonymous"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.css","integrity":"sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap-icons@1.8.3\u002Ffont\u002Fbootstrap-icons.css"},{"href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fsummernote@0.8.18\u002Fdist\u002Fsummernote.min.css","rel":"stylesheet"}],"script":[{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fjs\u002Fbootstrap.bundle.min.js","integrity":"sha384-pprn3073KE6tl6bjs2QrFaJGz5\u002FSUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2","crossorigin":"anonymous"},{"src":"\u002F\u002Ft1.daumcdn.net\u002Fmapjsapi\u002Fbundle\u002Fpostcode\u002Fprod\u002Fpostcode.v2.js"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjquery\u002F3.6.0\u002Fjquery.min.js","integrity":"sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn\u002F+\u002F3e7Jo4EaG7TubfWGUrMQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.js","integrity":"sha512-uto9mlQzrs59VwILcLiRYeLKPPbS\u002FbT71da\u002FOEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"type":"text\u002Fjavascript","src":"\u002F\u002Fdapi.kakao.com\u002Fv2\u002Fmaps\u002Fsdk.js?appkey=9c0ab16c7aa85bf5514d85cb7f46f6dc&libraries=clusterer,services,drawing"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fsummernote@0.8.18\u002Fdist\u002Fsummernote.min.js"},{"src":"\u002F\u002Ft1.daumcdn.net\u002Fmapjsapi\u002Fbundle\u002Fpostcode\u002Fprod\u002Fpostcode.v2.js"}],"style":[]},
+    head: {"title":"omym-frontend","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fcss\u002Fbootstrap.min.css","rel":"stylesheet","integrity":"sha384-0evHe\u002FX+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor","crossorigin":"anonymous"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@4.0.0\u002Fdist\u002Fcss\u002Fbootstrap.min.css","integrity":"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW\u002FdAiS6JXm","crossorigin":"anonymous"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.css","integrity":"sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap-icons@1.8.3\u002Ffont\u002Fbootstrap-icons.css"},{"href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fsummernote@0.8.18\u002Fdist\u002Fsummernote.min.css","rel":"stylesheet"}],"script":[{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@5.2.0-beta1\u002Fdist\u002Fjs\u002Fbootstrap.bundle.min.js","integrity":"sha384-pprn3073KE6tl6bjs2QrFaJGz5\u002FSUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2","crossorigin":"anonymous"},{"src":"\u002F\u002Ft1.daumcdn.net\u002Fmapjsapi\u002Fbundle\u002Fpostcode\u002Fprod\u002Fpostcode.v2.js"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjquery\u002F3.6.0\u002Fjquery.min.js","integrity":"sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn\u002F+\u002F3e7Jo4EaG7TubfWGUrMQ==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fjqueryui\u002F1.12.1\u002Fjquery-ui.min.js","integrity":"sha512-uto9mlQzrs59VwILcLiRYeLKPPbS\u002FbT71da\u002FOEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==","crossorigin":"anonymous","referrerpolicy":"no-referrer"},{"type":"text\u002Fjavascript","src":"\u002F\u002Fdapi.kakao.com\u002Fv2\u002Fmaps\u002Fsdk.js?appkey=9c0ab16c7aa85bf5514d85cb7f46f6dc&libraries=services"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fsummernote@0.8.18\u002Fdist\u002Fsummernote.min.js"},{"src":"\u002F\u002Ft1.daumcdn.net\u002Fmapjsapi\u002Fbundle\u002Fpostcode\u002Fprod\u002Fpostcode.v2.js"}],"style":[]},
 
     store,
     router,
@@ -210,16 +210,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_d39cc9aa === 'function') {
-    await nuxt_plugin_plugin_d39cc9aa(app.context, inject)
+  if (typeof nuxt_plugin_plugin_342e1f64 === 'function') {
+    await nuxt_plugin_plugin_342e1f64(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_117367fd === 'function') {
-    await nuxt_plugin_bootstrapvue_117367fd(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_7944f0b6 === 'function') {
+    await nuxt_plugin_bootstrapvue_7944f0b6(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_521f9064 === 'function') {
-    await nuxt_plugin_axios_521f9064(app.context, inject)
+  if (typeof nuxt_plugin_axios_dfa2ecf2 === 'function') {
+    await nuxt_plugin_axios_dfa2ecf2(app.context, inject)
   }
 
   if (typeof nuxt_plugin_validate_709b3feb === 'function') {

@@ -8,7 +8,7 @@
             </ul>
             <div ref="map" class="map-board">
                 <div class="custom-con">
-                    <p @click="viewAll">전체보기</p>
+                    <p @click="setBounds">전체보기</p>
                 </div>
             </div>
         </div>
@@ -19,13 +19,14 @@ export default {
     data() {
         return {
             locations: [
-                {title: "흑돼지식당", content: "- "+"맛있는 제주 흑돼지를 먹을 수 있는 숯불구이 전문점", position: "부산 부산진구 중앙대로 672"},
-                {title: "멘도롱카페", content: "- "+"제주감귤을 직접 착즙해 만드는 감귤에이드가 맛있는 카페", position: "부산 부산진구 중앙대로680번가길 80-16"},
-                {title: "제주호텔 임페리얼", content: "- "+"제주바다가 한눈에 보이는 오션뷰의 5성급 호텔", position: "부산 부산진구 동천로 47-1"},
+                {title: "흑돼지식당", content: "- "+"맛있는 제주 흑돼지를 먹을 수 있는 숯불구이 전문점", position: new kakao.maps.LatLng(33.452278, 126.567803)},
+                {title: "멘도롱카페", content: "- "+"제주감귤을 직접 착즙해 만드는 감귤에이드가 맛있는 카페", position: new kakao.maps.LatLng(33.452671, 126.574792)},
+                {title: "제주호텔 임페리얼", content: "- "+"제주바다가 한눈에 보이는 오션뷰의 5성급 호텔", position: new kakao.maps.LatLng(33.451744, 126.572441)},
             ],
             coords: [],
             map: null,
             activeList: null,
+            bounds: null
         }
     },
     methods: {
@@ -39,8 +40,11 @@ export default {
         //     console.log(this.addList);
         // },
 
-        viewAll() {
-
+        setBounds() {
+            for (let i = 0; i < this.locations.length; i++) {
+                this.bounds.extend(this.locations[i].position);
+                this.map.setBounds(this.bounds);
+            }
         },
         positionChange(pos, idx) {
             let showLoc = pos;
@@ -118,6 +122,8 @@ export default {
 
             let positions = []
             let geocoder = new kakao.maps.services.Geocoder();
+            let bounds = new kakao.maps.LatLngBounds();
+            this.bounds = bounds;
             for (let i = 0; i < this.locations.length; i++) {
                 geocoder.addressSearch(this.locations[i].position, (result, status) => {
                     if (status === kakao.maps.services.Status.OK) {
@@ -130,7 +136,7 @@ export default {
                 }
                 positions.push(pos);
             }
-            console.log(positions);
+            console.log("positions = {}", positions);
             // let positions = [
             //     {
             //         content: '<div class="customoverlay">' + '<a>' + '<span class="text">' + this.locations.title + '</span>' + '</a>' + '</div>',
@@ -145,7 +151,6 @@ export default {
             //         latlng: new kakao.maps.LatLng(33.451744, 126.572441)
             //     }
             // ];
-            let bound = new kakao.maps.LatLngBounds();
             for (let i = 0; i < positions.length; i++) {
                 const marker = new kakao.maps.Marker({
                     map: map,
@@ -157,9 +162,9 @@ export default {
                     content: positions[i].content,
                     // yAnchor: 1
                 });
-                bound.extend(positions[i].latlng);
+                this.bounds.extend(positions[i].latlng);
             };
-            map.setBounds(bound);
+            map.setBounds(this.bounds);
         },
         
     },
