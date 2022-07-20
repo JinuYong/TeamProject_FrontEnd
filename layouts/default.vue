@@ -1,6 +1,6 @@
 <template>
     <div style="position: relative; min-height: 100%">
-        <Header />
+        <Header  />
 
         <section class="default">
             <Nuxt />
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-   
+
 };
 </script>
 
@@ -27,7 +27,7 @@ export default {
     border-radius: 3px !important;
 }
 .default {
-    /* width: 1200px; */
+     width: 1200px;
     min-width: 700px;
     min-height: calc(100vh - 320px);
     margin: 0 auto;

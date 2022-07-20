@@ -109,7 +109,7 @@ export default {
             //         infowindow.open(map, marker);
             //     };
             // }
-            // // 인포윈도우를 닫는 클로저를 만드는 함수입니다 
+            // // 인포윈도우를 닫는 클로저를 만드는 함수입니다
             // function makeOutListener(infowindow) {
             //     return function() {
             //         infowindow.close();
@@ -129,7 +129,7 @@ export default {
             //         }
             //         console.log(this.coords);
             //     });
-                
+
             // }
 
             let positions = []
@@ -193,7 +193,7 @@ export default {
             };
             map.setBounds(this.bounds);
         },
-        
+
     },
     mounted() {
         this.kakaoMapShow();
@@ -296,7 +296,7 @@ export default {
         overflow:hidden;
         background: #a30000;
         background: #a30000
-                    url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) 
+                    url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png)
                     no-repeat right 14px center;
         }
 </style>

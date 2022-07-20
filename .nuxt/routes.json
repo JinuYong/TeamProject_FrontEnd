@@ -63,6 +63,13 @@
     "_name": "_b4be9c9c"
   },
   {
+    "name": "UploadImage",
+    "path": "/UploadImage",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/UploadImage.vue",
+    "chunkName": "pages/UploadImage",
+    "_name": "_5aebca88"
+  },
+  {
     "name": "board-List",
     "path": "/board/List",
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\board\\\\List.vue",
@@ -88,7 +95,20 @@
     "path": "/find/password",
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\find\\\\password.vue",
     "chunkName": "pages/find/password",
+<<<<<<< HEAD
     "_name": "_eb35ebe8"
+=======
+    "children": [
+      {
+        "name": "find-password-Complete",
+        "path": "Complete",
+        "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/find/password/Complete.vue",
+        "chunkName": "pages/find/password/Complete",
+        "_name": "_162cc0ce"
+      }
+    ],
+    "_name": "_634fdbff"
+>>>>>>> 2b85bc878b34e539a1cafe37341d34aafaa31289
   },
   {
     "name": "inform-List",
@@ -103,6 +123,13 @@
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\Write.vue",
     "chunkName": "pages/inform/Write",
     "_name": "_74cd7124"
+  },
+  {
+    "name": "inform-Write",
+    "path": "/inform/Write",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/inform/Write.vue",
+    "chunkName": "pages/inform/Write",
+    "_name": "_40c8053b"
   },
   {
     "name": "Items-Details",
@@ -224,6 +251,13 @@
     "_name": "_4e43b2b9"
   },
   {
+    "name": "inform-detail-update-idx",
+    "path": "/inform/detail/update/:idx?",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/inform/detail/update/_idx.vue",
+    "chunkName": "pages/inform/detail/update/_idx",
+    "_name": "_6016767a"
+  },
+  {
     "name": "board-detail-idx",
     "path": "/board/detail/:idx?",
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\board\\\\detail\\\\_idx.vue",
@@ -236,6 +270,13 @@
     "component": "C:\\\\Users\\\\진우\\\\Desktop\\\\프로젝트\\\\omym_front\\\\pages\\\\inform\\\\detail\\\\_idx.vue",
     "chunkName": "pages/inform/detail/_idx",
     "_name": "_400f4fb0"
+  },
+  {
+    "name": "inform-detail-idx",
+    "path": "/inform/detail/:idx?",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/af/TeamProject_FrontEnd/pages/inform/detail/_idx.vue",
+    "chunkName": "pages/inform/detail/_idx",
+    "_name": "_136c3610"
   },
   {
     "name": "Items-Details-idx",
