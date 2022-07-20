@@ -5,7 +5,7 @@ import ClientOnly from 'vue-client-only'
 import NoSsr from 'vue-no-ssr'
 import { createRouter } from './router.js'
 import NuxtChild from './components/nuxt-child.js'
-import NuxtError from '..\\layouts\\error.vue'
+import NuxtError from '../layouts/error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
 import { setContext, getLocation, getRouteData, normalizeError } from './utils'
@@ -13,10 +13,10 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_342e1f64 from 'nuxt_plugin_plugin_342e1f64' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_7944f0b6 from 'nuxt_plugin_bootstrapvue_7944f0b6' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_dfa2ecf2 from 'nuxt_plugin_axios_dfa2ecf2' // Source: .\\axios.js (mode: 'all')
-import nuxt_plugin_validate_709b3feb from 'nuxt_plugin_validate_709b3feb' // Source: ..\\plugins\\validate.js (mode: 'all')
+import nuxt_plugin_plugin_65b9020f from 'nuxt_plugin_plugin_65b9020f' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_1d981658 from 'nuxt_plugin_bootstrapvue_1d981658' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_298ae8b6 from 'nuxt_plugin_axios_298ae8b6' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_validate_709b3feb from 'nuxt_plugin_validate_709b3feb' // Source: ../plugins/validate.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -210,16 +210,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_342e1f64 === 'function') {
-    await nuxt_plugin_plugin_342e1f64(app.context, inject)
+  if (typeof nuxt_plugin_plugin_65b9020f === 'function') {
+    await nuxt_plugin_plugin_65b9020f(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_7944f0b6 === 'function') {
-    await nuxt_plugin_bootstrapvue_7944f0b6(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_1d981658 === 'function') {
+    await nuxt_plugin_bootstrapvue_1d981658(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_dfa2ecf2 === 'function') {
-    await nuxt_plugin_axios_dfa2ecf2(app.context, inject)
+  if (typeof nuxt_plugin_axios_298ae8b6 === 'function') {
+    await nuxt_plugin_axios_298ae8b6(app.context, inject)
   }
 
   if (typeof nuxt_plugin_validate_709b3feb === 'function') {
