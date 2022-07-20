@@ -2,236 +2,209 @@
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/CheckPayment.vue",
-    "chunkName": "pages/CheckPayment",
-    "_name": "_b2dc3b72"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\CheckPayment.vue",
+    "chunkName": "pages/CheckPayment"
   },
   {
     "name": "http-common",
     "path": "/http-common",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/http-common.js",
-    "chunkName": "pages/http-common",
-    "_name": "_b1b407d0"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\http-common.js",
+    "chunkName": "pages/http-common"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/LogIn.vue",
-    "chunkName": "pages/LogIn",
-    "_name": "_fe97b020"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\LogIn.vue",
+    "chunkName": "pages/LogIn"
   },
   {
     "name": "MapExample",
     "path": "/MapExample",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/MapExample.vue",
-    "chunkName": "pages/MapExample",
-    "_name": "_35657317"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\MapExample.vue",
+    "chunkName": "pages/MapExample"
   },
   {
     "name": "mypage",
     "path": "/mypage",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/mypage/index.vue",
-    "chunkName": "pages/mypage/index",
-    "_name": "_8e6e9b72"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\mypage\\\\index.vue",
+    "chunkName": "pages/mypage/index"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/Qna.vue",
-    "chunkName": "pages/Qna",
-    "_name": "_73d6d6ea"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\Qna.vue",
+    "chunkName": "pages/Qna"
   },
   {
     "name": "SearchResult",
     "path": "/SearchResult",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/SearchResult.vue",
-    "chunkName": "pages/SearchResult",
-    "_name": "_9e5bd264"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\SearchResult.vue",
+    "chunkName": "pages/SearchResult"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/SignUp/index.vue",
-    "chunkName": "pages/SignUp/index",
-    "_name": "_3972d124"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\SignUp\\\\index.vue",
+    "chunkName": "pages/SignUp/index"
   },
   {
     "name": "board-List",
     "path": "/board/List",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/board/List.vue",
-    "chunkName": "pages/board/List",
-    "_name": "_a8371760"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\board\\\\List.vue",
+    "chunkName": "pages/board/List"
   },
   {
     "name": "board-Write",
     "path": "/board/Write",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/board/Write.vue",
-    "chunkName": "pages/board/Write",
-    "_name": "_6f2513c6"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\board\\\\Write.vue",
+    "chunkName": "pages/board/Write"
   },
   {
     "name": "find-id",
     "path": "/find/id",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/find/id.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\find\\\\id.vue",
     "chunkName": "pages/find/id",
     "children": [
       {
         "name": "find-id-Complete",
         "path": "Complete",
-        "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/find/id/Complete.vue",
-        "chunkName": "pages/find/id/Complete",
-        "_name": "_b5558c80"
+        "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\find\\\\id\\\\Complete.vue",
+        "chunkName": "pages/find/id/Complete"
       }
-    ],
-    "_name": "_295c2c10"
+    ]
   },
   {
     "name": "find-password",
     "path": "/find/password",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/find/password.vue",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\find\\\\password.vue",
     "chunkName": "pages/find/password",
     "children": [
       {
         "name": "find-password-Complete",
         "path": "Complete",
-        "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/find/password/Complete.vue",
-        "chunkName": "pages/find/password/Complete",
-        "_name": "_5e046c00"
+        "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\find\\\\password\\\\Complete.vue",
+        "chunkName": "pages/find/password/Complete"
       }
-    ],
-    "_name": "_70952fb8"
+    ]
   },
   {
     "name": "inform-Detail",
     "path": "/inform/Detail",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/inform/Detail.vue",
-    "chunkName": "pages/inform/Detail",
-    "_name": "_5f785744"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\inform\\\\Detail.vue",
+    "chunkName": "pages/inform/Detail"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/inform/List.vue",
-    "chunkName": "pages/inform/List",
-    "_name": "_b755112a"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\inform\\\\List.vue",
+    "chunkName": "pages/inform/List"
   },
   {
     "name": "Items-Details",
     "path": "/Items/Details",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/Items/Details/index.vue",
-    "chunkName": "pages/Items/Details/index",
-    "_name": "_fb392b86"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\Items\\\\Details\\\\index.vue",
+    "chunkName": "pages/Items/Details/index"
   },
   {
     "name": "Items-List",
     "path": "/Items/List",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/Items/List.vue",
-    "chunkName": "pages/Items/List",
-    "_name": "_6730c654"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\Items\\\\List.vue",
+    "chunkName": "pages/Items/List"
   },
   {
     "name": "service-ItemDetailDataService",
     "path": "/service/ItemDetailDataService",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/service/ItemDetailDataService.js",
-    "chunkName": "pages/service/ItemDetailDataService",
-    "_name": "_1fca07bb"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\service\\\\ItemDetailDataService.js",
+    "chunkName": "pages/service/ItemDetailDataService"
+  },
+  {
+    "name": "service-ItemListDataService",
+    "path": "/service/ItemListDataService",
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\service\\\\ItemListDataService.js",
+    "chunkName": "pages/service/ItemListDataService"
   },
   {
     "name": "service-ReviewDataService",
     "path": "/service/ReviewDataService",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/service/ReviewDataService.js",
-    "chunkName": "pages/service/ReviewDataService",
-    "_name": "_cac95762"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\service\\\\ReviewDataService.js",
+    "chunkName": "pages/service/ReviewDataService"
   },
   {
     "name": "service-ShoppingCartDataService",
     "path": "/service/ShoppingCartDataService",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/service/ShoppingCartDataService.js",
-    "chunkName": "pages/service/ShoppingCartDataService",
-    "_name": "_9d26fd42"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\service\\\\ShoppingCartDataService.js",
+    "chunkName": "pages/service/ShoppingCartDataService"
   },
   {
     "name": "service-UserDataService",
     "path": "/service/UserDataService",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/service/UserDataService.js",
-    "chunkName": "pages/service/UserDataService",
-    "_name": "_b62fbb7c"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\service\\\\UserDataService.js",
+    "chunkName": "pages/service/UserDataService"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/shoppingCart/ShoppingCart.vue",
-    "chunkName": "pages/shoppingCart/ShoppingCart",
-    "_name": "_0159d2d6"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\shoppingCart\\\\ShoppingCart.vue",
+    "chunkName": "pages/shoppingCart/ShoppingCart"
   },
   {
     "name": "SignUp-Complete",
     "path": "/SignUp/Complete",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/SignUp/Complete.vue",
-    "chunkName": "pages/SignUp/Complete",
-    "_name": "_38f21277"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\SignUp\\\\Complete.vue",
+    "chunkName": "pages/SignUp/Complete"
   },
   {
     "name": "Items-Details-components-CardSliderCom",
     "path": "/Items/Details/components/CardSliderCom",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/Items/Details/components/CardSliderCom.vue",
-    "chunkName": "pages/Items/Details/components/CardSliderCom",
-    "_name": "_644d40bc"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\Items\\\\Details\\\\components\\\\CardSliderCom.vue",
+    "chunkName": "pages/Items/Details/components/CardSliderCom"
   },
   {
     "name": "Items-Details-components-ImgGalleryCom",
     "path": "/Items/Details/components/ImgGalleryCom",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/Items/Details/components/ImgGalleryCom.vue",
-    "chunkName": "pages/Items/Details/components/ImgGalleryCom",
-    "_name": "_f5559604"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\Items\\\\Details\\\\components\\\\ImgGalleryCom.vue",
+    "chunkName": "pages/Items/Details/components/ImgGalleryCom"
   },
   {
     "name": "Items-Details-components-KakaoMapApiCom",
     "path": "/Items/Details/components/KakaoMapApiCom",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/Items/Details/components/KakaoMapApiCom.vue",
-    "chunkName": "pages/Items/Details/components/KakaoMapApiCom",
-    "_name": "_78a88aa4"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\Items\\\\Details\\\\components\\\\KakaoMapApiCom.vue",
+    "chunkName": "pages/Items/Details/components/KakaoMapApiCom"
   },
   {
     "name": "Items-Details-components-ReviewsCom",
     "path": "/Items/Details/components/ReviewsCom",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/Items/Details/components/ReviewsCom.vue",
-    "chunkName": "pages/Items/Details/components/ReviewsCom",
-    "_name": "_5e61adec"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\Items\\\\Details\\\\components\\\\ReviewsCom.vue",
+    "chunkName": "pages/Items/Details/components/ReviewsCom"
   },
   {
     "name": "board-detail-update-idx",
     "path": "/board/detail/update/:idx?",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/board/detail/update/_idx.vue",
-    "chunkName": "pages/board/detail/update/_idx",
-    "_name": "_cad9f650"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\board\\\\detail\\\\update\\\\_idx.vue",
+    "chunkName": "pages/board/detail/update/_idx"
   },
   {
     "name": "board-detail-idx",
     "path": "/board/detail/:idx?",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/board/detail/_idx.vue",
-    "chunkName": "pages/board/detail/_idx",
-    "_name": "_4948b74c"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\board\\\\detail\\\\_idx.vue",
+    "chunkName": "pages/board/detail/_idx"
   },
   {
     "name": "Items-Details-idx",
     "path": "/Items/Details/:idx",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/Items/Details/_idx.vue",
-    "chunkName": "pages/Items/Details/_idx",
-    "_name": "_ea87893a"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\Items\\\\Details\\\\_idx.vue",
+    "chunkName": "pages/Items/Details/_idx"
   },
   {
     "name": "payment-userIdx",
     "path": "/payment/:userIdx?",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/payment/_userIdx.vue",
-    "chunkName": "pages/payment/_userIdx",
-    "_name": "_3be57a65"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\payment\\\\_userIdx.vue",
+    "chunkName": "pages/payment/_userIdx"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/hwan/Fullstack_cource/team/review/7_20_git/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_763578d9"
+    "component": "C:\\\\Users\\\\ds\\\\Desktop\\\\20220720\\\\front\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
