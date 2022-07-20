@@ -13,7 +13,7 @@ class UploadFilesService {
         formData.append("itemIdx", itemIdx);
         formData.append("file", file);
 
-        return http.post("/upload", formData, {
+        return http.post("/uploads", formData, {
             headers: {
                 // 이미지 전송 형태 : json 안됨
                 "Content-Type":"multipart/form-data"
@@ -27,11 +27,11 @@ class UploadFilesService {
     // 이미지를 서버에서 다운로드 받음
     //  select 문 호출
     getFiles() {
-        return http.get("/files");
+        return http.get("/filess");
     }
 
     getItemFiles(itemIdx) {
-        return http.get(`/files/${itemIdx}`);
+        return http.get(`/filess/${itemIdx}`);
     }
 }
 

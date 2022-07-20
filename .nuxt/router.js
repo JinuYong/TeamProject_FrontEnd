@@ -20,8 +20,8 @@ const _0d0dd102 = () => interopDefault(import('../pages/find/id.vue' /* webpackC
 const _4eab5419 = () => interopDefault(import('../pages/find/id/Complete.vue' /* webpackChunkName: "pages/find/id/Complete" */))
 const _634fdbff = () => interopDefault(import('../pages/find/password.vue' /* webpackChunkName: "pages/find/password" */))
 const _162cc0ce = () => interopDefault(import('../pages/find/password/Complete.vue' /* webpackChunkName: "pages/find/password/Complete" */))
-const _7a02feb6 = () => interopDefault(import('../pages/inform/Detail.vue' /* webpackChunkName: "pages/inform/Detail" */))
 const _6ee6ed1c = () => interopDefault(import('../pages/inform/List.vue' /* webpackChunkName: "pages/inform/List" */))
+const _40c8053b = () => interopDefault(import('../pages/inform/Write.vue' /* webpackChunkName: "pages/inform/Write" */))
 const _5d478544 = () => interopDefault(import('../pages/Items/Details/index.vue' /* webpackChunkName: "pages/Items/Details/index" */))
 const _64daa422 = () => interopDefault(import('../pages/Items/List.vue' /* webpackChunkName: "pages/Items/List" */))
 const _11204d9a = () => interopDefault(import('../pages/service/IndexDataService.js' /* webpackChunkName: "pages/service/IndexDataService" */))
@@ -40,7 +40,9 @@ const _820bd2d2 = () => interopDefault(import('../pages/Items/Details/components
 const _739fdc2b = () => interopDefault(import('../pages/Items/Details/components/KakaoMapApiCom.vue' /* webpackChunkName: "pages/Items/Details/components/KakaoMapApiCom" */))
 const _fa7b53de = () => interopDefault(import('../pages/Items/Details/components/ReviewsCom.vue' /* webpackChunkName: "pages/Items/Details/components/ReviewsCom" */))
 const _0cf9b631 = () => interopDefault(import('../pages/board/detail/update/_idx.vue' /* webpackChunkName: "pages/board/detail/update/_idx" */))
+const _6016767a = () => interopDefault(import('../pages/inform/detail/update/_idx.vue' /* webpackChunkName: "pages/inform/detail/update/_idx" */))
 const _5cc8d521 = () => interopDefault(import('../pages/board/detail/_idx.vue' /* webpackChunkName: "pages/board/detail/_idx" */))
+const _136c3610 = () => interopDefault(import('../pages/inform/detail/_idx.vue' /* webpackChunkName: "pages/inform/detail/_idx" */))
 const _36f5237c = () => interopDefault(import('../pages/Items/Details/_idx.vue' /* webpackChunkName: "pages/Items/Details/_idx" */))
 const _3588d684 = () => interopDefault(import('../pages/payment/_userIdx.vue' /* webpackChunkName: "pages/payment/_userIdx" */))
 const _cd467c10 = () => interopDefault(import('../pages/tourItemDetails/_idx.vue' /* webpackChunkName: "pages/tourItemDetails/_idx" */))
@@ -124,13 +126,13 @@ export const routerOptions = {
       name: "find-password-Complete"
     }]
   }, {
-    path: "/inform/Detail",
-    component: _7a02feb6,
-    name: "inform-Detail"
-  }, {
     path: "/inform/List",
     component: _6ee6ed1c,
     name: "inform-List"
+  }, {
+    path: "/inform/Write",
+    component: _40c8053b,
+    name: "inform-Write"
   }, {
     path: "/Items/Details",
     component: _5d478544,
@@ -204,9 +206,17 @@ export const routerOptions = {
     component: _0cf9b631,
     name: "board-detail-update-idx"
   }, {
+    path: "/inform/detail/update/:idx?",
+    component: _6016767a,
+    name: "inform-detail-update-idx"
+  }, {
     path: "/board/detail/:idx?",
     component: _5cc8d521,
     name: "board-detail-idx"
+  }, {
+    path: "/inform/detail/:idx?",
+    component: _136c3610,
+    name: "inform-detail-idx"
   }, {
     path: "/Items/Details/:idx",
     component: _36f5237c,

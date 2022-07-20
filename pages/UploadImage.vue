@@ -162,7 +162,7 @@ export default {
                     this.message = response.data.message;
                     // 서버쪽에 insert가 잘되었는지
                     // select문 호출
-                    this.$router.push('/UploadImage')
+                    $nuxt.$router.push('/UploadImage')
                     return UploadService.getFiles();
                 })
                 // 성공하면 then으로 들어옴(서버쪽 객체 받음)

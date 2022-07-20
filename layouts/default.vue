@@ -1,6 +1,6 @@
 <template>
     <div style="position: relative; min-height: 100%">
-        <Header />
+        <Header  />
 
         <section class="default">
             <Nuxt />
