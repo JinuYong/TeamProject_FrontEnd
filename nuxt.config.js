@@ -82,7 +82,7 @@ export default {
             // },
             {
                 type: "text/javascript", 
-                src: "//dapi.kakao.com/v2/maps/sdk.js?appkey=9c0ab16c7aa85bf5514d85cb7f46f6dc&libraries=clusterer,services,drawing"
+                src: "//dapi.kakao.com/v2/maps/sdk.js?appkey=9c0ab16c7aa85bf5514d85cb7f46f6dc&libraries=services"
             },
             // SummerNote
             {

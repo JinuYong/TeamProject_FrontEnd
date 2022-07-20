@@ -387,11 +387,10 @@ export default {
         }
     },
     mounted() {
-        // let userId = JSON.parse(localStorage.getItem("user")).username;
-        let userId = 'jinu12';
-        console.log(userId);
-        this.getUserInform(userId);
-        // console.log(localStorage.getItem("user"));
+        let id = JSON.parse(localStorage.getItem("user")).username;
+        console.log(JSON.parse(localStorage.getItem("user")));
+        console.log(id);
+        this.getUserInform(id);
         console.log(this.userForm);
     },
 }
