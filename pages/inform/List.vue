@@ -33,11 +33,9 @@
                             {{ topt.content }}
                         </p>
                         <p class="card-footer">
-                            <small class="text-muted"
-                                >{{ topt.insertTime }} | 조회수
+                                {{ topt.insertTime }} | 조회수
                                 {{ topt.count }} | 댓글수
                                 {{ topt.replyCount }}
-                            </small>
                         </p>
                     </div>
                 </div>
@@ -57,14 +55,14 @@
                     @click="moveTo2(upload.idx)"
                     style="cursor: pointer; margin-bottom: 15px"
                 >
-                    <div class="thumbnail-container col-md-3">
+                    <div class="thumbnail-container">
                         <img
                             :src="upload.url"
-                            class="img-fluid thumbnail"
+                            class="thumbnail"
                             alt="컨텐츠 이미지"
                         />
                     </div>
-                    <div class="card-body col-md-9">
+                    <div class="card-body">
                         <p class="card-title">{{ upload.title }}</p>
                         <p class="card-content">
                             {{ upload.content }}
@@ -149,14 +147,21 @@ export default {
 }
 .topcard-body {
     position: absolute;
-    transform: translateY(-158px);
+    bottom: 0;
     width: 350px;
     height: 45%;
     opacity: 0;
     padding: 20px 10px 5px 10px;
 }
 .card-footer {
-    line-height: 5;
+    bottom: 0;
+    position: absolute;
+    margin: 0;
+    background: none;
+    border: none;
+    padding: 10px 0px 10px;
+    font-size: 13px;
+    font-weight: 200;
 }
 .card-img {
     width: 350px;
@@ -238,18 +243,41 @@ export default {
     width: 250px;
     height: 180px;
     object-fit: cover;
+    border-radius: 5px 0px 0px 5px;
 }
 .card-bottom {
-    padding: 5px 16px;
+    padding: 10px 16px 20px;
+}
+.card-body {
+    width: 38vw;
+    padding-bottom: 0;
 }
 .card-title {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 .card-text {
     font-size: 15px;
     font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.card-content {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: 300;
+    font-size: 12;
 }
 .btn {
     border: none;

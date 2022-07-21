@@ -123,7 +123,7 @@ export default {
                 idx: null,
                 boardTitle: "",
                 content: "",
-                userIdx: 141,
+                userIdx: JSON.parse(localStorage.getItem("idx")),
                 currentImage: null, // 현재 이미지
                 imageInfo: [], // 이미지 정보 객체배열
             },
@@ -151,7 +151,7 @@ export default {
             BoardUploadService.upload(
                 this.board.boardTitle,
                 this.board.content,
-                this.board.userIdx,
+                JSON.parse(localStorage.getItem("user")).idx,
                 this.board.currentImage,
                 (event) => {
                     // 파일이 업로드될때 진척상황이 저장됨(%)
@@ -182,6 +182,9 @@ export default {
                 });
         },
     },
+    mounted() {
+        console.log(JSON.parse(localStorage.getItem("user")).idx)
+    }
 };
 </script>
 
