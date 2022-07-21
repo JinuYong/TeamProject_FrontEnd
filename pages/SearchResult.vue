@@ -73,7 +73,7 @@
                     </router-link>
                 </div>
                 <div class="col-md text-center p-5"
-                     v-show="items.length == 0">
+                    :class="{searchShow:searchShowResult}">
                     검색내용에 맞는 상품이 없습니다.
                 </div>
             </div>
@@ -120,6 +120,7 @@ export default {
             pageSize: 8,
 
             pageSizes: [8, 16, 24],
+            searchShowResult: true
         };
     },
     methods: {
@@ -164,13 +165,18 @@ export default {
                 //  성공하면 then으로 서버(spring) 데이터(response.data)가 들어옴
                 // Todo: 아래 수정
                 .then((response) => {
-                    // this.customers = response.data;
-                    const { items, totalItems } = response.data;
-                    // springboot 받은 객체 정보
-                    this.items = items;
-                    // springboot에서 받은 총 데이터 건수
-                    this.count = totalItems;
-                    console.log(this.items)
+                    console.log("res = ",response);
+                    if (response.data == "") {
+                        this.searchShowResult = false;
+                    } else {
+                        // this.customers = response.data;
+                        const { items, totalItems } = response.data;
+                        // springboot 받은 객체 정보
+                        this.items = items;
+                        // springboot에서 받은 총 데이터 건수
+                        this.count = totalItems;
+                        console.log(this.items)
+                    }
                 })
                 //  실패하면 catch로 에러메세지가 들어옴
                 .catch((e) => {
@@ -200,7 +206,6 @@ export default {
             return value.toFixed(numFix).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',');
         },
     },
-    computed: {},
     mounted() {
         // this.getSearchData(this.$route.query.keyword);
         this.retrieveCustomers();
@@ -230,7 +235,9 @@ hr{
 /* 공통 끝 */
 
 /* item card */
-
+.badge {
+    background-color: #a30000 !important;
+}
 a.btn-link {
     float: left;
 }
@@ -340,6 +347,9 @@ input::placeholder {
     color: #dfdfdf;
     font-weight: 400;
     font-size: 14px;
+}
+.searchShow {
+    display: none;
 }
 
 /* paging */

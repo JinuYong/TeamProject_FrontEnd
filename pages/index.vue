@@ -1,16 +1,15 @@
 <template>
-    <div id="app">
+    <div id="app" class="mainpage-container">
         <!-- 배너 -->
-        <div class="container p-0 main-img">
+        <div class="banner-video">
             <video muted autoplay loop>
                 <source src="@/assets/img/main/main-video.mp4" type="video/mp4">
             </video>
         </div>
-        <!-- 배너 끝 -->
-        <!-- 검색창 시작  -->
-        <div class="container search">
-            <div class="row">
-                <div class="col-12 text-center py-3">
+        <div class="banner-container p-0 main-img">
+
+            <div class="banner-search-container">
+                <div class="search-logo">
                     <img class="seoul-jeju-img" src="@/assets/img/main/seoul-jeju-white.png">
                 </div>
                 <div class="col-md-12 select-color m-auto">
@@ -218,9 +217,9 @@
                 </div>
             </div>
         </div>
+        <!-- 배너 끝 -->
+        <!-- 검색창 시작  -->
 
-
-        <div style="height: 600px"></div>
         <!-- 본문 시작 1 -->
         <div class="content-start">
             <div class="">
@@ -478,6 +477,7 @@ import UploadFilesService from "~/pages/service/UploadFilesService";
 
 export default {
     name: "IndexPage",
+    layout: "MyPage",
     data() {
         return {
             show1: true,
@@ -623,16 +623,35 @@ a:hover {
 .main-img {
     z-index: 0;
     opacity: 0.9;
-
 }
-
-.main-img video {
+.mainpage-container {
+    position: relative;
+}
+.banner-video {
     position: absolute;
+    width: 100vw;
+}
+.banner-video video {
     height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.banner-container {
+    display: flex;
+    padding: 200px;
+    height: 600px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.search-logo {
+    /* height: 100px; */
+    display: flex;
+    padding: 20px;
 }
 
 .main-img img {
-    height: 700px;
+    /* height: 700px; */
 }
 
 /* select창 시작 */
@@ -640,13 +659,6 @@ a:hover {
     height: 100px;
     margin: auto;
 }
-
-.search {
-    position: absolute;
-    top: 300px;
-    left: 10%;
-}
-
 .select-color {
     height: 120px;
     background-color: rgba(49, 49, 49, 0.8);
@@ -934,7 +946,7 @@ a {
     width: 60px;
     opacity: 0.5;
     /*float: left;*/
-    left: auto;
+    left: -12px;
     position: absolute;
     height: 70%;
 }
@@ -950,7 +962,9 @@ a {
 }
 
 .content-start {
+    width: 1200px;
     height: 100%;
+    margin: 0 auto;
 }
 
 /* datepicker 적용x -> layouts/default로 이동 */

@@ -229,7 +229,10 @@ export default {
 /*}*/
 .main-container {
     margin: 0 auto;
-    padding: 0 19%;
+    /* padding: 0 19%; */
+}
+.badge {
+    background-color: #a30000 !important;
 }
 
 .btn {

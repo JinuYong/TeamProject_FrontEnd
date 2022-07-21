@@ -232,6 +232,7 @@ export default {
     border: none;
     box-sizing: content-box;
     background-color: #f0f0f0;
+    align-content: flex-start;
 }
 .content-border {
     width: 900px;
@@ -244,12 +245,13 @@ export default {
     height: 180px;
     object-fit: cover;
     border-radius: 5px 0px 0px 5px;
+    margin-right: 10px;
 }
 .card-bottom {
     padding: 10px 16px 20px;
 }
 .card-body {
-    width: 38vw;
+    width: 620px;
     padding-bottom: 0;
 }
 .card-title {

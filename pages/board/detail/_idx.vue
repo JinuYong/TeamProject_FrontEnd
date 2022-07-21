@@ -53,11 +53,13 @@
         <div class="input-container">
             <textarea
                 class="form-control reply-input"
-                placeholder="댓글을 작성해주세요"
+                :placeholder="this.input_message"
                 style="height: 100px; width: 900px"
                 v-model="boardReply.content"
+                ref="reviewReg"
+                :class="{reviewDisable:this.userAuth}"
             ></textarea>
-            <button class="btn" @click="saveBoardReply">등록</button>
+            <button class="btn" @click="saveBoardReply" ref="reviewbtn">등록</button>
         </div>
 
         <hr />
@@ -146,6 +148,7 @@ export default {
     name: "boardDetails",
     data() {
         return {
+            input_message: "댓글을 작성해주세요. ",
             replyCounts: 0,
             boards: [],
             boardReply: {
@@ -164,6 +167,7 @@ export default {
             //     localStorage.getItem("idx") == this.boardReplies[0].userIdx
             //         ? true
             //         : false,
+            userAuth: localStorage.getItem("user")
         };
     },
     methods: {
@@ -286,6 +290,12 @@ export default {
         this.retrieveCounts(this.$route.params.idx);
         // localStorage.setItem("idx", "141");
         // localStorage.getItem("idx");
+        let userAuth = localStorage.getItem("user");
+        if (userAuth == undefined) {
+            this.$refs.reviewReg.disabled = true;
+            this.input_message = "로그인이 필요합니다";
+            this.$refs.reviewbtn.disabled = true;
+        }
     },
 };
 </script>
