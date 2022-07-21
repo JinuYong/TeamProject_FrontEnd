@@ -104,7 +104,13 @@
                             >
                                 수정
                             </button>
-                            <div v-if="sameId" style="margin: 5px">
+                            <button
+                                @click="deleteBoardReply(boardReplys.idx)"
+                                class="btn replyBtn"
+                            >
+                                삭제
+                            </button>
+                            <div v-if="sameId" style="margin-top: 10px">
                                 <input
                                     type="text"
                                     v-model="boardReplys.content"
@@ -121,12 +127,6 @@
                                     확인
                                 </button>
                             </div>
-                            <button
-                                @click="deleteBoardReply(boardReplys.idx)"
-                                class="btn replyBtn"
-                            >
-                                삭제
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -146,6 +146,7 @@ export default {
     name: "boardDetails",
     data() {
         return {
+            idx: null,
             replyCounts: 0,
             boards: [],
             boardReply: {
@@ -167,10 +168,6 @@ export default {
         };
     },
     methods: {
-        viewBtn() {
-            if (localStorage.getItem("idx") == this.boardReplies.userIdx) {
-            }
-        },
         updateBoardReplies() {
             if (this.sameId == false) {
                 this.sameId = true;
@@ -223,15 +220,6 @@ export default {
             BoardReplyDataService.get(this.$route.params.idx)
                 .then((response) => {
                     this.boardReplies = response.data;
-                    // let arr = [];
-                    // // this.boardReplies = response.data;
-                    // for (let i = 0; i < response.data.length; i++) {
-                    //     console.log(response.data[0]);
-                    //     console.log(response);
-                    //     this.boardReplies.push(response.data);
-                    // }
-                    // console.log(this.boardReplies);
-                    // this.boardReplies = arr;
                 })
                 .catch((e) => {
                     alert(e);
@@ -265,7 +253,7 @@ export default {
             let data = {
                 idx: this.boardReply.idx,
                 content: this.boardReply.content,
-                userIdx: 2,
+                userIdx: this.loginIdx,
                 boardIdx: this.boards.idx,
             };
             BoardReplyDataService.create(data)
@@ -280,12 +268,13 @@ export default {
         },
     },
     mounted() {
+        this.loginIdx = JSON.parse(localStorage.getItem("user")).idx;
         this.retrieveReplyCount(this.$route.params.idx);
         this.retrieveBoardReply();
         this.retrieveBoardUploadImage(this.$route.params.idx);
         this.retrieveCounts(this.$route.params.idx);
-        localStorage.setItem("idx", "141");
-        localStorage.getItem("idx");
+        // localStorage.setItem("idx", "141");
+        // localStorage.getItem("idx");
     },
 };
 </script>
@@ -337,6 +326,7 @@ export default {
     font-weight: 300;
     font-size: 14px;
     border: none;
+    box-shadow: none;
 }
 .reply-container {
     padding: 20px 30px 0 30px;

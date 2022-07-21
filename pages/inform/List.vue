@@ -242,7 +242,6 @@ export default {
 .card-bottom {
     padding: 5px 16px;
 }
-
 .card-title {
     font-size: 18px;
     font-weight: 500;
@@ -252,7 +251,6 @@ export default {
     font-size: 15px;
     font-weight: 300;
 }
-
 .btn {
     border: none;
     background-color: #a30000;

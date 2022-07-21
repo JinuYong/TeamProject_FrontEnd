@@ -11,9 +11,7 @@
 </template>
 
 <script>
-export default {
-   
-};
+export default {};
 </script>
 
 <style>
@@ -27,7 +25,7 @@ export default {
     border-radius: 3px !important;
 }
 .default {
-    /* width: 1200px; */
+    width: 1200px;
     min-width: 700px;
     min-height: calc(100vh - 320px);
     margin: 0 auto;
@@ -41,10 +39,6 @@ export default {
     font-size: 14px;
     font-weight: 300;
 }
-
-
-
-
 
 /* datepicker */
 .ui-widget-header {

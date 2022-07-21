@@ -3,9 +3,9 @@
     <div class="container mt-5 pt-5" v-if="board">
         <div>
             <h5 class="text-center mb-5">게시글 수정</h5>
-            <br />
         </div>
-        <div class="mb-3">
+        <br />
+        <div class="updateTitleInput mb-3">
             <label for="board-title">제목</label>
             <input
                 type="text"
@@ -30,10 +30,11 @@
                 </textarea>
             </div>
         </div>
-        <div class="mb-3">
-            <button @click="updateBoard" class="btn btn-primary me-3">
-                수정
+        <div class="updateBtn mb-3">
+            <button onclick="location.href=`/board/list`" class="btn">
+                취소
             </button>
+            <button @click="updateBoard" class="btn">수정</button>
         </div>
 
         <!-- 수정버튼을 클릭후 성공했을때 아래가 보임 -->
@@ -84,3 +85,23 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.updateTitleInput {
+    margin-right: auto;
+    width: 100%;
+}
+.updateBtn {
+    display: flex;
+    margin-right: auto;
+}
+.btn {
+    background-color: #a30000;
+    box-shadow: none;
+    color: white;
+    border: none;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 2px;
+}
+</style>

@@ -7,12 +7,12 @@
         <div v-if="!submitted">
             <span class="btns">
                 <input
-                    class="btn btn-sm"
+                    class="btn"
                     type="button"
                     value="이전"
                     onclick="location.href='/board/list'"
                 />
-                <button class="btn btn-sm" @click="upload">등록</button>
+                <button class="btn" @click="upload">등록</button>
             </span>
             <hr />
             <div class="form-group mt-4">
@@ -189,7 +189,6 @@ export default {
 hr {
     background-color: #a30000;
 }
-
 .btn {
     border: none;
     background-color: #a30000;
@@ -197,13 +196,11 @@ hr {
     margin-left: auto;
     /* display: flex; */
 }
-
 .btn:active,
 .btn:hover .btn:focus {
     background-color: #a30000;
     border: none;
 }
-
 .preview {
     max-width: 200px;
 }
