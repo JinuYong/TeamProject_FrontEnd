@@ -1,0 +1,300 @@
+[
+  {
+    "name": "CheckPayment",
+    "path": "/CheckPayment",
+    "component": "/Users/macbook/Desktop/test_front/pages/CheckPayment.vue",
+    "chunkName": "pages/CheckPayment",
+    "_name": "_e4edef6c"
+  },
+  {
+    "name": "file-http-common",
+    "path": "/file-http-common",
+    "component": "/Users/macbook/Desktop/test_front/pages/file-http-common.js",
+    "chunkName": "pages/file-http-common",
+    "_name": "_4c6e0464"
+  },
+  {
+    "name": "http-common",
+    "path": "/http-common",
+    "component": "/Users/macbook/Desktop/test_front/pages/http-common.js",
+    "chunkName": "pages/http-common",
+    "_name": "_72a4c6db"
+  },
+  {
+    "name": "LogIn",
+    "path": "/LogIn",
+    "component": "/Users/macbook/Desktop/test_front/pages/LogIn.vue",
+    "chunkName": "pages/LogIn",
+    "_name": "_68fc6f4d"
+  },
+  {
+    "name": "MapExample",
+    "path": "/MapExample",
+    "component": "/Users/macbook/Desktop/test_front/pages/MapExample.vue",
+    "chunkName": "pages/MapExample",
+    "_name": "_00e43dda"
+  },
+  {
+    "name": "mypage",
+    "path": "/mypage",
+    "component": "/Users/macbook/Desktop/test_front/pages/mypage/index.vue",
+    "chunkName": "pages/mypage/index",
+    "_name": "_c0804f6c"
+  },
+  {
+    "name": "Qna",
+    "path": "/Qna",
+    "component": "/Users/macbook/Desktop/test_front/pages/Qna.vue",
+    "chunkName": "pages/Qna",
+    "_name": "_1b910f28"
+  },
+  {
+    "name": "SearchResult",
+    "path": "/SearchResult",
+    "component": "/Users/macbook/Desktop/test_front/pages/SearchResult.vue",
+    "chunkName": "pages/SearchResult",
+    "_name": "_d06d865e"
+  },
+  {
+    "name": "SignUp",
+    "path": "/SignUp",
+    "component": "/Users/macbook/Desktop/test_front/pages/SignUp/index.vue",
+    "chunkName": "pages/SignUp/index",
+    "_name": "_2069f727"
+  },
+  {
+    "name": "board-List",
+    "path": "/board/List",
+    "component": "/Users/macbook/Desktop/test_front/pages/board/List.vue",
+    "chunkName": "pages/board/List",
+    "_name": "_77633f13"
+  },
+  {
+    "name": "board-Write",
+    "path": "/board/Write",
+    "component": "/Users/macbook/Desktop/test_front/pages/board/Write.vue",
+    "chunkName": "pages/board/Write",
+    "_name": "_6cc803ba"
+  },
+  {
+    "name": "find-id",
+    "path": "/find/id",
+    "component": "/Users/macbook/Desktop/test_front/pages/find/id.vue",
+    "chunkName": "pages/find/id",
+    "children": [
+      {
+        "name": "find-id-Complete",
+        "path": "Complete",
+        "component": "/Users/macbook/Desktop/test_front/pages/find/id/Complete.vue",
+        "chunkName": "pages/find/id/Complete",
+        "_name": "_5073a643"
+      }
+    ],
+    "_name": "_3ab463d6"
+  },
+  {
+    "name": "find-password",
+    "path": "/find/password",
+    "component": "/Users/macbook/Desktop/test_front/pages/find/password.vue",
+    "chunkName": "pages/find/password",
+    "children": [
+      {
+        "name": "find-password-Complete",
+        "path": "Complete",
+        "component": "/Users/macbook/Desktop/test_front/pages/find/password/Complete.vue",
+        "chunkName": "pages/find/password/Complete",
+        "_name": "_251bab7a"
+      }
+    ],
+    "_name": "_6882ca15"
+  },
+  {
+    "name": "inform-List",
+    "path": "/inform/List",
+    "component": "/Users/macbook/Desktop/test_front/pages/inform/List.vue",
+    "chunkName": "pages/inform/List",
+    "_name": "_48b00508"
+  },
+  {
+    "name": "inform-Write",
+    "path": "/inform/Write",
+    "component": "/Users/macbook/Desktop/test_front/pages/inform/Write.vue",
+    "chunkName": "pages/inform/Write",
+    "_name": "_75d80736"
+  },
+  {
+    "name": "Items-Details",
+    "path": "/Items/Details",
+    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/index.vue",
+    "chunkName": "pages/Items/Details/index",
+    "_name": "_684dea4c"
+  },
+  {
+    "name": "Items-List",
+    "path": "/Items/List",
+    "component": "/Users/macbook/Desktop/test_front/pages/Items/List.vue",
+    "chunkName": "pages/Items/List",
+    "_name": "_d03330ce"
+  },
+  {
+    "name": "service-IndexDataService",
+    "path": "/service/IndexDataService",
+    "component": "/Users/macbook/Desktop/test_front/pages/service/IndexDataService.js",
+    "chunkName": "pages/service/IndexDataService",
+    "_name": "_29a91830"
+  },
+  {
+    "name": "service-ItemDetailDataService",
+    "path": "/service/ItemDetailDataService",
+    "component": "/Users/macbook/Desktop/test_front/pages/service/ItemDetailDataService.js",
+    "chunkName": "pages/service/ItemDetailDataService",
+    "_name": "_61b2c7be"
+  },
+  {
+    "name": "service-ItemListDataService",
+    "path": "/service/ItemListDataService",
+    "component": "/Users/macbook/Desktop/test_front/pages/service/ItemListDataService.js",
+    "chunkName": "pages/service/ItemListDataService",
+    "_name": "_8636ecea"
+  },
+  {
+    "name": "service-ReviewDataService",
+    "path": "/service/ReviewDataService",
+    "component": "/Users/macbook/Desktop/test_front/pages/service/ReviewDataService.js",
+    "chunkName": "pages/service/ReviewDataService",
+    "_name": "_05928dd2"
+  },
+  {
+    "name": "service-ShoppingCartDataService",
+    "path": "/service/ShoppingCartDataService",
+    "component": "/Users/macbook/Desktop/test_front/pages/service/ShoppingCartDataService.js",
+    "chunkName": "pages/service/ShoppingCartDataService",
+    "_name": "_1c254ca2"
+  },
+  {
+    "name": "service-UploadFilesService",
+    "path": "/service/UploadFilesService",
+    "component": "/Users/macbook/Desktop/test_front/pages/service/UploadFilesService.js",
+    "chunkName": "pages/service/UploadFilesService",
+    "_name": "_6f1b36ec"
+  },
+  {
+    "name": "service-UserDataService",
+    "path": "/service/UserDataService",
+    "component": "/Users/macbook/Desktop/test_front/pages/service/UserDataService.js",
+    "chunkName": "pages/service/UserDataService",
+    "_name": "_3455e085"
+  },
+  {
+    "name": "shoppingCart-ShoppingCart",
+    "path": "/shoppingCart/ShoppingCart",
+    "component": "/Users/macbook/Desktop/test_front/pages/shoppingCart/ShoppingCart.vue",
+    "chunkName": "pages/shoppingCart/ShoppingCart",
+    "_name": "_156c6c9a"
+  },
+  {
+    "name": "SignUp-Complete",
+    "path": "/SignUp/Complete",
+    "component": "/Users/macbook/Desktop/test_front/pages/SignUp/Complete.vue",
+    "chunkName": "pages/SignUp/Complete",
+    "_name": "_283aecd8"
+  },
+  {
+    "name": "tourItemDetails-components-ImgGalleryCom",
+    "path": "/tourItemDetails/components/ImgGalleryCom",
+    "component": "/Users/macbook/Desktop/test_front/pages/tourItemDetails/components/ImgGalleryCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom",
+    "_name": "_8846d986"
+  },
+  {
+    "name": "tourItemDetails-components-KakaoMapApiCom",
+    "path": "/tourItemDetails/components/KakaoMapApiCom",
+    "component": "/Users/macbook/Desktop/test_front/pages/tourItemDetails/components/KakaoMapApiCom.vue",
+    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
+    "_name": "_130cf445"
+  },
+  {
+    "name": "Items-Details-components-CardSliderCom",
+    "path": "/Items/Details/components/CardSliderCom",
+    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/components/CardSliderCom.vue",
+    "chunkName": "pages/Items/Details/components/CardSliderCom",
+    "_name": "_ae17ce02"
+  },
+  {
+    "name": "Items-Details-components-ImgGalleryCom",
+    "path": "/Items/Details/components/ImgGalleryCom",
+    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/components/ImgGalleryCom.vue",
+    "chunkName": "pages/Items/Details/components/ImgGalleryCom",
+    "_name": "_6c07e57e"
+  },
+  {
+    "name": "Items-Details-components-KakaoMapApiCom",
+    "path": "/Items/Details/components/KakaoMapApiCom",
+    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/components/KakaoMapApiCom.vue",
+    "chunkName": "pages/Items/Details/components/KakaoMapApiCom",
+    "_name": "_6e468a7e"
+  },
+  {
+    "name": "Items-Details-components-ReviewsCom",
+    "path": "/Items/Details/components/ReviewsCom",
+    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/components/ReviewsCom.vue",
+    "chunkName": "pages/Items/Details/components/ReviewsCom",
+    "_name": "_3331efa7"
+  },
+  {
+    "name": "board-detail-update-idx",
+    "path": "/board/detail/update/:idx?",
+    "component": "/Users/macbook/Desktop/test_front/pages/board/detail/update/_idx.vue",
+    "chunkName": "pages/board/detail/update/_idx",
+    "_name": "_058a3e5b"
+  },
+  {
+    "name": "inform-detail-update-idx",
+    "path": "/inform/detail/update/:idx?",
+    "component": "/Users/macbook/Desktop/test_front/pages/inform/detail/update/_idx.vue",
+    "chunkName": "pages/inform/detail/update/_idx",
+    "_name": "_7996f390"
+  },
+  {
+    "name": "board-detail-idx",
+    "path": "/board/detail/:idx?",
+    "component": "/Users/macbook/Desktop/test_front/pages/board/detail/_idx.vue",
+    "chunkName": "pages/board/detail/_idx",
+    "_name": "_d7ea6f92"
+  },
+  {
+    "name": "inform-detail-idx",
+    "path": "/inform/detail/:idx?",
+    "component": "/Users/macbook/Desktop/test_front/pages/inform/detail/_idx.vue",
+    "chunkName": "pages/inform/detail/_idx",
+    "_name": "_b17356bc"
+  },
+  {
+    "name": "Items-Details-idx",
+    "path": "/Items/Details/:idx",
+    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/_idx.vue",
+    "chunkName": "pages/Items/Details/_idx",
+    "_name": "_301cd9b4"
+  },
+  {
+    "name": "payment-userIdx",
+    "path": "/payment/:userIdx?",
+    "component": "/Users/macbook/Desktop/test_front/pages/payment/_userIdx.vue",
+    "chunkName": "pages/payment/_userIdx",
+    "_name": "_31f83230"
+  },
+  {
+    "name": "tourItemDetails-idx",
+    "path": "/tourItemDetails/:idx?",
+    "component": "/Users/macbook/Desktop/test_front/pages/tourItemDetails/_idx.vue",
+    "chunkName": "pages/tourItemDetails/_idx",
+    "_name": "_060821bc"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/macbook/Desktop/test_front/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_5e7dc036"
+  }
+]
