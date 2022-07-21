@@ -11,13 +11,9 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-export default {};
-=======
 export default {
 
 };
->>>>>>> 8ddcbaef9596e3ed3948ff9ff0644273190f346e
 </script>
 
 <style>
@@ -31,11 +27,7 @@ export default {
     border-radius: 3px !important;
 }
 .default {
-<<<<<<< HEAD
     width: 1200px;
-=======
-     width: 1200px;
->>>>>>> 8ddcbaef9596e3ed3948ff9ff0644273190f346e
     min-width: 700px;
     min-height: calc(100vh - 320px);
     margin: 0 auto;

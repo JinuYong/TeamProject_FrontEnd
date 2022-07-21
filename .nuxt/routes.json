@@ -2,299 +2,235 @@
   {
     "name": "CheckPayment",
     "path": "/CheckPayment",
-    "component": "/Users/macbook/Desktop/test_front/pages/CheckPayment.vue",
-    "chunkName": "pages/CheckPayment",
-    "_name": "_e4edef6c"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/CheckPayment.vue",
+    "chunkName": "pages/CheckPayment"
   },
   {
     "name": "file-http-common",
     "path": "/file-http-common",
-    "component": "/Users/macbook/Desktop/test_front/pages/file-http-common.js",
-    "chunkName": "pages/file-http-common",
-    "_name": "_4c6e0464"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/file-http-common.js",
+    "chunkName": "pages/file-http-common"
   },
   {
     "name": "http-common",
     "path": "/http-common",
-    "component": "/Users/macbook/Desktop/test_front/pages/http-common.js",
-    "chunkName": "pages/http-common",
-    "_name": "_72a4c6db"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/http-common.js",
+    "chunkName": "pages/http-common"
   },
   {
     "name": "LogIn",
     "path": "/LogIn",
-    "component": "/Users/macbook/Desktop/test_front/pages/LogIn.vue",
-    "chunkName": "pages/LogIn",
-    "_name": "_68fc6f4d"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/LogIn.vue",
+    "chunkName": "pages/LogIn"
   },
   {
     "name": "MapExample",
     "path": "/MapExample",
-    "component": "/Users/macbook/Desktop/test_front/pages/MapExample.vue",
-    "chunkName": "pages/MapExample",
-    "_name": "_00e43dda"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/MapExample.vue",
+    "chunkName": "pages/MapExample"
   },
   {
     "name": "mypage",
     "path": "/mypage",
-    "component": "/Users/macbook/Desktop/test_front/pages/mypage/index.vue",
-    "chunkName": "pages/mypage/index",
-    "_name": "_c0804f6c"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/mypage/index.vue",
+    "chunkName": "pages/mypage/index"
   },
   {
     "name": "Qna",
     "path": "/Qna",
-    "component": "/Users/macbook/Desktop/test_front/pages/Qna.vue",
-    "chunkName": "pages/Qna",
-    "_name": "_1b910f28"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/Qna.vue",
+    "chunkName": "pages/Qna"
   },
   {
     "name": "SearchResult",
     "path": "/SearchResult",
-    "component": "/Users/macbook/Desktop/test_front/pages/SearchResult.vue",
-    "chunkName": "pages/SearchResult",
-    "_name": "_d06d865e"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/SearchResult.vue",
+    "chunkName": "pages/SearchResult"
   },
   {
     "name": "SignUp",
     "path": "/SignUp",
-    "component": "/Users/macbook/Desktop/test_front/pages/SignUp/index.vue",
-    "chunkName": "pages/SignUp/index",
-    "_name": "_2069f727"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/SignUp/index.vue",
+    "chunkName": "pages/SignUp/index"
+  },
+  {
+    "name": "UploadImage",
+    "path": "/UploadImage",
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/UploadImage.vue",
+    "chunkName": "pages/UploadImage"
   },
   {
     "name": "board-List",
     "path": "/board/List",
-    "component": "/Users/macbook/Desktop/test_front/pages/board/List.vue",
-    "chunkName": "pages/board/List",
-    "_name": "_77633f13"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/board/List.vue",
+    "chunkName": "pages/board/List"
   },
   {
     "name": "board-Write",
     "path": "/board/Write",
-    "component": "/Users/macbook/Desktop/test_front/pages/board/Write.vue",
-    "chunkName": "pages/board/Write",
-    "_name": "_6cc803ba"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/board/Write.vue",
+    "chunkName": "pages/board/Write"
   },
   {
     "name": "find-id",
     "path": "/find/id",
-    "component": "/Users/macbook/Desktop/test_front/pages/find/id.vue",
-    "chunkName": "pages/find/id",
-    "children": [
-      {
-        "name": "find-id-Complete",
-        "path": "Complete",
-        "component": "/Users/macbook/Desktop/test_front/pages/find/id/Complete.vue",
-        "chunkName": "pages/find/id/Complete",
-        "_name": "_5073a643"
-      }
-    ],
-    "_name": "_3ab463d6"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/find/id.vue",
+    "chunkName": "pages/find/id"
   },
   {
     "name": "find-password",
     "path": "/find/password",
-    "component": "/Users/macbook/Desktop/test_front/pages/find/password.vue",
-    "chunkName": "pages/find/password",
-    "children": [
-      {
-        "name": "find-password-Complete",
-        "path": "Complete",
-        "component": "/Users/macbook/Desktop/test_front/pages/find/password/Complete.vue",
-        "chunkName": "pages/find/password/Complete",
-        "_name": "_251bab7a"
-      }
-    ],
-    "_name": "_6882ca15"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/find/password.vue",
+    "chunkName": "pages/find/password"
   },
   {
     "name": "inform-List",
     "path": "/inform/List",
-    "component": "/Users/macbook/Desktop/test_front/pages/inform/List.vue",
-    "chunkName": "pages/inform/List",
-    "_name": "_48b00508"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/inform/List.vue",
+    "chunkName": "pages/inform/List"
   },
   {
     "name": "inform-Write",
     "path": "/inform/Write",
-    "component": "/Users/macbook/Desktop/test_front/pages/inform/Write.vue",
-    "chunkName": "pages/inform/Write",
-    "_name": "_75d80736"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/inform/Write.vue",
+    "chunkName": "pages/inform/Write"
   },
   {
     "name": "Items-Details",
     "path": "/Items/Details",
-    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/index.vue",
-    "chunkName": "pages/Items/Details/index",
-    "_name": "_684dea4c"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/Items/Details/index.vue",
+    "chunkName": "pages/Items/Details/index"
   },
   {
     "name": "Items-List",
     "path": "/Items/List",
-    "component": "/Users/macbook/Desktop/test_front/pages/Items/List.vue",
-    "chunkName": "pages/Items/List",
-    "_name": "_d03330ce"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/Items/List.vue",
+    "chunkName": "pages/Items/List"
   },
   {
     "name": "service-IndexDataService",
     "path": "/service/IndexDataService",
-    "component": "/Users/macbook/Desktop/test_front/pages/service/IndexDataService.js",
-    "chunkName": "pages/service/IndexDataService",
-    "_name": "_29a91830"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/service/IndexDataService.js",
+    "chunkName": "pages/service/IndexDataService"
   },
   {
     "name": "service-ItemDetailDataService",
     "path": "/service/ItemDetailDataService",
-    "component": "/Users/macbook/Desktop/test_front/pages/service/ItemDetailDataService.js",
-    "chunkName": "pages/service/ItemDetailDataService",
-    "_name": "_61b2c7be"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/service/ItemDetailDataService.js",
+    "chunkName": "pages/service/ItemDetailDataService"
   },
   {
     "name": "service-ItemListDataService",
     "path": "/service/ItemListDataService",
-    "component": "/Users/macbook/Desktop/test_front/pages/service/ItemListDataService.js",
-    "chunkName": "pages/service/ItemListDataService",
-    "_name": "_8636ecea"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/service/ItemListDataService.js",
+    "chunkName": "pages/service/ItemListDataService"
   },
   {
     "name": "service-ReviewDataService",
     "path": "/service/ReviewDataService",
-    "component": "/Users/macbook/Desktop/test_front/pages/service/ReviewDataService.js",
-    "chunkName": "pages/service/ReviewDataService",
-    "_name": "_05928dd2"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/service/ReviewDataService.js",
+    "chunkName": "pages/service/ReviewDataService"
   },
   {
     "name": "service-ShoppingCartDataService",
     "path": "/service/ShoppingCartDataService",
-    "component": "/Users/macbook/Desktop/test_front/pages/service/ShoppingCartDataService.js",
-    "chunkName": "pages/service/ShoppingCartDataService",
-    "_name": "_1c254ca2"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/service/ShoppingCartDataService.js",
+    "chunkName": "pages/service/ShoppingCartDataService"
   },
   {
     "name": "service-UploadFilesService",
     "path": "/service/UploadFilesService",
-    "component": "/Users/macbook/Desktop/test_front/pages/service/UploadFilesService.js",
-    "chunkName": "pages/service/UploadFilesService",
-    "_name": "_6f1b36ec"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/service/UploadFilesService.js",
+    "chunkName": "pages/service/UploadFilesService"
   },
   {
     "name": "service-UserDataService",
     "path": "/service/UserDataService",
-    "component": "/Users/macbook/Desktop/test_front/pages/service/UserDataService.js",
-    "chunkName": "pages/service/UserDataService",
-    "_name": "_3455e085"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/service/UserDataService.js",
+    "chunkName": "pages/service/UserDataService"
   },
   {
     "name": "shoppingCart-ShoppingCart",
     "path": "/shoppingCart/ShoppingCart",
-    "component": "/Users/macbook/Desktop/test_front/pages/shoppingCart/ShoppingCart.vue",
-    "chunkName": "pages/shoppingCart/ShoppingCart",
-    "_name": "_156c6c9a"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/shoppingCart/ShoppingCart.vue",
+    "chunkName": "pages/shoppingCart/ShoppingCart"
   },
   {
     "name": "SignUp-Complete",
     "path": "/SignUp/Complete",
-    "component": "/Users/macbook/Desktop/test_front/pages/SignUp/Complete.vue",
-    "chunkName": "pages/SignUp/Complete",
-    "_name": "_283aecd8"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/SignUp/Complete.vue",
+    "chunkName": "pages/SignUp/Complete"
   },
   {
     "name": "tourItemDetails-components-ImgGalleryCom",
     "path": "/tourItemDetails/components/ImgGalleryCom",
-    "component": "/Users/macbook/Desktop/test_front/pages/tourItemDetails/components/ImgGalleryCom.vue",
-    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom",
-    "_name": "_8846d986"
-  },
-  {
-    "name": "tourItemDetails-components-KakaoMapApiCom",
-    "path": "/tourItemDetails/components/KakaoMapApiCom",
-    "component": "/Users/macbook/Desktop/test_front/pages/tourItemDetails/components/KakaoMapApiCom.vue",
-    "chunkName": "pages/tourItemDetails/components/KakaoMapApiCom",
-    "_name": "_130cf445"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/tourItemDetails/components/ImgGalleryCom.vue",
+    "chunkName": "pages/tourItemDetails/components/ImgGalleryCom"
   },
   {
     "name": "Items-Details-components-CardSliderCom",
     "path": "/Items/Details/components/CardSliderCom",
-    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/components/CardSliderCom.vue",
-    "chunkName": "pages/Items/Details/components/CardSliderCom",
-    "_name": "_ae17ce02"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/Items/Details/components/CardSliderCom.vue",
+    "chunkName": "pages/Items/Details/components/CardSliderCom"
   },
   {
     "name": "Items-Details-components-ImgGalleryCom",
     "path": "/Items/Details/components/ImgGalleryCom",
-    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/components/ImgGalleryCom.vue",
-    "chunkName": "pages/Items/Details/components/ImgGalleryCom",
-    "_name": "_6c07e57e"
-  },
-  {
-    "name": "Items-Details-components-KakaoMapApiCom",
-    "path": "/Items/Details/components/KakaoMapApiCom",
-    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/components/KakaoMapApiCom.vue",
-    "chunkName": "pages/Items/Details/components/KakaoMapApiCom",
-    "_name": "_6e468a7e"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/Items/Details/components/ImgGalleryCom.vue",
+    "chunkName": "pages/Items/Details/components/ImgGalleryCom"
   },
   {
     "name": "Items-Details-components-ReviewsCom",
     "path": "/Items/Details/components/ReviewsCom",
-    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/components/ReviewsCom.vue",
-    "chunkName": "pages/Items/Details/components/ReviewsCom",
-    "_name": "_3331efa7"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/Items/Details/components/ReviewsCom.vue",
+    "chunkName": "pages/Items/Details/components/ReviewsCom"
   },
   {
     "name": "board-detail-update-idx",
     "path": "/board/detail/update/:idx?",
-    "component": "/Users/macbook/Desktop/test_front/pages/board/detail/update/_idx.vue",
-    "chunkName": "pages/board/detail/update/_idx",
-    "_name": "_058a3e5b"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/board/detail/update/_idx.vue",
+    "chunkName": "pages/board/detail/update/_idx"
   },
   {
     "name": "inform-detail-update-idx",
     "path": "/inform/detail/update/:idx?",
-    "component": "/Users/macbook/Desktop/test_front/pages/inform/detail/update/_idx.vue",
-    "chunkName": "pages/inform/detail/update/_idx",
-    "_name": "_7996f390"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/inform/detail/update/_idx.vue",
+    "chunkName": "pages/inform/detail/update/_idx"
   },
   {
     "name": "board-detail-idx",
     "path": "/board/detail/:idx?",
-    "component": "/Users/macbook/Desktop/test_front/pages/board/detail/_idx.vue",
-    "chunkName": "pages/board/detail/_idx",
-    "_name": "_d7ea6f92"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/board/detail/_idx.vue",
+    "chunkName": "pages/board/detail/_idx"
   },
   {
     "name": "inform-detail-idx",
     "path": "/inform/detail/:idx?",
-    "component": "/Users/macbook/Desktop/test_front/pages/inform/detail/_idx.vue",
-    "chunkName": "pages/inform/detail/_idx",
-    "_name": "_b17356bc"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/inform/detail/_idx.vue",
+    "chunkName": "pages/inform/detail/_idx"
   },
   {
     "name": "Items-Details-idx",
     "path": "/Items/Details/:idx",
-    "component": "/Users/macbook/Desktop/test_front/pages/Items/Details/_idx.vue",
-    "chunkName": "pages/Items/Details/_idx",
-    "_name": "_301cd9b4"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/Items/Details/_idx.vue",
+    "chunkName": "pages/Items/Details/_idx"
   },
   {
     "name": "payment-userIdx",
     "path": "/payment/:userIdx?",
-    "component": "/Users/macbook/Desktop/test_front/pages/payment/_userIdx.vue",
-    "chunkName": "pages/payment/_userIdx",
-    "_name": "_31f83230"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/payment/_userIdx.vue",
+    "chunkName": "pages/payment/_userIdx"
   },
   {
     "name": "tourItemDetails-idx",
     "path": "/tourItemDetails/:idx?",
-    "component": "/Users/macbook/Desktop/test_front/pages/tourItemDetails/_idx.vue",
-    "chunkName": "pages/tourItemDetails/_idx",
-    "_name": "_060821bc"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/tourItemDetails/_idx.vue",
+    "chunkName": "pages/tourItemDetails/_idx"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/macbook/Desktop/test_front/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_5e7dc036"
+    "component": "/Users/hwan/Fullstack_cource/team/review/7_21_git_front_복사본/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]
