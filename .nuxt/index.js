@@ -13,9 +13,9 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_10d76e92 from 'nuxt_plugin_plugin_10d76e92' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_4fa9ca52 from 'nuxt_plugin_bootstrapvue_4fa9ca52' // Source: ./bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_axios_454d64a8 from 'nuxt_plugin_axios_454d64a8' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_plugin_525d0a02 from 'nuxt_plugin_plugin_525d0a02' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_57b02372 from 'nuxt_plugin_bootstrapvue_57b02372' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_axios_2d66afd0 from 'nuxt_plugin_axios_2d66afd0' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_validate_709b3feb from 'nuxt_plugin_validate_709b3feb' // Source: ../plugins/validate.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -210,16 +210,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_10d76e92 === 'function') {
-    await nuxt_plugin_plugin_10d76e92(app.context, inject)
+  if (typeof nuxt_plugin_plugin_525d0a02 === 'function') {
+    await nuxt_plugin_plugin_525d0a02(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_4fa9ca52 === 'function') {
-    await nuxt_plugin_bootstrapvue_4fa9ca52(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_57b02372 === 'function') {
+    await nuxt_plugin_bootstrapvue_57b02372(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_454d64a8 === 'function') {
-    await nuxt_plugin_axios_454d64a8(app.context, inject)
+  if (typeof nuxt_plugin_axios_2d66afd0 === 'function') {
+    await nuxt_plugin_axios_2d66afd0(app.context, inject)
   }
 
   if (typeof nuxt_plugin_validate_709b3feb === 'function') {

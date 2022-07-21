@@ -253,11 +253,7 @@ export default {
             let data = {
                 idx: this.boardReply.idx,
                 content: this.boardReply.content,
-<<<<<<< HEAD
                 userIdx: this.loginIdx,
-=======
-                userIdx: JSON.parse(localStorage.getItem("idx")).idx,
->>>>>>> 8ddcbaef9596e3ed3948ff9ff0644273190f346e
                 boardIdx: this.boards.idx,
             };
             BoardReplyDataService.create(data)

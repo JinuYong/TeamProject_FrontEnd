@@ -118,9 +118,9 @@
                                         ></button>
                                     </div>
                                     <div class="modal-body">
-                                        <h5 class="mb-2">
+                                        <h6 class="mb-2">
                                             결제 취소 요청 접수되었습니다
-                                        </h5>
+                                        </h6>
                                     </div>
                                     <div class="modal-footer">
                                         <button
@@ -303,6 +303,11 @@
                                                     rows="10"
                                                     v-model="review.content"
                                                 ></textarea>
+                                                <div
+                                                    class="file-upload-form mt-2 mb-2"
+                                                >
+                                                
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -353,7 +358,7 @@ export default {
             currentPrice: "",
             review: {
                 idx: null,
-                rating: 0,
+                rating: null,
                 content: "",
             },
             // 리뷰작성 - 이미지
@@ -404,40 +409,54 @@ export default {
         // 저장 메소드 호출
         saveReview() {
             //  리뷰 임시 객체 만들기
-            var data = {
-                rating: this.review.rating,
-                content: this.review.content,
-            };
-            //  임시 게시판 객체를 서버쪽으로 전달해서 DB에 insert 요청
-            ReviewDataService.create(data)
-                //  성공하면 then으로 들어옴
-                .then((response) => {
-                    this.review.idx = response.data.idx;
-                    // this.submitted = true; // DB insert 성공
-                })
-                //  실패하면 catch으로 에러메세지가 들어옴
-                .catch((e) => {
-                    alert(e);
-                });
 
-            CancelDataService.update(this.currentNumber)
-                // 성공하면 then으로 결과 데이터가 들어옴
-                .then(() => {
-                    // router/index.js 안에 name
-                    // 화면 이동 : customers 화면으로 이동
-                    // this.$router.push({ name: "complains" });
-                    this.$router.push("/mypage");
-                    this.retrieveProducts();
-                })
-                // 실패하면 catch로 에러 데이터가 들어옴
-                .catch((e) => {
-                    alert(e);
-                });
+            if (this.review.rating != 0) {
+                if (this.review.content != "") {
+                    var data = {
+                        rating: this.review.rating,
+                        content: this.review.content,
+                    };
 
-            (this.review.rating = ""), (this.review.content = "");
+                    //  임시 게시판 객체를 서버쪽으로 전달해서 DB에 insert 요청
+                    ReviewDataService.create(data)
+                        //  성공하면 then으로 들어옴
+                        .then((response) => {
+                            this.review.idx = response.data.idx;
+                            // this.submitted = true; // DB insert 성공
+                        })
+                        //  실패하면 catch으로 에러메세지가 들어옴
+                        .catch((e) => {
+                            // alert(e);
+                        });
+
+                    CancelDataService.update(this.currentNumber)
+                        // 성공하면 then으로 결과 데이터가 들어옴
+                        .then(() => {
+                            // router/index.js 안에 name
+                            // 화면 이동 : customers 화면으로 이동
+                            // this.$router.push({ name: "complains" });
+                            this.$router.push("/mypage");
+                            this.retrieveProducts();
+                        })
+                        // 실패하면 catch로 에러 데이터가 들어옴
+                        .catch((e) => {
+                            // alert(e);
+                        });
+                } else {
+                    (this.review.rating = 0), (this.review.content = "");
+                    alert("별점과 후기를 작성해주세요");
+                    return;
+                }
+            } else {
+                (this.review.rating = 0), (this.review.content = "");
+                alert("별점과 후기를 작성해주세요");
+                return;
+            }
+
+            (this.review.rating = 0), (this.review.content = "");
         },
         cancelReview() {
-            (this.review.rating = ""), (this.review.content = "");
+            (this.review.rating = 0), (this.review.content = "");
         },
         // 리뷰 작성
         updateReview() {
