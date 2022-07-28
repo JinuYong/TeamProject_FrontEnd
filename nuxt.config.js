@@ -81,7 +81,7 @@ export default {
             //     src: "//dapi.kakao.com/v2/maps/sdk.js?appkey=2347b9f93173423c7fe7580ee45e5589&libraries=services,clusterer,drawing",
             // },
             {
-                type: "text/javascript", 
+                type: "text/javascript",
                 src: "//dapi.kakao.com/v2/maps/sdk.js?appkey=9c0ab16c7aa85bf5514d85cb7f46f6dc&libraries=services"
             },
             // SummerNote
@@ -119,6 +119,7 @@ export default {
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {
         // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+        // baseURL: "http://192.168.0.166:8000",
         baseURL: "http://localhost:8000",
     },
 

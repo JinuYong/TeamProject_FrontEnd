@@ -141,7 +141,7 @@ export default {
         return {
             // DB에 자료가 들어갈 빈 배열
             carts: [],
-            userIdx: 0
+            userIdx: 0,
         }
     },
 
@@ -231,6 +231,12 @@ export default {
         localStorage.setItem("idx", "1")
         localStorage.getItem("idx")
         this.retrieveCart(localStorage.getItem("idx"))
+        let userAuth = localStorage.getItem("user");
+        console.log(userAuth);
+        if (userAuth == null) {
+            alert("로그인 후 이용해주세요. ");
+            this.$router.push("/login");
+        }
     }
 }
 </script>
@@ -286,6 +292,7 @@ li {
 .input-count {
     text-align: center;
     border: 1px solid lightgray;
+    width: 30px;
 }
 
 .btn {

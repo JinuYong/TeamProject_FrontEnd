@@ -1,6 +1,6 @@
 <template>
     <div class="main-body">
-        <div class="container">
+        <div class="error-container">
             <h1>페이지를 찾을 수 없습니다. </h1>
             <p class="inform-text">정상적인 접근이 아닙니다. 다른 주소로 시도해주세요. </p>
             <img class="logoImg" src="@/assets/img/omym_logo.png" alt="로고이미지">
@@ -19,7 +19,7 @@ export default {
         display: flex;
         align-items: center;
     }
-    .container {
+    .error-container {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;

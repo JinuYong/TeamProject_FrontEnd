@@ -141,9 +141,14 @@
                             class="header-icon"
                             src="@/assets/img/header/person.svg"
                             alt="profile"
-                            @click="moveTo('/mypage/')"
+                            @click="moveTo('/mypage')"
                         />
-
+                        <img
+                            class="header-icon"
+                            src="@/assets/img/header/shopping_cart_black.svg"
+                            alt="cart"
+                            @click="moveTo('/shoppingCart/shoppingCart')"
+                        />
                         <a href @click.prevent="logOut">
                             <img
                                 class="header-icon"
@@ -187,6 +192,7 @@ export default {
                     keyword:this.keyword
                 }
             });
+            $nuxt.$router.reload();
         },
         // TODO:
         logOut() {
@@ -260,7 +266,7 @@ export default {
         color: #494949;
     }
     .nav-link:hover {
-        color: #a30000;
+        color: #a30000 !important;
         cursor: pointer;
     }
     .nav-item {

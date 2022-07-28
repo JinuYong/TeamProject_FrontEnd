@@ -130,6 +130,7 @@ export default {
 }
 .map-container {
     display: flex;
+    justify-content: center;
 }
 .map-board {
     width: 600px;
