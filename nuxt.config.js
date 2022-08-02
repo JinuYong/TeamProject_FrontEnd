@@ -1,4 +1,5 @@
 export default {
+    target: 'static', // default is 'server'
     // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
     ssr: false,
     lintOnSave: false,
@@ -81,7 +82,7 @@ export default {
             //     src: "//dapi.kakao.com/v2/maps/sdk.js?appkey=2347b9f93173423c7fe7580ee45e5589&libraries=services,clusterer,drawing",
             // },
             {
-                type: "text/javascript", 
+                type: "text/javascript",
                 src: "//dapi.kakao.com/v2/maps/sdk.js?appkey=9c0ab16c7aa85bf5514d85cb7f46f6dc&libraries=services"
             },
             // SummerNote
@@ -107,7 +108,13 @@ export default {
     components: true,
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: [],
+    buildModules: [
+        // '@nuxtjs/eslint-module',
+        // '@nuxtjs/moment'
+    ],
+    // moment:{
+    //     locales:'ko',
+    // },
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
@@ -119,9 +126,17 @@ export default {
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {
         // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+        // baseURL: "http://192.168.0.166:8000",
         baseURL: "http://localhost:8000",
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
+    build: {
+        // analyze: {
+        //     analyzerMode: 'static'
+        // },
+        // extend(config, { isClient, isServer }) {
+        //     console.log('webpack', config, isClient, isServer)
+        // },
+    },
 };

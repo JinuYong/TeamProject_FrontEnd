@@ -1,4 +1,4 @@
-# omym-frontend
+ㅜㅕㅌ# omym-frontend
 
 ## 깃 허브 쓰는방법
 > 1. 작업 전에는 항상 최신화(git pull origin main) 먼저 하고 

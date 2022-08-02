@@ -184,7 +184,15 @@ export default {
     },
     mounted() {
         console.log(JSON.parse(localStorage.getItem("user")).idx)
-    }
+    },
+    beforeCreate() {
+        let userAuth = localStorage.getItem("user");
+        console.log(userAuth);
+        if (userAuth == null) {
+            alert("로그인 후 이용해주세요. ");
+            this.$router.push("/login");
+        }
+    },
 };
 </script>
 

@@ -156,11 +156,11 @@
         <hr style="background-color: black">
 
         <!--            카카오 지도 API -->
-        <div class="row" >
+        <div class="row">
             <div class="col-md">
                 <div class="h5 m-4 text-center">여행지 한눈에 보기</div>
                 <div class="px-3">
-                    <KakaoMapApiCom />
+                    <KakaoMapApiCom/>
                 </div>
 
             </div>
@@ -169,7 +169,7 @@
 
         <!-- 상품 card slider -->
         <!-- Related items section-->
-        <div class="py-3 slider-div" >
+        <div class="py-3 slider-div">
             <div class=" px-0 pt-1">
                 <div class="h5 m-4">관련여행상품 추천</div>
                 <div class="outerDiv pt-2" id="container">
@@ -433,8 +433,6 @@ export default {
             this.quntyty += 1;
         },
         addCart() {
-
-            // cart 임시 객체 만들기
             let data = {
                 idx: null,
                 userIdx: this.userIdx,
@@ -444,12 +442,15 @@ export default {
             ItemDetailDataService.insertCart(data)
                 .then(res => {
                     console.log(res)
-                    alert("장바구니에 추가하였습니다!")
-
+                    if(res.request.status == 200) {
+                        alert("장바구니에 추가하였습니다!")
+                    }else{
+                        alert("이미 장바구니에 있는 상품입니다.")
+                    }
                 })
                 .catch(e => {
-                    alert(e);
-
+                    console.log(e)
+                    alert("에러가 발생하였습니다.")
                 })
         },
         reviewsData(idx) {
@@ -541,10 +542,8 @@ export default {
         //     require('@/assets/img/itemDetails/contents/' + this.item.thumnail)
 
         // 로그인 관련 설정
-        this.userIdx = localStorage.getItem("idx");
-        console.log("userIdx:"+localStorage.getItem("idx"))
-        localStorage.setItem("idx", "1")
-        localStorage.getItem("idx")
+        this.userIdx = JSON.parse(localStorage.getItem("user")).idx;
+        console.log("userIdx:" + JSON.parse(localStorage.getItem("user")).idx)
         this.getItemData(this.$route.params.idx);
         // this.getUserData(JSON.parse(localStorage.getItem("idx")).idx);
         this.reviewsData(this.$route.params.idx);
