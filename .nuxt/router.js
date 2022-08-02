@@ -20,6 +20,7 @@ const _556bdd81 = () => interopDefault(import('../pages/find/id.vue' /* webpackC
 const _053acefe = () => interopDefault(import('../pages/find/password.vue' /* webpackChunkName: "pages/find/password" */))
 const _7c6f0318 = () => interopDefault(import('../pages/inform/List.vue' /* webpackChunkName: "pages/inform/List" */))
 const _6f0ab079 = () => interopDefault(import('../pages/inform/Write.vue' /* webpackChunkName: "pages/inform/Write" */))
+const _2a1c448d = () => interopDefault(import('../pages/items/List.vue' /* webpackChunkName: "pages/items/List" */))
 const _4c1acf9c = () => interopDefault(import('../pages/service/IndexDataService.js' /* webpackChunkName: "pages/service/IndexDataService" */))
 const _1d06d3d2 = () => interopDefault(import('../pages/service/ItemDetailDataService.js' /* webpackChunkName: "pages/service/ItemDetailDataService" */))
 const _0c348a9f = () => interopDefault(import('../pages/service/ItemListDataService.js' /* webpackChunkName: "pages/service/ItemListDataService" */))
@@ -113,6 +114,10 @@ export const routerOptions = {
     path: "/inform/Write",
     component: _6f0ab079,
     name: "inform-Write"
+  }, {
+    path: "/items/List",
+    component: _2a1c448d,
+    name: "items-List"
   }, {
     path: "/service/IndexDataService",
     component: _4c1acf9c,

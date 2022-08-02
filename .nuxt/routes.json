@@ -112,6 +112,13 @@
     "_name": "_6f0ab079"
   },
   {
+    "name": "items-List",
+    "path": "/items/List",
+    "component": "/Users/gim-yeong-geun/Documents/TeamProject/github/TeamProject_FrontEnd/pages/items/List.vue",
+    "chunkName": "pages/items/List",
+    "_name": "_2a1c448d"
+  },
+  {
     "name": "service-IndexDataService",
     "path": "/service/IndexDataService",
     "component": "/Users/gim-yeong-geun/Documents/TeamProject/github/TeamProject_FrontEnd/pages/service/IndexDataService.js",

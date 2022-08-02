@@ -1,4 +1,5 @@
 export default {
+    target: 'static', // default is 'server'
     // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
     ssr: false,
     lintOnSave: false,
@@ -107,7 +108,13 @@ export default {
     components: true,
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: [],
+    buildModules: [
+        // '@nuxtjs/eslint-module',
+        // '@nuxtjs/moment'
+    ],
+    // moment:{
+    //     locales:'ko',
+    // },
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
@@ -124,5 +131,12 @@ export default {
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
+    build: {
+        // analyze: {
+        //     analyzerMode: 'static'
+        // },
+        // extend(config, { isClient, isServer }) {
+        //     console.log('webpack', config, isClient, isServer)
+        // },
+    },
 };

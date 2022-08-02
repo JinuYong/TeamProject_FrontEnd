@@ -71,17 +71,17 @@
         >
             <div class="reviews-members py-4">
                 <div class="media">
-                    <a href="#">
-                        <img
-                            v-if="boardReplys.profileUrl"
-                            alt="Generic placeholder image"
-                            :src="
-                                'http://localhost:8000/image/' +
-                                boardReplys.profileUrl
-                            "
-                            class="mr-3 rounded-pill"
-                        />
-                    </a>
+<!--                    <a href="#">-->
+<!--                        <img-->
+<!--                            v-if="boardReplys.profileUrl"-->
+<!--                            alt="Generic placeholder image"-->
+<!--                            :src="-->
+<!--                                'http://localhost:8000/image/' +-->
+<!--                                boardReplys.profileUrl-->
+<!--                            "-->
+<!--                            class="mr-3 rounded-pill"-->
+<!--                        />-->
+<!--                    </a>-->
 
                     <div class="media-body">
                         <div class="reviews-members-header">
