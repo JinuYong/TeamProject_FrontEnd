@@ -25,7 +25,7 @@
             </tbody>
         </table>
 
-        <div>
+        <div class="writeBtn">
             <input
                 class="btn"
                 type="button"
@@ -41,7 +41,11 @@
                     v-model="pageSize"
                     @change="handlePageSizeChange($event)"
                 >
-                    <option v-for="size in pageSizes" :key="size" :value="size">
+                    <option
+                        v-for="size in pageSizes"
+                        :key="size"
+                        :value="pageSize"
+                    >
                         {{ size }}
                     </option>
                 </select>
@@ -50,7 +54,7 @@
             <!-- page: 현재페이지, count: 총 데이터 건수 -->
             <!-- pageSize: 1페이지 당 개수(건수) -->
             <b-pagination
-                class="pagination justify-content-center mt-5"
+                class="pagination justify-content-center mt-5 pagingBtn"
                 v-model="page"
                 :total-rows="count"
                 :per-page="pageSize"
@@ -123,7 +127,7 @@ export default {
             page: 1,
             count: 0,
             pageSize: 10,
-            pageSizes: [3, 6, 9],
+            pageSizes: [10, 20, 30],
         };
     },
     methods: {
@@ -159,6 +163,7 @@ export default {
             BoardUploadService.getAll(params)
                 // 성공하면 then으로 서버 데이터 전송
                 .then((response) => {
+                    console.log("param = ", params);
                     const { boards, totalItems } = response.data;
                     // springboot 받은 객체 정보
                     this.boards = boards;
@@ -206,10 +211,12 @@ export default {
     border: none;
     background-color: #a30000;
     color: white;
-    margin-left: auto;
-    display: flex;
+    /* margin-left: auto; */
+    /* display: flex; */
 }
-
+.writeBtn {
+    margin-left: auto;
+}
 .pagination-custom {
     margin-top: 80px;
     border-bottom: none;
@@ -217,10 +224,6 @@ export default {
 .page-item {
     --bs-pagination-color: #494949;
     --bs-pagination-hover-color: #a30000;
-}
-.page-link.active {
-    background-color: #a30000;
-    border-color: #a30000;
 }
 .container {
     margin-top: 50px;

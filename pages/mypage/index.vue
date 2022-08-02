@@ -20,14 +20,26 @@
 </template>
 <script>
 export default {
+    layout: "MyPage",
     data() {
         return {
-            menuStatus: "myInform"
+            menuStatus: "myInform",
         }
     },
     methods: {
         changeMenu(val) {
             this.menuStatus = val;
+        }
+    },
+    mounted() {
+        if (this.$route.params.show == 'payment') {
+            this.menuStatus = "payment";
+        }
+        let user = localStorage.getItem("user");
+        if (!user) {
+            console.log(user);
+            alert("로그인 후 이용해주세요. ");
+            this.$router.push('/login');
         }
     },
 }

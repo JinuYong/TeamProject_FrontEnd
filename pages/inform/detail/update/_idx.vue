@@ -5,7 +5,7 @@
             <h5 class="text-center mb-5">여행정보 게시글 수정</h5>
             <br />
         </div>
-        <div class="mb-3">
+        <div class="updateTitleInput mb-3">
             <label for="inform-title">제목</label>
             <input
                 type="text"
@@ -30,7 +30,10 @@
                 </textarea>
             </div>
         </div>
-        <div class="mb-3">
+        <div class="updateBtn mb-3">
+            <button onclick="location.href=`/inform/list`" class="btn">
+                취소
+            </button>
             <button @click="updateInformDetail" class="btn btn-primary me-3">
                 수정
             </button>
@@ -82,3 +85,23 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.updateTitleInput {
+    margin-right: auto;
+    width: 100%;
+}
+.updateBtn {
+    display: flex;
+    margin-right: auto;
+}
+.btn {
+    background-color: #a30000;
+    box-shadow: none;
+    color: white;
+    border: none;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 2px;
+}
+</style>

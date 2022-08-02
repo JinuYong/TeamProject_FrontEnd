@@ -53,11 +53,13 @@
         <div class="input-container">
             <textarea
                 class="form-control reply-input"
-                placeholder="댓글을 작성해주세요"
+                :placeholder="this.input_message"
                 style="height: 100px; width: 900px"
                 v-model="boardReply.content"
+                ref="reviewReg"
+                :class="{reviewDisable:this.userAuth}"
             ></textarea>
-            <button class="btn" @click="saveBoardReply">등록</button>
+            <button class="btn" @click="saveBoardReply" ref="reviewbtn">등록</button>
         </div>
 
         <hr />
@@ -69,17 +71,17 @@
         >
             <div class="reviews-members py-4">
                 <div class="media">
-                    <a href="#">
-                        <img
-                            v-if="boardReplys.profileUrl"
-                            alt="Generic placeholder image"
-                            :src="
-                                'http://localhost:8000/image/' +
-                                boardReplys.profileUrl
-                            "
-                            class="mr-3 rounded-pill"
-                        />
-                    </a>
+<!--                    <a href="#">-->
+<!--                        <img-->
+<!--                            v-if="boardReplys.profileUrl"-->
+<!--                            alt="Generic placeholder image"-->
+<!--                            :src="-->
+<!--                                'http://localhost:8000/image/' +-->
+<!--                                boardReplys.profileUrl-->
+<!--                            "-->
+<!--                            class="mr-3 rounded-pill"-->
+<!--                        />-->
+<!--                    </a>-->
 
                     <div class="media-body">
                         <div class="reviews-members-header">
@@ -104,7 +106,13 @@
                             >
                                 수정
                             </button>
-                            <div v-if="sameId" style="margin: 5px">
+                            <button
+                                @click="deleteBoardReply(boardReplys.idx)"
+                                class="btn replyBtn"
+                            >
+                                삭제
+                            </button>
+                            <div v-if="sameId" style="margin-top: 10px">
                                 <input
                                     type="text"
                                     v-model="boardReplys.content"
@@ -121,12 +129,6 @@
                                     확인
                                 </button>
                             </div>
-                            <button
-                                @click="deleteBoardReply(boardReplys.idx)"
-                                class="btn replyBtn"
-                            >
-                                삭제
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -146,6 +148,8 @@ export default {
     name: "boardDetails",
     data() {
         return {
+            input_message: "댓글을 작성해주세요. ",
+            idx: null,
             replyCounts: 0,
             boards: [],
             boardReply: {
@@ -164,13 +168,10 @@ export default {
             //     localStorage.getItem("idx") == this.boardReplies[0].userIdx
             //         ? true
             //         : false,
+            userAuth: localStorage.getItem("user")
         };
     },
     methods: {
-        viewBtn() {
-            if (localStorage.getItem("idx") == this.boardReplies.userIdx) {
-            }
-        },
         updateBoardReplies() {
             if (this.sameId == false) {
                 this.sameId = true;
@@ -223,15 +224,6 @@ export default {
             BoardReplyDataService.get(this.$route.params.idx)
                 .then((response) => {
                     this.boardReplies = response.data;
-                    // let arr = [];
-                    // // this.boardReplies = response.data;
-                    // for (let i = 0; i < response.data.length; i++) {
-                    //     console.log(response.data[0]);
-                    //     console.log(response);
-                    //     this.boardReplies.push(response.data);
-                    // }
-                    // console.log(this.boardReplies);
-                    // this.boardReplies = arr;
                 })
                 .catch((e) => {
                     alert(e);
@@ -265,7 +257,7 @@ export default {
             let data = {
                 idx: this.boardReply.idx,
                 content: this.boardReply.content,
-                userIdx: JSON.parse(localStorage.getItem("idx")).idx,
+                userIdx: this.loginIdx,
                 boardIdx: this.boards.idx,
             };
             BoardReplyDataService.create(data)
@@ -280,12 +272,19 @@ export default {
         },
     },
     mounted() {
+        this.loginIdx = JSON.parse(localStorage.getItem("user")).idx;
         this.retrieveReplyCount(this.$route.params.idx);
         this.retrieveBoardReply();
         this.retrieveBoardUploadImage(this.$route.params.idx);
         this.retrieveCounts(this.$route.params.idx);
         // localStorage.setItem("idx", "141");
         // localStorage.getItem("idx");
+        let userAuth = localStorage.getItem("user");
+        if (userAuth == undefined) {
+            this.$refs.reviewReg.disabled = true;
+            this.input_message = "로그인이 필요합니다";
+            this.$refs.reviewbtn.disabled = true;
+        }
     },
 };
 </script>
@@ -337,6 +336,7 @@ export default {
     font-weight: 300;
     font-size: 14px;
     border: none;
+    box-shadow: none;
 }
 .reply-container {
     padding: 20px 30px 0 30px;

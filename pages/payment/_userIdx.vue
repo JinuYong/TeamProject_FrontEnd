@@ -1,5 +1,5 @@
 <template>
-    <div class=" px-3 my-5 clearfix" >
+    <div class=" px-3 my-5 clearfix">
         <div class="card">
             <div class="card-header">
                 <h2>주문/결제</h2>
@@ -14,7 +14,16 @@
                         <th class="text-center py-3 px-4" style="width: 20%;">상품금액</th>
                     </tr>
                     </thead>
-                    <tbody v-for="cart in carts">
+                    <tbody v-show="!carts">
+                    <tr>
+                        <td class="text-center">선택한 상품이 없습니다.</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                    <tbody v-for="cart in carts" v-show="carts">
                     <tr>
                         <!--                        <td class="px-4 text-center"-->
                         <!--                            style="vertical-align: middle">-->
@@ -123,7 +132,6 @@
 import ShoppingCartDataService from "~/pages/service/ShoppingCartDataService";
 import UserDataService from "~/pages/service/UserDataService";
 import {Bootpay} from '@bootpay/client-js'
-import axios from "axios";
 
 
 export default {
@@ -150,7 +158,13 @@ export default {
                     this.carts = response.data;
                     // springboot에서 받은 총 데이터 건수
                     // this.count = totalItems;
-                    this.payData.name = this.carts[0].title
+                    // if (response.data.length > 1) {
+                    //     this.payData.name =
+                    //         response.data[0].title + " 외" + response.data.length +"건"
+                    // } else {
+                    //     this.payData.name = response.data.title
+                    // }
+                    this.payData.name = response.data[0].title
                     this.title = this.carts[0].title
                     this.cartIdx = this.carts[0].idx
 
@@ -158,7 +172,7 @@ export default {
                 })
                 .catch(err => {
                     console.log(err)
-                    alert(err)
+                    alert("결제할 상품이 없습니다.")
                 })
         },
         getUserData(userIdx) {
@@ -167,7 +181,6 @@ export default {
                     this.user = response.data;
                     // springboot에서 받은 총 데이터 건수
                     // this.count = totalItems;
-                    this.userIdx = response.idx
                 })
                 .catch(err => {
                     console.log(err)
@@ -207,9 +220,18 @@ export default {
                 if (response.event === 'issued') {// 가상계좌 입금 완료 처리
                 } else if (response.event === 'done') {
                     // 결제 완료 처리
-                    console.log(response)
-                    // 결제 완료 처리
+                    console.log("response:" + response)
                     this.$router.push({path: ("/CheckPayment")})
+                    // 결제 완료 처리
+                    // todo: 결제완료 아이템 카트에서 제거
+
+                    ShoppingCartDataService.deleteUserCartAll(this.user.idx)
+                        .then(res => {
+                            console.log(res)
+                        })
+                        .catch(err => {
+                            console.log(err + " 1")
+                        })
                 } else if (response.event === 'confirm') {
                     //payload.extra.separately_confirmed = true; 일 경우 승인 전 해당 이벤트가 호출됨
                     console.log(response.receipt_id);
@@ -223,7 +245,16 @@ export default {
                         alert("결제 완료 처리")
                         console.log(response)
                         // 결제 완료 처리
-                        this.$router.push({path: ("/CheckPayment")})
+                        // todo: 결제완료 아이템 카트에서 제거
+
+                        ShoppingCartDataService.deleteUserCartAll(this.user.idx)
+                            .then(res => {
+                                console.log(res)
+                                this.$router.push({path: ("/CheckPayment")})
+                            })
+                            .catch(err => {
+                                console.log(err + " 2")
+                            })
                     } else if (confirmedData.event === 'error') {
                         //결제 승인 실패
                         console.log(response)
@@ -305,15 +336,21 @@ export default {
         }
     },
     mounted() {
-        localStorage.setItem("idx", "1")
-        localStorage.getItem("idx")
         // console.log("userIdx : " + this.$route.params.userIdx)
         // 유저의 카트내역 표시
-        this.getUserCart(localStorage.getItem("idx"));
+        this.getUserCart(JSON.parse(localStorage.getItem("user")).idx);
         // 유저정보
-        this.getUserData(localStorage.getItem("idx"));
+        this.getUserData(JSON.parse(localStorage.getItem("user")).idx);
 
-    }
+    },
+    beforeCreate() {
+        let userAuth = localStorage.getItem("user");
+        console.log(userAuth);
+        if (userAuth == null) {
+            alert("로그인 후 이용해주세요. ");
+            this.$router.push("/login");
+        }
+    },
 }
 </script>
 

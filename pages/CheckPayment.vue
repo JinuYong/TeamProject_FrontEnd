@@ -1,6 +1,6 @@
 <template>
     <div class="common-container">
-        <div class="common">
+        <div class="common" v-if="payment">
             <h4 class="mb-5 fw-normal text-center">결제가 완료되었습니다.</h4>
 
             <div class="mt-5 text-center">
@@ -11,8 +11,7 @@
             <div class="mt-3 mb-4 text-center">
                 <button
                     class="btn"
-                    type="submit"
-                    onClick="location.href='/mypageupdate'"
+                    @click="paymentShow"
                 >
                     결제내역 확인하기
                 </button>
@@ -28,6 +27,10 @@
                 </div>
             </div>
         </div>
+
+        <div v-if="!payment">
+            <Payment />
+        </div>
     </div>
 </template>
 
@@ -35,6 +38,19 @@
 /* eslint-disable */
 export default {
     name: "checkpayment",
+    data() {
+        return {
+            payment: true
+        }
+    },
+    methods: {
+        paymentShow(e) {
+            e.preventDefault();
+            
+            this.payment = false;
+            this.$router.push({ name: 'mypage', params: { show: 'payment' }})
+        }
+    }
 };
 </script>
 

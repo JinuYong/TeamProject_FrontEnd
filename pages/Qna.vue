@@ -411,6 +411,7 @@ export default {
 <style scoped>
 .container {
     margin-top: 50px;
+    width: 100%;
 }
 .qna-title {
     text-align: center;

@@ -99,7 +99,13 @@
                             >
                                 수정
                             </button>
-                            <div v-if="sameId" style="margin: 5px">
+                            <button
+                                @click="deleteInformReply(informReply.idx)"
+                                class="btn replyBtn"
+                            >
+                                삭제
+                            </button>
+                            <div v-if="sameId" style="margin-top: 10px">
                                 <input
                                     type="text"
                                     v-model="informReply.content"
@@ -116,12 +122,6 @@
                                     확인
                                 </button>
                             </div>
-                            <button
-                                @click="deleteInformReply(informReply.idx)"
-                                class="btn replyBtn"
-                            >
-                                삭제
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -312,6 +312,7 @@ export default {
     font-weight: 300;
     font-size: 14px;
     border: none;
+    box-shadow: none;
 }
 .reply-container {
     padding: 20px 30px 0 30px;
