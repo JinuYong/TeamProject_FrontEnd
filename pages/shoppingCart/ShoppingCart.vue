@@ -14,7 +14,7 @@
                             <th class="text-center py-3 px-4" style="min-width: 350px;">상품명 &amp; 상품상세</th>
                             <th class="text-center py-3 px-4" style="width: 100px;">가격</th>
                             <th class="text-center py-3 px-4" style="width: 120px;">여행인원</th>
-                            <th class="text-center py-3 px-4" style="width: 130px;">총</th>
+                            <th class="text-center py-3 px-4" style="width: 110px;">총</th>
                             <th class="text-center align-middle py-3 px-0" style="width: 40px;">
                                 <a href="#"
                                    class="shop-tooltip float-none text-light"
@@ -24,8 +24,18 @@
                         </tr>
                         </thead>
 
+                        <tbody v-show="!carts">
+                        <tr>
+                            <td class="text-center">카트에 상품이 없습니다.</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
                         <tbody v-for="(cart, index) in carts"
-                               :key="index">
+                               :key="index"
+                               v-show="carts">
                         <tr>
                             <td class="p-4">
                                 <div class="media align-items-center">
@@ -157,7 +167,6 @@ export default {
                 })
                 .catch(err => {
                     console.log(err)
-                    alert(err)
                 })
         },
 
@@ -228,9 +237,8 @@ export default {
         },
     },
     mounted() {
-        localStorage.setItem("idx", "1")
-        localStorage.getItem("idx")
-        this.retrieveCart(localStorage.getItem("idx"))
+        this.retrieveCart(JSON.parse(localStorage.getItem("user")).idx)
+        console.log("userIdx 값 확인", JSON.parse(localStorage.getItem("user")).idx)
         let userAuth = localStorage.getItem("user");
         console.log(userAuth);
         if (userAuth == null) {

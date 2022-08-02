@@ -11,12 +11,16 @@ class ItemDetailDataService {
         return http.get(`/item/${idx}`);
     }
 
+    getCartData(itemsIdx) {
+        return http.get(`/carts/${itemsIdx}`);
+    }
+
     insertCart(data) {
         return http.post(`/cart`, data);
     }
 
     getItemByArea(area) {
-        return http.get(`/item/area/${area}`)
+        return http.get(`/item/area/${area}`);
     }
 
     // getSearchData(area, itemDate) {

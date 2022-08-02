@@ -11,9 +11,15 @@ class ShoppingCartDataService {
         return http.delete(`/cart/${idx}`)
     }
 
+    deleteUserCartAll(userIdx) {
+        return http.delete(`/cart/del/${userIdx}`)
+    }
+
     update(idx, data) {
         return http.put(`/cart/${idx}`,data)
     }
+
+    insertPaymentItems
 
 }
 
